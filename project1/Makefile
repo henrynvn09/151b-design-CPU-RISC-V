@@ -35,7 +35,7 @@ test: $(DESTDIR)/$(PROJECT)
 	$(MAKE) -C tests run
 
 submit: 
-	@echo "-- ZIPPING ALL THE FILE ---------"
+	@echo "-- ZIPPING ALL THE FILE --"
 	zip submission.zip src/*
 
 clean:
