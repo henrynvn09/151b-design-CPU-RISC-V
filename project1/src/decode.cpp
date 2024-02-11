@@ -429,18 +429,43 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
   case InstType::B_TYPE:
   {
     // TODO:
+    instr->addSrcReg(rs1, RegType::Integer);
+    instr->addSrcReg(rs2, RegType::Integer);
+    instr->setFunc3(func3);
+
+    const int width_s_imm = (11 - 5 + 1);
+
+    auto imm12and10_5 = code >> (shift_rs2 + width_reg);
+    auto imm12 = imm12and10_5 >> (width_s_imm - 1);
+    auto imm10_5 = imm12and10_5 & ~(1 << (width_s_imm - 1));
+
+    auto imm4_1and11 = rd;
+    auto imm4_1 = imm4_1and11 >> 1;
+    auto imm11 = imm4_1and11 & 1;
+
+    auto imm = imm12 << 12 + imm11 << 11 + imm10_5 << 5 + imm4_1 << 1;
+
+    instr->setImm(imm);
   }
   break;
 
   case InstType::U_TYPE:
   {
     // TODO:
+    instr->setDestReg(rd, RegType::Integer);
+
+    auto imm = (code >> shift_func3) << 12;
+
+    instr->setImm(imm);
   }
   break;
 
   case InstType::J_TYPE:
   {
     // TODO:
+    instr->setDestReg(rd, RegType::Integer);
+
+    auto imm = (code >> shift_func3) << 12;
   }
   break;
 
