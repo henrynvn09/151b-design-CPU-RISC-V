@@ -387,23 +387,20 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
       instr->setSrcReg(0, rs1, RegType::None);
       break;
     case Opcode::I_INST:
-      // TODO:
+      // TODO:DONE
       // code >> shift_rs2 = remove
       std::cout << "Enter I_INST state";
       instr->setDestReg(rd, RegType::Integer);
-      if (func3 == 0 || func3 == 0x4 || func3 == 0x6 || func3 == 0x7)
+      if (func3 == 0x1 || func3 == 0x5)
       {
-        auto imm = code >> shift_rs2;
+        auto imm = (code >> shift_rs2) & mask_reg;
         instr->setImm(imm);
-      }
-      else if (func3 == 0x1 || func3 == 0x5)
-      {
-        auto imm = (code >> shift_rs2) & 0b11111;
-        instr->setImm(imm);
+        instr->setFunc7(func7);
       }
       else
       {
-        /* last 2 I */
+        auto imm = code >> shift_rs2;
+        instr->setImm(imm);
       }
 
       break;
@@ -418,7 +415,14 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
 
   case InstType::S_TYPE:
   {
-    // TODO:
+    instr->addSrcReg(rs1, RegType::Integer);
+    instr->addSrcReg(rs2, RegType::Integer);
+    instr->setFunc3(func3);
+
+    auto imm11_5 = code >> (shift_rs2 + width_reg);
+    auto imm4_0 = rd;
+
+    instr->setImm((imm11_5 << 5) | imm4_0);
   }
   break;
 
