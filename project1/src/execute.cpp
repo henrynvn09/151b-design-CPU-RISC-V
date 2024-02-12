@@ -1,10 +1,10 @@
 // Copyright © 2019-2023
-// 
+//
 // Licensed under the Apache License;
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
 // http://www.apache.org/licenses/LICENSE-2.0
-// 
+//
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -27,38 +27,43 @@
 
 using namespace tinyrv;
 
-union reg_data_t {
-  Word     u;
-  WordI    i;
-  WordF    f;
-  float    f32;
-  double   f64;
+union reg_data_t
+{
+  Word u;
+  WordI i;
+  WordF f;
+  float f32;
+  double f64;
   uint32_t u32;
-  uint64_t u64; 
-  int32_t  i32;
-  int64_t  i64;
+  uint64_t u64;
+  int32_t i32;
+  int64_t i64;
 };
 
-void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
+void Emulator::execute(const Instr &instr, pipeline_trace_t *trace)
+{
   auto next_pc = PC_ + 4;
 
-  auto func3  = instr.getFunc3();
-  auto func7  = instr.getFunc7();
+  auto func3 = instr.getFunc3();
+  auto func7 = instr.getFunc7();
   auto opcode = instr.getOpcode();
-  auto rdest  = instr.getRDest();
-  auto rsrc0  = instr.getRSrc(0);
-  auto rsrc1  = instr.getRSrc(1);
+  auto rdest = instr.getRDest();
+  auto rsrc0 = instr.getRSrc(0);
+  auto rsrc1 = instr.getRSrc(1);
   auto immsrc = sext((Word)instr.getImm(), 32);
 
   // Register File access
-  reg_data_t rsdata [2];
+  reg_data_t rsdata[2];
   auto num_rsrcs = instr.getNRSrc();
-  if (num_rsrcs) {       
-    for (uint32_t i = 0; i < num_rsrcs; ++i) {          
+  if (num_rsrcs)
+  {
+    for (uint32_t i = 0; i < num_rsrcs; ++i)
+    {
       auto type = instr.getRSType(i);
-      auto reg = instr.getRSrc(i);        
-      switch (type) {
-      case RegType::Integer: 
+      auto reg = instr.getRSrc(i);
+      switch (type)
+      {
+      case RegType::Integer:
         rsdata[i].u = reg_file_[reg];
         DPH(2, "Src" << std::dec << i << " Reg: " << type << std::dec << reg << "={0x" << std::hex << rsdata[i].i << "}" << std::endl);
         break;
@@ -66,23 +71,26 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
         break;
       default:
         std::abort();
-      }      
+      }
     }
   }
 
   reg_data_t rddata;
   bool rd_write = false;
-  
-  switch (opcode) {  
-  case LUI_INST: {
+
+  switch (opcode)
+  {
+  case LUI_INST:
+  {
     // RV32I: LUI
     trace->exe_type = ExeType::ALU;
     trace->alu_type = AluType::ARITH;
     rddata.i = immsrc << 12;
     rd_write = true;
     break;
-  }  
-  case AUIPC_INST: {
+  }
+  case AUIPC_INST:
+  {
     // RV32I: AUIPC
     trace->exe_type = ExeType::ALU;
     trace->alu_type = AluType::ARITH;
@@ -90,20 +98,25 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
     rd_write = true;
     break;
   }
-  case R_INST: {
-    trace->exe_type = ExeType::ALU;    
+  case R_INST:
+  {
+    trace->exe_type = ExeType::ALU;
     trace->alu_type = AluType::ARITH;
     trace->used_regs.set(rsrc0);
     trace->used_regs.set(rsrc1);
-    if (func7 & 0x1) {
-      switch (func3) {
-      case 0: {
+    if (func7 & 0x1)
+    {
+      switch (func3)
+      {
+      case 0:
+      {
         // RV32M: MUL
         rddata.i = rsdata[0].i * rsdata[1].i;
         trace->alu_type = AluType::IMUL;
         break;
       }
-      case 1: {
+      case 1:
+      {
         // RV32M: MULH
         auto first = static_cast<DWordI>(rsdata[0].i);
         auto second = static_cast<DWordI>(rsdata[1].i);
@@ -111,134 +124,173 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
         trace->alu_type = AluType::IMUL;
         break;
       }
-      case 2: {
-        // RV32M: MULHSU       
+      case 2:
+      {
+        // RV32M: MULHSU
         auto first = static_cast<DWordI>(rsdata[0].i);
         auto second = static_cast<DWord>(rsdata[1].u);
         rddata.i = (first * second) >> XLEN;
         trace->alu_type = AluType::IMUL;
         break;
-      } 
-      case 3: {
+      }
+      case 3:
+      {
         // RV32M: MULHU
         auto first = static_cast<DWord>(rsdata[0].u);
         auto second = static_cast<DWord>(rsdata[1].u);
         rddata.i = (first * second) >> XLEN;
         trace->alu_type = AluType::IMUL;
         break;
-      } 
-      case 4: {
+      }
+      case 4:
+      {
         // RV32M: DIV
         auto dividen = rsdata[0].i;
-        auto divisor = rsdata[1].i; 
-        auto largest_negative = WordI(1) << (XLEN-1);  
-        if (divisor == 0) {
+        auto divisor = rsdata[1].i;
+        auto largest_negative = WordI(1) << (XLEN - 1);
+        if (divisor == 0)
+        {
           rddata.i = -1;
-        } else if (dividen == largest_negative && divisor == -1) {
+        }
+        else if (dividen == largest_negative && divisor == -1)
+        {
           rddata.i = dividen;
-        } else {
+        }
+        else
+        {
           rddata.i = dividen / divisor;
         }
         trace->alu_type = AluType::IDIV;
         break;
-      } 
-      case 5: {
+      }
+      case 5:
+      {
         // RV32M: DIVU
         auto dividen = rsdata[0].u;
         auto divisor = rsdata[1].u;
-        if (divisor == 0) {
+        if (divisor == 0)
+        {
           rddata.i = -1;
-        } else {
+        }
+        else
+        {
           rddata.i = dividen / divisor;
         }
         trace->alu_type = AluType::IDIV;
         break;
-      } 
-      case 6: {
+      }
+      case 6:
+      {
         // RV32M: REM
         auto dividen = rsdata[0].i;
         auto divisor = rsdata[1].i;
-        auto largest_negative = WordI(1) << (XLEN-1);
-        if (rsdata[1].i == 0) {
+        auto largest_negative = WordI(1) << (XLEN - 1);
+        if (rsdata[1].i == 0)
+        {
           rddata.i = dividen;
-        } else if (dividen == largest_negative && divisor == -1) {
+        }
+        else if (dividen == largest_negative && divisor == -1)
+        {
           rddata.i = 0;
-        } else {
+        }
+        else
+        {
           rddata.i = dividen % divisor;
         }
         trace->alu_type = AluType::IDIV;
         break;
-      } 
-      case 7: {
+      }
+      case 7:
+      {
         // RV32M: REMU
         auto dividen = rsdata[0].u;
         auto divisor = rsdata[1].u;
-        if (rsdata[1].i == 0) {
+        if (rsdata[1].i == 0)
+        {
           rddata.i = dividen;
-        } else {
+        }
+        else
+        {
           rddata.i = dividen % divisor;
         }
         trace->alu_type = AluType::IDIV;
         break;
-      } 
+      }
       default:
         std::abort();
       }
-    } else {
-      switch (func3) {
-      case 0: {
-        if (func7) {
+    }
+    else
+    {
+      switch (func3)
+      {
+      case 0:
+      {
+        if (func7)
+        {
           // RV32I: SUB
           rddata.i = rsdata[0].i - rsdata[1].i;
-        } else {
+        }
+        else
+        {
           // RV32I: ADD
           rddata.i = rsdata[0].i + rsdata[1].i;
         }
         break;
       }
-      case 1: {
+      case 1:
+      {
         // RV32I: SLL
         // TODO: rddata.i = ?
         rddata.i = rsdata[0].i << rsdata[1].i;
         break;
       }
-      case 2: {
+      case 2:
+      {
         // RV32I: SLT
         // TODO: rddata.i = ?
-        rddata.i = (rsdata[0].i < rsdata[1].i)?1:0;
+        rddata.i = (rsdata[0].i < rsdata[1].i) ? 1 : 0;
         break;
       }
-      case 3: {
+      case 3:
+      {
         // RV32I: SLTU
         // TODO: rddata.i = ?
-        rddata.u = (rsdata[0].u < rsdata[1].u)?1:0;
+        rddata.u = (rsdata[0].u < rsdata[1].u) ? 1 : 0;
         break;
       }
-      case 4: {
+      case 4:
+      {
         // RV32I: XOR
         // TODO: rddata.i = ?
         rddata.i = rsdata[0].i ^ rsdata[1].i;
         break;
       }
-      case 5: {
-        if (func7) {
+      case 5:
+      {
+        if (func7)
+        {
           // RV32I: SRA
           // TODO: rddata.i = ?
           rddata.i = rsdata[0].i >> rsdata[1].i;
-        } else {
+        }
+        else
+        {
           // RV32I: SRL
           // TODO: rddata.i = ?
           rddata.u = rsdata[0].u >> rsdata[1].u;
         }
         break;
       }
-      case 6: {
+      case 6:
+      {
         // RV32I: OR
         // TODO: rddata.i = ?
         rddata.i = rsdata[0].i | rsdata[1].i;
         break;
       }
-      case 7: {
+      case 7:
+      {
         // RV32I: AND
         // TODO: rddata.i = ?
         rddata.i = rsdata[0].i & rsdata[1].i;
@@ -247,64 +299,77 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
       default:
         std::abort();
       }
-    }    
+    }
     rd_write = true;
     break;
   }
-  case I_INST: {
-    trace->exe_type = ExeType::ALU;    
-    trace->alu_type = AluType::ARITH;    
+  case I_INST:
+  {
+    trace->exe_type = ExeType::ALU;
+    trace->alu_type = AluType::ARITH;
     trace->used_regs.set(rsrc0);
-    switch (func3) {
-    case 0: {
+    switch (func3)
+    {
+    case 0:
+    {
       // RV32I: ADDI
       // TODO: rddata.i = ?
       rddata.i = rsdata[0].i + immsrc;
       break;
     }
-    case 1: {
+    case 1:
+    {
       // RV32I: SLLI
       // TODO: rddata.i = ?
       rddata.i = rsdata[0].i >> immsrc;
       break;
     }
-    case 2: {
+    case 2:
+    {
       // RV32I: SLTI
       // TODO: rddata.i = ?
-      rddata.i = (rsdata[0].i < immsrc)?1:0;
+      rddata.i = (rsdata[0].i < immsrc) ? 1 : 0;
       break;
     }
-    case 3: {
+    case 3:
+    {
       // RV32I: SLTIU
       // TODO: rddata.i = ?
-      rddata.u = (rsdata[0].u < immsrc)?1:0;
+      rddata.u = (rsdata[0].u < immsrc) ? 1 : 0;
       break;
-    } 
-    case 4: {
+    }
+    case 4:
+    {
       // RV32I: XORI
       // TODO: rddata.i = ?
       rddata.i = rsdata[0].i ^ immsrc;
       break;
     }
-    case 5: {
-      if (func7) {
+    case 5:
+    {
+      if (func7)
+      {
         // RV32I: SRAI
         // TODO: rddata.i = ?
         rddata.i = rsdata[0].i >> immsrc;
-      } else {
+      }
+      else
+      {
         // RV32I: SRLI
         // TODO: rddata.i = ?
         rddata.u = rsdata[0].u >> immsrc;
       }
       break;
     }
-    case 6: {
+    case 6:
+    {
       // RV32I: ORI
       // TODO: rddata.i = ?
       rddata.i = rsdata[0].i | immsrc;
       break;
     }
-    case 7: {
+    case 7:
+    {
       // RV32I: ANDI
       // TODO: rddata.i = ?
       rddata.i = rsdata[0].i & immsrc;
@@ -314,55 +379,69 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
     rd_write = true;
     break;
   }
-  case B_INST: {   
-    trace->exe_type = ExeType::ALU;    
-    trace->alu_type = AluType::BRANCH;    
+  case B_INST:
+  {
+    trace->exe_type = ExeType::ALU;
+    trace->alu_type = AluType::BRANCH;
     trace->used_regs.set(rsrc0);
     trace->used_regs.set(rsrc1);
-    switch (func3) {
-    case 0: {
+    switch (func3)
+    {
+    case 0:
+    {
       // RV32I: BEQ
-      if (rsdata[0].i == rsdata[1].i) {
+      if (rsdata[0].i == rsdata[1].i)
+      {
         next_pc = PC_ + immsrc;
       }
       break;
     }
-    case 1: {
+    case 1:
+    {
       // RV32I: BNE
       // TODO: next_pc = ?
-      if (rsdata[0].i != rsdata[1].i) {
+      if (rsdata[0].i != rsdata[1].i)
+      {
         next_pc = PC_ + immsrc;
       }
       break;
     }
-    case 4: {
+    case 4:
+    {
       // RV32I: BLT
       // TODO: next_pc = ?
-      if (rsdata[0].i < rsdata[1].i) {
+      if (rsdata[0].i < rsdata[1].i)
+      {
         next_pc = PC_ + immsrc;
       }
       break;
     }
-    case 5: {
+    case 5:
+    {
       // RV32I: BGE
       // TODO: next_pc = ?
-      if (rsdata[0].i >= rsdata[1].i) {
+      if (rsdata[0].i >= rsdata[1].i)
+      {
         next_pc = PC_ + immsrc;
       }
       break;
     }
-    case 6: {
+    case 6:
+    {
       // RV32I: BLTU
       // TODO: next_pc = ?
-      if (rsdata[0].u < rsdata[1].u) {
+      if (rsdata[0].u < rsdata[1].u)
+      {
         next_pc = PC_ + immsrc;
       }
       break;
     }
-    case 7: {
+    case 7:
+    {
       // RV32I: BGEU
       // TODO: next_pc = ?
-      if (rsdata[0].u >= rsdata[1].u) {
+      if (rsdata[0].u >= rsdata[1].u)
+      {
         next_pc = PC_ + immsrc;
       }
       break;
@@ -371,22 +450,24 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
       std::abort();
     }
     break;
-  }  
-  case JAL_INST: {
+  }
+  case JAL_INST:
+  {
     // RV32I: JAL
-    trace->exe_type = ExeType::ALU;    
+    trace->exe_type = ExeType::ALU;
     trace->alu_type = AluType::BRANCH;
     // rddata.i = ?
     // TODO: next_pc = ?
-    rddata.u = PC+4;
+    rddata.u = PC_ + 4;
     next_pc = PC_ + immsrc;
 
     rd_write = true;
     break;
-  }  
-  case JALR_INST: {
+  }
+  case JALR_INST:
+  {
     // RV32I: JALR
-    trace->exe_type = ExeType::ALU;    
+    trace->exe_type = ExeType::ALU;
     trace->alu_type = AluType::BRANCH;
     trace->used_regs.set(rsrc0);
     // rddata.i = ?
@@ -397,8 +478,9 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
     rd_write = true;
     break;
   }
-  case L_INST: {
-    trace->exe_type = ExeType::LSU;    
+  case L_INST:
+  {
+    trace->exe_type = ExeType::LSU;
     trace->lsu_type = LsuType::LOAD;
     trace->used_regs.set(rsrc0);
     auto trace_data = std::make_shared<LsuTraceData>();
@@ -407,10 +489,12 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
     uint32_t data_width = 8 * data_bytes;
     uint64_t mem_addr;
     // mem_addr = ?
+    mem_addr = rsdata[0].u64 + immsrc;
     uint64_t read_data = 0;
     this->dcache_read(&read_data, mem_addr, data_bytes);
     trace_data->mem_addrs = {mem_addr, data_bytes};
-    switch (func3) {
+    switch (func3)
+    {
     case 0: // RV32I: LB
     case 1: // RV32I: LH
       rddata.i = sext((Word)read_data, data_width);
@@ -423,16 +507,17 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
       rddata.u64 = read_data;
       break;
     default:
-      std::abort();      
+      std::abort();
     }
     rd_write = true;
     break;
   }
-  case S_INST: {
-    trace->exe_type = ExeType::LSU;    
+  case S_INST:
+  {
+    trace->exe_type = ExeType::LSU;
     trace->lsu_type = LsuType::STORE;
     trace->used_regs.set(rsrc0);
-    trace->used_regs.set(rsrc1);    
+    trace->used_regs.set(rsrc1);
     auto trace_data = std::make_shared<LsuTraceData>();
     trace->data = trace_data;
     uint32_t data_bytes = 1 << (func3 & 0x3);
@@ -440,31 +525,38 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
     uint64_t write_data;
     // mem_addr = ?
     // write_data = ?
+    mem_addr = rsdata[0].u64 + immsrc;
+    write_data = rsdata[1].u64;
+
     trace_data->mem_addrs = {mem_addr, data_bytes};
-    switch (func3) {
+    switch (func3)
+    {
     case 0:
     case 1:
     case 2:
     case 3:
-      this->dcache_write(&write_data, mem_addr, data_bytes);  
+      this->dcache_write(&write_data, mem_addr, data_bytes);
       break;
     default:
       std::abort();
     }
     break;
   }
-  case SYS_INST: {
+  case SYS_INST:
+  {
     uint32_t csr_addr = immsrc;
     uint32_t csr_value;
-    if (func3 == 0) {
+    if (func3 == 0)
+    {
       trace->exe_type = ExeType::ALU;
       trace->alu_type = AluType::SYSCALL;
-      switch (csr_addr) {
-      case 0: 
+      switch (csr_addr)
+      {
+      case 0:
         // RV32I: ECALL
         this->trigger_ecall();
         break;
-      case 1: 
+      case 1:
         // RV32I: EBREAK
         this->trigger_ebreak();
         break;
@@ -474,24 +566,30 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
         break;
       default:
         std::abort();
-      }                
-    } else {
+      }
+    }
+    else
+    {
       trace->exe_type = ExeType::CSR;
       csr_value = this->get_csr(csr_addr);
-      switch (func3) {
-      case 1: {
+      switch (func3)
+      {
+      case 1:
+      {
         // RV32I: CSRRW
         rddata.i = csr_value;
-        this->set_csr(csr_addr, rsdata[0].i);      
+        this->set_csr(csr_addr, rsdata[0].i);
         trace->used_regs.set(rsrc0);
         trace->csr_type = CSRType::CSRRW;
         rd_write = true;
         break;
       }
-      case 2: {
+      case 2:
+      {
         // RV32I: CSRRS
         rddata.i = csr_value;
-        if (rsdata[0].i != 0) {
+        if (rsdata[0].i != 0)
+        {
           this->set_csr(csr_addr, csr_value | rsdata[0].i);
         }
         trace->used_regs.set(rsrc0);
@@ -499,10 +597,12 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
         rd_write = true;
         break;
       }
-      case 3: {
+      case 3:
+      {
         // RV32I: CSRRC
         rddata.i = csr_value;
-        if (rsdata[0].i != 0) {
+        if (rsdata[0].i != 0)
+        {
           this->set_csr(csr_addr, csr_value & ~rsdata[0].i);
         }
         trace->used_regs.set(rsrc0);
@@ -510,28 +610,33 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
         rd_write = true;
         break;
       }
-      case 5: {
+      case 5:
+      {
         // RV32I: CSRRWI
         rddata.i = csr_value;
         this->set_csr(csr_addr, rsrc0);
-        trace->csr_type = CSRType::CSRRW;    
+        trace->csr_type = CSRType::CSRRW;
         rd_write = true;
         break;
       }
-      case 6: {
+      case 6:
+      {
         // RV32I: CSRRSI;
         rddata.i = csr_value;
-        if (rsrc0 != 0) {
+        if (rsrc0 != 0)
+        {
           this->set_csr(csr_addr, csr_value | rsrc0);
         }
         trace->csr_type = CSRType::CSRRS;
         rd_write = true;
         break;
       }
-      case 7: {
+      case 7:
+      {
         // RV32I: CSRRCI
         rddata.i = csr_value;
-        if (rsrc0 != 0) {
+        if (rsrc0 != 0)
+        {
           this->set_csr(csr_addr, csr_value & ~rsrc0);
         }
         trace->csr_type = CSRType::CSRRC;
@@ -541,12 +646,13 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
       default:
         break;
       }
-    } 
+    }
     break;
-  }   
-  case FENCE: {
+  }
+  case FENCE:
+  {
     // RV32I: FENCE
-    trace->exe_type = ExeType::LSU;    
+    trace->exe_type = ExeType::LSU;
     trace->lsu_type = LsuType::FENCE;
     break;
   }
@@ -554,16 +660,21 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
     std::abort();
   }
 
-  if (rd_write) {
+  if (rd_write)
+  {
     trace->wb = true;
-    auto type = instr.getRDType();    
-    switch (type) {
-    case RegType::Integer:      
-      if (rdest) {
-        DPH(2, "Dest Reg: " << type << std::dec << rdest << "={0x" << std::hex << rddata.i << "}" << std::endl);    
+    auto type = instr.getRDType();
+    switch (type)
+    {
+    case RegType::Integer:
+      if (rdest)
+      {
+        DPH(2, "Dest Reg: " << type << std::dec << rdest << "={0x" << std::hex << rddata.i << "}" << std::endl);
         reg_file_[rdest] = rddata.i;
         trace->used_regs[rdest] = 1;
-      } else {
+      }
+      else
+      {
         // disable write to x0
         trace->wb = false;
       }
@@ -576,7 +687,8 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
 
   // advance program counter
   PC_ += 4;
-  if (PC_ != next_pc) {
+  if (PC_ != next_pc)
+  {
     DP(3, "*** Next PC=0x" << std::hex << next_pc << std::dec);
     PC_ = next_pc;
   }
