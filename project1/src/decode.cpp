@@ -465,7 +465,24 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
     // TODO:
     instr->setDestReg(rd, RegType::Integer);
 
-    auto imm = (code >> shift_func3) << 12;
+    auto imm_reg = (code >> shift_func3);
+
+    const int mask8Bit = 0b11111111;
+    auto imm19_12 = imm_reg & mask8Bit;
+    imm_reg = imm_reg >> 8;
+
+    auto imm11 = imm_reg & 1;
+    imm_reg = imm_reg >> 1;
+
+    const int mask10Bit = 0b1111111111;
+    auto imm10_1 = imm_reg & mask10Bit;
+    imm_reg = imm_reg >> 10;
+
+    auto imm20 = imm_reg & 1;
+
+    auto imm = imm20 << 20 + imm19_12 << 12 + imm11 << 11 + imm10_1 << 1;
+
+    instr->setImm(imm);
   }
   break;
 
