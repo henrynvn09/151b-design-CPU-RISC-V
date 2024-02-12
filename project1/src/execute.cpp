@@ -259,46 +259,55 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
     case 0: {
       // RV32I: ADDI
       // TODO: rddata.i = ?
+      rddata.i = rsdata[0].i + immsrc;
       break;
     }
     case 1: {
       // RV32I: SLLI
       // TODO: rddata.i = ?
+      rddata.i = rsdata[0].i >> immsrc;
       break;
     }
     case 2: {
       // RV32I: SLTI
       // TODO: rddata.i = ?
+      rddata.i = (rsdata[0].i < immsrc)?1:0;
       break;
     }
     case 3: {
       // RV32I: SLTIU
       // TODO: rddata.i = ?
+      rddata.u = (rsdata[0].u < immsrc)?1:0;
       break;
     } 
     case 4: {
       // RV32I: XORI
       // TODO: rddata.i = ?
+      rddata.i = rsdata[0].i ^ immsrc;
       break;
     }
     case 5: {
       if (func7) {
         // RV32I: SRAI
         // TODO: rddata.i = ?
+        rddata.i = rsdata[0].i >> immsrc;
       } else {
         // RV32I: SRLI
         // TODO: rddata.i = ?
+        rddata.u = rsdata[0].u >> immsrc;
       }
       break;
     }
     case 6: {
       // RV32I: ORI
       // TODO: rddata.i = ?
+      rddata.i = rsdata[0].i | immsrc;
       break;
     }
     case 7: {
       // RV32I: ANDI
       // TODO: rddata.i = ?
+      rddata.i = rsdata[0].i & immsrc;
       break;
     }
     }
@@ -321,26 +330,41 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
     case 1: {
       // RV32I: BNE
       // TODO: next_pc = ?
+      if (rsdata[0].i != rsdata[1].i) {
+        next_pc = PC_ + immsrc;
+      }
       break;
     }
     case 4: {
       // RV32I: BLT
       // TODO: next_pc = ?
+      if (rsdata[0].i < rsdata[1].i) {
+        next_pc = PC_ + immsrc;
+      }
       break;
     }
     case 5: {
       // RV32I: BGE
       // TODO: next_pc = ?
+      if (rsdata[0].i >= rsdata[1].i) {
+        next_pc = PC_ + immsrc;
+      }
       break;
     }
     case 6: {
       // RV32I: BLTU
       // TODO: next_pc = ?
+      if (rsdata[0].u < rsdata[1].u) {
+        next_pc = PC_ + immsrc;
+      }
       break;
     }
     case 7: {
       // RV32I: BGEU
       // TODO: next_pc = ?
+      if (rsdata[0].u >= rsdata[1].u) {
+        next_pc = PC_ + immsrc;
+      }
       break;
     }
     default:
@@ -354,6 +378,9 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
     trace->alu_type = AluType::BRANCH;
     // rddata.i = ?
     // TODO: next_pc = ?
+    rddata.u = PC+4;
+    next_pc = PC_ + immsrc;
+
     rd_write = true;
     break;
   }  
@@ -364,6 +391,9 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
     trace->used_regs.set(rsrc0);
     // rddata.i = ?
     // TODO: next_pc = ?
+    rddata.i = PC_ + 4;
+    next_pc = rsdata[0].i + immsrc;
+
     rd_write = true;
     break;
   }
