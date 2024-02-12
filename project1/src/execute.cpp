@@ -328,7 +328,7 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace)
     {
       // RV32I: SLTI
       // TODO: rddata.i = ?
-      rddata.i = (rsdata[0].i < immsrc) ? 1 : 0;
+      rddata.i = (rsdata[0].i < (int32_t)immsrc) ? 1 : 0;
       break;
     }
     case 3:
