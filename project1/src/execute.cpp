@@ -199,41 +199,49 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace) {
       case 1: {
         // RV32I: SLL
         // TODO: rddata.i = ?
+        rddata.i = rsdata[0].i << rsdata[1].i;
         break;
       }
       case 2: {
         // RV32I: SLT
         // TODO: rddata.i = ?
+        rddata.i = (rsdata[0].i < rsdata[1].i)?1:0;
         break;
       }
       case 3: {
         // RV32I: SLTU
         // TODO: rddata.i = ?
+        rddata.u = (rsdata[0].u < rsdata[1].u)?1:0;
         break;
       }
       case 4: {
         // RV32I: XOR
         // TODO: rddata.i = ?
+        rddata.i = rsdata[0].i ^ rsdata[1].i;
         break;
       }
       case 5: {
         if (func7) {
           // RV32I: SRA
           // TODO: rddata.i = ?
+          rddata.i = rsdata[0].i >> rsdata[1].i;
         } else {
           // RV32I: SRL
           // TODO: rddata.i = ?
+          rddata.u = rsdata[0].u >> rsdata[1].u;
         }
         break;
       }
       case 6: {
         // RV32I: OR
         // TODO: rddata.i = ?
+        rddata.i = rsdata[0].i | rsdata[1].i;
         break;
       }
       case 7: {
         // RV32I: AND
         // TODO: rddata.i = ?
+        rddata.i = rsdata[0].i & rsdata[1].i;
         break;
       }
       default:
