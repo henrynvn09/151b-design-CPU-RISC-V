@@ -399,7 +399,7 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
       }
       else
       {
-        auto imm = code >> shift_rs2;
+        auto imm = (code >> shift_rs2) & mask_i_imm;
         instr->setImm(imm);
       }
 
@@ -407,7 +407,7 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
     default:
       // int12
       auto imm = code >> shift_rs2;
-      instr->setImm(sext(imm, width_i_imm));
+      instr->setImm(zext(imm, width_i_imm));
       break;
     }
   }
