@@ -389,7 +389,6 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
     case Opcode::I_INST:
       // TODO:DONE
       // code >> shift_rs2 = remove
-      std::cout << "Enter I_INST state";
       instr->setDestReg(rd, RegType::Integer);
       if (func3 == 0x1 || func3 == 0x5)
       {
@@ -443,7 +442,7 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
     auto imm4_1 = imm4_1and11 >> 1;
     auto imm11 = imm4_1and11 & 1;
 
-    auto imm = imm12 << 12 + imm11 << 11 + imm10_5 << 5 + imm4_1 << 1;
+    auto imm = (imm12 << 12) + (imm11 << 11) + (imm10_5 << 5) + (imm4_1 << 1);
 
     instr->setImm(imm);
   }
@@ -480,7 +479,7 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
 
     auto imm20 = imm_reg & 1;
 
-    auto imm = imm20 << 20 + imm19_12 << 12 + imm11 << 11 + imm10_1 << 1;
+    auto imm = (imm20 << 20) + (imm19_12 << 12) + (imm11 << 11) + (imm10_1 << 1);
 
     instr->setImm(imm);
   }
