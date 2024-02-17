@@ -489,7 +489,7 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace)
     uint32_t data_width = 8 * data_bytes;
     uint64_t mem_addr;
     // mem_addr = ?
-    mem_addr = rsdata[0].u64 + immsrc;
+    mem_addr = rsdata[0].i32 + immsrc;
     uint64_t read_data = 0;
     this->dcache_read(&read_data, mem_addr, data_bytes);
     trace_data->mem_addrs = {mem_addr, data_bytes};
@@ -525,8 +525,8 @@ void Emulator::execute(const Instr &instr, pipeline_trace_t *trace)
     uint64_t write_data;
     // mem_addr = ?
     // write_data = ?
-    mem_addr = rsdata[0].u64 + immsrc;
-    write_data = rsdata[1].u64;
+    mem_addr = rsdata[0].i32 + immsrc;
+    write_data = rsdata[1].i32;
 
     trace_data->mem_addrs = {mem_addr, data_bytes};
     switch (func3)

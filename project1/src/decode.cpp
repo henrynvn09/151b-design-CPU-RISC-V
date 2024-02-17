@@ -390,23 +390,28 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
       // TODO:DONE
       // code >> shift_rs2 = remove
       instr->setDestReg(rd, RegType::Integer);
-
+      
+      //std::cout << "enter I_Inst opcode I_Inst";
+	
       if (func3 == 0x1 || func3 == 0x5)
       {
+	//std::cout << "enter I_Inst opcode I_Inst";
         auto imm = (code >> shift_rs2) & mask_reg;
         instr->setImm(zext(imm,32));
       }
       else
       {
-        auto imm = ((int)code >> shift_rs2);
-        instr->setImm(sext(imm,32));
+	//std::cout << code;
+        auto imm = ((int)code >> shift_rs2) & mask_i_imm;
+        instr->setImm(sext(imm,11));
       }
 
       break;
     default:
       // int12
+      // std::cout << "enter I_Inst default";
       auto imm = code >> shift_rs2;
-      instr->setImm(zext(imm, width_i_imm));
+      instr->setImm(sext(imm, width_i_imm));
       break;
     }
   }
@@ -479,9 +484,9 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
 
     auto imm20 = imm_reg & 1;
 
-    auto imm = (imm20 << 20) + (imm19_12 << 12) + (imm11 << 11) + (imm10_1 << 1);
+    auto imm = (imm20 << 20) | (imm19_12 << 12) | (imm11 << 11) | (imm10_1 << 1);
 
-    instr->setImm(imm);
+    instr->setImm(sext(imm,32));
   }
   break;
 
