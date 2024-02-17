@@ -401,9 +401,9 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
       }
       else
       {
-	//std::cout << code;
+	//std::cout << "at I_inst else";
         auto imm = ((int)code >> shift_rs2) & mask_i_imm;
-        instr->setImm(sext(imm,11));
+        instr->setImm(sext(imm,12));
       }
 
       break;
