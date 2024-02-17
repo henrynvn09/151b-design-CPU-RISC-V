@@ -390,16 +390,16 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
       // TODO:DONE
       // code >> shift_rs2 = remove
       instr->setDestReg(rd, RegType::Integer);
+
       if (func3 == 0x1 || func3 == 0x5)
       {
         auto imm = (code >> shift_rs2) & mask_reg;
-        instr->setImm(imm);
-        instr->setFunc7(func7);
+        instr->setImm(zext(imm,32));
       }
       else
       {
-        auto imm = (code >> shift_rs2) & mask_i_imm;
-        instr->setImm(imm);
+        auto imm = ((int)code >> shift_rs2);
+        instr->setImm(sext(imm,32));
       }
 
       break;
@@ -434,17 +434,17 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
 
     const int width_s_imm = (11 - 5 + 1);
 
-    auto imm12and10_5 = code >> (shift_rs2 + width_reg);
+    auto imm12and10_5 = (int)code >> (shift_rs2 + width_reg);
     auto imm12 = imm12and10_5 >> (width_s_imm - 1);
     auto imm10_5 = imm12and10_5 & ~(1 << (width_s_imm - 1));
 
     auto imm4_1and11 = rd;
-    auto imm4_1 = imm4_1and11 >> 1;
+    auto imm4_1 = (imm4_1and11 >> 1) & 0b1111;
     auto imm11 = imm4_1and11 & 1;
 
-    auto imm = (imm12 << 12) + (imm11 << 11) + (imm10_5 << 5) + (imm4_1 << 1);
+    auto imm = (imm12 << 12) | (imm11 << 11) | (imm10_5 << 5) | (imm4_1 << 1);
 
-    instr->setImm(imm);
+    instr->setImm(sext(imm,32));
   }
   break;
 
@@ -453,9 +453,9 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
     // TODO:
     instr->setDestReg(rd, RegType::Integer);
 
-    auto imm = (code >> shift_func3) << 12;
+    int imm = ((int)code >> shift_func3);
 
-    instr->setImm(imm);
+    instr->setImm(sext(imm, 32));
   }
   break;
 

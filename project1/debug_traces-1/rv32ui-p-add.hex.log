@@ -1,0 +1,1958 @@
+Running rv32ui-p-add.hex..
+DEBUG Fetch: PC=0x80000000 (#0)
+DEBUG Instr 0x500006f: JAL x0, 0x50
+DEBUG Fetch: PC=0x80000050 (#1)
+DEBUG Instr 0x93: ADDI x1, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x0}
+DEBUG Fetch: PC=0x80000054 (#2)
+DEBUG Instr 0x113: ADDI x2, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0x0}
+DEBUG Fetch: PC=0x80000058 (#3)
+DEBUG Instr 0x193: ADDI x3, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x0}
+DEBUG Fetch: PC=0x8000005c (#4)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x80000060 (#5)
+DEBUG Instr 0x293: ADDI x5, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x0}
+DEBUG Fetch: PC=0x80000064 (#6)
+DEBUG Instr 0x313: ADDI x6, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x6={0x0}
+DEBUG Fetch: PC=0x80000068 (#7)
+DEBUG Instr 0x393: ADDI x7, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x0}
+DEBUG Fetch: PC=0x8000006c (#8)
+DEBUG Instr 0x413: ADDI x8, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x8={0x0}
+DEBUG Fetch: PC=0x80000070 (#9)
+DEBUG Instr 0x493: ADDI x9, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x9={0x0}
+DEBUG Fetch: PC=0x80000074 (#10)
+DEBUG Instr 0x513: ADDI x10, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x10={0x0}
+DEBUG Fetch: PC=0x80000078 (#11)
+DEBUG Instr 0x593: ADDI x11, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x11={0x0}
+DEBUG Fetch: PC=0x8000007c (#12)
+DEBUG Instr 0x613: ADDI x12, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x12={0x0}
+DEBUG Fetch: PC=0x80000080 (#13)
+DEBUG Instr 0x693: ADDI x13, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x13={0x0}
+DEBUG Fetch: PC=0x80000084 (#14)
+DEBUG Instr 0x713: ADDI x14, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x14={0x0}
+DEBUG Fetch: PC=0x80000088 (#15)
+DEBUG Instr 0x793: ADDI x15, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x15={0x0}
+DEBUG Fetch: PC=0x8000008c (#16)
+DEBUG Instr 0x813: ADDI x16, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x16={0x0}
+DEBUG Fetch: PC=0x80000090 (#17)
+DEBUG Instr 0x893: ADDI x17, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x17={0x0}
+DEBUG Fetch: PC=0x80000094 (#18)
+DEBUG Instr 0x913: ADDI x18, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x18={0x0}
+DEBUG Fetch: PC=0x80000098 (#19)
+DEBUG Instr 0x993: ADDI x19, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x19={0x0}
+DEBUG Fetch: PC=0x8000009c (#20)
+DEBUG Instr 0xa13: ADDI x20, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x20={0x0}
+DEBUG Fetch: PC=0x800000a0 (#21)
+DEBUG Instr 0xa93: ADDI x21, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x21={0x0}
+DEBUG Fetch: PC=0x800000a4 (#22)
+DEBUG Instr 0xb13: ADDI x22, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x22={0x0}
+DEBUG Fetch: PC=0x800000a8 (#23)
+DEBUG Instr 0xb93: ADDI x23, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x23={0x0}
+DEBUG Fetch: PC=0x800000ac (#24)
+DEBUG Instr 0xc13: ADDI x24, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x24={0x0}
+DEBUG Fetch: PC=0x800000b0 (#25)
+DEBUG Instr 0xc93: ADDI x25, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x25={0x0}
+DEBUG Fetch: PC=0x800000b4 (#26)
+DEBUG Instr 0xd13: ADDI x26, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x26={0x0}
+DEBUG Fetch: PC=0x800000b8 (#27)
+DEBUG Instr 0xd93: ADDI x27, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x27={0x0}
+DEBUG Fetch: PC=0x800000bc (#28)
+DEBUG Instr 0xe13: ADDI x28, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x28={0x0}
+DEBUG Fetch: PC=0x800000c0 (#29)
+DEBUG Instr 0xe93: ADDI x29, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x29={0x0}
+DEBUG Fetch: PC=0x800000c4 (#30)
+DEBUG Instr 0xf13: ADDI x30, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x30={0x0}
+DEBUG Fetch: PC=0x800000c8 (#31)
+DEBUG Instr 0xf93: ADDI x31, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x31={0x0}
+DEBUG Fetch: PC=0x800000cc (#32)
+DEBUG Instr 0xf1402573: CSRRS x10, x0, 0xf14
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x10={0x0}
+DEBUG Fetch: PC=0x800000d0 (#33)
+DEBUG Instr 0x51063: BNE x10, x0, 0x0
+DEBUG Src0 Reg: x10={0x0}
+DEBUG Src1 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800000d4 (#34)
+DEBUG Instr 0x297: AUIPC x5, 0x0
+DEBUG Dest Reg: x5={0x800000d4}
+DEBUG Fetch: PC=0x800000d8 (#35)
+DEBUG Instr 0x1028293: ADDI x5, x5, 0x10
+DEBUG Src0 Reg: x5={0x800000d4}
+DEBUG Dest Reg: x5={0x800000e4}
+DEBUG Fetch: PC=0x800000dc (#36)
+DEBUG Instr 0x30529073: CSRRW x0, x5, 0x305
+DEBUG Src0 Reg: x5={0x800000e4}
+DEBUG Fetch: PC=0x800000e0 (#37)
+DEBUG Instr 0x74445073: CSRRWI x0, 0x744, 0x8
+DEBUG Fetch: PC=0x800000e4 (#38)
+DEBUG Instr 0x297: AUIPC x5, 0x0
+DEBUG Dest Reg: x5={0x800000e4}
+DEBUG Fetch: PC=0x800000e8 (#39)
+DEBUG Instr 0x1028293: ADDI x5, x5, 0x10
+DEBUG Src0 Reg: x5={0x800000e4}
+DEBUG Dest Reg: x5={0x800000f4}
+DEBUG Fetch: PC=0x800000ec (#40)
+DEBUG Instr 0x30529073: CSRRW x0, x5, 0x305
+DEBUG Src0 Reg: x5={0x800000f4}
+DEBUG Fetch: PC=0x800000f0 (#41)
+DEBUG Instr 0x18005073: CSRRWI x0, 0x180, 0x0
+DEBUG Fetch: PC=0x800000f4 (#42)
+DEBUG Instr 0x297: AUIPC x5, 0x0
+DEBUG Dest Reg: x5={0x800000f4}
+DEBUG Fetch: PC=0x800000f8 (#43)
+DEBUG Instr 0x2028293: ADDI x5, x5, 0x20
+DEBUG Src0 Reg: x5={0x800000f4}
+DEBUG Dest Reg: x5={0x80000114}
+DEBUG Fetch: PC=0x800000fc (#44)
+DEBUG Instr 0x30529073: CSRRW x0, x5, 0x305
+DEBUG Src0 Reg: x5={0x80000114}
+DEBUG Fetch: PC=0x80000100 (#45)
+DEBUG Instr 0x800002b7: LUI x5, 0xfff80000
+DEBUG Dest Reg: x5={0x80000000}
+DEBUG Fetch: PC=0x80000104 (#46)
+DEBUG Instr 0xfff28293: ADDI x5, x5, 0xffffffff
+DEBUG Src0 Reg: x5={0x80000000}
+DEBUG Dest Reg: x5={0x7fffffff}
+DEBUG Fetch: PC=0x80000108 (#47)
+DEBUG Instr 0x3b029073: CSRRW x0, x5, 0x3b0
+DEBUG Src0 Reg: x5={0x7fffffff}
+DEBUG Fetch: PC=0x8000010c (#48)
+DEBUG Instr 0x1f00293: ADDI x5, x0, 0x1f
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x1f}
+DEBUG Fetch: PC=0x80000110 (#49)
+DEBUG Instr 0x3a029073: CSRRW x0, x5, 0x3a0
+DEBUG Src0 Reg: x5={0x1f}
+DEBUG Fetch: PC=0x80000114 (#50)
+DEBUG Instr 0x30405073: CSRRWI x0, 0x304, 0x0
+DEBUG Fetch: PC=0x80000118 (#51)
+DEBUG Instr 0x297: AUIPC x5, 0x0
+DEBUG Dest Reg: x5={0x80000118}
+DEBUG Fetch: PC=0x8000011c (#52)
+DEBUG Instr 0x1428293: ADDI x5, x5, 0x14
+DEBUG Src0 Reg: x5={0x80000118}
+DEBUG Dest Reg: x5={0x8000012c}
+DEBUG Fetch: PC=0x80000120 (#53)
+DEBUG Instr 0x30529073: CSRRW x0, x5, 0x305
+DEBUG Src0 Reg: x5={0x8000012c}
+DEBUG Fetch: PC=0x80000124 (#54)
+DEBUG Instr 0x30205073: CSRRWI x0, 0x302, 0x0
+DEBUG Fetch: PC=0x80000128 (#55)
+DEBUG Instr 0x30305073: CSRRWI x0, 0x303, 0x0
+DEBUG Fetch: PC=0x8000012c (#56)
+DEBUG Instr 0x193: ADDI x3, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x0}
+DEBUG Fetch: PC=0x80000130 (#57)
+DEBUG Instr 0x297: AUIPC x5, 0x0
+DEBUG Dest Reg: x5={0x80000130}
+DEBUG Fetch: PC=0x80000134 (#58)
+DEBUG Instr 0xed428293: ADDI x5, x5, 0xfffffed4
+DEBUG Src0 Reg: x5={0x80000130}
+DEBUG Dest Reg: x5={0x80000004}
+DEBUG Fetch: PC=0x80000138 (#59)
+DEBUG Instr 0x30529073: CSRRW x0, x5, 0x305
+DEBUG Src0 Reg: x5={0x80000004}
+DEBUG Fetch: PC=0x8000013c (#60)
+DEBUG Instr 0x100513: ADDI x10, x0, 0x1
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x10={0x1}
+DEBUG Fetch: PC=0x80000140 (#61)
+DEBUG Instr 0x1f51513: SLLI x10, x10, 0x1f
+DEBUG Src0 Reg: x10={0x1}
+DEBUG Dest Reg: x10={0x80000000}
+DEBUG Fetch: PC=0x80000144 (#62)
+DEBUG Instr 0x54c63: BLT x10, x0, 0x18
+DEBUG Src0 Reg: x10={0x80000000}
+DEBUG Src1 Reg: x0={0x0}
+DEBUG Fetch: PC=0x8000015c (#63)
+DEBUG Instr 0x293: ADDI x5, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x0}
+DEBUG Fetch: PC=0x80000160 (#64)
+DEBUG Instr 0x28a63: BEQ x5, x0, 0x14
+DEBUG Src0 Reg: x5={0x0}
+DEBUG Src1 Reg: x0={0x0}
+DEBUG Fetch: PC=0x80000174 (#65)
+DEBUG Instr 0x30005073: CSRRWI x0, 0x300, 0x0
+DEBUG Fetch: PC=0x80000178 (#66)
+DEBUG Instr 0x297: AUIPC x5, 0x0
+DEBUG Dest Reg: x5={0x80000178}
+DEBUG Fetch: PC=0x8000017c (#67)
+DEBUG Instr 0x1428293: ADDI x5, x5, 0x14
+DEBUG Src0 Reg: x5={0x80000178}
+DEBUG Dest Reg: x5={0x8000018c}
+DEBUG Fetch: PC=0x80000180 (#68)
+DEBUG Instr 0x34129073: CSRRW x0, x5, 0x341
+DEBUG Src0 Reg: x5={0x8000018c}
+DEBUG Fetch: PC=0x80000184 (#69)
+DEBUG Instr 0xf1402573: CSRRS x10, x0, 0xf14
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x10={0x0}
+DEBUG Fetch: PC=0x80000188 (#70)
+DEBUG Instr 0x30200073: MRET 0x302
+DEBUG Fetch: PC=0x8000018c (#71)
+DEBUG Instr 0x200193: ADDI x3, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x2}
+DEBUG Fetch: PC=0x80000190 (#72)
+DEBUG Instr 0x93: ADDI x1, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x0}
+DEBUG Fetch: PC=0x80000194 (#73)
+DEBUG Instr 0x113: ADDI x2, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0x0}
+DEBUG Fetch: PC=0x80000198 (#74)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0x0}
+DEBUG Src1 Reg: x2={0x0}
+DEBUG Dest Reg: x14={0x0}
+DEBUG Fetch: PC=0x8000019c (#75)
+DEBUG Instr 0x393: ADDI x7, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x0}
+DEBUG Fetch: PC=0x800001a0 (#76)
+DEBUG Instr 0x4c771663: BNE x14, x7, 0x4cc
+DEBUG Src0 Reg: x14={0x0}
+DEBUG Src1 Reg: x7={0x0}
+DEBUG Fetch: PC=0x800001a4 (#77)
+DEBUG Instr 0x300193: ADDI x3, x0, 0x3
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x3}
+DEBUG Fetch: PC=0x800001a8 (#78)
+DEBUG Instr 0x100093: ADDI x1, x0, 0x1
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x1}
+DEBUG Fetch: PC=0x800001ac (#79)
+DEBUG Instr 0x100113: ADDI x2, x0, 0x1
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0x1}
+DEBUG Fetch: PC=0x800001b0 (#80)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0x1}
+DEBUG Src1 Reg: x2={0x1}
+DEBUG Dest Reg: x14={0x2}
+DEBUG Fetch: PC=0x800001b4 (#81)
+DEBUG Instr 0x200393: ADDI x7, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x2}
+DEBUG Fetch: PC=0x800001b8 (#82)
+DEBUG Instr 0x4a771a63: BNE x14, x7, 0x4b4
+DEBUG Src0 Reg: x14={0x2}
+DEBUG Src1 Reg: x7={0x2}
+DEBUG Fetch: PC=0x800001bc (#83)
+DEBUG Instr 0x400193: ADDI x3, x0, 0x4
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x4}
+DEBUG Fetch: PC=0x800001c0 (#84)
+DEBUG Instr 0x300093: ADDI x1, x0, 0x3
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x3}
+DEBUG Fetch: PC=0x800001c4 (#85)
+DEBUG Instr 0x700113: ADDI x2, x0, 0x7
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0x7}
+DEBUG Fetch: PC=0x800001c8 (#86)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0x3}
+DEBUG Src1 Reg: x2={0x7}
+DEBUG Dest Reg: x14={0xa}
+DEBUG Fetch: PC=0x800001cc (#87)
+DEBUG Instr 0xa00393: ADDI x7, x0, 0xa
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0xa}
+DEBUG Fetch: PC=0x800001d0 (#88)
+DEBUG Instr 0x48771e63: BNE x14, x7, 0x49c
+DEBUG Src0 Reg: x14={0xa}
+DEBUG Src1 Reg: x7={0xa}
+DEBUG Fetch: PC=0x800001d4 (#89)
+DEBUG Instr 0x500193: ADDI x3, x0, 0x5
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x5}
+DEBUG Fetch: PC=0x800001d8 (#90)
+DEBUG Instr 0x93: ADDI x1, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x0}
+DEBUG Fetch: PC=0x800001dc (#91)
+DEBUG Instr 0xffff8137: LUI x2, 0xfffffff8
+DEBUG Dest Reg: x2={0xffff8000}
+DEBUG Fetch: PC=0x800001e0 (#92)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0x0}
+DEBUG Src1 Reg: x2={0xffff8000}
+DEBUG Dest Reg: x14={0xffff8000}
+DEBUG Fetch: PC=0x800001e4 (#93)
+DEBUG Instr 0xffff83b7: LUI x7, 0xfffffff8
+DEBUG Dest Reg: x7={0xffff8000}
+DEBUG Fetch: PC=0x800001e8 (#94)
+DEBUG Instr 0x48771263: BNE x14, x7, 0x484
+DEBUG Src0 Reg: x14={0xffff8000}
+DEBUG Src1 Reg: x7={0xffff8000}
+DEBUG Fetch: PC=0x800001ec (#95)
+DEBUG Instr 0x600193: ADDI x3, x0, 0x6
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x6}
+DEBUG Fetch: PC=0x800001f0 (#96)
+DEBUG Instr 0x800000b7: LUI x1, 0xfff80000
+DEBUG Dest Reg: x1={0x80000000}
+DEBUG Fetch: PC=0x800001f4 (#97)
+DEBUG Instr 0x113: ADDI x2, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0x0}
+DEBUG Fetch: PC=0x800001f8 (#98)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0x80000000}
+DEBUG Src1 Reg: x2={0x0}
+DEBUG Dest Reg: x14={0x80000000}
+DEBUG Fetch: PC=0x800001fc (#99)
+DEBUG Instr 0x800003b7: LUI x7, 0xfff80000
+DEBUG Dest Reg: x7={0x80000000}
+DEBUG Fetch: PC=0x80000200 (#100)
+DEBUG Instr 0x46771663: BNE x14, x7, 0x46c
+DEBUG Src0 Reg: x14={0x80000000}
+DEBUG Src1 Reg: x7={0x80000000}
+DEBUG Fetch: PC=0x80000204 (#101)
+DEBUG Instr 0x700193: ADDI x3, x0, 0x7
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x7}
+DEBUG Fetch: PC=0x80000208 (#102)
+DEBUG Instr 0x800000b7: LUI x1, 0xfff80000
+DEBUG Dest Reg: x1={0x80000000}
+DEBUG Fetch: PC=0x8000020c (#103)
+DEBUG Instr 0xffff8137: LUI x2, 0xfffffff8
+DEBUG Dest Reg: x2={0xffff8000}
+DEBUG Fetch: PC=0x80000210 (#104)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0x80000000}
+DEBUG Src1 Reg: x2={0xffff8000}
+DEBUG Dest Reg: x14={0x7fff8000}
+DEBUG Fetch: PC=0x80000214 (#105)
+DEBUG Instr 0x7fff83b7: LUI x7, 0x7fff8
+DEBUG Dest Reg: x7={0x7fff8000}
+DEBUG Fetch: PC=0x80000218 (#106)
+DEBUG Instr 0x44771a63: BNE x14, x7, 0x454
+DEBUG Src0 Reg: x14={0x7fff8000}
+DEBUG Src1 Reg: x7={0x7fff8000}
+DEBUG Fetch: PC=0x8000021c (#107)
+DEBUG Instr 0x800193: ADDI x3, x0, 0x8
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x8}
+DEBUG Fetch: PC=0x80000220 (#108)
+DEBUG Instr 0x93: ADDI x1, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x0}
+DEBUG Fetch: PC=0x80000224 (#109)
+DEBUG Instr 0x8137: LUI x2, 0x8
+DEBUG Dest Reg: x2={0x8000}
+DEBUG Fetch: PC=0x80000228 (#110)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0x8000}
+DEBUG Dest Reg: x2={0x7fff}
+DEBUG Fetch: PC=0x8000022c (#111)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0x0}
+DEBUG Src1 Reg: x2={0x7fff}
+DEBUG Dest Reg: x14={0x7fff}
+DEBUG Fetch: PC=0x80000230 (#112)
+DEBUG Instr 0x83b7: LUI x7, 0x8
+DEBUG Dest Reg: x7={0x8000}
+DEBUG Fetch: PC=0x80000234 (#113)
+DEBUG Instr 0xfff38393: ADDI x7, x7, 0xffffffff
+DEBUG Src0 Reg: x7={0x8000}
+DEBUG Dest Reg: x7={0x7fff}
+DEBUG Fetch: PC=0x80000238 (#114)
+DEBUG Instr 0x42771a63: BNE x14, x7, 0x434
+DEBUG Src0 Reg: x14={0x7fff}
+DEBUG Src1 Reg: x7={0x7fff}
+DEBUG Fetch: PC=0x8000023c (#115)
+DEBUG Instr 0x900193: ADDI x3, x0, 0x9
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x9}
+DEBUG Fetch: PC=0x80000240 (#116)
+DEBUG Instr 0x800000b7: LUI x1, 0xfff80000
+DEBUG Dest Reg: x1={0x80000000}
+DEBUG Fetch: PC=0x80000244 (#117)
+DEBUG Instr 0xfff08093: ADDI x1, x1, 0xffffffff
+DEBUG Src0 Reg: x1={0x80000000}
+DEBUG Dest Reg: x1={0x7fffffff}
+DEBUG Fetch: PC=0x80000248 (#118)
+DEBUG Instr 0x113: ADDI x2, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0x0}
+DEBUG Fetch: PC=0x8000024c (#119)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0x7fffffff}
+DEBUG Src1 Reg: x2={0x0}
+DEBUG Dest Reg: x14={0x7fffffff}
+DEBUG Fetch: PC=0x80000250 (#120)
+DEBUG Instr 0x800003b7: LUI x7, 0xfff80000
+DEBUG Dest Reg: x7={0x80000000}
+DEBUG Fetch: PC=0x80000254 (#121)
+DEBUG Instr 0xfff38393: ADDI x7, x7, 0xffffffff
+DEBUG Src0 Reg: x7={0x80000000}
+DEBUG Dest Reg: x7={0x7fffffff}
+DEBUG Fetch: PC=0x80000258 (#122)
+DEBUG Instr 0x40771a63: BNE x14, x7, 0x414
+DEBUG Src0 Reg: x14={0x7fffffff}
+DEBUG Src1 Reg: x7={0x7fffffff}
+DEBUG Fetch: PC=0x8000025c (#123)
+DEBUG Instr 0xa00193: ADDI x3, x0, 0xa
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0xa}
+DEBUG Fetch: PC=0x80000260 (#124)
+DEBUG Instr 0x800000b7: LUI x1, 0xfff80000
+DEBUG Dest Reg: x1={0x80000000}
+DEBUG Fetch: PC=0x80000264 (#125)
+DEBUG Instr 0xfff08093: ADDI x1, x1, 0xffffffff
+DEBUG Src0 Reg: x1={0x80000000}
+DEBUG Dest Reg: x1={0x7fffffff}
+DEBUG Fetch: PC=0x80000268 (#126)
+DEBUG Instr 0x8137: LUI x2, 0x8
+DEBUG Dest Reg: x2={0x8000}
+DEBUG Fetch: PC=0x8000026c (#127)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0x8000}
+DEBUG Dest Reg: x2={0x7fff}
+DEBUG Fetch: PC=0x80000270 (#128)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0x7fffffff}
+DEBUG Src1 Reg: x2={0x7fff}
+DEBUG Dest Reg: x14={0x80007ffe}
+DEBUG Fetch: PC=0x80000274 (#129)
+DEBUG Instr 0x800083b7: LUI x7, 0xfff80008
+DEBUG Dest Reg: x7={0x80008000}
+DEBUG Fetch: PC=0x80000278 (#130)
+DEBUG Instr 0xffe38393: ADDI x7, x7, 0xfffffffe
+DEBUG Src0 Reg: x7={0x80008000}
+DEBUG Dest Reg: x7={0x80007ffe}
+DEBUG Fetch: PC=0x8000027c (#131)
+DEBUG Instr 0x3e771863: BNE x14, x7, 0x3f0
+DEBUG Src0 Reg: x14={0x80007ffe}
+DEBUG Src1 Reg: x7={0x80007ffe}
+DEBUG Fetch: PC=0x80000280 (#132)
+DEBUG Instr 0xb00193: ADDI x3, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0xb}
+DEBUG Fetch: PC=0x80000284 (#133)
+DEBUG Instr 0x800000b7: LUI x1, 0xfff80000
+DEBUG Dest Reg: x1={0x80000000}
+DEBUG Fetch: PC=0x80000288 (#134)
+DEBUG Instr 0x8137: LUI x2, 0x8
+DEBUG Dest Reg: x2={0x8000}
+DEBUG Fetch: PC=0x8000028c (#135)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0x8000}
+DEBUG Dest Reg: x2={0x7fff}
+DEBUG Fetch: PC=0x80000290 (#136)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0x80000000}
+DEBUG Src1 Reg: x2={0x7fff}
+DEBUG Dest Reg: x14={0x80007fff}
+DEBUG Fetch: PC=0x80000294 (#137)
+DEBUG Instr 0x800083b7: LUI x7, 0xfff80008
+DEBUG Dest Reg: x7={0x80008000}
+DEBUG Fetch: PC=0x80000298 (#138)
+DEBUG Instr 0xfff38393: ADDI x7, x7, 0xffffffff
+DEBUG Src0 Reg: x7={0x80008000}
+DEBUG Dest Reg: x7={0x80007fff}
+DEBUG Fetch: PC=0x8000029c (#139)
+DEBUG Instr 0x3c771863: BNE x14, x7, 0x3d0
+DEBUG Src0 Reg: x14={0x80007fff}
+DEBUG Src1 Reg: x7={0x80007fff}
+DEBUG Fetch: PC=0x800002a0 (#140)
+DEBUG Instr 0xc00193: ADDI x3, x0, 0xc
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0xc}
+DEBUG Fetch: PC=0x800002a4 (#141)
+DEBUG Instr 0x800000b7: LUI x1, 0xfff80000
+DEBUG Dest Reg: x1={0x80000000}
+DEBUG Fetch: PC=0x800002a8 (#142)
+DEBUG Instr 0xfff08093: ADDI x1, x1, 0xffffffff
+DEBUG Src0 Reg: x1={0x80000000}
+DEBUG Dest Reg: x1={0x7fffffff}
+DEBUG Fetch: PC=0x800002ac (#143)
+DEBUG Instr 0xffff8137: LUI x2, 0xfffffff8
+DEBUG Dest Reg: x2={0xffff8000}
+DEBUG Fetch: PC=0x800002b0 (#144)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0x7fffffff}
+DEBUG Src1 Reg: x2={0xffff8000}
+DEBUG Dest Reg: x14={0x7fff7fff}
+DEBUG Fetch: PC=0x800002b4 (#145)
+DEBUG Instr 0x7fff83b7: LUI x7, 0x7fff8
+DEBUG Dest Reg: x7={0x7fff8000}
+DEBUG Fetch: PC=0x800002b8 (#146)
+DEBUG Instr 0xfff38393: ADDI x7, x7, 0xffffffff
+DEBUG Src0 Reg: x7={0x7fff8000}
+DEBUG Dest Reg: x7={0x7fff7fff}
+DEBUG Fetch: PC=0x800002bc (#147)
+DEBUG Instr 0x3a771863: BNE x14, x7, 0x3b0
+DEBUG Src0 Reg: x14={0x7fff7fff}
+DEBUG Src1 Reg: x7={0x7fff7fff}
+DEBUG Fetch: PC=0x800002c0 (#148)
+DEBUG Instr 0xd00193: ADDI x3, x0, 0xd
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0xd}
+DEBUG Fetch: PC=0x800002c4 (#149)
+DEBUG Instr 0x93: ADDI x1, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x0}
+DEBUG Fetch: PC=0x800002c8 (#150)
+DEBUG Instr 0xfff00113: ADDI x2, x0, 0xffffffff
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xffffffff}
+DEBUG Fetch: PC=0x800002cc (#151)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0x0}
+DEBUG Src1 Reg: x2={0xffffffff}
+DEBUG Dest Reg: x14={0xffffffff}
+DEBUG Fetch: PC=0x800002d0 (#152)
+DEBUG Instr 0xfff00393: ADDI x7, x0, 0xffffffff
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0xffffffff}
+DEBUG Fetch: PC=0x800002d4 (#153)
+DEBUG Instr 0x38771c63: BNE x14, x7, 0x398
+DEBUG Src0 Reg: x14={0xffffffff}
+DEBUG Src1 Reg: x7={0xffffffff}
+DEBUG Fetch: PC=0x800002d8 (#154)
+DEBUG Instr 0xe00193: ADDI x3, x0, 0xe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0xe}
+DEBUG Fetch: PC=0x800002dc (#155)
+DEBUG Instr 0xfff00093: ADDI x1, x0, 0xffffffff
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xffffffff}
+DEBUG Fetch: PC=0x800002e0 (#156)
+DEBUG Instr 0x100113: ADDI x2, x0, 0x1
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0x1}
+DEBUG Fetch: PC=0x800002e4 (#157)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xffffffff}
+DEBUG Src1 Reg: x2={0x1}
+DEBUG Dest Reg: x14={0x0}
+DEBUG Fetch: PC=0x800002e8 (#158)
+DEBUG Instr 0x393: ADDI x7, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x0}
+DEBUG Fetch: PC=0x800002ec (#159)
+DEBUG Instr 0x38771063: BNE x14, x7, 0x380
+DEBUG Src0 Reg: x14={0x0}
+DEBUG Src1 Reg: x7={0x0}
+DEBUG Fetch: PC=0x800002f0 (#160)
+DEBUG Instr 0xf00193: ADDI x3, x0, 0xf
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0xf}
+DEBUG Fetch: PC=0x800002f4 (#161)
+DEBUG Instr 0xfff00093: ADDI x1, x0, 0xffffffff
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xffffffff}
+DEBUG Fetch: PC=0x800002f8 (#162)
+DEBUG Instr 0xfff00113: ADDI x2, x0, 0xffffffff
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xffffffff}
+DEBUG Fetch: PC=0x800002fc (#163)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xffffffff}
+DEBUG Src1 Reg: x2={0xffffffff}
+DEBUG Dest Reg: x14={0xfffffffe}
+DEBUG Fetch: PC=0x80000300 (#164)
+DEBUG Instr 0xffe00393: ADDI x7, x0, 0xfffffffe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0xfffffffe}
+DEBUG Fetch: PC=0x80000304 (#165)
+DEBUG Instr 0x36771463: BNE x14, x7, 0x368
+DEBUG Src0 Reg: x14={0xfffffffe}
+DEBUG Src1 Reg: x7={0xfffffffe}
+DEBUG Fetch: PC=0x80000308 (#166)
+DEBUG Instr 0x1000193: ADDI x3, x0, 0x10
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x10}
+DEBUG Fetch: PC=0x8000030c (#167)
+DEBUG Instr 0x100093: ADDI x1, x0, 0x1
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x1}
+DEBUG Fetch: PC=0x80000310 (#168)
+DEBUG Instr 0x80000137: LUI x2, 0xfff80000
+DEBUG Dest Reg: x2={0x80000000}
+DEBUG Fetch: PC=0x80000314 (#169)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0x80000000}
+DEBUG Dest Reg: x2={0x7fffffff}
+DEBUG Fetch: PC=0x80000318 (#170)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0x1}
+DEBUG Src1 Reg: x2={0x7fffffff}
+DEBUG Dest Reg: x14={0x80000000}
+DEBUG Fetch: PC=0x8000031c (#171)
+DEBUG Instr 0x800003b7: LUI x7, 0xfff80000
+DEBUG Dest Reg: x7={0x80000000}
+DEBUG Fetch: PC=0x80000320 (#172)
+DEBUG Instr 0x34771663: BNE x14, x7, 0x34c
+DEBUG Src0 Reg: x14={0x80000000}
+DEBUG Src1 Reg: x7={0x80000000}
+DEBUG Fetch: PC=0x80000324 (#173)
+DEBUG Instr 0x1100193: ADDI x3, x0, 0x11
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x11}
+DEBUG Fetch: PC=0x80000328 (#174)
+DEBUG Instr 0xd00093: ADDI x1, x0, 0xd
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xd}
+DEBUG Fetch: PC=0x8000032c (#175)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000330 (#176)
+DEBUG Instr 0x2080b3: ADD x1, x1, x2
+DEBUG Src0 Reg: x1={0xd}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x1={0x18}
+DEBUG Fetch: PC=0x80000334 (#177)
+DEBUG Instr 0x1800393: ADDI x7, x0, 0x18
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x18}
+DEBUG Fetch: PC=0x80000338 (#178)
+DEBUG Instr 0x32709a63: BNE x1, x7, 0x334
+DEBUG Src0 Reg: x1={0x18}
+DEBUG Src1 Reg: x7={0x18}
+DEBUG Fetch: PC=0x8000033c (#179)
+DEBUG Instr 0x1200193: ADDI x3, x0, 0x12
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x12}
+DEBUG Fetch: PC=0x80000340 (#180)
+DEBUG Instr 0xe00093: ADDI x1, x0, 0xe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xe}
+DEBUG Fetch: PC=0x80000344 (#181)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000348 (#182)
+DEBUG Instr 0x208133: ADD x2, x1, x2
+DEBUG Src0 Reg: x1={0xe}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x2={0x19}
+DEBUG Fetch: PC=0x8000034c (#183)
+DEBUG Instr 0x1900393: ADDI x7, x0, 0x19
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x19}
+DEBUG Fetch: PC=0x80000350 (#184)
+DEBUG Instr 0x30711e63: BNE x2, x7, 0x31c
+DEBUG Src0 Reg: x2={0x19}
+DEBUG Src1 Reg: x7={0x19}
+DEBUG Fetch: PC=0x80000354 (#185)
+DEBUG Instr 0x1300193: ADDI x3, x0, 0x13
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x13}
+DEBUG Fetch: PC=0x80000358 (#186)
+DEBUG Instr 0xd00093: ADDI x1, x0, 0xd
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xd}
+DEBUG Fetch: PC=0x8000035c (#187)
+DEBUG Instr 0x1080b3: ADD x1, x1, x1
+DEBUG Src0 Reg: x1={0xd}
+DEBUG Src1 Reg: x1={0xd}
+DEBUG Dest Reg: x1={0x1a}
+DEBUG Fetch: PC=0x80000360 (#188)
+DEBUG Instr 0x1a00393: ADDI x7, x0, 0x1a
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x1a}
+DEBUG Fetch: PC=0x80000364 (#189)
+DEBUG Instr 0x30709463: BNE x1, x7, 0x308
+DEBUG Src0 Reg: x1={0x1a}
+DEBUG Src1 Reg: x7={0x1a}
+DEBUG Fetch: PC=0x80000368 (#190)
+DEBUG Instr 0x1400193: ADDI x3, x0, 0x14
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x14}
+DEBUG Fetch: PC=0x8000036c (#191)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x80000370 (#192)
+DEBUG Instr 0xd00093: ADDI x1, x0, 0xd
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xd}
+DEBUG Fetch: PC=0x80000374 (#193)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000378 (#194)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xd}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x18}
+DEBUG Fetch: PC=0x8000037c (#195)
+DEBUG Instr 0x70313: ADDI x6, x14, 0x0
+DEBUG Src0 Reg: x14={0x18}
+DEBUG Dest Reg: x6={0x18}
+DEBUG Fetch: PC=0x80000380 (#196)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+DEBUG Fetch: PC=0x80000384 (#197)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000388 (#198)
+DEBUG Instr 0xfe5214e3: BNE x4, x5, 0xffffffe8
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000370 (#65728)
+DEBUG Instr 0xd00093: ADDI x1, x0, 0xd
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xd}
+DEBUG Fetch: PC=0x80000374 (#65729)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000378 (#65730)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xd}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x18}
+DEBUG Fetch: PC=0x8000037c (#65731)
+DEBUG Instr 0x70313: ADDI x6, x14, 0x0
+DEBUG Src0 Reg: x14={0x18}
+DEBUG Dest Reg: x6={0x18}
+DEBUG Fetch: PC=0x80000380 (#65732)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+DEBUG Fetch: PC=0x80000384 (#65733)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000388 (#65734)
+DEBUG Instr 0xfe5214e3: BNE x4, x5, 0xffffffe8
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x8000038c (#199)
+DEBUG Instr 0x1800393: ADDI x7, x0, 0x18
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x18}
+DEBUG Fetch: PC=0x80000390 (#200)
+DEBUG Instr 0x2c731e63: BNE x6, x7, 0x2dc
+DEBUG Src0 Reg: x6={0x18}
+DEBUG Src1 Reg: x7={0x18}
+DEBUG Fetch: PC=0x80000394 (#201)
+DEBUG Instr 0x1500193: ADDI x3, x0, 0x15
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x15}
+DEBUG Fetch: PC=0x80000398 (#202)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x8000039c (#203)
+DEBUG Instr 0xe00093: ADDI x1, x0, 0xe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xe}
+DEBUG Fetch: PC=0x800003a0 (#204)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x800003a4 (#205)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xe}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x19}
+DEBUG Fetch: PC=0x800003a8 (#206)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800003ac (#207)
+DEBUG Instr 0x70313: ADDI x6, x14, 0x0
+DEBUG Src0 Reg: x14={0x19}
+DEBUG Dest Reg: x6={0x19}
+DEBUG Fetch: PC=0x800003b0 (#208)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+DEBUG Fetch: PC=0x800003b4 (#209)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x800003b8 (#210)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x8000039c (#65739)
+DEBUG Instr 0xe00093: ADDI x1, x0, 0xe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xe}
+DEBUG Fetch: PC=0x800003a0 (#65740)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x800003a4 (#65741)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xe}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x19}
+DEBUG Fetch: PC=0x800003a8 (#65742)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800003ac (#65743)
+DEBUG Instr 0x70313: ADDI x6, x14, 0x0
+DEBUG Src0 Reg: x14={0x19}
+DEBUG Dest Reg: x6={0x19}
+DEBUG Fetch: PC=0x800003b0 (#65744)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+DEBUG Fetch: PC=0x800003b4 (#65745)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x800003b8 (#65746)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x800003bc (#211)
+DEBUG Instr 0x1900393: ADDI x7, x0, 0x19
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x19}
+DEBUG Fetch: PC=0x800003c0 (#212)
+DEBUG Instr 0x2a731663: BNE x6, x7, 0x2ac
+DEBUG Src0 Reg: x6={0x19}
+DEBUG Src1 Reg: x7={0x19}
+DEBUG Fetch: PC=0x800003c4 (#213)
+DEBUG Instr 0x1600193: ADDI x3, x0, 0x16
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x16}
+DEBUG Fetch: PC=0x800003c8 (#214)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x800003cc (#215)
+DEBUG Instr 0xf00093: ADDI x1, x0, 0xf
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xf}
+DEBUG Fetch: PC=0x800003d0 (#216)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x800003d4 (#217)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xf}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x1a}
+DEBUG Fetch: PC=0x800003d8 (#218)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800003dc (#219)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800003e0 (#220)
+DEBUG Instr 0x70313: ADDI x6, x14, 0x0
+DEBUG Src0 Reg: x14={0x1a}
+DEBUG Dest Reg: x6={0x1a}
+DEBUG Fetch: PC=0x800003e4 (#221)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+DEBUG Fetch: PC=0x800003e8 (#222)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x800003ec (#223)
+DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x800003cc (#65751)
+DEBUG Instr 0xf00093: ADDI x1, x0, 0xf
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xf}
+DEBUG Fetch: PC=0x800003d0 (#65752)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x800003d4 (#65753)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xf}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x1a}
+DEBUG Fetch: PC=0x800003d8 (#65754)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800003dc (#65755)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800003e0 (#65756)
+DEBUG Instr 0x70313: ADDI x6, x14, 0x0
+DEBUG Src0 Reg: x14={0x1a}
+DEBUG Dest Reg: x6={0x1a}
+DEBUG Fetch: PC=0x800003e4 (#65757)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+DEBUG Fetch: PC=0x800003e8 (#65758)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x800003ec (#65759)
+DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x800003f0 (#224)
+DEBUG Instr 0x1a00393: ADDI x7, x0, 0x1a
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x1a}
+DEBUG Fetch: PC=0x800003f4 (#225)
+DEBUG Instr 0x26731c63: BNE x6, x7, 0x278
+DEBUG Src0 Reg: x6={0x1a}
+DEBUG Src1 Reg: x7={0x1a}
+DEBUG Fetch: PC=0x800003f8 (#226)
+DEBUG Instr 0x1700193: ADDI x3, x0, 0x17
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x17}
+DEBUG Fetch: PC=0x800003fc (#227)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x80000400 (#228)
+DEBUG Instr 0xd00093: ADDI x1, x0, 0xd
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xd}
+DEBUG Fetch: PC=0x80000404 (#229)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000408 (#230)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xd}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x18}
+DEBUG Fetch: PC=0x8000040c (#231)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+DEBUG Fetch: PC=0x80000410 (#232)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000414 (#233)
+DEBUG Instr 0xfe5216e3: BNE x4, x5, 0xffffffec
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000400 (#65764)
+DEBUG Instr 0xd00093: ADDI x1, x0, 0xd
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xd}
+DEBUG Fetch: PC=0x80000404 (#65765)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000408 (#65766)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xd}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x18}
+DEBUG Fetch: PC=0x8000040c (#65767)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+DEBUG Fetch: PC=0x80000410 (#65768)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000414 (#65769)
+DEBUG Instr 0xfe5216e3: BNE x4, x5, 0xffffffec
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000418 (#234)
+DEBUG Instr 0x1800393: ADDI x7, x0, 0x18
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x18}
+DEBUG Fetch: PC=0x8000041c (#235)
+DEBUG Instr 0x24771863: BNE x14, x7, 0x250
+DEBUG Src0 Reg: x14={0x18}
+DEBUG Src1 Reg: x7={0x18}
+DEBUG Fetch: PC=0x80000420 (#236)
+DEBUG Instr 0x1800193: ADDI x3, x0, 0x18
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x18}
+DEBUG Fetch: PC=0x80000424 (#237)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x80000428 (#238)
+DEBUG Instr 0xe00093: ADDI x1, x0, 0xe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xe}
+DEBUG Fetch: PC=0x8000042c (#239)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000430 (#240)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x80000434 (#241)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xe}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x19}
+DEBUG Fetch: PC=0x80000438 (#242)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+DEBUG Fetch: PC=0x8000043c (#243)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000440 (#244)
+DEBUG Instr 0xfe5214e3: BNE x4, x5, 0xffffffe8
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000428 (#65774)
+DEBUG Instr 0xe00093: ADDI x1, x0, 0xe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xe}
+DEBUG Fetch: PC=0x8000042c (#65775)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000430 (#65776)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x80000434 (#65777)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xe}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x19}
+DEBUG Fetch: PC=0x80000438 (#65778)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+DEBUG Fetch: PC=0x8000043c (#65779)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000440 (#65780)
+DEBUG Instr 0xfe5214e3: BNE x4, x5, 0xffffffe8
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000444 (#245)
+DEBUG Instr 0x1900393: ADDI x7, x0, 0x19
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x19}
+DEBUG Fetch: PC=0x80000448 (#246)
+DEBUG Instr 0x22771263: BNE x14, x7, 0x224
+DEBUG Src0 Reg: x14={0x19}
+DEBUG Src1 Reg: x7={0x19}
+DEBUG Fetch: PC=0x8000044c (#247)
+DEBUG Instr 0x1900193: ADDI x3, x0, 0x19
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x19}
+DEBUG Fetch: PC=0x80000450 (#248)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x80000454 (#249)
+DEBUG Instr 0xf00093: ADDI x1, x0, 0xf
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xf}
+DEBUG Fetch: PC=0x80000458 (#250)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x8000045c (#251)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x80000460 (#252)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x80000464 (#253)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xf}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x1a}
+DEBUG Fetch: PC=0x80000468 (#254)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+DEBUG Fetch: PC=0x8000046c (#255)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000470 (#256)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000454 (#65785)
+DEBUG Instr 0xf00093: ADDI x1, x0, 0xf
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xf}
+DEBUG Fetch: PC=0x80000458 (#65786)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x8000045c (#65787)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x80000460 (#65788)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x80000464 (#65789)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xf}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x1a}
+DEBUG Fetch: PC=0x80000468 (#65790)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+DEBUG Fetch: PC=0x8000046c (#65791)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000470 (#65792)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000474 (#257)
+DEBUG Instr 0x1a00393: ADDI x7, x0, 0x1a
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x1a}
+DEBUG Fetch: PC=0x80000478 (#258)
+DEBUG Instr 0x1e771a63: BNE x14, x7, 0x1f4
+DEBUG Src0 Reg: x14={0x1a}
+DEBUG Src1 Reg: x7={0x1a}
+DEBUG Fetch: PC=0x8000047c (#259)
+DEBUG Instr 0x1a00193: ADDI x3, x0, 0x1a
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x1a}
+DEBUG Fetch: PC=0x80000480 (#260)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x80000484 (#261)
+DEBUG Instr 0xd00093: ADDI x1, x0, 0xd
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xd}
+DEBUG Fetch: PC=0x80000488 (#262)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x8000048c (#263)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000490 (#264)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xd}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x18}
+DEBUG Fetch: PC=0x80000494 (#265)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+DEBUG Fetch: PC=0x80000498 (#266)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x8000049c (#267)
+DEBUG Instr 0xfe5214e3: BNE x4, x5, 0xffffffe8
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000484 (#65797)
+DEBUG Instr 0xd00093: ADDI x1, x0, 0xd
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xd}
+DEBUG Fetch: PC=0x80000488 (#65798)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x8000048c (#65799)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000490 (#65800)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xd}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x18}
+DEBUG Fetch: PC=0x80000494 (#65801)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+DEBUG Fetch: PC=0x80000498 (#65802)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x8000049c (#65803)
+DEBUG Instr 0xfe5214e3: BNE x4, x5, 0xffffffe8
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x800004a0 (#268)
+DEBUG Instr 0x1800393: ADDI x7, x0, 0x18
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x18}
+DEBUG Fetch: PC=0x800004a4 (#269)
+DEBUG Instr 0x1c771463: BNE x14, x7, 0x1c8
+DEBUG Src0 Reg: x14={0x18}
+DEBUG Src1 Reg: x7={0x18}
+DEBUG Fetch: PC=0x800004a8 (#270)
+DEBUG Instr 0x1b00193: ADDI x3, x0, 0x1b
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x1b}
+DEBUG Fetch: PC=0x800004ac (#271)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x800004b0 (#272)
+DEBUG Instr 0xe00093: ADDI x1, x0, 0xe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xe}
+DEBUG Fetch: PC=0x800004b4 (#273)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800004b8 (#274)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x800004bc (#275)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800004c0 (#276)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xe}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x19}
+DEBUG Fetch: PC=0x800004c4 (#277)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+DEBUG Fetch: PC=0x800004c8 (#278)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x800004cc (#279)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x800004b0 (#65808)
+DEBUG Instr 0xe00093: ADDI x1, x0, 0xe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xe}
+DEBUG Fetch: PC=0x800004b4 (#65809)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800004b8 (#65810)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x800004bc (#65811)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800004c0 (#65812)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xe}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x19}
+DEBUG Fetch: PC=0x800004c4 (#65813)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+DEBUG Fetch: PC=0x800004c8 (#65814)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x800004cc (#65815)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x800004d0 (#280)
+DEBUG Instr 0x1900393: ADDI x7, x0, 0x19
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x19}
+DEBUG Fetch: PC=0x800004d4 (#281)
+DEBUG Instr 0x18771c63: BNE x14, x7, 0x198
+DEBUG Src0 Reg: x14={0x19}
+DEBUG Src1 Reg: x7={0x19}
+DEBUG Fetch: PC=0x800004d8 (#282)
+DEBUG Instr 0x1c00193: ADDI x3, x0, 0x1c
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x1c}
+DEBUG Fetch: PC=0x800004dc (#283)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x800004e0 (#284)
+DEBUG Instr 0xf00093: ADDI x1, x0, 0xf
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xf}
+DEBUG Fetch: PC=0x800004e4 (#285)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800004e8 (#286)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800004ec (#287)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x800004f0 (#288)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xf}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x1a}
+DEBUG Fetch: PC=0x800004f4 (#289)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+DEBUG Fetch: PC=0x800004f8 (#290)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x800004fc (#291)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x800004e0 (#65820)
+DEBUG Instr 0xf00093: ADDI x1, x0, 0xf
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xf}
+DEBUG Fetch: PC=0x800004e4 (#65821)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800004e8 (#65822)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800004ec (#65823)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x800004f0 (#65824)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xf}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x1a}
+DEBUG Fetch: PC=0x800004f4 (#65825)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+DEBUG Fetch: PC=0x800004f8 (#65826)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x800004fc (#65827)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000500 (#292)
+DEBUG Instr 0x1a00393: ADDI x7, x0, 0x1a
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x1a}
+DEBUG Fetch: PC=0x80000504 (#293)
+DEBUG Instr 0x16771463: BNE x14, x7, 0x168
+DEBUG Src0 Reg: x14={0x1a}
+DEBUG Src1 Reg: x7={0x1a}
+DEBUG Fetch: PC=0x80000508 (#294)
+DEBUG Instr 0x1d00193: ADDI x3, x0, 0x1d
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x1d}
+DEBUG Fetch: PC=0x8000050c (#295)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x80000510 (#296)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000514 (#297)
+DEBUG Instr 0xd00093: ADDI x1, x0, 0xd
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xd}
+DEBUG Fetch: PC=0x80000518 (#298)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xd}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x18}
+DEBUG Fetch: PC=0x8000051c (#299)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+DEBUG Fetch: PC=0x80000520 (#300)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000524 (#301)
+DEBUG Instr 0xfe5216e3: BNE x4, x5, 0xffffffec
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000510 (#65832)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000514 (#65833)
+DEBUG Instr 0xd00093: ADDI x1, x0, 0xd
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xd}
+DEBUG Fetch: PC=0x80000518 (#65834)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xd}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x18}
+DEBUG Fetch: PC=0x8000051c (#65835)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+DEBUG Fetch: PC=0x80000520 (#65836)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000524 (#65837)
+DEBUG Instr 0xfe5216e3: BNE x4, x5, 0xffffffec
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000528 (#302)
+DEBUG Instr 0x1800393: ADDI x7, x0, 0x18
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x18}
+DEBUG Fetch: PC=0x8000052c (#303)
+DEBUG Instr 0x14771063: BNE x14, x7, 0x140
+DEBUG Src0 Reg: x14={0x18}
+DEBUG Src1 Reg: x7={0x18}
+DEBUG Fetch: PC=0x80000530 (#304)
+DEBUG Instr 0x1e00193: ADDI x3, x0, 0x1e
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x1e}
+DEBUG Fetch: PC=0x80000534 (#305)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x80000538 (#306)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x8000053c (#307)
+DEBUG Instr 0xe00093: ADDI x1, x0, 0xe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xe}
+DEBUG Fetch: PC=0x80000540 (#308)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x80000544 (#309)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xe}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x19}
+DEBUG Fetch: PC=0x80000548 (#310)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+DEBUG Fetch: PC=0x8000054c (#311)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000550 (#312)
+DEBUG Instr 0xfe5214e3: BNE x4, x5, 0xffffffe8
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000538 (#65842)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x8000053c (#65843)
+DEBUG Instr 0xe00093: ADDI x1, x0, 0xe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xe}
+DEBUG Fetch: PC=0x80000540 (#65844)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x80000544 (#65845)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xe}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x19}
+DEBUG Fetch: PC=0x80000548 (#65846)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+DEBUG Fetch: PC=0x8000054c (#65847)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000550 (#65848)
+DEBUG Instr 0xfe5214e3: BNE x4, x5, 0xffffffe8
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000554 (#313)
+DEBUG Instr 0x1900393: ADDI x7, x0, 0x19
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x19}
+DEBUG Fetch: PC=0x80000558 (#314)
+DEBUG Instr 0x10771a63: BNE x14, x7, 0x114
+DEBUG Src0 Reg: x14={0x19}
+DEBUG Src1 Reg: x7={0x19}
+DEBUG Fetch: PC=0x8000055c (#315)
+DEBUG Instr 0x1f00193: ADDI x3, x0, 0x1f
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x1f}
+DEBUG Fetch: PC=0x80000560 (#316)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x80000564 (#317)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000568 (#318)
+DEBUG Instr 0xf00093: ADDI x1, x0, 0xf
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xf}
+DEBUG Fetch: PC=0x8000056c (#319)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x80000570 (#320)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x80000574 (#321)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xf}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x1a}
+DEBUG Fetch: PC=0x80000578 (#322)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+DEBUG Fetch: PC=0x8000057c (#323)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000580 (#324)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000564 (#65853)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000568 (#65854)
+DEBUG Instr 0xf00093: ADDI x1, x0, 0xf
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xf}
+DEBUG Fetch: PC=0x8000056c (#65855)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x80000570 (#65856)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x80000574 (#65857)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xf}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x1a}
+DEBUG Fetch: PC=0x80000578 (#65858)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+DEBUG Fetch: PC=0x8000057c (#65859)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000580 (#65860)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000584 (#325)
+DEBUG Instr 0x1a00393: ADDI x7, x0, 0x1a
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x1a}
+DEBUG Fetch: PC=0x80000588 (#326)
+DEBUG Instr 0xe771263: BNE x14, x7, 0xe4
+DEBUG Src0 Reg: x14={0x1a}
+DEBUG Src1 Reg: x7={0x1a}
+DEBUG Fetch: PC=0x8000058c (#327)
+DEBUG Instr 0x2000193: ADDI x3, x0, 0x20
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x20}
+DEBUG Fetch: PC=0x80000590 (#328)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x80000594 (#329)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000598 (#330)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x8000059c (#331)
+DEBUG Instr 0xd00093: ADDI x1, x0, 0xd
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xd}
+DEBUG Fetch: PC=0x800005a0 (#332)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xd}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x18}
+DEBUG Fetch: PC=0x800005a4 (#333)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+DEBUG Fetch: PC=0x800005a8 (#334)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x800005ac (#335)
+DEBUG Instr 0xfe5214e3: BNE x4, x5, 0xffffffe8
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000594 (#65865)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x80000598 (#65866)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x8000059c (#65867)
+DEBUG Instr 0xd00093: ADDI x1, x0, 0xd
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xd}
+DEBUG Fetch: PC=0x800005a0 (#65868)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xd}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x18}
+DEBUG Fetch: PC=0x800005a4 (#65869)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+DEBUG Fetch: PC=0x800005a8 (#65870)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x800005ac (#65871)
+DEBUG Instr 0xfe5214e3: BNE x4, x5, 0xffffffe8
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x800005b0 (#336)
+DEBUG Instr 0x1800393: ADDI x7, x0, 0x18
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x18}
+DEBUG Fetch: PC=0x800005b4 (#337)
+DEBUG Instr 0xa771c63: BNE x14, x7, 0xb8
+DEBUG Src0 Reg: x14={0x18}
+DEBUG Src1 Reg: x7={0x18}
+DEBUG Fetch: PC=0x800005b8 (#338)
+DEBUG Instr 0x2100193: ADDI x3, x0, 0x21
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x21}
+DEBUG Fetch: PC=0x800005bc (#339)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x800005c0 (#340)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x800005c4 (#341)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800005c8 (#342)
+DEBUG Instr 0xe00093: ADDI x1, x0, 0xe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xe}
+DEBUG Fetch: PC=0x800005cc (#343)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800005d0 (#344)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xe}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x19}
+DEBUG Fetch: PC=0x800005d4 (#345)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+DEBUG Fetch: PC=0x800005d8 (#346)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x800005dc (#347)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x800005c0 (#65876)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x800005c4 (#65877)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800005c8 (#65878)
+DEBUG Instr 0xe00093: ADDI x1, x0, 0xe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xe}
+DEBUG Fetch: PC=0x800005cc (#65879)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800005d0 (#65880)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xe}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x19}
+DEBUG Fetch: PC=0x800005d4 (#65881)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+DEBUG Fetch: PC=0x800005d8 (#65882)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x800005dc (#65883)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x800005e0 (#348)
+DEBUG Instr 0x1900393: ADDI x7, x0, 0x19
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x19}
+DEBUG Fetch: PC=0x800005e4 (#349)
+DEBUG Instr 0x8771463: BNE x14, x7, 0x88
+DEBUG Src0 Reg: x14={0x19}
+DEBUG Src1 Reg: x7={0x19}
+DEBUG Fetch: PC=0x800005e8 (#350)
+DEBUG Instr 0x2200193: ADDI x3, x0, 0x22
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x22}
+DEBUG Fetch: PC=0x800005ec (#351)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+DEBUG Fetch: PC=0x800005f0 (#352)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x800005f4 (#353)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800005f8 (#354)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800005fc (#355)
+DEBUG Instr 0xf00093: ADDI x1, x0, 0xf
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xf}
+DEBUG Fetch: PC=0x80000600 (#356)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xf}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x1a}
+DEBUG Fetch: PC=0x80000604 (#357)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+DEBUG Fetch: PC=0x80000608 (#358)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x8000060c (#359)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x800005f0 (#65888)
+DEBUG Instr 0xb00113: ADDI x2, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xb}
+DEBUG Fetch: PC=0x800005f4 (#65889)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800005f8 (#65890)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Fetch: PC=0x800005fc (#65891)
+DEBUG Instr 0xf00093: ADDI x1, x0, 0xf
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xf}
+DEBUG Fetch: PC=0x80000600 (#65892)
+DEBUG Instr 0x208733: ADD x14, x1, x2
+DEBUG Src0 Reg: x1={0xf}
+DEBUG Src1 Reg: x2={0xb}
+DEBUG Dest Reg: x14={0x1a}
+DEBUG Fetch: PC=0x80000604 (#65893)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+DEBUG Fetch: PC=0x80000608 (#65894)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+DEBUG Fetch: PC=0x8000060c (#65895)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG Fetch: PC=0x80000610 (#360)
+DEBUG Instr 0x1a00393: ADDI x7, x0, 0x1a
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x1a}
+DEBUG Fetch: PC=0x80000614 (#361)
+DEBUG Instr 0x4771c63: BNE x14, x7, 0x58
+DEBUG Src0 Reg: x14={0x1a}
+DEBUG Src1 Reg: x7={0x1a}
+DEBUG Fetch: PC=0x80000618 (#362)
+DEBUG Instr 0x2300193: ADDI x3, x0, 0x23
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x23}
+DEBUG Fetch: PC=0x8000061c (#363)
+DEBUG Instr 0xf00093: ADDI x1, x0, 0xf
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xf}
+DEBUG Fetch: PC=0x80000620 (#364)
+DEBUG Instr 0x100133: ADD x2, x0, x1
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Src1 Reg: x1={0xf}
+DEBUG Dest Reg: x2={0xf}
+DEBUG Fetch: PC=0x80000624 (#365)
+DEBUG Instr 0xf00393: ADDI x7, x0, 0xf
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0xf}
+DEBUG Fetch: PC=0x80000628 (#366)
+DEBUG Instr 0x4711263: BNE x2, x7, 0x44
+DEBUG Src0 Reg: x2={0xf}
+DEBUG Src1 Reg: x7={0xf}
+DEBUG Fetch: PC=0x8000062c (#367)
+DEBUG Instr 0x2400193: ADDI x3, x0, 0x24
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x24}
+DEBUG Fetch: PC=0x80000630 (#368)
+DEBUG Instr 0x2000093: ADDI x1, x0, 0x20
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x20}
+DEBUG Fetch: PC=0x80000634 (#369)
+DEBUG Instr 0x8133: ADD x2, x1, x0
+DEBUG Src0 Reg: x1={0x20}
+DEBUG Src1 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0x20}
+DEBUG Fetch: PC=0x80000638 (#370)
+DEBUG Instr 0x2000393: ADDI x7, x0, 0x20
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x20}
+DEBUG Fetch: PC=0x8000063c (#371)
+DEBUG Instr 0x2711863: BNE x2, x7, 0x30
+DEBUG Src0 Reg: x2={0x20}
+DEBUG Src1 Reg: x7={0x20}
+DEBUG Fetch: PC=0x80000640 (#372)
+DEBUG Instr 0x2500193: ADDI x3, x0, 0x25
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x25}
+DEBUG Fetch: PC=0x80000644 (#373)
+DEBUG Instr 0xb3: ADD x1, x0, x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Src1 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x0}
+DEBUG Fetch: PC=0x80000648 (#374)
+DEBUG Instr 0x393: ADDI x7, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x0}
+DEBUG Fetch: PC=0x8000064c (#375)
+DEBUG Instr 0x2709063: BNE x1, x7, 0x20
+DEBUG Src0 Reg: x1={0x0}
+DEBUG Src1 Reg: x7={0x0}
+DEBUG Fetch: PC=0x80000650 (#376)
+DEBUG Instr 0x2600193: ADDI x3, x0, 0x26
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x26}
+DEBUG Fetch: PC=0x80000654 (#377)
+DEBUG Instr 0x1000093: ADDI x1, x0, 0x10
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x10}
+DEBUG Fetch: PC=0x80000658 (#378)
+DEBUG Instr 0x1e00113: ADDI x2, x0, 0x1e
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0x1e}
+DEBUG Fetch: PC=0x8000065c (#379)
+DEBUG Instr 0x208033: ADD x0, x1, x2
+DEBUG Src0 Reg: x1={0x10}
+DEBUG Src1 Reg: x2={0x1e}
+DEBUG Fetch: PC=0x80000660 (#380)
+DEBUG Instr 0x393: ADDI x7, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x0}
+DEBUG Fetch: PC=0x80000664 (#381)
+DEBUG Instr 0x701463: BNE x0, x7, 0x8
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Src1 Reg: x7={0x0}
+DEBUG Fetch: PC=0x80000668 (#382)
+DEBUG Instr 0x2301063: BNE x0, x3, 0x20
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Src1 Reg: x3={0x26}
+DEBUG Fetch: PC=0x80000688 (#383)
+DEBUG Instr 0xff0000f: FENCE 0xff
+DEBUG Fetch: PC=0x8000068c (#384)
+DEBUG Instr 0x100193: ADDI x3, x0, 0x1
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x1}
+DEBUG Fetch: PC=0x80000690 (#385)
+DEBUG Instr 0x5d00893: ADDI x17, x0, 0x5d
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x17={0x5d}
+DEBUG Fetch: PC=0x80000694 (#386)
+DEBUG Instr 0x513: ADDI x10, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x10={0x0}
+DEBUG Fetch: PC=0x80000698 (#387)
+DEBUG Instr 0x73: ECALL 0x0
+PASSED!
