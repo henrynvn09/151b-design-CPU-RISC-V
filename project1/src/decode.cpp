@@ -409,7 +409,7 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
       break;
     default:
       // int12
-      // std::cout << "enter I_Inst default";
+       //std::cout << "enter I_Inst default";
       auto imm = code >> shift_rs2;
       instr->setImm(sext(imm, width_i_imm));
       break;
@@ -419,6 +419,7 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
 
   case InstType::S_TYPE:
   {
+    //std::cout << "enter S_type";
     instr->addSrcReg(rs1, RegType::Integer);
     instr->addSrcReg(rs2, RegType::Integer);
     instr->setFunc3(func3);
@@ -426,7 +427,7 @@ std::shared_ptr<Instr> Emulator::decode(uint32_t code) const
     auto imm11_5 = code >> (shift_rs2 + width_reg);
     auto imm4_0 = rd;
 
-    instr->setImm((imm11_5 << 5) | imm4_0);
+    instr->setImm(sext((imm11_5 << 5) | imm4_0, 12));
   }
   break;
 
