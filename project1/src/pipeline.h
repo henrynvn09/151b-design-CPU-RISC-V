@@ -53,6 +53,11 @@ public:
   //- 
   ExeType     exe_type; 
 
+  // Add src registers
+  uint32_t    rSrc1;
+  uint32_t    rSrc2;
+  uint32_t    num_rSrcs;
+
   //--
   union {
     uint32_t unit_type;

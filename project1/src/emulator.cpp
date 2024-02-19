@@ -77,7 +77,17 @@ pipeline_trace_t* Emulator::step() {
   trace->PC    = PC_;
   trace->rdest = instr->getRDest();
   trace->rdest_type = instr->getRDType();
-    
+   
+  trace->num_rSrcs = instr->getNRSrc();
+  if (instr->getNRSrc() >= 1) {
+    trace->rSrc1 = instr->getRSrc(0);
+  }
+  
+  if (instr->getNRSrc() >= 2) {
+    trace->rSrc2 = instr->getRSrc(1); 
+  }
+
+
   // execute
   this->execute(*instr, trace);
 
@@ -87,7 +97,22 @@ pipeline_trace_t* Emulator::step() {
     DPN(5, "0x" << std::setfill('0') << std::setw(XLEN/4) << std::hex << reg_file_.at(i) << std::setfill(' ') << std::endl);
   }  
 
+
   return trace;
+}
+
+std::shared_ptr<Instr> Emulator::decodeNextInst() {
+  // fetch
+  uint32_t instr_code = 0;
+  this->icache_read(&instr_code, PC_, sizeof(uint32_t));
+
+  // decode
+  auto instr = this->decode(instr_code);
+  if (!(instr)) {
+    return nullptr;
+  }  
+
+  return instr;
 }
 
 void Emulator::trigger_ecall() {

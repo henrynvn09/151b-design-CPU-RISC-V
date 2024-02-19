@@ -47,6 +47,8 @@ public:
 
   pipeline_trace_t* step();
 
+  std::shared_ptr<Instr> decodeNextInst();
+
   bool check_exit(Word* exitcode, bool riscv_test) const;
 
 private:

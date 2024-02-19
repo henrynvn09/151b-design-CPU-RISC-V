@@ -10,7 +10,9 @@ make clean &&
   DEBUG=3 make &&
 
 # Run the test
-./tinyrv -s "tests/$hex_file" > tmp.log
+./tinyrv -s "tests/$hex_file" > tmp.log 2> err
+
+echo $err
 
 # Check for errors
 if [ $? -ne 0 ]; then
@@ -19,5 +21,5 @@ if [ $? -ne 0 ]; then
 fi
 
 # Display differences
-diff tmp.log "debug_traces/${hex_file}.log"
+vimdiff tmp.log "debug_traces/${hex_file}.log"
 
