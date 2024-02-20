@@ -60,16 +60,12 @@ void Core::tick()
   DPN(2, std::flush);
 }
 
-bool if_traceDst_eq_nextInstSrc(pipeline_trace_t* trace, std::shared_ptr<Instr>& nextInst)
+bool is_traceDst_eq_nextTraceSrc(pipeline_trace_t* trace, pipeline_trace_t* nextTrace)
 {
-  auto num_rSrcs = nextInst->getNRSrc();
+  auto num_rSrcs = nextTrace->num_rSrcs;
 
-  if (num_rSrcs >=1) {
-    std::cout << "== src: " << nextInst->getRSrc(0) << " - dest:" << trace->rdest << "===";
-  }
-
-  return ((num_rSrcs >=1 && nextInst->getRSrc(0) == trace->rdest)
-    || (num_rSrcs >=2 && nextInst->getRSrc(1) == trace->rdest));
+  return ((num_rSrcs >=1 && nextTrace->rSrc1 == trace->rdest)
+    || (num_rSrcs >=2 && nextTrace->rSrc2 == trace->rdest));
 }
 
 void Core::if_stage()
@@ -89,7 +85,13 @@ void Core::if_stage()
   auto trace = emulator_.step();
 
   // TODO:
-  if (trace->opcode == Opcode::B_INST || trace->opcode == Opcode::JAL_INST || trace->opcode == Opcode::JALR_INST)
+
+  // check if the instruction is a branch and it is taken
+  bool is_Branch_taken = true;
+
+
+  // if the branch is taken
+  if (is_Branch_taken || trace->opcode == Opcode::JAL_INST || trace->opcode == Opcode::JALR_INST)
   {
     branch_stall = 3;
   }
@@ -110,23 +112,23 @@ void Core::id_stage()
 
   auto trace = if_id_latch_.front();
 
-  DT(3, "pipeline-decode: " << *trace);
 
 
-  // // TODO:
-  // auto nextInst = emulator_.decodeNextInst();
+  // TODO:
+  
+  // if the previous instruction was L instruction and its dest register is the
+  //  same as the source register of the current instruction stall the pipeline
+  if (!ex_mem_latch_.empty() && ex_mem_latch_.front()->opcode == Opcode::L_INST && is_traceDst_eq_nextTraceSrc(ex_mem_latch_.front(), trace))
+  {
+    DT(3, "*** pipeline-decode stalled!: " << *trace); 
+  }
+  else {
+    DT(3, "pipeline-decode: " << *trace);
+    // move instruction to next stage
+    id_ex_latch_.push(trace);
 
-  // // if it is RAW of registers, stall the pipeline
-  // if (if_traceDst_eq_nextInstSrc(trace, nextInst))
-  // {
-  //   fetch_stalled_ = true;
-  //   std::cout << "stalled at decode" << std::endl;
-  // }
-
-  // move instruction to next stage
-  id_ex_latch_.push(trace);
-
-  if_id_latch_.pop();
+    if_id_latch_.pop();
+  }
 }
 
 void Core::ex_stage()
@@ -138,15 +140,7 @@ void Core::ex_stage()
 
   DT(3, "pipeline-execute: " << *trace);
 
-  // // TODO:
-  // auto nextInst = emulator_.decodeNextInst();
-
-  // // if it is RAW of registers, stall the pipeline
-  // if (if_traceDst_eq_nextInstSrc(trace, nextInst))
-  // {
-  //   fetch_stalled_ = true;
-  //   std::cout << "stalled at execute" << std::endl;
-  // }
+  // TODO:
 
   // move instruction to next stage
   ex_mem_latch_.push(trace);
@@ -163,14 +157,8 @@ void Core::mem_stage()
 
   DT(3, "pipeline-memory: " << *trace);
 
-  // // TODO:
-  // auto nextInst = emulator_.decodeNextInst();
-  // // if it is RAW of registers, stall the pipeline
-  // if (if_traceDst_eq_nextInstSrc(trace, nextInst))
-  // {
-  //   fetch_stalled_ = true;
-  //   std::cout<< "stalled at memory" << std::endl;
-  // }
+  // TODO:
+
 
   // move instruction to next stage
   mem_wb_latch_.push(trace);
