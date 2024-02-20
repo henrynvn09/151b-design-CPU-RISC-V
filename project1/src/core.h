@@ -79,6 +79,9 @@ private:
 
   bool fetch_stalled_;  
   uint64_t issued_instrs_;
+  
+  // student added
+  int32_t branch_stall;
 
   PerfStats perf_stats_;
 

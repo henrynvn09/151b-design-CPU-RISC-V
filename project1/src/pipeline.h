@@ -58,6 +58,8 @@ public:
   uint32_t    rSrc2;
   uint32_t    num_rSrcs;
 
+  uint32_t opcode;
+
   //--
   union {
     uint32_t unit_type;

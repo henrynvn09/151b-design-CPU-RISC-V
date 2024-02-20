@@ -77,7 +77,7 @@ pipeline_trace_t* Emulator::step() {
   trace->PC    = PC_;
   trace->rdest = instr->getRDest();
   trace->rdest_type = instr->getRDType();
-   
+  
   trace->num_rSrcs = instr->getNRSrc();
   if (instr->getNRSrc() >= 1) {
     trace->rSrc1 = instr->getRSrc(0);
@@ -87,6 +87,7 @@ pipeline_trace_t* Emulator::step() {
     trace->rSrc2 = instr->getRSrc(1); 
   }
 
+  trace->opcode = instr->getOpcode();
 
   // execute
   this->execute(*instr, trace);

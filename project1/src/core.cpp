@@ -27,6 +27,7 @@ using namespace tinyrv;
 Core::Core(const SimContext &ctx, uint32_t core_id, ProcessorImpl *processor)
     : SimObject(ctx, "core"), core_id_(core_id), processor_(processor), emulator_(this)
 {
+  branch_stall = 0;
   this->reset();
 }
 
@@ -59,9 +60,13 @@ void Core::tick()
   DPN(2, std::flush);
 }
 
-bool if_traceSrc_eq_latchDst(pipeline_trace_t* trace, std::shared_ptr<Instr>& nextInst)
+bool if_traceDst_eq_nextInstSrc(pipeline_trace_t* trace, std::shared_ptr<Instr>& nextInst)
 {
   auto num_rSrcs = nextInst->getNRSrc();
+
+  if (num_rSrcs >=1) {
+    std::cout << "== src: " << nextInst->getRSrc(0) << " - dest:" << trace->rdest << "===";
+  }
 
   return ((num_rSrcs >=1 && nextInst->getRSrc(0) == trace->rdest)
     || (num_rSrcs >=2 && nextInst->getRSrc(1) == trace->rdest));
@@ -69,30 +74,25 @@ bool if_traceSrc_eq_latchDst(pipeline_trace_t* trace, std::shared_ptr<Instr>& ne
 
 void Core::if_stage()
 {
-  if (fetch_stalled_)
+  if (fetch_stalled_ || branch_stall > 0)
   {
     DT(3, "*** pipeline-fetch stalled!");
     fetch_stalled_ = false;
+
+    if (branch_stall > 0)
+    {
+      --branch_stall;
+    }
     return;
   }
 
   auto trace = emulator_.step();
 
   // TODO:
-  
-  // auto numSrc = trace->num_rSrcs;
-  // std::string result = "nSrc " + std::to_string(numSrc);
-  // if (numSrc >= 1) result += "-- src1: " + std::to_string(trace->rSrc1);
-  // if (numSrc >= 2) result +=  "-- src2: " + std::to_string(trace->rSrc2);
-  // result += "- empty: " + std::to_string(this->id_ex_latch_.empty());
-  // if (this->id_ex_latch_.front()) result += "-- latch: " + std::to_string(this->id_ex_latch_.front()->rdest);
-  //DT(3, result);
-
-  // if (if_traceSrc_eq_latchDst(id_ex_latch_, trace))
-  // {
-  //   DT(3, "*** pipeline-fetch stalled!");
-  // }
-  // else {
+  if (trace->opcode == Opcode::B_INST || trace->opcode == Opcode::JAL_INST || trace->opcode == Opcode::JALR_INST)
+  {
+    branch_stall = 3;
+  }
 
   DT(3, "pipeline-fetch: " << *trace);
   // move instruction to next stage
@@ -113,14 +113,15 @@ void Core::id_stage()
   DT(3, "pipeline-decode: " << *trace);
 
 
-  // TODO:
-  auto nextInst = emulator_.decodeNextInst();
+  // // TODO:
+  // auto nextInst = emulator_.decodeNextInst();
 
-  // if it is RAW of registers, stall the pipeline
-  if (if_traceSrc_eq_latchDst(trace, nextInst))
-  {
-    fetch_stalled_ = true;
-  }
+  // // if it is RAW of registers, stall the pipeline
+  // if (if_traceDst_eq_nextInstSrc(trace, nextInst))
+  // {
+  //   fetch_stalled_ = true;
+  //   std::cout << "stalled at decode" << std::endl;
+  // }
 
   // move instruction to next stage
   id_ex_latch_.push(trace);
@@ -137,14 +138,15 @@ void Core::ex_stage()
 
   DT(3, "pipeline-execute: " << *trace);
 
-  // TODO:
-  auto nextInst = emulator_.decodeNextInst();
+  // // TODO:
+  // auto nextInst = emulator_.decodeNextInst();
 
-  // if it is RAW of registers, stall the pipeline
-  if (if_traceSrc_eq_latchDst(trace, nextInst))
-  {
-    fetch_stalled_ = true;
-  }
+  // // if it is RAW of registers, stall the pipeline
+  // if (if_traceDst_eq_nextInstSrc(trace, nextInst))
+  // {
+  //   fetch_stalled_ = true;
+  //   std::cout << "stalled at execute" << std::endl;
+  // }
 
   // move instruction to next stage
   ex_mem_latch_.push(trace);
@@ -161,13 +163,14 @@ void Core::mem_stage()
 
   DT(3, "pipeline-memory: " << *trace);
 
-  // TODO:
-  auto nextInst = emulator_.decodeNextInst();
-  // if it is RAW of registers, stall the pipeline
-  if (if_traceSrc_eq_latchDst(trace, nextInst))
-  {
-    fetch_stalled_ = true;
-  }
+  // // TODO:
+  // auto nextInst = emulator_.decodeNextInst();
+  // // if it is RAW of registers, stall the pipeline
+  // if (if_traceDst_eq_nextInstSrc(trace, nextInst))
+  // {
+  //   fetch_stalled_ = true;
+  //   std::cout<< "stalled at memory" << std::endl;
+  // }
 
   // move instruction to next stage
   mem_wb_latch_.push(trace);
