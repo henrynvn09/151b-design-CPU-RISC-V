@@ -1,4 +1,4 @@
 while IFS= read -r i; do  
-	./testCompare.sh "$i"
+	./timeCompare.sh "$i"
 done < list_files
 

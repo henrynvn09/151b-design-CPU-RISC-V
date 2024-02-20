@@ -21,5 +21,5 @@ if [ $? -ne 0 ]; then
 fi
 
 # Display differences
-vimdiff tmp.log "debug_traces/${hex_file}.log"
+diff tmp.log "debug_traces/${hex_file}.log"
 
