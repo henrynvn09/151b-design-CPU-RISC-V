@@ -60,16 +60,17 @@ void Core::tick()
   DPN(2, std::flush);
 }
 
-bool if_traceDst_eq_nextInstSrc(pipeline_trace_t* trace, std::shared_ptr<Instr>& nextInst)
+bool if_traceDst_eq_traceSrc(pipeline_trace_t* trace, pipeline_trace_t* traceSrc)
 {
-  auto num_rSrcs = nextInst->getNRSrc();
+  auto num_rSrcs = traceSrc->num_rSrcs;
 
-  if (num_rSrcs >=1) {
-    std::cout << "== src: " << nextInst->getRSrc(0) << " - dest:" << trace->rdest << "===";
-  }
+  // if (num_rSrcs >=1) {
+  //   std::cout << "== src: " << traceSrc->rSrc1 << " - dest:" << trace->rdest << "===";
+  // }
 
-  return ((num_rSrcs >=1 && nextInst->getRSrc(0) == trace->rdest)
-    || (num_rSrcs >=2 && nextInst->getRSrc(1) == trace->rdest));
+
+  return ((num_rSrcs >=1 && traceSrc->rSrc1 == trace->rdest)
+    || (num_rSrcs >=2 && traceSrc->rSrc2 == trace->rdest));
 }
 
 void Core::if_stage()
@@ -110,23 +111,23 @@ void Core::id_stage()
 
   auto trace = if_id_latch_.front();
 
-  DT(3, "pipeline-decode: " << *trace);
 
 
-  // // TODO:
-  // auto nextInst = emulator_.decodeNextInst();
+  // TODO:
+  auto latch = ex_mem_latch_;
+  // if it is RAW of registers, stall the pipeline
+  if (!latch.empty() && latch.back()->opcode == Opcode::L_INST && if_traceDst_eq_traceSrc(latch.back(), trace))
+  {
+    fetch_stalled_ = true;
+    DT(3, "*** pipeline-decode stalled!: " << *trace);
+  }
+  else {
+    DT(3, "pipeline-decode: " << *trace);
+    // move instruction to next stage
+    id_ex_latch_.push(trace);
 
-  // // if it is RAW of registers, stall the pipeline
-  // if (if_traceDst_eq_nextInstSrc(trace, nextInst))
-  // {
-  //   fetch_stalled_ = true;
-  //   std::cout << "stalled at decode" << std::endl;
-  // }
-
-  // move instruction to next stage
-  id_ex_latch_.push(trace);
-
-  if_id_latch_.pop();
+    if_id_latch_.pop();
+  }
 }
 
 void Core::ex_stage()

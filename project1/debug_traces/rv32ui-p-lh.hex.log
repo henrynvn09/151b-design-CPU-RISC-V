@@ -1394,34 +1394,30 @@ TRACE        197: pipeline-writeback: PC=0x800002cc, wb=1, rd=x1, ex=ALU (#151)
 TRACE        197: pipeline-memory: PC=0x800002d0, wb=1, rd=x1, ex=ALU (#152)
 TRACE        197: pipeline-execute: PC=0x800002d4, wb=1, rd=x14, ex=LSU (#153)
 TRACE        197: *** pipeline-decode stalled!: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#154)
-DEBUG Fetch: PC=0x800002dc (#155)
-DEBUG Instr 0x13b7: LUI x7, 0x1
-DEBUG Dest Reg: x7={0x1000}
-TRACE        197: pipeline-fetch: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#155)
+TRACE        197: *** pipeline-fetch stalled!
 TRACE        198: pipeline-writeback: PC=0x800002d0, wb=1, rd=x1, ex=ALU (#152)
 TRACE        198: pipeline-memory: PC=0x800002d4, wb=1, rd=x14, ex=LSU (#153)
 TRACE        198: pipeline-decode: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#154)
+DEBUG Fetch: PC=0x800002dc (#155)
+DEBUG Instr 0x13b7: LUI x7, 0x1
+DEBUG Dest Reg: x7={0x1000}
+TRACE        198: pipeline-fetch: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#155)
+TRACE        199: pipeline-writeback: PC=0x800002d4, wb=1, rd=x14, ex=LSU (#153)
+TRACE        199: pipeline-execute: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#154)
+TRACE        199: pipeline-decode: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#155)
 DEBUG Fetch: PC=0x800002e0 (#156)
 DEBUG Instr 0xff038393: ADDI x7, x7, 0xfffffff0
 DEBUG Src0 Reg: x7={0x1000}
 DEBUG Dest Reg: x7={0xff0}
-TRACE        198: pipeline-fetch: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#156)
-TRACE        199: pipeline-writeback: PC=0x800002d4, wb=1, rd=x14, ex=LSU (#153)
-TRACE        199: pipeline-execute: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#154)
-TRACE        199: pipeline-decode: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#155)
+TRACE        199: pipeline-fetch: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#156)
+TRACE        200: pipeline-memory: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#154)
+TRACE        200: pipeline-execute: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#155)
+TRACE        200: pipeline-decode: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#156)
 DEBUG Fetch: PC=0x800002e4 (#157)
 DEBUG Instr 0x14731263: BNE x6, x7, 0x144
 DEBUG Src0 Reg: x6={0xff0}
 DEBUG Src1 Reg: x7={0xff0}
-TRACE        199: pipeline-fetch: PC=0x800002e4, wb=0, ex=ALU (#157)
-TRACE        200: pipeline-memory: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#154)
-TRACE        200: pipeline-execute: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#155)
-TRACE        200: pipeline-decode: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#156)
-DEBUG Fetch: PC=0x800002e8 (#158)
-DEBUG Instr 0x120213: ADDI x4, x4, 0x1
-DEBUG Src0 Reg: x4={0x0}
-DEBUG Dest Reg: x4={0x1}
-TRACE        200: pipeline-fetch: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#158)
+TRACE        200: pipeline-fetch: PC=0x800002e4, wb=0, ex=ALU (#157)
 TRACE        201: pipeline-writeback: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#154)
 TRACE        201: pipeline-memory: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#155)
 TRACE        201: pipeline-execute: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#156)
@@ -1430,1371 +1426,1376 @@ TRACE        201: *** pipeline-fetch stalled!
 TRACE        202: pipeline-writeback: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#155)
 TRACE        202: pipeline-memory: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#156)
 TRACE        202: pipeline-execute: PC=0x800002e4, wb=0, ex=ALU (#157)
-TRACE        202: pipeline-decode: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#158)
 TRACE        202: *** pipeline-fetch stalled!
 TRACE        203: pipeline-writeback: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#156)
 TRACE        203: pipeline-memory: PC=0x800002e4, wb=0, ex=ALU (#157)
-TRACE        203: pipeline-execute: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#158)
 TRACE        203: *** pipeline-fetch stalled!
 TRACE        204: pipeline-writeback: PC=0x800002e4, wb=0, ex=ALU (#157)
-TRACE        204: pipeline-memory: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#158)
+DEBUG Fetch: PC=0x800002e8 (#158)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+TRACE        204: pipeline-fetch: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#158)
+TRACE        205: pipeline-decode: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#158)
 DEBUG Fetch: PC=0x800002ec (#159)
 DEBUG Instr 0x200293: ADDI x5, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x5={0x2}
-TRACE        204: pipeline-fetch: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#159)
-TRACE        205: pipeline-writeback: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#158)
-TRACE        205: pipeline-decode: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#159)
+TRACE        205: pipeline-fetch: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#159)
+TRACE        206: pipeline-execute: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#158)
+TRACE        206: pipeline-decode: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#159)
 DEBUG Fetch: PC=0x800002f0 (#160)
 DEBUG Instr 0xfc521ee3: BNE x4, x5, 0xffffffdc
 DEBUG Src0 Reg: x4={0x1}
 DEBUG Src1 Reg: x5={0x2}
 DEBUG *** Next PC=0x800002cc
-TRACE        205: pipeline-fetch: PC=0x800002f0, wb=0, ex=ALU (#160)
-TRACE        206: pipeline-execute: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#159)
-TRACE        206: pipeline-decode: PC=0x800002f0, wb=0, ex=ALU (#160)
-TRACE        206: *** pipeline-fetch stalled!
-TRACE        207: pipeline-memory: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#159)
-TRACE        207: pipeline-execute: PC=0x800002f0, wb=0, ex=ALU (#160)
+TRACE        206: pipeline-fetch: PC=0x800002f0, wb=0, ex=ALU (#160)
+TRACE        207: pipeline-memory: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#158)
+TRACE        207: pipeline-execute: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#159)
+TRACE        207: pipeline-decode: PC=0x800002f0, wb=0, ex=ALU (#160)
 TRACE        207: *** pipeline-fetch stalled!
-TRACE        208: pipeline-writeback: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#159)
-TRACE        208: pipeline-memory: PC=0x800002f0, wb=0, ex=ALU (#160)
+TRACE        208: pipeline-writeback: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#158)
+TRACE        208: pipeline-memory: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#159)
+TRACE        208: pipeline-execute: PC=0x800002f0, wb=0, ex=ALU (#160)
 TRACE        208: *** pipeline-fetch stalled!
-TRACE        209: pipeline-writeback: PC=0x800002f0, wb=0, ex=ALU (#160)
+TRACE        209: pipeline-writeback: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#159)
+TRACE        209: pipeline-memory: PC=0x800002f0, wb=0, ex=ALU (#160)
+TRACE        209: *** pipeline-fetch stalled!
+TRACE        210: pipeline-writeback: PC=0x800002f0, wb=0, ex=ALU (#160)
 DEBUG Fetch: PC=0x800002cc (#65687)
 DEBUG Instr 0x2097: AUIPC x1, 0x2
 DEBUG Dest Reg: x1={0x800022cc}
-TRACE        209: pipeline-fetch: PC=0x800002cc, wb=1, rd=x1, ex=ALU (#65687)
-TRACE        210: pipeline-decode: PC=0x800002cc, wb=1, rd=x1, ex=ALU (#65687)
+TRACE        210: pipeline-fetch: PC=0x800002cc, wb=1, rd=x1, ex=ALU (#65687)
+TRACE        211: pipeline-decode: PC=0x800002cc, wb=1, rd=x1, ex=ALU (#65687)
 DEBUG Fetch: PC=0x800002d0 (#65688)
 DEBUG Instr 0xd3608093: ADDI x1, x1, 0xfffffd36
 DEBUG Src0 Reg: x1={0x800022cc}
 DEBUG Dest Reg: x1={0x80002002}
-TRACE        210: pipeline-fetch: PC=0x800002d0, wb=1, rd=x1, ex=ALU (#65688)
-TRACE        211: pipeline-execute: PC=0x800002cc, wb=1, rd=x1, ex=ALU (#65687)
-TRACE        211: pipeline-decode: PC=0x800002d0, wb=1, rd=x1, ex=ALU (#65688)
+TRACE        211: pipeline-fetch: PC=0x800002d0, wb=1, rd=x1, ex=ALU (#65688)
+TRACE        212: pipeline-execute: PC=0x800002cc, wb=1, rd=x1, ex=ALU (#65687)
+TRACE        212: pipeline-decode: PC=0x800002d0, wb=1, rd=x1, ex=ALU (#65688)
 DEBUG Fetch: PC=0x800002d4 (#65689)
 DEBUG Instr 0x209703: LH x14, x1, 0x2
 DEBUG Src0 Reg: x1={0x80002002}
 DEBUG Mem Read: addr=0x80002004, data=0x0ff0 (size=2, type=Global)
 DEBUG Dest Reg: x14={0xff0}
-TRACE        211: pipeline-fetch: PC=0x800002d4, wb=1, rd=x14, ex=LSU (#65689)
-TRACE        212: pipeline-memory: PC=0x800002cc, wb=1, rd=x1, ex=ALU (#65687)
-TRACE        212: pipeline-execute: PC=0x800002d0, wb=1, rd=x1, ex=ALU (#65688)
-TRACE        212: pipeline-decode: PC=0x800002d4, wb=1, rd=x14, ex=LSU (#65689)
+TRACE        212: pipeline-fetch: PC=0x800002d4, wb=1, rd=x14, ex=LSU (#65689)
+TRACE        213: pipeline-memory: PC=0x800002cc, wb=1, rd=x1, ex=ALU (#65687)
+TRACE        213: pipeline-execute: PC=0x800002d0, wb=1, rd=x1, ex=ALU (#65688)
+TRACE        213: pipeline-decode: PC=0x800002d4, wb=1, rd=x14, ex=LSU (#65689)
 DEBUG Fetch: PC=0x800002d8 (#65690)
 DEBUG Instr 0x70313: ADDI x6, x14, 0x0
 DEBUG Src0 Reg: x14={0xff0}
 DEBUG Dest Reg: x6={0xff0}
-TRACE        212: pipeline-fetch: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#65690)
-TRACE        213: pipeline-writeback: PC=0x800002cc, wb=1, rd=x1, ex=ALU (#65687)
-TRACE        213: pipeline-memory: PC=0x800002d0, wb=1, rd=x1, ex=ALU (#65688)
-TRACE        213: pipeline-execute: PC=0x800002d4, wb=1, rd=x14, ex=LSU (#65689)
-TRACE        213: *** pipeline-decode stalled!: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#65690)
+TRACE        213: pipeline-fetch: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#65690)
+TRACE        214: pipeline-writeback: PC=0x800002cc, wb=1, rd=x1, ex=ALU (#65687)
+TRACE        214: pipeline-memory: PC=0x800002d0, wb=1, rd=x1, ex=ALU (#65688)
+TRACE        214: pipeline-execute: PC=0x800002d4, wb=1, rd=x14, ex=LSU (#65689)
+TRACE        214: *** pipeline-decode stalled!: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#65690)
+TRACE        214: *** pipeline-fetch stalled!
+TRACE        215: pipeline-writeback: PC=0x800002d0, wb=1, rd=x1, ex=ALU (#65688)
+TRACE        215: pipeline-memory: PC=0x800002d4, wb=1, rd=x14, ex=LSU (#65689)
+TRACE        215: pipeline-decode: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#65690)
 DEBUG Fetch: PC=0x800002dc (#65691)
 DEBUG Instr 0x13b7: LUI x7, 0x1
 DEBUG Dest Reg: x7={0x1000}
-TRACE        213: pipeline-fetch: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#65691)
-TRACE        214: pipeline-writeback: PC=0x800002d0, wb=1, rd=x1, ex=ALU (#65688)
-TRACE        214: pipeline-memory: PC=0x800002d4, wb=1, rd=x14, ex=LSU (#65689)
-TRACE        214: pipeline-decode: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#65690)
+TRACE        215: pipeline-fetch: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#65691)
+TRACE        216: pipeline-writeback: PC=0x800002d4, wb=1, rd=x14, ex=LSU (#65689)
+TRACE        216: pipeline-execute: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#65690)
+TRACE        216: pipeline-decode: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#65691)
 DEBUG Fetch: PC=0x800002e0 (#65692)
 DEBUG Instr 0xff038393: ADDI x7, x7, 0xfffffff0
 DEBUG Src0 Reg: x7={0x1000}
 DEBUG Dest Reg: x7={0xff0}
-TRACE        214: pipeline-fetch: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#65692)
-TRACE        215: pipeline-writeback: PC=0x800002d4, wb=1, rd=x14, ex=LSU (#65689)
-TRACE        215: pipeline-execute: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#65690)
-TRACE        215: pipeline-decode: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#65691)
+TRACE        216: pipeline-fetch: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#65692)
+TRACE        217: pipeline-memory: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#65690)
+TRACE        217: pipeline-execute: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#65691)
+TRACE        217: pipeline-decode: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#65692)
 DEBUG Fetch: PC=0x800002e4 (#65693)
 DEBUG Instr 0x14731263: BNE x6, x7, 0x144
 DEBUG Src0 Reg: x6={0xff0}
 DEBUG Src1 Reg: x7={0xff0}
-TRACE        215: pipeline-fetch: PC=0x800002e4, wb=0, ex=ALU (#65693)
-TRACE        216: pipeline-memory: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#65690)
-TRACE        216: pipeline-execute: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#65691)
-TRACE        216: pipeline-decode: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#65692)
+TRACE        217: pipeline-fetch: PC=0x800002e4, wb=0, ex=ALU (#65693)
+TRACE        218: pipeline-writeback: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#65690)
+TRACE        218: pipeline-memory: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#65691)
+TRACE        218: pipeline-execute: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#65692)
+TRACE        218: pipeline-decode: PC=0x800002e4, wb=0, ex=ALU (#65693)
+TRACE        218: *** pipeline-fetch stalled!
+TRACE        219: pipeline-writeback: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#65691)
+TRACE        219: pipeline-memory: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#65692)
+TRACE        219: pipeline-execute: PC=0x800002e4, wb=0, ex=ALU (#65693)
+TRACE        219: *** pipeline-fetch stalled!
+TRACE        220: pipeline-writeback: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#65692)
+TRACE        220: pipeline-memory: PC=0x800002e4, wb=0, ex=ALU (#65693)
+TRACE        220: *** pipeline-fetch stalled!
+TRACE        221: pipeline-writeback: PC=0x800002e4, wb=0, ex=ALU (#65693)
 DEBUG Fetch: PC=0x800002e8 (#65694)
 DEBUG Instr 0x120213: ADDI x4, x4, 0x1
 DEBUG Src0 Reg: x4={0x1}
 DEBUG Dest Reg: x4={0x2}
-TRACE        216: pipeline-fetch: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#65694)
-TRACE        217: pipeline-writeback: PC=0x800002d8, wb=1, rd=x6, ex=ALU (#65690)
-TRACE        217: pipeline-memory: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#65691)
-TRACE        217: pipeline-execute: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#65692)
-TRACE        217: pipeline-decode: PC=0x800002e4, wb=0, ex=ALU (#65693)
-TRACE        217: *** pipeline-fetch stalled!
-TRACE        218: pipeline-writeback: PC=0x800002dc, wb=1, rd=x7, ex=ALU (#65691)
-TRACE        218: pipeline-memory: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#65692)
-TRACE        218: pipeline-execute: PC=0x800002e4, wb=0, ex=ALU (#65693)
-TRACE        218: pipeline-decode: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#65694)
-TRACE        218: *** pipeline-fetch stalled!
-TRACE        219: pipeline-writeback: PC=0x800002e0, wb=1, rd=x7, ex=ALU (#65692)
-TRACE        219: pipeline-memory: PC=0x800002e4, wb=0, ex=ALU (#65693)
-TRACE        219: pipeline-execute: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#65694)
-TRACE        219: *** pipeline-fetch stalled!
-TRACE        220: pipeline-writeback: PC=0x800002e4, wb=0, ex=ALU (#65693)
-TRACE        220: pipeline-memory: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#65694)
+TRACE        221: pipeline-fetch: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#65694)
+TRACE        222: pipeline-decode: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#65694)
 DEBUG Fetch: PC=0x800002ec (#65695)
 DEBUG Instr 0x200293: ADDI x5, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x5={0x2}
-TRACE        220: pipeline-fetch: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#65695)
-TRACE        221: pipeline-writeback: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#65694)
-TRACE        221: pipeline-decode: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#65695)
+TRACE        222: pipeline-fetch: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#65695)
+TRACE        223: pipeline-execute: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#65694)
+TRACE        223: pipeline-decode: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#65695)
 DEBUG Fetch: PC=0x800002f0 (#65696)
 DEBUG Instr 0xfc521ee3: BNE x4, x5, 0xffffffdc
 DEBUG Src0 Reg: x4={0x2}
 DEBUG Src1 Reg: x5={0x2}
-TRACE        221: pipeline-fetch: PC=0x800002f0, wb=0, ex=ALU (#65696)
-TRACE        222: pipeline-execute: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#65695)
-TRACE        222: pipeline-decode: PC=0x800002f0, wb=0, ex=ALU (#65696)
-TRACE        222: *** pipeline-fetch stalled!
-TRACE        223: pipeline-memory: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#65695)
-TRACE        223: pipeline-execute: PC=0x800002f0, wb=0, ex=ALU (#65696)
-TRACE        223: *** pipeline-fetch stalled!
-TRACE        224: pipeline-writeback: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#65695)
-TRACE        224: pipeline-memory: PC=0x800002f0, wb=0, ex=ALU (#65696)
+TRACE        223: pipeline-fetch: PC=0x800002f0, wb=0, ex=ALU (#65696)
+TRACE        224: pipeline-memory: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#65694)
+TRACE        224: pipeline-execute: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#65695)
+TRACE        224: pipeline-decode: PC=0x800002f0, wb=0, ex=ALU (#65696)
 TRACE        224: *** pipeline-fetch stalled!
-TRACE        225: pipeline-writeback: PC=0x800002f0, wb=0, ex=ALU (#65696)
+TRACE        225: pipeline-writeback: PC=0x800002e8, wb=1, rd=x4, ex=ALU (#65694)
+TRACE        225: pipeline-memory: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#65695)
+TRACE        225: pipeline-execute: PC=0x800002f0, wb=0, ex=ALU (#65696)
+TRACE        225: *** pipeline-fetch stalled!
+TRACE        226: pipeline-writeback: PC=0x800002ec, wb=1, rd=x5, ex=ALU (#65695)
+TRACE        226: pipeline-memory: PC=0x800002f0, wb=0, ex=ALU (#65696)
+TRACE        226: *** pipeline-fetch stalled!
+TRACE        227: pipeline-writeback: PC=0x800002f0, wb=0, ex=ALU (#65696)
 DEBUG Fetch: PC=0x800002f4 (#161)
 DEBUG Instr 0xd00193: ADDI x3, x0, 0xd
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x3={0xd}
-TRACE        225: pipeline-fetch: PC=0x800002f4, wb=1, rd=x3, ex=ALU (#161)
-TRACE        226: pipeline-decode: PC=0x800002f4, wb=1, rd=x3, ex=ALU (#161)
+TRACE        227: pipeline-fetch: PC=0x800002f4, wb=1, rd=x3, ex=ALU (#161)
+TRACE        228: pipeline-decode: PC=0x800002f4, wb=1, rd=x3, ex=ALU (#161)
 DEBUG Fetch: PC=0x800002f8 (#162)
 DEBUG Instr 0x213: ADDI x4, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x4={0x0}
-TRACE        226: pipeline-fetch: PC=0x800002f8, wb=1, rd=x4, ex=ALU (#162)
-TRACE        227: pipeline-execute: PC=0x800002f4, wb=1, rd=x3, ex=ALU (#161)
-TRACE        227: pipeline-decode: PC=0x800002f8, wb=1, rd=x4, ex=ALU (#162)
+TRACE        228: pipeline-fetch: PC=0x800002f8, wb=1, rd=x4, ex=ALU (#162)
+TRACE        229: pipeline-execute: PC=0x800002f4, wb=1, rd=x3, ex=ALU (#161)
+TRACE        229: pipeline-decode: PC=0x800002f8, wb=1, rd=x4, ex=ALU (#162)
 DEBUG Fetch: PC=0x800002fc (#163)
 DEBUG Instr 0x2097: AUIPC x1, 0x2
 DEBUG Dest Reg: x1={0x800022fc}
-TRACE        227: pipeline-fetch: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#163)
-TRACE        228: pipeline-memory: PC=0x800002f4, wb=1, rd=x3, ex=ALU (#161)
-TRACE        228: pipeline-execute: PC=0x800002f8, wb=1, rd=x4, ex=ALU (#162)
-TRACE        228: pipeline-decode: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#163)
+TRACE        229: pipeline-fetch: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#163)
+TRACE        230: pipeline-memory: PC=0x800002f4, wb=1, rd=x3, ex=ALU (#161)
+TRACE        230: pipeline-execute: PC=0x800002f8, wb=1, rd=x4, ex=ALU (#162)
+TRACE        230: pipeline-decode: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#163)
 DEBUG Fetch: PC=0x80000300 (#164)
 DEBUG Instr 0xd0808093: ADDI x1, x1, 0xfffffd08
 DEBUG Src0 Reg: x1={0x800022fc}
 DEBUG Dest Reg: x1={0x80002004}
-TRACE        228: pipeline-fetch: PC=0x80000300, wb=1, rd=x1, ex=ALU (#164)
-TRACE        229: pipeline-writeback: PC=0x800002f4, wb=1, rd=x3, ex=ALU (#161)
-TRACE        229: pipeline-memory: PC=0x800002f8, wb=1, rd=x4, ex=ALU (#162)
-TRACE        229: pipeline-execute: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#163)
-TRACE        229: pipeline-decode: PC=0x80000300, wb=1, rd=x1, ex=ALU (#164)
+TRACE        230: pipeline-fetch: PC=0x80000300, wb=1, rd=x1, ex=ALU (#164)
+TRACE        231: pipeline-writeback: PC=0x800002f4, wb=1, rd=x3, ex=ALU (#161)
+TRACE        231: pipeline-memory: PC=0x800002f8, wb=1, rd=x4, ex=ALU (#162)
+TRACE        231: pipeline-execute: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#163)
+TRACE        231: pipeline-decode: PC=0x80000300, wb=1, rd=x1, ex=ALU (#164)
 DEBUG Fetch: PC=0x80000304 (#165)
 DEBUG Instr 0x209703: LH x14, x1, 0x2
 DEBUG Src0 Reg: x1={0x80002004}
 DEBUG Mem Read: addr=0x80002006, data=0xf00f (size=2, type=Global)
 DEBUG Dest Reg: x14={0xfffff00f}
-TRACE        229: pipeline-fetch: PC=0x80000304, wb=1, rd=x14, ex=LSU (#165)
-TRACE        230: pipeline-writeback: PC=0x800002f8, wb=1, rd=x4, ex=ALU (#162)
-TRACE        230: pipeline-memory: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#163)
-TRACE        230: pipeline-execute: PC=0x80000300, wb=1, rd=x1, ex=ALU (#164)
-TRACE        230: pipeline-decode: PC=0x80000304, wb=1, rd=x14, ex=LSU (#165)
+TRACE        231: pipeline-fetch: PC=0x80000304, wb=1, rd=x14, ex=LSU (#165)
+TRACE        232: pipeline-writeback: PC=0x800002f8, wb=1, rd=x4, ex=ALU (#162)
+TRACE        232: pipeline-memory: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#163)
+TRACE        232: pipeline-execute: PC=0x80000300, wb=1, rd=x1, ex=ALU (#164)
+TRACE        232: pipeline-decode: PC=0x80000304, wb=1, rd=x14, ex=LSU (#165)
 DEBUG Fetch: PC=0x80000308 (#166)
 DEBUG Instr 0x13: ADDI x0, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
-TRACE        230: pipeline-fetch: PC=0x80000308, wb=0, ex=ALU (#166)
-TRACE        231: pipeline-writeback: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#163)
-TRACE        231: pipeline-memory: PC=0x80000300, wb=1, rd=x1, ex=ALU (#164)
-TRACE        231: pipeline-execute: PC=0x80000304, wb=1, rd=x14, ex=LSU (#165)
-TRACE        231: pipeline-decode: PC=0x80000308, wb=0, ex=ALU (#166)
+TRACE        232: pipeline-fetch: PC=0x80000308, wb=0, ex=ALU (#166)
+TRACE        233: pipeline-writeback: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#163)
+TRACE        233: pipeline-memory: PC=0x80000300, wb=1, rd=x1, ex=ALU (#164)
+TRACE        233: pipeline-execute: PC=0x80000304, wb=1, rd=x14, ex=LSU (#165)
+TRACE        233: pipeline-decode: PC=0x80000308, wb=0, ex=ALU (#166)
 DEBUG Fetch: PC=0x8000030c (#167)
 DEBUG Instr 0x70313: ADDI x6, x14, 0x0
 DEBUG Src0 Reg: x14={0xfffff00f}
 DEBUG Dest Reg: x6={0xfffff00f}
-TRACE        231: pipeline-fetch: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#167)
-TRACE        232: pipeline-writeback: PC=0x80000300, wb=1, rd=x1, ex=ALU (#164)
-TRACE        232: pipeline-memory: PC=0x80000304, wb=1, rd=x14, ex=LSU (#165)
-TRACE        232: pipeline-execute: PC=0x80000308, wb=0, ex=ALU (#166)
-TRACE        232: pipeline-decode: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#167)
+TRACE        233: pipeline-fetch: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#167)
+TRACE        234: pipeline-writeback: PC=0x80000300, wb=1, rd=x1, ex=ALU (#164)
+TRACE        234: pipeline-memory: PC=0x80000304, wb=1, rd=x14, ex=LSU (#165)
+TRACE        234: pipeline-execute: PC=0x80000308, wb=0, ex=ALU (#166)
+TRACE        234: pipeline-decode: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#167)
 DEBUG Fetch: PC=0x80000310 (#168)
 DEBUG Instr 0xfffff3b7: LUI x7, 0xffffffff
 DEBUG Dest Reg: x7={0xfffff000}
-TRACE        232: pipeline-fetch: PC=0x80000310, wb=1, rd=x7, ex=ALU (#168)
-TRACE        233: pipeline-writeback: PC=0x80000304, wb=1, rd=x14, ex=LSU (#165)
-TRACE        233: pipeline-memory: PC=0x80000308, wb=0, ex=ALU (#166)
-TRACE        233: pipeline-execute: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#167)
-TRACE        233: pipeline-decode: PC=0x80000310, wb=1, rd=x7, ex=ALU (#168)
+TRACE        234: pipeline-fetch: PC=0x80000310, wb=1, rd=x7, ex=ALU (#168)
+TRACE        235: pipeline-writeback: PC=0x80000304, wb=1, rd=x14, ex=LSU (#165)
+TRACE        235: pipeline-memory: PC=0x80000308, wb=0, ex=ALU (#166)
+TRACE        235: pipeline-execute: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#167)
+TRACE        235: pipeline-decode: PC=0x80000310, wb=1, rd=x7, ex=ALU (#168)
 DEBUG Fetch: PC=0x80000314 (#169)
 DEBUG Instr 0xf38393: ADDI x7, x7, 0xf
 DEBUG Src0 Reg: x7={0xfffff000}
 DEBUG Dest Reg: x7={0xfffff00f}
-TRACE        233: pipeline-fetch: PC=0x80000314, wb=1, rd=x7, ex=ALU (#169)
-TRACE        234: pipeline-writeback: PC=0x80000308, wb=0, ex=ALU (#166)
-TRACE        234: pipeline-memory: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#167)
-TRACE        234: pipeline-execute: PC=0x80000310, wb=1, rd=x7, ex=ALU (#168)
-TRACE        234: pipeline-decode: PC=0x80000314, wb=1, rd=x7, ex=ALU (#169)
+TRACE        235: pipeline-fetch: PC=0x80000314, wb=1, rd=x7, ex=ALU (#169)
+TRACE        236: pipeline-writeback: PC=0x80000308, wb=0, ex=ALU (#166)
+TRACE        236: pipeline-memory: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#167)
+TRACE        236: pipeline-execute: PC=0x80000310, wb=1, rd=x7, ex=ALU (#168)
+TRACE        236: pipeline-decode: PC=0x80000314, wb=1, rd=x7, ex=ALU (#169)
 DEBUG Fetch: PC=0x80000318 (#170)
 DEBUG Instr 0x10731863: BNE x6, x7, 0x110
 DEBUG Src0 Reg: x6={0xfffff00f}
 DEBUG Src1 Reg: x7={0xfffff00f}
-TRACE        234: pipeline-fetch: PC=0x80000318, wb=0, ex=ALU (#170)
-TRACE        235: pipeline-writeback: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#167)
-TRACE        235: pipeline-memory: PC=0x80000310, wb=1, rd=x7, ex=ALU (#168)
-TRACE        235: pipeline-execute: PC=0x80000314, wb=1, rd=x7, ex=ALU (#169)
-TRACE        235: pipeline-decode: PC=0x80000318, wb=0, ex=ALU (#170)
-TRACE        235: *** pipeline-fetch stalled!
-TRACE        236: pipeline-writeback: PC=0x80000310, wb=1, rd=x7, ex=ALU (#168)
-TRACE        236: pipeline-memory: PC=0x80000314, wb=1, rd=x7, ex=ALU (#169)
-TRACE        236: pipeline-execute: PC=0x80000318, wb=0, ex=ALU (#170)
-TRACE        236: *** pipeline-fetch stalled!
-TRACE        237: pipeline-writeback: PC=0x80000314, wb=1, rd=x7, ex=ALU (#169)
-TRACE        237: pipeline-memory: PC=0x80000318, wb=0, ex=ALU (#170)
+TRACE        236: pipeline-fetch: PC=0x80000318, wb=0, ex=ALU (#170)
+TRACE        237: pipeline-writeback: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#167)
+TRACE        237: pipeline-memory: PC=0x80000310, wb=1, rd=x7, ex=ALU (#168)
+TRACE        237: pipeline-execute: PC=0x80000314, wb=1, rd=x7, ex=ALU (#169)
+TRACE        237: pipeline-decode: PC=0x80000318, wb=0, ex=ALU (#170)
 TRACE        237: *** pipeline-fetch stalled!
-TRACE        238: pipeline-writeback: PC=0x80000318, wb=0, ex=ALU (#170)
+TRACE        238: pipeline-writeback: PC=0x80000310, wb=1, rd=x7, ex=ALU (#168)
+TRACE        238: pipeline-memory: PC=0x80000314, wb=1, rd=x7, ex=ALU (#169)
+TRACE        238: pipeline-execute: PC=0x80000318, wb=0, ex=ALU (#170)
+TRACE        238: *** pipeline-fetch stalled!
+TRACE        239: pipeline-writeback: PC=0x80000314, wb=1, rd=x7, ex=ALU (#169)
+TRACE        239: pipeline-memory: PC=0x80000318, wb=0, ex=ALU (#170)
+TRACE        239: *** pipeline-fetch stalled!
+TRACE        240: pipeline-writeback: PC=0x80000318, wb=0, ex=ALU (#170)
 DEBUG Fetch: PC=0x8000031c (#171)
 DEBUG Instr 0x120213: ADDI x4, x4, 0x1
 DEBUG Src0 Reg: x4={0x0}
 DEBUG Dest Reg: x4={0x1}
-TRACE        238: pipeline-fetch: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#171)
-TRACE        239: pipeline-decode: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#171)
+TRACE        240: pipeline-fetch: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#171)
+TRACE        241: pipeline-decode: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#171)
 DEBUG Fetch: PC=0x80000320 (#172)
 DEBUG Instr 0x200293: ADDI x5, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x5={0x2}
-TRACE        239: pipeline-fetch: PC=0x80000320, wb=1, rd=x5, ex=ALU (#172)
-TRACE        240: pipeline-execute: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#171)
-TRACE        240: pipeline-decode: PC=0x80000320, wb=1, rd=x5, ex=ALU (#172)
+TRACE        241: pipeline-fetch: PC=0x80000320, wb=1, rd=x5, ex=ALU (#172)
+TRACE        242: pipeline-execute: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#171)
+TRACE        242: pipeline-decode: PC=0x80000320, wb=1, rd=x5, ex=ALU (#172)
 DEBUG Fetch: PC=0x80000324 (#173)
 DEBUG Instr 0xfc521ce3: BNE x4, x5, 0xffffffd8
 DEBUG Src0 Reg: x4={0x1}
 DEBUG Src1 Reg: x5={0x2}
 DEBUG *** Next PC=0x800002fc
-TRACE        240: pipeline-fetch: PC=0x80000324, wb=0, ex=ALU (#173)
-TRACE        241: pipeline-memory: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#171)
-TRACE        241: pipeline-execute: PC=0x80000320, wb=1, rd=x5, ex=ALU (#172)
-TRACE        241: pipeline-decode: PC=0x80000324, wb=0, ex=ALU (#173)
-TRACE        241: *** pipeline-fetch stalled!
-TRACE        242: pipeline-writeback: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#171)
-TRACE        242: pipeline-memory: PC=0x80000320, wb=1, rd=x5, ex=ALU (#172)
-TRACE        242: pipeline-execute: PC=0x80000324, wb=0, ex=ALU (#173)
-TRACE        242: *** pipeline-fetch stalled!
-TRACE        243: pipeline-writeback: PC=0x80000320, wb=1, rd=x5, ex=ALU (#172)
-TRACE        243: pipeline-memory: PC=0x80000324, wb=0, ex=ALU (#173)
+TRACE        242: pipeline-fetch: PC=0x80000324, wb=0, ex=ALU (#173)
+TRACE        243: pipeline-memory: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#171)
+TRACE        243: pipeline-execute: PC=0x80000320, wb=1, rd=x5, ex=ALU (#172)
+TRACE        243: pipeline-decode: PC=0x80000324, wb=0, ex=ALU (#173)
 TRACE        243: *** pipeline-fetch stalled!
-TRACE        244: pipeline-writeback: PC=0x80000324, wb=0, ex=ALU (#173)
+TRACE        244: pipeline-writeback: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#171)
+TRACE        244: pipeline-memory: PC=0x80000320, wb=1, rd=x5, ex=ALU (#172)
+TRACE        244: pipeline-execute: PC=0x80000324, wb=0, ex=ALU (#173)
+TRACE        244: *** pipeline-fetch stalled!
+TRACE        245: pipeline-writeback: PC=0x80000320, wb=1, rd=x5, ex=ALU (#172)
+TRACE        245: pipeline-memory: PC=0x80000324, wb=0, ex=ALU (#173)
+TRACE        245: *** pipeline-fetch stalled!
+TRACE        246: pipeline-writeback: PC=0x80000324, wb=0, ex=ALU (#173)
 DEBUG Fetch: PC=0x800002fc (#65699)
 DEBUG Instr 0x2097: AUIPC x1, 0x2
 DEBUG Dest Reg: x1={0x800022fc}
-TRACE        244: pipeline-fetch: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#65699)
-TRACE        245: pipeline-decode: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#65699)
+TRACE        246: pipeline-fetch: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#65699)
+TRACE        247: pipeline-decode: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#65699)
 DEBUG Fetch: PC=0x80000300 (#65700)
 DEBUG Instr 0xd0808093: ADDI x1, x1, 0xfffffd08
 DEBUG Src0 Reg: x1={0x800022fc}
 DEBUG Dest Reg: x1={0x80002004}
-TRACE        245: pipeline-fetch: PC=0x80000300, wb=1, rd=x1, ex=ALU (#65700)
-TRACE        246: pipeline-execute: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#65699)
-TRACE        246: pipeline-decode: PC=0x80000300, wb=1, rd=x1, ex=ALU (#65700)
+TRACE        247: pipeline-fetch: PC=0x80000300, wb=1, rd=x1, ex=ALU (#65700)
+TRACE        248: pipeline-execute: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#65699)
+TRACE        248: pipeline-decode: PC=0x80000300, wb=1, rd=x1, ex=ALU (#65700)
 DEBUG Fetch: PC=0x80000304 (#65701)
 DEBUG Instr 0x209703: LH x14, x1, 0x2
 DEBUG Src0 Reg: x1={0x80002004}
 DEBUG Mem Read: addr=0x80002006, data=0xf00f (size=2, type=Global)
 DEBUG Dest Reg: x14={0xfffff00f}
-TRACE        246: pipeline-fetch: PC=0x80000304, wb=1, rd=x14, ex=LSU (#65701)
-TRACE        247: pipeline-memory: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#65699)
-TRACE        247: pipeline-execute: PC=0x80000300, wb=1, rd=x1, ex=ALU (#65700)
-TRACE        247: pipeline-decode: PC=0x80000304, wb=1, rd=x14, ex=LSU (#65701)
+TRACE        248: pipeline-fetch: PC=0x80000304, wb=1, rd=x14, ex=LSU (#65701)
+TRACE        249: pipeline-memory: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#65699)
+TRACE        249: pipeline-execute: PC=0x80000300, wb=1, rd=x1, ex=ALU (#65700)
+TRACE        249: pipeline-decode: PC=0x80000304, wb=1, rd=x14, ex=LSU (#65701)
 DEBUG Fetch: PC=0x80000308 (#65702)
 DEBUG Instr 0x13: ADDI x0, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
-TRACE        247: pipeline-fetch: PC=0x80000308, wb=0, ex=ALU (#65702)
-TRACE        248: pipeline-writeback: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#65699)
-TRACE        248: pipeline-memory: PC=0x80000300, wb=1, rd=x1, ex=ALU (#65700)
-TRACE        248: pipeline-execute: PC=0x80000304, wb=1, rd=x14, ex=LSU (#65701)
-TRACE        248: pipeline-decode: PC=0x80000308, wb=0, ex=ALU (#65702)
+TRACE        249: pipeline-fetch: PC=0x80000308, wb=0, ex=ALU (#65702)
+TRACE        250: pipeline-writeback: PC=0x800002fc, wb=1, rd=x1, ex=ALU (#65699)
+TRACE        250: pipeline-memory: PC=0x80000300, wb=1, rd=x1, ex=ALU (#65700)
+TRACE        250: pipeline-execute: PC=0x80000304, wb=1, rd=x14, ex=LSU (#65701)
+TRACE        250: pipeline-decode: PC=0x80000308, wb=0, ex=ALU (#65702)
 DEBUG Fetch: PC=0x8000030c (#65703)
 DEBUG Instr 0x70313: ADDI x6, x14, 0x0
 DEBUG Src0 Reg: x14={0xfffff00f}
 DEBUG Dest Reg: x6={0xfffff00f}
-TRACE        248: pipeline-fetch: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#65703)
-TRACE        249: pipeline-writeback: PC=0x80000300, wb=1, rd=x1, ex=ALU (#65700)
-TRACE        249: pipeline-memory: PC=0x80000304, wb=1, rd=x14, ex=LSU (#65701)
-TRACE        249: pipeline-execute: PC=0x80000308, wb=0, ex=ALU (#65702)
-TRACE        249: pipeline-decode: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#65703)
+TRACE        250: pipeline-fetch: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#65703)
+TRACE        251: pipeline-writeback: PC=0x80000300, wb=1, rd=x1, ex=ALU (#65700)
+TRACE        251: pipeline-memory: PC=0x80000304, wb=1, rd=x14, ex=LSU (#65701)
+TRACE        251: pipeline-execute: PC=0x80000308, wb=0, ex=ALU (#65702)
+TRACE        251: pipeline-decode: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#65703)
 DEBUG Fetch: PC=0x80000310 (#65704)
 DEBUG Instr 0xfffff3b7: LUI x7, 0xffffffff
 DEBUG Dest Reg: x7={0xfffff000}
-TRACE        249: pipeline-fetch: PC=0x80000310, wb=1, rd=x7, ex=ALU (#65704)
-TRACE        250: pipeline-writeback: PC=0x80000304, wb=1, rd=x14, ex=LSU (#65701)
-TRACE        250: pipeline-memory: PC=0x80000308, wb=0, ex=ALU (#65702)
-TRACE        250: pipeline-execute: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#65703)
-TRACE        250: pipeline-decode: PC=0x80000310, wb=1, rd=x7, ex=ALU (#65704)
+TRACE        251: pipeline-fetch: PC=0x80000310, wb=1, rd=x7, ex=ALU (#65704)
+TRACE        252: pipeline-writeback: PC=0x80000304, wb=1, rd=x14, ex=LSU (#65701)
+TRACE        252: pipeline-memory: PC=0x80000308, wb=0, ex=ALU (#65702)
+TRACE        252: pipeline-execute: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#65703)
+TRACE        252: pipeline-decode: PC=0x80000310, wb=1, rd=x7, ex=ALU (#65704)
 DEBUG Fetch: PC=0x80000314 (#65705)
 DEBUG Instr 0xf38393: ADDI x7, x7, 0xf
 DEBUG Src0 Reg: x7={0xfffff000}
 DEBUG Dest Reg: x7={0xfffff00f}
-TRACE        250: pipeline-fetch: PC=0x80000314, wb=1, rd=x7, ex=ALU (#65705)
-TRACE        251: pipeline-writeback: PC=0x80000308, wb=0, ex=ALU (#65702)
-TRACE        251: pipeline-memory: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#65703)
-TRACE        251: pipeline-execute: PC=0x80000310, wb=1, rd=x7, ex=ALU (#65704)
-TRACE        251: pipeline-decode: PC=0x80000314, wb=1, rd=x7, ex=ALU (#65705)
+TRACE        252: pipeline-fetch: PC=0x80000314, wb=1, rd=x7, ex=ALU (#65705)
+TRACE        253: pipeline-writeback: PC=0x80000308, wb=0, ex=ALU (#65702)
+TRACE        253: pipeline-memory: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#65703)
+TRACE        253: pipeline-execute: PC=0x80000310, wb=1, rd=x7, ex=ALU (#65704)
+TRACE        253: pipeline-decode: PC=0x80000314, wb=1, rd=x7, ex=ALU (#65705)
 DEBUG Fetch: PC=0x80000318 (#65706)
 DEBUG Instr 0x10731863: BNE x6, x7, 0x110
 DEBUG Src0 Reg: x6={0xfffff00f}
 DEBUG Src1 Reg: x7={0xfffff00f}
-TRACE        251: pipeline-fetch: PC=0x80000318, wb=0, ex=ALU (#65706)
-TRACE        252: pipeline-writeback: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#65703)
-TRACE        252: pipeline-memory: PC=0x80000310, wb=1, rd=x7, ex=ALU (#65704)
-TRACE        252: pipeline-execute: PC=0x80000314, wb=1, rd=x7, ex=ALU (#65705)
-TRACE        252: pipeline-decode: PC=0x80000318, wb=0, ex=ALU (#65706)
-TRACE        252: *** pipeline-fetch stalled!
-TRACE        253: pipeline-writeback: PC=0x80000310, wb=1, rd=x7, ex=ALU (#65704)
-TRACE        253: pipeline-memory: PC=0x80000314, wb=1, rd=x7, ex=ALU (#65705)
-TRACE        253: pipeline-execute: PC=0x80000318, wb=0, ex=ALU (#65706)
-TRACE        253: *** pipeline-fetch stalled!
-TRACE        254: pipeline-writeback: PC=0x80000314, wb=1, rd=x7, ex=ALU (#65705)
-TRACE        254: pipeline-memory: PC=0x80000318, wb=0, ex=ALU (#65706)
+TRACE        253: pipeline-fetch: PC=0x80000318, wb=0, ex=ALU (#65706)
+TRACE        254: pipeline-writeback: PC=0x8000030c, wb=1, rd=x6, ex=ALU (#65703)
+TRACE        254: pipeline-memory: PC=0x80000310, wb=1, rd=x7, ex=ALU (#65704)
+TRACE        254: pipeline-execute: PC=0x80000314, wb=1, rd=x7, ex=ALU (#65705)
+TRACE        254: pipeline-decode: PC=0x80000318, wb=0, ex=ALU (#65706)
 TRACE        254: *** pipeline-fetch stalled!
-TRACE        255: pipeline-writeback: PC=0x80000318, wb=0, ex=ALU (#65706)
+TRACE        255: pipeline-writeback: PC=0x80000310, wb=1, rd=x7, ex=ALU (#65704)
+TRACE        255: pipeline-memory: PC=0x80000314, wb=1, rd=x7, ex=ALU (#65705)
+TRACE        255: pipeline-execute: PC=0x80000318, wb=0, ex=ALU (#65706)
+TRACE        255: *** pipeline-fetch stalled!
+TRACE        256: pipeline-writeback: PC=0x80000314, wb=1, rd=x7, ex=ALU (#65705)
+TRACE        256: pipeline-memory: PC=0x80000318, wb=0, ex=ALU (#65706)
+TRACE        256: *** pipeline-fetch stalled!
+TRACE        257: pipeline-writeback: PC=0x80000318, wb=0, ex=ALU (#65706)
 DEBUG Fetch: PC=0x8000031c (#65707)
 DEBUG Instr 0x120213: ADDI x4, x4, 0x1
 DEBUG Src0 Reg: x4={0x1}
 DEBUG Dest Reg: x4={0x2}
-TRACE        255: pipeline-fetch: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#65707)
-TRACE        256: pipeline-decode: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#65707)
+TRACE        257: pipeline-fetch: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#65707)
+TRACE        258: pipeline-decode: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#65707)
 DEBUG Fetch: PC=0x80000320 (#65708)
 DEBUG Instr 0x200293: ADDI x5, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x5={0x2}
-TRACE        256: pipeline-fetch: PC=0x80000320, wb=1, rd=x5, ex=ALU (#65708)
-TRACE        257: pipeline-execute: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#65707)
-TRACE        257: pipeline-decode: PC=0x80000320, wb=1, rd=x5, ex=ALU (#65708)
+TRACE        258: pipeline-fetch: PC=0x80000320, wb=1, rd=x5, ex=ALU (#65708)
+TRACE        259: pipeline-execute: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#65707)
+TRACE        259: pipeline-decode: PC=0x80000320, wb=1, rd=x5, ex=ALU (#65708)
 DEBUG Fetch: PC=0x80000324 (#65709)
 DEBUG Instr 0xfc521ce3: BNE x4, x5, 0xffffffd8
 DEBUG Src0 Reg: x4={0x2}
 DEBUG Src1 Reg: x5={0x2}
-TRACE        257: pipeline-fetch: PC=0x80000324, wb=0, ex=ALU (#65709)
-TRACE        258: pipeline-memory: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#65707)
-TRACE        258: pipeline-execute: PC=0x80000320, wb=1, rd=x5, ex=ALU (#65708)
-TRACE        258: pipeline-decode: PC=0x80000324, wb=0, ex=ALU (#65709)
-TRACE        258: *** pipeline-fetch stalled!
-TRACE        259: pipeline-writeback: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#65707)
-TRACE        259: pipeline-memory: PC=0x80000320, wb=1, rd=x5, ex=ALU (#65708)
-TRACE        259: pipeline-execute: PC=0x80000324, wb=0, ex=ALU (#65709)
-TRACE        259: *** pipeline-fetch stalled!
-TRACE        260: pipeline-writeback: PC=0x80000320, wb=1, rd=x5, ex=ALU (#65708)
-TRACE        260: pipeline-memory: PC=0x80000324, wb=0, ex=ALU (#65709)
+TRACE        259: pipeline-fetch: PC=0x80000324, wb=0, ex=ALU (#65709)
+TRACE        260: pipeline-memory: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#65707)
+TRACE        260: pipeline-execute: PC=0x80000320, wb=1, rd=x5, ex=ALU (#65708)
+TRACE        260: pipeline-decode: PC=0x80000324, wb=0, ex=ALU (#65709)
 TRACE        260: *** pipeline-fetch stalled!
-TRACE        261: pipeline-writeback: PC=0x80000324, wb=0, ex=ALU (#65709)
+TRACE        261: pipeline-writeback: PC=0x8000031c, wb=1, rd=x4, ex=ALU (#65707)
+TRACE        261: pipeline-memory: PC=0x80000320, wb=1, rd=x5, ex=ALU (#65708)
+TRACE        261: pipeline-execute: PC=0x80000324, wb=0, ex=ALU (#65709)
+TRACE        261: *** pipeline-fetch stalled!
+TRACE        262: pipeline-writeback: PC=0x80000320, wb=1, rd=x5, ex=ALU (#65708)
+TRACE        262: pipeline-memory: PC=0x80000324, wb=0, ex=ALU (#65709)
+TRACE        262: *** pipeline-fetch stalled!
+TRACE        263: pipeline-writeback: PC=0x80000324, wb=0, ex=ALU (#65709)
 DEBUG Fetch: PC=0x80000328 (#174)
 DEBUG Instr 0xe00193: ADDI x3, x0, 0xe
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x3={0xe}
-TRACE        261: pipeline-fetch: PC=0x80000328, wb=1, rd=x3, ex=ALU (#174)
-TRACE        262: pipeline-decode: PC=0x80000328, wb=1, rd=x3, ex=ALU (#174)
+TRACE        263: pipeline-fetch: PC=0x80000328, wb=1, rd=x3, ex=ALU (#174)
+TRACE        264: pipeline-decode: PC=0x80000328, wb=1, rd=x3, ex=ALU (#174)
 DEBUG Fetch: PC=0x8000032c (#175)
 DEBUG Instr 0x213: ADDI x4, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x4={0x0}
-TRACE        262: pipeline-fetch: PC=0x8000032c, wb=1, rd=x4, ex=ALU (#175)
-TRACE        263: pipeline-execute: PC=0x80000328, wb=1, rd=x3, ex=ALU (#174)
-TRACE        263: pipeline-decode: PC=0x8000032c, wb=1, rd=x4, ex=ALU (#175)
+TRACE        264: pipeline-fetch: PC=0x8000032c, wb=1, rd=x4, ex=ALU (#175)
+TRACE        265: pipeline-execute: PC=0x80000328, wb=1, rd=x3, ex=ALU (#174)
+TRACE        265: pipeline-decode: PC=0x8000032c, wb=1, rd=x4, ex=ALU (#175)
 DEBUG Fetch: PC=0x80000330 (#176)
 DEBUG Instr 0x2097: AUIPC x1, 0x2
 DEBUG Dest Reg: x1={0x80002330}
-TRACE        263: pipeline-fetch: PC=0x80000330, wb=1, rd=x1, ex=ALU (#176)
-TRACE        264: pipeline-memory: PC=0x80000328, wb=1, rd=x3, ex=ALU (#174)
-TRACE        264: pipeline-execute: PC=0x8000032c, wb=1, rd=x4, ex=ALU (#175)
-TRACE        264: pipeline-decode: PC=0x80000330, wb=1, rd=x1, ex=ALU (#176)
+TRACE        265: pipeline-fetch: PC=0x80000330, wb=1, rd=x1, ex=ALU (#176)
+TRACE        266: pipeline-memory: PC=0x80000328, wb=1, rd=x3, ex=ALU (#174)
+TRACE        266: pipeline-execute: PC=0x8000032c, wb=1, rd=x4, ex=ALU (#175)
+TRACE        266: pipeline-decode: PC=0x80000330, wb=1, rd=x1, ex=ALU (#176)
 DEBUG Fetch: PC=0x80000334 (#177)
 DEBUG Instr 0xcd008093: ADDI x1, x1, 0xfffffcd0
 DEBUG Src0 Reg: x1={0x80002330}
 DEBUG Dest Reg: x1={0x80002000}
-TRACE        264: pipeline-fetch: PC=0x80000334, wb=1, rd=x1, ex=ALU (#177)
-TRACE        265: pipeline-writeback: PC=0x80000328, wb=1, rd=x3, ex=ALU (#174)
-TRACE        265: pipeline-memory: PC=0x8000032c, wb=1, rd=x4, ex=ALU (#175)
-TRACE        265: pipeline-execute: PC=0x80000330, wb=1, rd=x1, ex=ALU (#176)
-TRACE        265: pipeline-decode: PC=0x80000334, wb=1, rd=x1, ex=ALU (#177)
+TRACE        266: pipeline-fetch: PC=0x80000334, wb=1, rd=x1, ex=ALU (#177)
+TRACE        267: pipeline-writeback: PC=0x80000328, wb=1, rd=x3, ex=ALU (#174)
+TRACE        267: pipeline-memory: PC=0x8000032c, wb=1, rd=x4, ex=ALU (#175)
+TRACE        267: pipeline-execute: PC=0x80000330, wb=1, rd=x1, ex=ALU (#176)
+TRACE        267: pipeline-decode: PC=0x80000334, wb=1, rd=x1, ex=ALU (#177)
 DEBUG Fetch: PC=0x80000338 (#178)
 DEBUG Instr 0x209703: LH x14, x1, 0x2
 DEBUG Src0 Reg: x1={0x80002000}
 DEBUG Mem Read: addr=0x80002002, data=0xff00 (size=2, type=Global)
 DEBUG Dest Reg: x14={0xffffff00}
-TRACE        265: pipeline-fetch: PC=0x80000338, wb=1, rd=x14, ex=LSU (#178)
-TRACE        266: pipeline-writeback: PC=0x8000032c, wb=1, rd=x4, ex=ALU (#175)
-TRACE        266: pipeline-memory: PC=0x80000330, wb=1, rd=x1, ex=ALU (#176)
-TRACE        266: pipeline-execute: PC=0x80000334, wb=1, rd=x1, ex=ALU (#177)
-TRACE        266: pipeline-decode: PC=0x80000338, wb=1, rd=x14, ex=LSU (#178)
+TRACE        267: pipeline-fetch: PC=0x80000338, wb=1, rd=x14, ex=LSU (#178)
+TRACE        268: pipeline-writeback: PC=0x8000032c, wb=1, rd=x4, ex=ALU (#175)
+TRACE        268: pipeline-memory: PC=0x80000330, wb=1, rd=x1, ex=ALU (#176)
+TRACE        268: pipeline-execute: PC=0x80000334, wb=1, rd=x1, ex=ALU (#177)
+TRACE        268: pipeline-decode: PC=0x80000338, wb=1, rd=x14, ex=LSU (#178)
 DEBUG Fetch: PC=0x8000033c (#179)
 DEBUG Instr 0x13: ADDI x0, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
-TRACE        266: pipeline-fetch: PC=0x8000033c, wb=0, ex=ALU (#179)
-TRACE        267: pipeline-writeback: PC=0x80000330, wb=1, rd=x1, ex=ALU (#176)
-TRACE        267: pipeline-memory: PC=0x80000334, wb=1, rd=x1, ex=ALU (#177)
-TRACE        267: pipeline-execute: PC=0x80000338, wb=1, rd=x14, ex=LSU (#178)
-TRACE        267: pipeline-decode: PC=0x8000033c, wb=0, ex=ALU (#179)
+TRACE        268: pipeline-fetch: PC=0x8000033c, wb=0, ex=ALU (#179)
+TRACE        269: pipeline-writeback: PC=0x80000330, wb=1, rd=x1, ex=ALU (#176)
+TRACE        269: pipeline-memory: PC=0x80000334, wb=1, rd=x1, ex=ALU (#177)
+TRACE        269: pipeline-execute: PC=0x80000338, wb=1, rd=x14, ex=LSU (#178)
+TRACE        269: pipeline-decode: PC=0x8000033c, wb=0, ex=ALU (#179)
 DEBUG Fetch: PC=0x80000340 (#180)
 DEBUG Instr 0x13: ADDI x0, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
-TRACE        267: pipeline-fetch: PC=0x80000340, wb=0, ex=ALU (#180)
-TRACE        268: pipeline-writeback: PC=0x80000334, wb=1, rd=x1, ex=ALU (#177)
-TRACE        268: pipeline-memory: PC=0x80000338, wb=1, rd=x14, ex=LSU (#178)
-TRACE        268: pipeline-execute: PC=0x8000033c, wb=0, ex=ALU (#179)
-TRACE        268: pipeline-decode: PC=0x80000340, wb=0, ex=ALU (#180)
+TRACE        269: pipeline-fetch: PC=0x80000340, wb=0, ex=ALU (#180)
+TRACE        270: pipeline-writeback: PC=0x80000334, wb=1, rd=x1, ex=ALU (#177)
+TRACE        270: pipeline-memory: PC=0x80000338, wb=1, rd=x14, ex=LSU (#178)
+TRACE        270: pipeline-execute: PC=0x8000033c, wb=0, ex=ALU (#179)
+TRACE        270: pipeline-decode: PC=0x80000340, wb=0, ex=ALU (#180)
 DEBUG Fetch: PC=0x80000344 (#181)
 DEBUG Instr 0x70313: ADDI x6, x14, 0x0
 DEBUG Src0 Reg: x14={0xffffff00}
 DEBUG Dest Reg: x6={0xffffff00}
-TRACE        268: pipeline-fetch: PC=0x80000344, wb=1, rd=x6, ex=ALU (#181)
-TRACE        269: pipeline-writeback: PC=0x80000338, wb=1, rd=x14, ex=LSU (#178)
-TRACE        269: pipeline-memory: PC=0x8000033c, wb=0, ex=ALU (#179)
-TRACE        269: pipeline-execute: PC=0x80000340, wb=0, ex=ALU (#180)
-TRACE        269: pipeline-decode: PC=0x80000344, wb=1, rd=x6, ex=ALU (#181)
+TRACE        270: pipeline-fetch: PC=0x80000344, wb=1, rd=x6, ex=ALU (#181)
+TRACE        271: pipeline-writeback: PC=0x80000338, wb=1, rd=x14, ex=LSU (#178)
+TRACE        271: pipeline-memory: PC=0x8000033c, wb=0, ex=ALU (#179)
+TRACE        271: pipeline-execute: PC=0x80000340, wb=0, ex=ALU (#180)
+TRACE        271: pipeline-decode: PC=0x80000344, wb=1, rd=x6, ex=ALU (#181)
 DEBUG Fetch: PC=0x80000348 (#182)
 DEBUG Instr 0xf0000393: ADDI x7, x0, 0xffffff00
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x7={0xffffff00}
-TRACE        269: pipeline-fetch: PC=0x80000348, wb=1, rd=x7, ex=ALU (#182)
-TRACE        270: pipeline-writeback: PC=0x8000033c, wb=0, ex=ALU (#179)
-TRACE        270: pipeline-memory: PC=0x80000340, wb=0, ex=ALU (#180)
-TRACE        270: pipeline-execute: PC=0x80000344, wb=1, rd=x6, ex=ALU (#181)
-TRACE        270: pipeline-decode: PC=0x80000348, wb=1, rd=x7, ex=ALU (#182)
+TRACE        271: pipeline-fetch: PC=0x80000348, wb=1, rd=x7, ex=ALU (#182)
+TRACE        272: pipeline-writeback: PC=0x8000033c, wb=0, ex=ALU (#179)
+TRACE        272: pipeline-memory: PC=0x80000340, wb=0, ex=ALU (#180)
+TRACE        272: pipeline-execute: PC=0x80000344, wb=1, rd=x6, ex=ALU (#181)
+TRACE        272: pipeline-decode: PC=0x80000348, wb=1, rd=x7, ex=ALU (#182)
 DEBUG Fetch: PC=0x8000034c (#183)
 DEBUG Instr 0xc731e63: BNE x6, x7, 0xdc
 DEBUG Src0 Reg: x6={0xffffff00}
 DEBUG Src1 Reg: x7={0xffffff00}
-TRACE        270: pipeline-fetch: PC=0x8000034c, wb=0, ex=ALU (#183)
-TRACE        271: pipeline-writeback: PC=0x80000340, wb=0, ex=ALU (#180)
-TRACE        271: pipeline-memory: PC=0x80000344, wb=1, rd=x6, ex=ALU (#181)
-TRACE        271: pipeline-execute: PC=0x80000348, wb=1, rd=x7, ex=ALU (#182)
-TRACE        271: pipeline-decode: PC=0x8000034c, wb=0, ex=ALU (#183)
-TRACE        271: *** pipeline-fetch stalled!
-TRACE        272: pipeline-writeback: PC=0x80000344, wb=1, rd=x6, ex=ALU (#181)
-TRACE        272: pipeline-memory: PC=0x80000348, wb=1, rd=x7, ex=ALU (#182)
-TRACE        272: pipeline-execute: PC=0x8000034c, wb=0, ex=ALU (#183)
-TRACE        272: *** pipeline-fetch stalled!
-TRACE        273: pipeline-writeback: PC=0x80000348, wb=1, rd=x7, ex=ALU (#182)
-TRACE        273: pipeline-memory: PC=0x8000034c, wb=0, ex=ALU (#183)
+TRACE        272: pipeline-fetch: PC=0x8000034c, wb=0, ex=ALU (#183)
+TRACE        273: pipeline-writeback: PC=0x80000340, wb=0, ex=ALU (#180)
+TRACE        273: pipeline-memory: PC=0x80000344, wb=1, rd=x6, ex=ALU (#181)
+TRACE        273: pipeline-execute: PC=0x80000348, wb=1, rd=x7, ex=ALU (#182)
+TRACE        273: pipeline-decode: PC=0x8000034c, wb=0, ex=ALU (#183)
 TRACE        273: *** pipeline-fetch stalled!
-TRACE        274: pipeline-writeback: PC=0x8000034c, wb=0, ex=ALU (#183)
+TRACE        274: pipeline-writeback: PC=0x80000344, wb=1, rd=x6, ex=ALU (#181)
+TRACE        274: pipeline-memory: PC=0x80000348, wb=1, rd=x7, ex=ALU (#182)
+TRACE        274: pipeline-execute: PC=0x8000034c, wb=0, ex=ALU (#183)
+TRACE        274: *** pipeline-fetch stalled!
+TRACE        275: pipeline-writeback: PC=0x80000348, wb=1, rd=x7, ex=ALU (#182)
+TRACE        275: pipeline-memory: PC=0x8000034c, wb=0, ex=ALU (#183)
+TRACE        275: *** pipeline-fetch stalled!
+TRACE        276: pipeline-writeback: PC=0x8000034c, wb=0, ex=ALU (#183)
 DEBUG Fetch: PC=0x80000350 (#184)
 DEBUG Instr 0x120213: ADDI x4, x4, 0x1
 DEBUG Src0 Reg: x4={0x0}
 DEBUG Dest Reg: x4={0x1}
-TRACE        274: pipeline-fetch: PC=0x80000350, wb=1, rd=x4, ex=ALU (#184)
-TRACE        275: pipeline-decode: PC=0x80000350, wb=1, rd=x4, ex=ALU (#184)
+TRACE        276: pipeline-fetch: PC=0x80000350, wb=1, rd=x4, ex=ALU (#184)
+TRACE        277: pipeline-decode: PC=0x80000350, wb=1, rd=x4, ex=ALU (#184)
 DEBUG Fetch: PC=0x80000354 (#185)
 DEBUG Instr 0x200293: ADDI x5, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x5={0x2}
-TRACE        275: pipeline-fetch: PC=0x80000354, wb=1, rd=x5, ex=ALU (#185)
-TRACE        276: pipeline-execute: PC=0x80000350, wb=1, rd=x4, ex=ALU (#184)
-TRACE        276: pipeline-decode: PC=0x80000354, wb=1, rd=x5, ex=ALU (#185)
+TRACE        277: pipeline-fetch: PC=0x80000354, wb=1, rd=x5, ex=ALU (#185)
+TRACE        278: pipeline-execute: PC=0x80000350, wb=1, rd=x4, ex=ALU (#184)
+TRACE        278: pipeline-decode: PC=0x80000354, wb=1, rd=x5, ex=ALU (#185)
 DEBUG Fetch: PC=0x80000358 (#186)
 DEBUG Instr 0xfc521ce3: BNE x4, x5, 0xffffffd8
 DEBUG Src0 Reg: x4={0x1}
 DEBUG Src1 Reg: x5={0x2}
 DEBUG *** Next PC=0x80000330
-TRACE        276: pipeline-fetch: PC=0x80000358, wb=0, ex=ALU (#186)
-TRACE        277: pipeline-memory: PC=0x80000350, wb=1, rd=x4, ex=ALU (#184)
-TRACE        277: pipeline-execute: PC=0x80000354, wb=1, rd=x5, ex=ALU (#185)
-TRACE        277: pipeline-decode: PC=0x80000358, wb=0, ex=ALU (#186)
-TRACE        277: *** pipeline-fetch stalled!
-TRACE        278: pipeline-writeback: PC=0x80000350, wb=1, rd=x4, ex=ALU (#184)
-TRACE        278: pipeline-memory: PC=0x80000354, wb=1, rd=x5, ex=ALU (#185)
-TRACE        278: pipeline-execute: PC=0x80000358, wb=0, ex=ALU (#186)
-TRACE        278: *** pipeline-fetch stalled!
-TRACE        279: pipeline-writeback: PC=0x80000354, wb=1, rd=x5, ex=ALU (#185)
-TRACE        279: pipeline-memory: PC=0x80000358, wb=0, ex=ALU (#186)
+TRACE        278: pipeline-fetch: PC=0x80000358, wb=0, ex=ALU (#186)
+TRACE        279: pipeline-memory: PC=0x80000350, wb=1, rd=x4, ex=ALU (#184)
+TRACE        279: pipeline-execute: PC=0x80000354, wb=1, rd=x5, ex=ALU (#185)
+TRACE        279: pipeline-decode: PC=0x80000358, wb=0, ex=ALU (#186)
 TRACE        279: *** pipeline-fetch stalled!
-TRACE        280: pipeline-writeback: PC=0x80000358, wb=0, ex=ALU (#186)
+TRACE        280: pipeline-writeback: PC=0x80000350, wb=1, rd=x4, ex=ALU (#184)
+TRACE        280: pipeline-memory: PC=0x80000354, wb=1, rd=x5, ex=ALU (#185)
+TRACE        280: pipeline-execute: PC=0x80000358, wb=0, ex=ALU (#186)
+TRACE        280: *** pipeline-fetch stalled!
+TRACE        281: pipeline-writeback: PC=0x80000354, wb=1, rd=x5, ex=ALU (#185)
+TRACE        281: pipeline-memory: PC=0x80000358, wb=0, ex=ALU (#186)
+TRACE        281: *** pipeline-fetch stalled!
+TRACE        282: pipeline-writeback: PC=0x80000358, wb=0, ex=ALU (#186)
 DEBUG Fetch: PC=0x80000330 (#65712)
 DEBUG Instr 0x2097: AUIPC x1, 0x2
 DEBUG Dest Reg: x1={0x80002330}
-TRACE        280: pipeline-fetch: PC=0x80000330, wb=1, rd=x1, ex=ALU (#65712)
-TRACE        281: pipeline-decode: PC=0x80000330, wb=1, rd=x1, ex=ALU (#65712)
+TRACE        282: pipeline-fetch: PC=0x80000330, wb=1, rd=x1, ex=ALU (#65712)
+TRACE        283: pipeline-decode: PC=0x80000330, wb=1, rd=x1, ex=ALU (#65712)
 DEBUG Fetch: PC=0x80000334 (#65713)
 DEBUG Instr 0xcd008093: ADDI x1, x1, 0xfffffcd0
 DEBUG Src0 Reg: x1={0x80002330}
 DEBUG Dest Reg: x1={0x80002000}
-TRACE        281: pipeline-fetch: PC=0x80000334, wb=1, rd=x1, ex=ALU (#65713)
-TRACE        282: pipeline-execute: PC=0x80000330, wb=1, rd=x1, ex=ALU (#65712)
-TRACE        282: pipeline-decode: PC=0x80000334, wb=1, rd=x1, ex=ALU (#65713)
+TRACE        283: pipeline-fetch: PC=0x80000334, wb=1, rd=x1, ex=ALU (#65713)
+TRACE        284: pipeline-execute: PC=0x80000330, wb=1, rd=x1, ex=ALU (#65712)
+TRACE        284: pipeline-decode: PC=0x80000334, wb=1, rd=x1, ex=ALU (#65713)
 DEBUG Fetch: PC=0x80000338 (#65714)
 DEBUG Instr 0x209703: LH x14, x1, 0x2
 DEBUG Src0 Reg: x1={0x80002000}
 DEBUG Mem Read: addr=0x80002002, data=0xff00 (size=2, type=Global)
 DEBUG Dest Reg: x14={0xffffff00}
-TRACE        282: pipeline-fetch: PC=0x80000338, wb=1, rd=x14, ex=LSU (#65714)
-TRACE        283: pipeline-memory: PC=0x80000330, wb=1, rd=x1, ex=ALU (#65712)
-TRACE        283: pipeline-execute: PC=0x80000334, wb=1, rd=x1, ex=ALU (#65713)
-TRACE        283: pipeline-decode: PC=0x80000338, wb=1, rd=x14, ex=LSU (#65714)
+TRACE        284: pipeline-fetch: PC=0x80000338, wb=1, rd=x14, ex=LSU (#65714)
+TRACE        285: pipeline-memory: PC=0x80000330, wb=1, rd=x1, ex=ALU (#65712)
+TRACE        285: pipeline-execute: PC=0x80000334, wb=1, rd=x1, ex=ALU (#65713)
+TRACE        285: pipeline-decode: PC=0x80000338, wb=1, rd=x14, ex=LSU (#65714)
 DEBUG Fetch: PC=0x8000033c (#65715)
 DEBUG Instr 0x13: ADDI x0, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
-TRACE        283: pipeline-fetch: PC=0x8000033c, wb=0, ex=ALU (#65715)
-TRACE        284: pipeline-writeback: PC=0x80000330, wb=1, rd=x1, ex=ALU (#65712)
-TRACE        284: pipeline-memory: PC=0x80000334, wb=1, rd=x1, ex=ALU (#65713)
-TRACE        284: pipeline-execute: PC=0x80000338, wb=1, rd=x14, ex=LSU (#65714)
-TRACE        284: pipeline-decode: PC=0x8000033c, wb=0, ex=ALU (#65715)
+TRACE        285: pipeline-fetch: PC=0x8000033c, wb=0, ex=ALU (#65715)
+TRACE        286: pipeline-writeback: PC=0x80000330, wb=1, rd=x1, ex=ALU (#65712)
+TRACE        286: pipeline-memory: PC=0x80000334, wb=1, rd=x1, ex=ALU (#65713)
+TRACE        286: pipeline-execute: PC=0x80000338, wb=1, rd=x14, ex=LSU (#65714)
+TRACE        286: pipeline-decode: PC=0x8000033c, wb=0, ex=ALU (#65715)
 DEBUG Fetch: PC=0x80000340 (#65716)
 DEBUG Instr 0x13: ADDI x0, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
-TRACE        284: pipeline-fetch: PC=0x80000340, wb=0, ex=ALU (#65716)
-TRACE        285: pipeline-writeback: PC=0x80000334, wb=1, rd=x1, ex=ALU (#65713)
-TRACE        285: pipeline-memory: PC=0x80000338, wb=1, rd=x14, ex=LSU (#65714)
-TRACE        285: pipeline-execute: PC=0x8000033c, wb=0, ex=ALU (#65715)
-TRACE        285: pipeline-decode: PC=0x80000340, wb=0, ex=ALU (#65716)
+TRACE        286: pipeline-fetch: PC=0x80000340, wb=0, ex=ALU (#65716)
+TRACE        287: pipeline-writeback: PC=0x80000334, wb=1, rd=x1, ex=ALU (#65713)
+TRACE        287: pipeline-memory: PC=0x80000338, wb=1, rd=x14, ex=LSU (#65714)
+TRACE        287: pipeline-execute: PC=0x8000033c, wb=0, ex=ALU (#65715)
+TRACE        287: pipeline-decode: PC=0x80000340, wb=0, ex=ALU (#65716)
 DEBUG Fetch: PC=0x80000344 (#65717)
 DEBUG Instr 0x70313: ADDI x6, x14, 0x0
 DEBUG Src0 Reg: x14={0xffffff00}
 DEBUG Dest Reg: x6={0xffffff00}
-TRACE        285: pipeline-fetch: PC=0x80000344, wb=1, rd=x6, ex=ALU (#65717)
-TRACE        286: pipeline-writeback: PC=0x80000338, wb=1, rd=x14, ex=LSU (#65714)
-TRACE        286: pipeline-memory: PC=0x8000033c, wb=0, ex=ALU (#65715)
-TRACE        286: pipeline-execute: PC=0x80000340, wb=0, ex=ALU (#65716)
-TRACE        286: pipeline-decode: PC=0x80000344, wb=1, rd=x6, ex=ALU (#65717)
+TRACE        287: pipeline-fetch: PC=0x80000344, wb=1, rd=x6, ex=ALU (#65717)
+TRACE        288: pipeline-writeback: PC=0x80000338, wb=1, rd=x14, ex=LSU (#65714)
+TRACE        288: pipeline-memory: PC=0x8000033c, wb=0, ex=ALU (#65715)
+TRACE        288: pipeline-execute: PC=0x80000340, wb=0, ex=ALU (#65716)
+TRACE        288: pipeline-decode: PC=0x80000344, wb=1, rd=x6, ex=ALU (#65717)
 DEBUG Fetch: PC=0x80000348 (#65718)
 DEBUG Instr 0xf0000393: ADDI x7, x0, 0xffffff00
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x7={0xffffff00}
-TRACE        286: pipeline-fetch: PC=0x80000348, wb=1, rd=x7, ex=ALU (#65718)
-TRACE        287: pipeline-writeback: PC=0x8000033c, wb=0, ex=ALU (#65715)
-TRACE        287: pipeline-memory: PC=0x80000340, wb=0, ex=ALU (#65716)
-TRACE        287: pipeline-execute: PC=0x80000344, wb=1, rd=x6, ex=ALU (#65717)
-TRACE        287: pipeline-decode: PC=0x80000348, wb=1, rd=x7, ex=ALU (#65718)
+TRACE        288: pipeline-fetch: PC=0x80000348, wb=1, rd=x7, ex=ALU (#65718)
+TRACE        289: pipeline-writeback: PC=0x8000033c, wb=0, ex=ALU (#65715)
+TRACE        289: pipeline-memory: PC=0x80000340, wb=0, ex=ALU (#65716)
+TRACE        289: pipeline-execute: PC=0x80000344, wb=1, rd=x6, ex=ALU (#65717)
+TRACE        289: pipeline-decode: PC=0x80000348, wb=1, rd=x7, ex=ALU (#65718)
 DEBUG Fetch: PC=0x8000034c (#65719)
 DEBUG Instr 0xc731e63: BNE x6, x7, 0xdc
 DEBUG Src0 Reg: x6={0xffffff00}
 DEBUG Src1 Reg: x7={0xffffff00}
-TRACE        287: pipeline-fetch: PC=0x8000034c, wb=0, ex=ALU (#65719)
-TRACE        288: pipeline-writeback: PC=0x80000340, wb=0, ex=ALU (#65716)
-TRACE        288: pipeline-memory: PC=0x80000344, wb=1, rd=x6, ex=ALU (#65717)
-TRACE        288: pipeline-execute: PC=0x80000348, wb=1, rd=x7, ex=ALU (#65718)
-TRACE        288: pipeline-decode: PC=0x8000034c, wb=0, ex=ALU (#65719)
-TRACE        288: *** pipeline-fetch stalled!
-TRACE        289: pipeline-writeback: PC=0x80000344, wb=1, rd=x6, ex=ALU (#65717)
-TRACE        289: pipeline-memory: PC=0x80000348, wb=1, rd=x7, ex=ALU (#65718)
-TRACE        289: pipeline-execute: PC=0x8000034c, wb=0, ex=ALU (#65719)
-TRACE        289: *** pipeline-fetch stalled!
-TRACE        290: pipeline-writeback: PC=0x80000348, wb=1, rd=x7, ex=ALU (#65718)
-TRACE        290: pipeline-memory: PC=0x8000034c, wb=0, ex=ALU (#65719)
+TRACE        289: pipeline-fetch: PC=0x8000034c, wb=0, ex=ALU (#65719)
+TRACE        290: pipeline-writeback: PC=0x80000340, wb=0, ex=ALU (#65716)
+TRACE        290: pipeline-memory: PC=0x80000344, wb=1, rd=x6, ex=ALU (#65717)
+TRACE        290: pipeline-execute: PC=0x80000348, wb=1, rd=x7, ex=ALU (#65718)
+TRACE        290: pipeline-decode: PC=0x8000034c, wb=0, ex=ALU (#65719)
 TRACE        290: *** pipeline-fetch stalled!
-TRACE        291: pipeline-writeback: PC=0x8000034c, wb=0, ex=ALU (#65719)
+TRACE        291: pipeline-writeback: PC=0x80000344, wb=1, rd=x6, ex=ALU (#65717)
+TRACE        291: pipeline-memory: PC=0x80000348, wb=1, rd=x7, ex=ALU (#65718)
+TRACE        291: pipeline-execute: PC=0x8000034c, wb=0, ex=ALU (#65719)
+TRACE        291: *** pipeline-fetch stalled!
+TRACE        292: pipeline-writeback: PC=0x80000348, wb=1, rd=x7, ex=ALU (#65718)
+TRACE        292: pipeline-memory: PC=0x8000034c, wb=0, ex=ALU (#65719)
+TRACE        292: *** pipeline-fetch stalled!
+TRACE        293: pipeline-writeback: PC=0x8000034c, wb=0, ex=ALU (#65719)
 DEBUG Fetch: PC=0x80000350 (#65720)
 DEBUG Instr 0x120213: ADDI x4, x4, 0x1
 DEBUG Src0 Reg: x4={0x1}
 DEBUG Dest Reg: x4={0x2}
-TRACE        291: pipeline-fetch: PC=0x80000350, wb=1, rd=x4, ex=ALU (#65720)
-TRACE        292: pipeline-decode: PC=0x80000350, wb=1, rd=x4, ex=ALU (#65720)
+TRACE        293: pipeline-fetch: PC=0x80000350, wb=1, rd=x4, ex=ALU (#65720)
+TRACE        294: pipeline-decode: PC=0x80000350, wb=1, rd=x4, ex=ALU (#65720)
 DEBUG Fetch: PC=0x80000354 (#65721)
 DEBUG Instr 0x200293: ADDI x5, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x5={0x2}
-TRACE        292: pipeline-fetch: PC=0x80000354, wb=1, rd=x5, ex=ALU (#65721)
-TRACE        293: pipeline-execute: PC=0x80000350, wb=1, rd=x4, ex=ALU (#65720)
-TRACE        293: pipeline-decode: PC=0x80000354, wb=1, rd=x5, ex=ALU (#65721)
+TRACE        294: pipeline-fetch: PC=0x80000354, wb=1, rd=x5, ex=ALU (#65721)
+TRACE        295: pipeline-execute: PC=0x80000350, wb=1, rd=x4, ex=ALU (#65720)
+TRACE        295: pipeline-decode: PC=0x80000354, wb=1, rd=x5, ex=ALU (#65721)
 DEBUG Fetch: PC=0x80000358 (#65722)
 DEBUG Instr 0xfc521ce3: BNE x4, x5, 0xffffffd8
 DEBUG Src0 Reg: x4={0x2}
 DEBUG Src1 Reg: x5={0x2}
-TRACE        293: pipeline-fetch: PC=0x80000358, wb=0, ex=ALU (#65722)
-TRACE        294: pipeline-memory: PC=0x80000350, wb=1, rd=x4, ex=ALU (#65720)
-TRACE        294: pipeline-execute: PC=0x80000354, wb=1, rd=x5, ex=ALU (#65721)
-TRACE        294: pipeline-decode: PC=0x80000358, wb=0, ex=ALU (#65722)
-TRACE        294: *** pipeline-fetch stalled!
-TRACE        295: pipeline-writeback: PC=0x80000350, wb=1, rd=x4, ex=ALU (#65720)
-TRACE        295: pipeline-memory: PC=0x80000354, wb=1, rd=x5, ex=ALU (#65721)
-TRACE        295: pipeline-execute: PC=0x80000358, wb=0, ex=ALU (#65722)
-TRACE        295: *** pipeline-fetch stalled!
-TRACE        296: pipeline-writeback: PC=0x80000354, wb=1, rd=x5, ex=ALU (#65721)
-TRACE        296: pipeline-memory: PC=0x80000358, wb=0, ex=ALU (#65722)
+TRACE        295: pipeline-fetch: PC=0x80000358, wb=0, ex=ALU (#65722)
+TRACE        296: pipeline-memory: PC=0x80000350, wb=1, rd=x4, ex=ALU (#65720)
+TRACE        296: pipeline-execute: PC=0x80000354, wb=1, rd=x5, ex=ALU (#65721)
+TRACE        296: pipeline-decode: PC=0x80000358, wb=0, ex=ALU (#65722)
 TRACE        296: *** pipeline-fetch stalled!
-TRACE        297: pipeline-writeback: PC=0x80000358, wb=0, ex=ALU (#65722)
+TRACE        297: pipeline-writeback: PC=0x80000350, wb=1, rd=x4, ex=ALU (#65720)
+TRACE        297: pipeline-memory: PC=0x80000354, wb=1, rd=x5, ex=ALU (#65721)
+TRACE        297: pipeline-execute: PC=0x80000358, wb=0, ex=ALU (#65722)
+TRACE        297: *** pipeline-fetch stalled!
+TRACE        298: pipeline-writeback: PC=0x80000354, wb=1, rd=x5, ex=ALU (#65721)
+TRACE        298: pipeline-memory: PC=0x80000358, wb=0, ex=ALU (#65722)
+TRACE        298: *** pipeline-fetch stalled!
+TRACE        299: pipeline-writeback: PC=0x80000358, wb=0, ex=ALU (#65722)
 DEBUG Fetch: PC=0x8000035c (#187)
 DEBUG Instr 0xf00193: ADDI x3, x0, 0xf
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x3={0xf}
-TRACE        297: pipeline-fetch: PC=0x8000035c, wb=1, rd=x3, ex=ALU (#187)
-TRACE        298: pipeline-decode: PC=0x8000035c, wb=1, rd=x3, ex=ALU (#187)
+TRACE        299: pipeline-fetch: PC=0x8000035c, wb=1, rd=x3, ex=ALU (#187)
+TRACE        300: pipeline-decode: PC=0x8000035c, wb=1, rd=x3, ex=ALU (#187)
 DEBUG Fetch: PC=0x80000360 (#188)
 DEBUG Instr 0x213: ADDI x4, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x4={0x0}
-TRACE        298: pipeline-fetch: PC=0x80000360, wb=1, rd=x4, ex=ALU (#188)
-TRACE        299: pipeline-execute: PC=0x8000035c, wb=1, rd=x3, ex=ALU (#187)
-TRACE        299: pipeline-decode: PC=0x80000360, wb=1, rd=x4, ex=ALU (#188)
+TRACE        300: pipeline-fetch: PC=0x80000360, wb=1, rd=x4, ex=ALU (#188)
+TRACE        301: pipeline-execute: PC=0x8000035c, wb=1, rd=x3, ex=ALU (#187)
+TRACE        301: pipeline-decode: PC=0x80000360, wb=1, rd=x4, ex=ALU (#188)
 DEBUG Fetch: PC=0x80000364 (#189)
 DEBUG Instr 0x2097: AUIPC x1, 0x2
 DEBUG Dest Reg: x1={0x80002364}
-TRACE        299: pipeline-fetch: PC=0x80000364, wb=1, rd=x1, ex=ALU (#189)
-TRACE        300: pipeline-memory: PC=0x8000035c, wb=1, rd=x3, ex=ALU (#187)
-TRACE        300: pipeline-execute: PC=0x80000360, wb=1, rd=x4, ex=ALU (#188)
-TRACE        300: pipeline-decode: PC=0x80000364, wb=1, rd=x1, ex=ALU (#189)
+TRACE        301: pipeline-fetch: PC=0x80000364, wb=1, rd=x1, ex=ALU (#189)
+TRACE        302: pipeline-memory: PC=0x8000035c, wb=1, rd=x3, ex=ALU (#187)
+TRACE        302: pipeline-execute: PC=0x80000360, wb=1, rd=x4, ex=ALU (#188)
+TRACE        302: pipeline-decode: PC=0x80000364, wb=1, rd=x1, ex=ALU (#189)
 DEBUG Fetch: PC=0x80000368 (#190)
 DEBUG Instr 0xc9e08093: ADDI x1, x1, 0xfffffc9e
 DEBUG Src0 Reg: x1={0x80002364}
 DEBUG Dest Reg: x1={0x80002002}
-TRACE        300: pipeline-fetch: PC=0x80000368, wb=1, rd=x1, ex=ALU (#190)
-TRACE        301: pipeline-writeback: PC=0x8000035c, wb=1, rd=x3, ex=ALU (#187)
-TRACE        301: pipeline-memory: PC=0x80000360, wb=1, rd=x4, ex=ALU (#188)
-TRACE        301: pipeline-execute: PC=0x80000364, wb=1, rd=x1, ex=ALU (#189)
-TRACE        301: pipeline-decode: PC=0x80000368, wb=1, rd=x1, ex=ALU (#190)
+TRACE        302: pipeline-fetch: PC=0x80000368, wb=1, rd=x1, ex=ALU (#190)
+TRACE        303: pipeline-writeback: PC=0x8000035c, wb=1, rd=x3, ex=ALU (#187)
+TRACE        303: pipeline-memory: PC=0x80000360, wb=1, rd=x4, ex=ALU (#188)
+TRACE        303: pipeline-execute: PC=0x80000364, wb=1, rd=x1, ex=ALU (#189)
+TRACE        303: pipeline-decode: PC=0x80000368, wb=1, rd=x1, ex=ALU (#190)
 DEBUG Fetch: PC=0x8000036c (#191)
 DEBUG Instr 0x209703: LH x14, x1, 0x2
 DEBUG Src0 Reg: x1={0x80002002}
 DEBUG Mem Read: addr=0x80002004, data=0x0ff0 (size=2, type=Global)
 DEBUG Dest Reg: x14={0xff0}
-TRACE        301: pipeline-fetch: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#191)
-TRACE        302: pipeline-writeback: PC=0x80000360, wb=1, rd=x4, ex=ALU (#188)
-TRACE        302: pipeline-memory: PC=0x80000364, wb=1, rd=x1, ex=ALU (#189)
-TRACE        302: pipeline-execute: PC=0x80000368, wb=1, rd=x1, ex=ALU (#190)
-TRACE        302: pipeline-decode: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#191)
+TRACE        303: pipeline-fetch: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#191)
+TRACE        304: pipeline-writeback: PC=0x80000360, wb=1, rd=x4, ex=ALU (#188)
+TRACE        304: pipeline-memory: PC=0x80000364, wb=1, rd=x1, ex=ALU (#189)
+TRACE        304: pipeline-execute: PC=0x80000368, wb=1, rd=x1, ex=ALU (#190)
+TRACE        304: pipeline-decode: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#191)
 DEBUG Fetch: PC=0x80000370 (#192)
 DEBUG Instr 0x13b7: LUI x7, 0x1
 DEBUG Dest Reg: x7={0x1000}
-TRACE        302: pipeline-fetch: PC=0x80000370, wb=1, rd=x7, ex=ALU (#192)
-TRACE        303: pipeline-writeback: PC=0x80000364, wb=1, rd=x1, ex=ALU (#189)
-TRACE        303: pipeline-memory: PC=0x80000368, wb=1, rd=x1, ex=ALU (#190)
-TRACE        303: pipeline-execute: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#191)
-TRACE        303: pipeline-decode: PC=0x80000370, wb=1, rd=x7, ex=ALU (#192)
+TRACE        304: pipeline-fetch: PC=0x80000370, wb=1, rd=x7, ex=ALU (#192)
+TRACE        305: pipeline-writeback: PC=0x80000364, wb=1, rd=x1, ex=ALU (#189)
+TRACE        305: pipeline-memory: PC=0x80000368, wb=1, rd=x1, ex=ALU (#190)
+TRACE        305: pipeline-execute: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#191)
+TRACE        305: pipeline-decode: PC=0x80000370, wb=1, rd=x7, ex=ALU (#192)
 DEBUG Fetch: PC=0x80000374 (#193)
 DEBUG Instr 0xff038393: ADDI x7, x7, 0xfffffff0
 DEBUG Src0 Reg: x7={0x1000}
 DEBUG Dest Reg: x7={0xff0}
-TRACE        303: pipeline-fetch: PC=0x80000374, wb=1, rd=x7, ex=ALU (#193)
-TRACE        304: pipeline-writeback: PC=0x80000368, wb=1, rd=x1, ex=ALU (#190)
-TRACE        304: pipeline-memory: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#191)
-TRACE        304: pipeline-execute: PC=0x80000370, wb=1, rd=x7, ex=ALU (#192)
-TRACE        304: pipeline-decode: PC=0x80000374, wb=1, rd=x7, ex=ALU (#193)
+TRACE        305: pipeline-fetch: PC=0x80000374, wb=1, rd=x7, ex=ALU (#193)
+TRACE        306: pipeline-writeback: PC=0x80000368, wb=1, rd=x1, ex=ALU (#190)
+TRACE        306: pipeline-memory: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#191)
+TRACE        306: pipeline-execute: PC=0x80000370, wb=1, rd=x7, ex=ALU (#192)
+TRACE        306: pipeline-decode: PC=0x80000374, wb=1, rd=x7, ex=ALU (#193)
 DEBUG Fetch: PC=0x80000378 (#194)
 DEBUG Instr 0xa771863: BNE x14, x7, 0xb0
 DEBUG Src0 Reg: x14={0xff0}
 DEBUG Src1 Reg: x7={0xff0}
-TRACE        304: pipeline-fetch: PC=0x80000378, wb=0, ex=ALU (#194)
-TRACE        305: pipeline-writeback: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#191)
-TRACE        305: pipeline-memory: PC=0x80000370, wb=1, rd=x7, ex=ALU (#192)
-TRACE        305: pipeline-execute: PC=0x80000374, wb=1, rd=x7, ex=ALU (#193)
-TRACE        305: pipeline-decode: PC=0x80000378, wb=0, ex=ALU (#194)
-TRACE        305: *** pipeline-fetch stalled!
-TRACE        306: pipeline-writeback: PC=0x80000370, wb=1, rd=x7, ex=ALU (#192)
-TRACE        306: pipeline-memory: PC=0x80000374, wb=1, rd=x7, ex=ALU (#193)
-TRACE        306: pipeline-execute: PC=0x80000378, wb=0, ex=ALU (#194)
-TRACE        306: *** pipeline-fetch stalled!
-TRACE        307: pipeline-writeback: PC=0x80000374, wb=1, rd=x7, ex=ALU (#193)
-TRACE        307: pipeline-memory: PC=0x80000378, wb=0, ex=ALU (#194)
+TRACE        306: pipeline-fetch: PC=0x80000378, wb=0, ex=ALU (#194)
+TRACE        307: pipeline-writeback: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#191)
+TRACE        307: pipeline-memory: PC=0x80000370, wb=1, rd=x7, ex=ALU (#192)
+TRACE        307: pipeline-execute: PC=0x80000374, wb=1, rd=x7, ex=ALU (#193)
+TRACE        307: pipeline-decode: PC=0x80000378, wb=0, ex=ALU (#194)
 TRACE        307: *** pipeline-fetch stalled!
-TRACE        308: pipeline-writeback: PC=0x80000378, wb=0, ex=ALU (#194)
+TRACE        308: pipeline-writeback: PC=0x80000370, wb=1, rd=x7, ex=ALU (#192)
+TRACE        308: pipeline-memory: PC=0x80000374, wb=1, rd=x7, ex=ALU (#193)
+TRACE        308: pipeline-execute: PC=0x80000378, wb=0, ex=ALU (#194)
+TRACE        308: *** pipeline-fetch stalled!
+TRACE        309: pipeline-writeback: PC=0x80000374, wb=1, rd=x7, ex=ALU (#193)
+TRACE        309: pipeline-memory: PC=0x80000378, wb=0, ex=ALU (#194)
+TRACE        309: *** pipeline-fetch stalled!
+TRACE        310: pipeline-writeback: PC=0x80000378, wb=0, ex=ALU (#194)
 DEBUG Fetch: PC=0x8000037c (#195)
 DEBUG Instr 0x120213: ADDI x4, x4, 0x1
 DEBUG Src0 Reg: x4={0x0}
 DEBUG Dest Reg: x4={0x1}
-TRACE        308: pipeline-fetch: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#195)
-TRACE        309: pipeline-decode: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#195)
+TRACE        310: pipeline-fetch: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#195)
+TRACE        311: pipeline-decode: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#195)
 DEBUG Fetch: PC=0x80000380 (#196)
 DEBUG Instr 0x200293: ADDI x5, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x5={0x2}
-TRACE        309: pipeline-fetch: PC=0x80000380, wb=1, rd=x5, ex=ALU (#196)
-TRACE        310: pipeline-execute: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#195)
-TRACE        310: pipeline-decode: PC=0x80000380, wb=1, rd=x5, ex=ALU (#196)
+TRACE        311: pipeline-fetch: PC=0x80000380, wb=1, rd=x5, ex=ALU (#196)
+TRACE        312: pipeline-execute: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#195)
+TRACE        312: pipeline-decode: PC=0x80000380, wb=1, rd=x5, ex=ALU (#196)
 DEBUG Fetch: PC=0x80000384 (#197)
 DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
 DEBUG Src0 Reg: x4={0x1}
 DEBUG Src1 Reg: x5={0x2}
 DEBUG *** Next PC=0x80000364
-TRACE        310: pipeline-fetch: PC=0x80000384, wb=0, ex=ALU (#197)
-TRACE        311: pipeline-memory: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#195)
-TRACE        311: pipeline-execute: PC=0x80000380, wb=1, rd=x5, ex=ALU (#196)
-TRACE        311: pipeline-decode: PC=0x80000384, wb=0, ex=ALU (#197)
-TRACE        311: *** pipeline-fetch stalled!
-TRACE        312: pipeline-writeback: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#195)
-TRACE        312: pipeline-memory: PC=0x80000380, wb=1, rd=x5, ex=ALU (#196)
-TRACE        312: pipeline-execute: PC=0x80000384, wb=0, ex=ALU (#197)
-TRACE        312: *** pipeline-fetch stalled!
-TRACE        313: pipeline-writeback: PC=0x80000380, wb=1, rd=x5, ex=ALU (#196)
-TRACE        313: pipeline-memory: PC=0x80000384, wb=0, ex=ALU (#197)
+TRACE        312: pipeline-fetch: PC=0x80000384, wb=0, ex=ALU (#197)
+TRACE        313: pipeline-memory: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#195)
+TRACE        313: pipeline-execute: PC=0x80000380, wb=1, rd=x5, ex=ALU (#196)
+TRACE        313: pipeline-decode: PC=0x80000384, wb=0, ex=ALU (#197)
 TRACE        313: *** pipeline-fetch stalled!
-TRACE        314: pipeline-writeback: PC=0x80000384, wb=0, ex=ALU (#197)
+TRACE        314: pipeline-writeback: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#195)
+TRACE        314: pipeline-memory: PC=0x80000380, wb=1, rd=x5, ex=ALU (#196)
+TRACE        314: pipeline-execute: PC=0x80000384, wb=0, ex=ALU (#197)
+TRACE        314: *** pipeline-fetch stalled!
+TRACE        315: pipeline-writeback: PC=0x80000380, wb=1, rd=x5, ex=ALU (#196)
+TRACE        315: pipeline-memory: PC=0x80000384, wb=0, ex=ALU (#197)
+TRACE        315: *** pipeline-fetch stalled!
+TRACE        316: pipeline-writeback: PC=0x80000384, wb=0, ex=ALU (#197)
 DEBUG Fetch: PC=0x80000364 (#65725)
 DEBUG Instr 0x2097: AUIPC x1, 0x2
 DEBUG Dest Reg: x1={0x80002364}
-TRACE        314: pipeline-fetch: PC=0x80000364, wb=1, rd=x1, ex=ALU (#65725)
-TRACE        315: pipeline-decode: PC=0x80000364, wb=1, rd=x1, ex=ALU (#65725)
+TRACE        316: pipeline-fetch: PC=0x80000364, wb=1, rd=x1, ex=ALU (#65725)
+TRACE        317: pipeline-decode: PC=0x80000364, wb=1, rd=x1, ex=ALU (#65725)
 DEBUG Fetch: PC=0x80000368 (#65726)
 DEBUG Instr 0xc9e08093: ADDI x1, x1, 0xfffffc9e
 DEBUG Src0 Reg: x1={0x80002364}
 DEBUG Dest Reg: x1={0x80002002}
-TRACE        315: pipeline-fetch: PC=0x80000368, wb=1, rd=x1, ex=ALU (#65726)
-TRACE        316: pipeline-execute: PC=0x80000364, wb=1, rd=x1, ex=ALU (#65725)
-TRACE        316: pipeline-decode: PC=0x80000368, wb=1, rd=x1, ex=ALU (#65726)
+TRACE        317: pipeline-fetch: PC=0x80000368, wb=1, rd=x1, ex=ALU (#65726)
+TRACE        318: pipeline-execute: PC=0x80000364, wb=1, rd=x1, ex=ALU (#65725)
+TRACE        318: pipeline-decode: PC=0x80000368, wb=1, rd=x1, ex=ALU (#65726)
 DEBUG Fetch: PC=0x8000036c (#65727)
 DEBUG Instr 0x209703: LH x14, x1, 0x2
 DEBUG Src0 Reg: x1={0x80002002}
 DEBUG Mem Read: addr=0x80002004, data=0x0ff0 (size=2, type=Global)
 DEBUG Dest Reg: x14={0xff0}
-TRACE        316: pipeline-fetch: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#65727)
-TRACE        317: pipeline-memory: PC=0x80000364, wb=1, rd=x1, ex=ALU (#65725)
-TRACE        317: pipeline-execute: PC=0x80000368, wb=1, rd=x1, ex=ALU (#65726)
-TRACE        317: pipeline-decode: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#65727)
+TRACE        318: pipeline-fetch: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#65727)
+TRACE        319: pipeline-memory: PC=0x80000364, wb=1, rd=x1, ex=ALU (#65725)
+TRACE        319: pipeline-execute: PC=0x80000368, wb=1, rd=x1, ex=ALU (#65726)
+TRACE        319: pipeline-decode: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#65727)
 DEBUG Fetch: PC=0x80000370 (#65728)
 DEBUG Instr 0x13b7: LUI x7, 0x1
 DEBUG Dest Reg: x7={0x1000}
-TRACE        317: pipeline-fetch: PC=0x80000370, wb=1, rd=x7, ex=ALU (#65728)
-TRACE        318: pipeline-writeback: PC=0x80000364, wb=1, rd=x1, ex=ALU (#65725)
-TRACE        318: pipeline-memory: PC=0x80000368, wb=1, rd=x1, ex=ALU (#65726)
-TRACE        318: pipeline-execute: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#65727)
-TRACE        318: pipeline-decode: PC=0x80000370, wb=1, rd=x7, ex=ALU (#65728)
+TRACE        319: pipeline-fetch: PC=0x80000370, wb=1, rd=x7, ex=ALU (#65728)
+TRACE        320: pipeline-writeback: PC=0x80000364, wb=1, rd=x1, ex=ALU (#65725)
+TRACE        320: pipeline-memory: PC=0x80000368, wb=1, rd=x1, ex=ALU (#65726)
+TRACE        320: pipeline-execute: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#65727)
+TRACE        320: pipeline-decode: PC=0x80000370, wb=1, rd=x7, ex=ALU (#65728)
 DEBUG Fetch: PC=0x80000374 (#65729)
 DEBUG Instr 0xff038393: ADDI x7, x7, 0xfffffff0
 DEBUG Src0 Reg: x7={0x1000}
 DEBUG Dest Reg: x7={0xff0}
-TRACE        318: pipeline-fetch: PC=0x80000374, wb=1, rd=x7, ex=ALU (#65729)
-TRACE        319: pipeline-writeback: PC=0x80000368, wb=1, rd=x1, ex=ALU (#65726)
-TRACE        319: pipeline-memory: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#65727)
-TRACE        319: pipeline-execute: PC=0x80000370, wb=1, rd=x7, ex=ALU (#65728)
-TRACE        319: pipeline-decode: PC=0x80000374, wb=1, rd=x7, ex=ALU (#65729)
+TRACE        320: pipeline-fetch: PC=0x80000374, wb=1, rd=x7, ex=ALU (#65729)
+TRACE        321: pipeline-writeback: PC=0x80000368, wb=1, rd=x1, ex=ALU (#65726)
+TRACE        321: pipeline-memory: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#65727)
+TRACE        321: pipeline-execute: PC=0x80000370, wb=1, rd=x7, ex=ALU (#65728)
+TRACE        321: pipeline-decode: PC=0x80000374, wb=1, rd=x7, ex=ALU (#65729)
 DEBUG Fetch: PC=0x80000378 (#65730)
 DEBUG Instr 0xa771863: BNE x14, x7, 0xb0
 DEBUG Src0 Reg: x14={0xff0}
 DEBUG Src1 Reg: x7={0xff0}
-TRACE        319: pipeline-fetch: PC=0x80000378, wb=0, ex=ALU (#65730)
-TRACE        320: pipeline-writeback: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#65727)
-TRACE        320: pipeline-memory: PC=0x80000370, wb=1, rd=x7, ex=ALU (#65728)
-TRACE        320: pipeline-execute: PC=0x80000374, wb=1, rd=x7, ex=ALU (#65729)
-TRACE        320: pipeline-decode: PC=0x80000378, wb=0, ex=ALU (#65730)
-TRACE        320: *** pipeline-fetch stalled!
-TRACE        321: pipeline-writeback: PC=0x80000370, wb=1, rd=x7, ex=ALU (#65728)
-TRACE        321: pipeline-memory: PC=0x80000374, wb=1, rd=x7, ex=ALU (#65729)
-TRACE        321: pipeline-execute: PC=0x80000378, wb=0, ex=ALU (#65730)
-TRACE        321: *** pipeline-fetch stalled!
-TRACE        322: pipeline-writeback: PC=0x80000374, wb=1, rd=x7, ex=ALU (#65729)
-TRACE        322: pipeline-memory: PC=0x80000378, wb=0, ex=ALU (#65730)
+TRACE        321: pipeline-fetch: PC=0x80000378, wb=0, ex=ALU (#65730)
+TRACE        322: pipeline-writeback: PC=0x8000036c, wb=1, rd=x14, ex=LSU (#65727)
+TRACE        322: pipeline-memory: PC=0x80000370, wb=1, rd=x7, ex=ALU (#65728)
+TRACE        322: pipeline-execute: PC=0x80000374, wb=1, rd=x7, ex=ALU (#65729)
+TRACE        322: pipeline-decode: PC=0x80000378, wb=0, ex=ALU (#65730)
 TRACE        322: *** pipeline-fetch stalled!
-TRACE        323: pipeline-writeback: PC=0x80000378, wb=0, ex=ALU (#65730)
+TRACE        323: pipeline-writeback: PC=0x80000370, wb=1, rd=x7, ex=ALU (#65728)
+TRACE        323: pipeline-memory: PC=0x80000374, wb=1, rd=x7, ex=ALU (#65729)
+TRACE        323: pipeline-execute: PC=0x80000378, wb=0, ex=ALU (#65730)
+TRACE        323: *** pipeline-fetch stalled!
+TRACE        324: pipeline-writeback: PC=0x80000374, wb=1, rd=x7, ex=ALU (#65729)
+TRACE        324: pipeline-memory: PC=0x80000378, wb=0, ex=ALU (#65730)
+TRACE        324: *** pipeline-fetch stalled!
+TRACE        325: pipeline-writeback: PC=0x80000378, wb=0, ex=ALU (#65730)
 DEBUG Fetch: PC=0x8000037c (#65731)
 DEBUG Instr 0x120213: ADDI x4, x4, 0x1
 DEBUG Src0 Reg: x4={0x1}
 DEBUG Dest Reg: x4={0x2}
-TRACE        323: pipeline-fetch: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#65731)
-TRACE        324: pipeline-decode: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#65731)
+TRACE        325: pipeline-fetch: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#65731)
+TRACE        326: pipeline-decode: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#65731)
 DEBUG Fetch: PC=0x80000380 (#65732)
 DEBUG Instr 0x200293: ADDI x5, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x5={0x2}
-TRACE        324: pipeline-fetch: PC=0x80000380, wb=1, rd=x5, ex=ALU (#65732)
-TRACE        325: pipeline-execute: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#65731)
-TRACE        325: pipeline-decode: PC=0x80000380, wb=1, rd=x5, ex=ALU (#65732)
+TRACE        326: pipeline-fetch: PC=0x80000380, wb=1, rd=x5, ex=ALU (#65732)
+TRACE        327: pipeline-execute: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#65731)
+TRACE        327: pipeline-decode: PC=0x80000380, wb=1, rd=x5, ex=ALU (#65732)
 DEBUG Fetch: PC=0x80000384 (#65733)
 DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
 DEBUG Src0 Reg: x4={0x2}
 DEBUG Src1 Reg: x5={0x2}
-TRACE        325: pipeline-fetch: PC=0x80000384, wb=0, ex=ALU (#65733)
-TRACE        326: pipeline-memory: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#65731)
-TRACE        326: pipeline-execute: PC=0x80000380, wb=1, rd=x5, ex=ALU (#65732)
-TRACE        326: pipeline-decode: PC=0x80000384, wb=0, ex=ALU (#65733)
-TRACE        326: *** pipeline-fetch stalled!
-TRACE        327: pipeline-writeback: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#65731)
-TRACE        327: pipeline-memory: PC=0x80000380, wb=1, rd=x5, ex=ALU (#65732)
-TRACE        327: pipeline-execute: PC=0x80000384, wb=0, ex=ALU (#65733)
-TRACE        327: *** pipeline-fetch stalled!
-TRACE        328: pipeline-writeback: PC=0x80000380, wb=1, rd=x5, ex=ALU (#65732)
-TRACE        328: pipeline-memory: PC=0x80000384, wb=0, ex=ALU (#65733)
+TRACE        327: pipeline-fetch: PC=0x80000384, wb=0, ex=ALU (#65733)
+TRACE        328: pipeline-memory: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#65731)
+TRACE        328: pipeline-execute: PC=0x80000380, wb=1, rd=x5, ex=ALU (#65732)
+TRACE        328: pipeline-decode: PC=0x80000384, wb=0, ex=ALU (#65733)
 TRACE        328: *** pipeline-fetch stalled!
-TRACE        329: pipeline-writeback: PC=0x80000384, wb=0, ex=ALU (#65733)
+TRACE        329: pipeline-writeback: PC=0x8000037c, wb=1, rd=x4, ex=ALU (#65731)
+TRACE        329: pipeline-memory: PC=0x80000380, wb=1, rd=x5, ex=ALU (#65732)
+TRACE        329: pipeline-execute: PC=0x80000384, wb=0, ex=ALU (#65733)
+TRACE        329: *** pipeline-fetch stalled!
+TRACE        330: pipeline-writeback: PC=0x80000380, wb=1, rd=x5, ex=ALU (#65732)
+TRACE        330: pipeline-memory: PC=0x80000384, wb=0, ex=ALU (#65733)
+TRACE        330: *** pipeline-fetch stalled!
+TRACE        331: pipeline-writeback: PC=0x80000384, wb=0, ex=ALU (#65733)
 DEBUG Fetch: PC=0x80000388 (#198)
 DEBUG Instr 0x1000193: ADDI x3, x0, 0x10
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x3={0x10}
-TRACE        329: pipeline-fetch: PC=0x80000388, wb=1, rd=x3, ex=ALU (#198)
-TRACE        330: pipeline-decode: PC=0x80000388, wb=1, rd=x3, ex=ALU (#198)
+TRACE        331: pipeline-fetch: PC=0x80000388, wb=1, rd=x3, ex=ALU (#198)
+TRACE        332: pipeline-decode: PC=0x80000388, wb=1, rd=x3, ex=ALU (#198)
 DEBUG Fetch: PC=0x8000038c (#199)
 DEBUG Instr 0x213: ADDI x4, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x4={0x0}
-TRACE        330: pipeline-fetch: PC=0x8000038c, wb=1, rd=x4, ex=ALU (#199)
-TRACE        331: pipeline-execute: PC=0x80000388, wb=1, rd=x3, ex=ALU (#198)
-TRACE        331: pipeline-decode: PC=0x8000038c, wb=1, rd=x4, ex=ALU (#199)
+TRACE        332: pipeline-fetch: PC=0x8000038c, wb=1, rd=x4, ex=ALU (#199)
+TRACE        333: pipeline-execute: PC=0x80000388, wb=1, rd=x3, ex=ALU (#198)
+TRACE        333: pipeline-decode: PC=0x8000038c, wb=1, rd=x4, ex=ALU (#199)
 DEBUG Fetch: PC=0x80000390 (#200)
 DEBUG Instr 0x2097: AUIPC x1, 0x2
 DEBUG Dest Reg: x1={0x80002390}
-TRACE        331: pipeline-fetch: PC=0x80000390, wb=1, rd=x1, ex=ALU (#200)
-TRACE        332: pipeline-memory: PC=0x80000388, wb=1, rd=x3, ex=ALU (#198)
-TRACE        332: pipeline-execute: PC=0x8000038c, wb=1, rd=x4, ex=ALU (#199)
-TRACE        332: pipeline-decode: PC=0x80000390, wb=1, rd=x1, ex=ALU (#200)
+TRACE        333: pipeline-fetch: PC=0x80000390, wb=1, rd=x1, ex=ALU (#200)
+TRACE        334: pipeline-memory: PC=0x80000388, wb=1, rd=x3, ex=ALU (#198)
+TRACE        334: pipeline-execute: PC=0x8000038c, wb=1, rd=x4, ex=ALU (#199)
+TRACE        334: pipeline-decode: PC=0x80000390, wb=1, rd=x1, ex=ALU (#200)
 DEBUG Fetch: PC=0x80000394 (#201)
 DEBUG Instr 0xc7408093: ADDI x1, x1, 0xfffffc74
 DEBUG Src0 Reg: x1={0x80002390}
 DEBUG Dest Reg: x1={0x80002004}
-TRACE        332: pipeline-fetch: PC=0x80000394, wb=1, rd=x1, ex=ALU (#201)
-TRACE        333: pipeline-writeback: PC=0x80000388, wb=1, rd=x3, ex=ALU (#198)
-TRACE        333: pipeline-memory: PC=0x8000038c, wb=1, rd=x4, ex=ALU (#199)
-TRACE        333: pipeline-execute: PC=0x80000390, wb=1, rd=x1, ex=ALU (#200)
-TRACE        333: pipeline-decode: PC=0x80000394, wb=1, rd=x1, ex=ALU (#201)
+TRACE        334: pipeline-fetch: PC=0x80000394, wb=1, rd=x1, ex=ALU (#201)
+TRACE        335: pipeline-writeback: PC=0x80000388, wb=1, rd=x3, ex=ALU (#198)
+TRACE        335: pipeline-memory: PC=0x8000038c, wb=1, rd=x4, ex=ALU (#199)
+TRACE        335: pipeline-execute: PC=0x80000390, wb=1, rd=x1, ex=ALU (#200)
+TRACE        335: pipeline-decode: PC=0x80000394, wb=1, rd=x1, ex=ALU (#201)
 DEBUG Fetch: PC=0x80000398 (#202)
 DEBUG Instr 0x13: ADDI x0, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
-TRACE        333: pipeline-fetch: PC=0x80000398, wb=0, ex=ALU (#202)
-TRACE        334: pipeline-writeback: PC=0x8000038c, wb=1, rd=x4, ex=ALU (#199)
-TRACE        334: pipeline-memory: PC=0x80000390, wb=1, rd=x1, ex=ALU (#200)
-TRACE        334: pipeline-execute: PC=0x80000394, wb=1, rd=x1, ex=ALU (#201)
-TRACE        334: pipeline-decode: PC=0x80000398, wb=0, ex=ALU (#202)
+TRACE        335: pipeline-fetch: PC=0x80000398, wb=0, ex=ALU (#202)
+TRACE        336: pipeline-writeback: PC=0x8000038c, wb=1, rd=x4, ex=ALU (#199)
+TRACE        336: pipeline-memory: PC=0x80000390, wb=1, rd=x1, ex=ALU (#200)
+TRACE        336: pipeline-execute: PC=0x80000394, wb=1, rd=x1, ex=ALU (#201)
+TRACE        336: pipeline-decode: PC=0x80000398, wb=0, ex=ALU (#202)
 DEBUG Fetch: PC=0x8000039c (#203)
 DEBUG Instr 0x209703: LH x14, x1, 0x2
 DEBUG Src0 Reg: x1={0x80002004}
 DEBUG Mem Read: addr=0x80002006, data=0xf00f (size=2, type=Global)
 DEBUG Dest Reg: x14={0xfffff00f}
-TRACE        334: pipeline-fetch: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#203)
-TRACE        335: pipeline-writeback: PC=0x80000390, wb=1, rd=x1, ex=ALU (#200)
-TRACE        335: pipeline-memory: PC=0x80000394, wb=1, rd=x1, ex=ALU (#201)
-TRACE        335: pipeline-execute: PC=0x80000398, wb=0, ex=ALU (#202)
-TRACE        335: pipeline-decode: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#203)
+TRACE        336: pipeline-fetch: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#203)
+TRACE        337: pipeline-writeback: PC=0x80000390, wb=1, rd=x1, ex=ALU (#200)
+TRACE        337: pipeline-memory: PC=0x80000394, wb=1, rd=x1, ex=ALU (#201)
+TRACE        337: pipeline-execute: PC=0x80000398, wb=0, ex=ALU (#202)
+TRACE        337: pipeline-decode: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#203)
 DEBUG Fetch: PC=0x800003a0 (#204)
 DEBUG Instr 0xfffff3b7: LUI x7, 0xffffffff
 DEBUG Dest Reg: x7={0xfffff000}
-TRACE        335: pipeline-fetch: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#204)
-TRACE        336: pipeline-writeback: PC=0x80000394, wb=1, rd=x1, ex=ALU (#201)
-TRACE        336: pipeline-memory: PC=0x80000398, wb=0, ex=ALU (#202)
-TRACE        336: pipeline-execute: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#203)
-TRACE        336: pipeline-decode: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#204)
+TRACE        337: pipeline-fetch: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#204)
+TRACE        338: pipeline-writeback: PC=0x80000394, wb=1, rd=x1, ex=ALU (#201)
+TRACE        338: pipeline-memory: PC=0x80000398, wb=0, ex=ALU (#202)
+TRACE        338: pipeline-execute: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#203)
+TRACE        338: pipeline-decode: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#204)
 DEBUG Fetch: PC=0x800003a4 (#205)
 DEBUG Instr 0xf38393: ADDI x7, x7, 0xf
 DEBUG Src0 Reg: x7={0xfffff000}
 DEBUG Dest Reg: x7={0xfffff00f}
-TRACE        336: pipeline-fetch: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#205)
-TRACE        337: pipeline-writeback: PC=0x80000398, wb=0, ex=ALU (#202)
-TRACE        337: pipeline-memory: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#203)
-TRACE        337: pipeline-execute: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#204)
-TRACE        337: pipeline-decode: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#205)
+TRACE        338: pipeline-fetch: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#205)
+TRACE        339: pipeline-writeback: PC=0x80000398, wb=0, ex=ALU (#202)
+TRACE        339: pipeline-memory: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#203)
+TRACE        339: pipeline-execute: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#204)
+TRACE        339: pipeline-decode: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#205)
 DEBUG Fetch: PC=0x800003a8 (#206)
 DEBUG Instr 0x8771063: BNE x14, x7, 0x80
 DEBUG Src0 Reg: x14={0xfffff00f}
 DEBUG Src1 Reg: x7={0xfffff00f}
-TRACE        337: pipeline-fetch: PC=0x800003a8, wb=0, ex=ALU (#206)
-TRACE        338: pipeline-writeback: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#203)
-TRACE        338: pipeline-memory: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#204)
-TRACE        338: pipeline-execute: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#205)
-TRACE        338: pipeline-decode: PC=0x800003a8, wb=0, ex=ALU (#206)
-TRACE        338: *** pipeline-fetch stalled!
-TRACE        339: pipeline-writeback: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#204)
-TRACE        339: pipeline-memory: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#205)
-TRACE        339: pipeline-execute: PC=0x800003a8, wb=0, ex=ALU (#206)
-TRACE        339: *** pipeline-fetch stalled!
-TRACE        340: pipeline-writeback: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#205)
-TRACE        340: pipeline-memory: PC=0x800003a8, wb=0, ex=ALU (#206)
+TRACE        339: pipeline-fetch: PC=0x800003a8, wb=0, ex=ALU (#206)
+TRACE        340: pipeline-writeback: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#203)
+TRACE        340: pipeline-memory: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#204)
+TRACE        340: pipeline-execute: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#205)
+TRACE        340: pipeline-decode: PC=0x800003a8, wb=0, ex=ALU (#206)
 TRACE        340: *** pipeline-fetch stalled!
-TRACE        341: pipeline-writeback: PC=0x800003a8, wb=0, ex=ALU (#206)
+TRACE        341: pipeline-writeback: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#204)
+TRACE        341: pipeline-memory: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#205)
+TRACE        341: pipeline-execute: PC=0x800003a8, wb=0, ex=ALU (#206)
+TRACE        341: *** pipeline-fetch stalled!
+TRACE        342: pipeline-writeback: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#205)
+TRACE        342: pipeline-memory: PC=0x800003a8, wb=0, ex=ALU (#206)
+TRACE        342: *** pipeline-fetch stalled!
+TRACE        343: pipeline-writeback: PC=0x800003a8, wb=0, ex=ALU (#206)
 DEBUG Fetch: PC=0x800003ac (#207)
 DEBUG Instr 0x120213: ADDI x4, x4, 0x1
 DEBUG Src0 Reg: x4={0x0}
 DEBUG Dest Reg: x4={0x1}
-TRACE        341: pipeline-fetch: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#207)
-TRACE        342: pipeline-decode: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#207)
+TRACE        343: pipeline-fetch: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#207)
+TRACE        344: pipeline-decode: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#207)
 DEBUG Fetch: PC=0x800003b0 (#208)
 DEBUG Instr 0x200293: ADDI x5, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x5={0x2}
-TRACE        342: pipeline-fetch: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#208)
-TRACE        343: pipeline-execute: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#207)
-TRACE        343: pipeline-decode: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#208)
+TRACE        344: pipeline-fetch: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#208)
+TRACE        345: pipeline-execute: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#207)
+TRACE        345: pipeline-decode: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#208)
 DEBUG Fetch: PC=0x800003b4 (#209)
 DEBUG Instr 0xfc521ee3: BNE x4, x5, 0xffffffdc
 DEBUG Src0 Reg: x4={0x1}
 DEBUG Src1 Reg: x5={0x2}
 DEBUG *** Next PC=0x80000390
-TRACE        343: pipeline-fetch: PC=0x800003b4, wb=0, ex=ALU (#209)
-TRACE        344: pipeline-memory: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#207)
-TRACE        344: pipeline-execute: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#208)
-TRACE        344: pipeline-decode: PC=0x800003b4, wb=0, ex=ALU (#209)
-TRACE        344: *** pipeline-fetch stalled!
-TRACE        345: pipeline-writeback: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#207)
-TRACE        345: pipeline-memory: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#208)
-TRACE        345: pipeline-execute: PC=0x800003b4, wb=0, ex=ALU (#209)
-TRACE        345: *** pipeline-fetch stalled!
-TRACE        346: pipeline-writeback: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#208)
-TRACE        346: pipeline-memory: PC=0x800003b4, wb=0, ex=ALU (#209)
+TRACE        345: pipeline-fetch: PC=0x800003b4, wb=0, ex=ALU (#209)
+TRACE        346: pipeline-memory: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#207)
+TRACE        346: pipeline-execute: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#208)
+TRACE        346: pipeline-decode: PC=0x800003b4, wb=0, ex=ALU (#209)
 TRACE        346: *** pipeline-fetch stalled!
-TRACE        347: pipeline-writeback: PC=0x800003b4, wb=0, ex=ALU (#209)
+TRACE        347: pipeline-writeback: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#207)
+TRACE        347: pipeline-memory: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#208)
+TRACE        347: pipeline-execute: PC=0x800003b4, wb=0, ex=ALU (#209)
+TRACE        347: *** pipeline-fetch stalled!
+TRACE        348: pipeline-writeback: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#208)
+TRACE        348: pipeline-memory: PC=0x800003b4, wb=0, ex=ALU (#209)
+TRACE        348: *** pipeline-fetch stalled!
+TRACE        349: pipeline-writeback: PC=0x800003b4, wb=0, ex=ALU (#209)
 DEBUG Fetch: PC=0x80000390 (#65736)
 DEBUG Instr 0x2097: AUIPC x1, 0x2
 DEBUG Dest Reg: x1={0x80002390}
-TRACE        347: pipeline-fetch: PC=0x80000390, wb=1, rd=x1, ex=ALU (#65736)
-TRACE        348: pipeline-decode: PC=0x80000390, wb=1, rd=x1, ex=ALU (#65736)
+TRACE        349: pipeline-fetch: PC=0x80000390, wb=1, rd=x1, ex=ALU (#65736)
+TRACE        350: pipeline-decode: PC=0x80000390, wb=1, rd=x1, ex=ALU (#65736)
 DEBUG Fetch: PC=0x80000394 (#65737)
 DEBUG Instr 0xc7408093: ADDI x1, x1, 0xfffffc74
 DEBUG Src0 Reg: x1={0x80002390}
 DEBUG Dest Reg: x1={0x80002004}
-TRACE        348: pipeline-fetch: PC=0x80000394, wb=1, rd=x1, ex=ALU (#65737)
-TRACE        349: pipeline-execute: PC=0x80000390, wb=1, rd=x1, ex=ALU (#65736)
-TRACE        349: pipeline-decode: PC=0x80000394, wb=1, rd=x1, ex=ALU (#65737)
+TRACE        350: pipeline-fetch: PC=0x80000394, wb=1, rd=x1, ex=ALU (#65737)
+TRACE        351: pipeline-execute: PC=0x80000390, wb=1, rd=x1, ex=ALU (#65736)
+TRACE        351: pipeline-decode: PC=0x80000394, wb=1, rd=x1, ex=ALU (#65737)
 DEBUG Fetch: PC=0x80000398 (#65738)
 DEBUG Instr 0x13: ADDI x0, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
-TRACE        349: pipeline-fetch: PC=0x80000398, wb=0, ex=ALU (#65738)
-TRACE        350: pipeline-memory: PC=0x80000390, wb=1, rd=x1, ex=ALU (#65736)
-TRACE        350: pipeline-execute: PC=0x80000394, wb=1, rd=x1, ex=ALU (#65737)
-TRACE        350: pipeline-decode: PC=0x80000398, wb=0, ex=ALU (#65738)
+TRACE        351: pipeline-fetch: PC=0x80000398, wb=0, ex=ALU (#65738)
+TRACE        352: pipeline-memory: PC=0x80000390, wb=1, rd=x1, ex=ALU (#65736)
+TRACE        352: pipeline-execute: PC=0x80000394, wb=1, rd=x1, ex=ALU (#65737)
+TRACE        352: pipeline-decode: PC=0x80000398, wb=0, ex=ALU (#65738)
 DEBUG Fetch: PC=0x8000039c (#65739)
 DEBUG Instr 0x209703: LH x14, x1, 0x2
 DEBUG Src0 Reg: x1={0x80002004}
 DEBUG Mem Read: addr=0x80002006, data=0xf00f (size=2, type=Global)
 DEBUG Dest Reg: x14={0xfffff00f}
-TRACE        350: pipeline-fetch: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#65739)
-TRACE        351: pipeline-writeback: PC=0x80000390, wb=1, rd=x1, ex=ALU (#65736)
-TRACE        351: pipeline-memory: PC=0x80000394, wb=1, rd=x1, ex=ALU (#65737)
-TRACE        351: pipeline-execute: PC=0x80000398, wb=0, ex=ALU (#65738)
-TRACE        351: pipeline-decode: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#65739)
+TRACE        352: pipeline-fetch: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#65739)
+TRACE        353: pipeline-writeback: PC=0x80000390, wb=1, rd=x1, ex=ALU (#65736)
+TRACE        353: pipeline-memory: PC=0x80000394, wb=1, rd=x1, ex=ALU (#65737)
+TRACE        353: pipeline-execute: PC=0x80000398, wb=0, ex=ALU (#65738)
+TRACE        353: pipeline-decode: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#65739)
 DEBUG Fetch: PC=0x800003a0 (#65740)
 DEBUG Instr 0xfffff3b7: LUI x7, 0xffffffff
 DEBUG Dest Reg: x7={0xfffff000}
-TRACE        351: pipeline-fetch: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#65740)
-TRACE        352: pipeline-writeback: PC=0x80000394, wb=1, rd=x1, ex=ALU (#65737)
-TRACE        352: pipeline-memory: PC=0x80000398, wb=0, ex=ALU (#65738)
-TRACE        352: pipeline-execute: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#65739)
-TRACE        352: pipeline-decode: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#65740)
+TRACE        353: pipeline-fetch: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#65740)
+TRACE        354: pipeline-writeback: PC=0x80000394, wb=1, rd=x1, ex=ALU (#65737)
+TRACE        354: pipeline-memory: PC=0x80000398, wb=0, ex=ALU (#65738)
+TRACE        354: pipeline-execute: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#65739)
+TRACE        354: pipeline-decode: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#65740)
 DEBUG Fetch: PC=0x800003a4 (#65741)
 DEBUG Instr 0xf38393: ADDI x7, x7, 0xf
 DEBUG Src0 Reg: x7={0xfffff000}
 DEBUG Dest Reg: x7={0xfffff00f}
-TRACE        352: pipeline-fetch: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#65741)
-TRACE        353: pipeline-writeback: PC=0x80000398, wb=0, ex=ALU (#65738)
-TRACE        353: pipeline-memory: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#65739)
-TRACE        353: pipeline-execute: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#65740)
-TRACE        353: pipeline-decode: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#65741)
+TRACE        354: pipeline-fetch: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#65741)
+TRACE        355: pipeline-writeback: PC=0x80000398, wb=0, ex=ALU (#65738)
+TRACE        355: pipeline-memory: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#65739)
+TRACE        355: pipeline-execute: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#65740)
+TRACE        355: pipeline-decode: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#65741)
 DEBUG Fetch: PC=0x800003a8 (#65742)
 DEBUG Instr 0x8771063: BNE x14, x7, 0x80
 DEBUG Src0 Reg: x14={0xfffff00f}
 DEBUG Src1 Reg: x7={0xfffff00f}
-TRACE        353: pipeline-fetch: PC=0x800003a8, wb=0, ex=ALU (#65742)
-TRACE        354: pipeline-writeback: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#65739)
-TRACE        354: pipeline-memory: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#65740)
-TRACE        354: pipeline-execute: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#65741)
-TRACE        354: pipeline-decode: PC=0x800003a8, wb=0, ex=ALU (#65742)
-TRACE        354: *** pipeline-fetch stalled!
-TRACE        355: pipeline-writeback: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#65740)
-TRACE        355: pipeline-memory: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#65741)
-TRACE        355: pipeline-execute: PC=0x800003a8, wb=0, ex=ALU (#65742)
-TRACE        355: *** pipeline-fetch stalled!
-TRACE        356: pipeline-writeback: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#65741)
-TRACE        356: pipeline-memory: PC=0x800003a8, wb=0, ex=ALU (#65742)
+TRACE        355: pipeline-fetch: PC=0x800003a8, wb=0, ex=ALU (#65742)
+TRACE        356: pipeline-writeback: PC=0x8000039c, wb=1, rd=x14, ex=LSU (#65739)
+TRACE        356: pipeline-memory: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#65740)
+TRACE        356: pipeline-execute: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#65741)
+TRACE        356: pipeline-decode: PC=0x800003a8, wb=0, ex=ALU (#65742)
 TRACE        356: *** pipeline-fetch stalled!
-TRACE        357: pipeline-writeback: PC=0x800003a8, wb=0, ex=ALU (#65742)
+TRACE        357: pipeline-writeback: PC=0x800003a0, wb=1, rd=x7, ex=ALU (#65740)
+TRACE        357: pipeline-memory: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#65741)
+TRACE        357: pipeline-execute: PC=0x800003a8, wb=0, ex=ALU (#65742)
+TRACE        357: *** pipeline-fetch stalled!
+TRACE        358: pipeline-writeback: PC=0x800003a4, wb=1, rd=x7, ex=ALU (#65741)
+TRACE        358: pipeline-memory: PC=0x800003a8, wb=0, ex=ALU (#65742)
+TRACE        358: *** pipeline-fetch stalled!
+TRACE        359: pipeline-writeback: PC=0x800003a8, wb=0, ex=ALU (#65742)
 DEBUG Fetch: PC=0x800003ac (#65743)
 DEBUG Instr 0x120213: ADDI x4, x4, 0x1
 DEBUG Src0 Reg: x4={0x1}
 DEBUG Dest Reg: x4={0x2}
-TRACE        357: pipeline-fetch: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#65743)
-TRACE        358: pipeline-decode: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#65743)
+TRACE        359: pipeline-fetch: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#65743)
+TRACE        360: pipeline-decode: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#65743)
 DEBUG Fetch: PC=0x800003b0 (#65744)
 DEBUG Instr 0x200293: ADDI x5, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x5={0x2}
-TRACE        358: pipeline-fetch: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#65744)
-TRACE        359: pipeline-execute: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#65743)
-TRACE        359: pipeline-decode: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#65744)
+TRACE        360: pipeline-fetch: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#65744)
+TRACE        361: pipeline-execute: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#65743)
+TRACE        361: pipeline-decode: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#65744)
 DEBUG Fetch: PC=0x800003b4 (#65745)
 DEBUG Instr 0xfc521ee3: BNE x4, x5, 0xffffffdc
 DEBUG Src0 Reg: x4={0x2}
 DEBUG Src1 Reg: x5={0x2}
-TRACE        359: pipeline-fetch: PC=0x800003b4, wb=0, ex=ALU (#65745)
-TRACE        360: pipeline-memory: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#65743)
-TRACE        360: pipeline-execute: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#65744)
-TRACE        360: pipeline-decode: PC=0x800003b4, wb=0, ex=ALU (#65745)
-TRACE        360: *** pipeline-fetch stalled!
-TRACE        361: pipeline-writeback: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#65743)
-TRACE        361: pipeline-memory: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#65744)
-TRACE        361: pipeline-execute: PC=0x800003b4, wb=0, ex=ALU (#65745)
-TRACE        361: *** pipeline-fetch stalled!
-TRACE        362: pipeline-writeback: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#65744)
-TRACE        362: pipeline-memory: PC=0x800003b4, wb=0, ex=ALU (#65745)
+TRACE        361: pipeline-fetch: PC=0x800003b4, wb=0, ex=ALU (#65745)
+TRACE        362: pipeline-memory: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#65743)
+TRACE        362: pipeline-execute: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#65744)
+TRACE        362: pipeline-decode: PC=0x800003b4, wb=0, ex=ALU (#65745)
 TRACE        362: *** pipeline-fetch stalled!
-TRACE        363: pipeline-writeback: PC=0x800003b4, wb=0, ex=ALU (#65745)
+TRACE        363: pipeline-writeback: PC=0x800003ac, wb=1, rd=x4, ex=ALU (#65743)
+TRACE        363: pipeline-memory: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#65744)
+TRACE        363: pipeline-execute: PC=0x800003b4, wb=0, ex=ALU (#65745)
+TRACE        363: *** pipeline-fetch stalled!
+TRACE        364: pipeline-writeback: PC=0x800003b0, wb=1, rd=x5, ex=ALU (#65744)
+TRACE        364: pipeline-memory: PC=0x800003b4, wb=0, ex=ALU (#65745)
+TRACE        364: *** pipeline-fetch stalled!
+TRACE        365: pipeline-writeback: PC=0x800003b4, wb=0, ex=ALU (#65745)
 DEBUG Fetch: PC=0x800003b8 (#210)
 DEBUG Instr 0x1100193: ADDI x3, x0, 0x11
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x3={0x11}
-TRACE        363: pipeline-fetch: PC=0x800003b8, wb=1, rd=x3, ex=ALU (#210)
-TRACE        364: pipeline-decode: PC=0x800003b8, wb=1, rd=x3, ex=ALU (#210)
+TRACE        365: pipeline-fetch: PC=0x800003b8, wb=1, rd=x3, ex=ALU (#210)
+TRACE        366: pipeline-decode: PC=0x800003b8, wb=1, rd=x3, ex=ALU (#210)
 DEBUG Fetch: PC=0x800003bc (#211)
 DEBUG Instr 0x213: ADDI x4, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x4={0x0}
-TRACE        364: pipeline-fetch: PC=0x800003bc, wb=1, rd=x4, ex=ALU (#211)
-TRACE        365: pipeline-execute: PC=0x800003b8, wb=1, rd=x3, ex=ALU (#210)
-TRACE        365: pipeline-decode: PC=0x800003bc, wb=1, rd=x4, ex=ALU (#211)
+TRACE        366: pipeline-fetch: PC=0x800003bc, wb=1, rd=x4, ex=ALU (#211)
+TRACE        367: pipeline-execute: PC=0x800003b8, wb=1, rd=x3, ex=ALU (#210)
+TRACE        367: pipeline-decode: PC=0x800003bc, wb=1, rd=x4, ex=ALU (#211)
 DEBUG Fetch: PC=0x800003c0 (#212)
 DEBUG Instr 0x2097: AUIPC x1, 0x2
 DEBUG Dest Reg: x1={0x800023c0}
-TRACE        365: pipeline-fetch: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#212)
-TRACE        366: pipeline-memory: PC=0x800003b8, wb=1, rd=x3, ex=ALU (#210)
-TRACE        366: pipeline-execute: PC=0x800003bc, wb=1, rd=x4, ex=ALU (#211)
-TRACE        366: pipeline-decode: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#212)
+TRACE        367: pipeline-fetch: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#212)
+TRACE        368: pipeline-memory: PC=0x800003b8, wb=1, rd=x3, ex=ALU (#210)
+TRACE        368: pipeline-execute: PC=0x800003bc, wb=1, rd=x4, ex=ALU (#211)
+TRACE        368: pipeline-decode: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#212)
 DEBUG Fetch: PC=0x800003c4 (#213)
 DEBUG Instr 0xc4008093: ADDI x1, x1, 0xfffffc40
 DEBUG Src0 Reg: x1={0x800023c0}
 DEBUG Dest Reg: x1={0x80002000}
-TRACE        366: pipeline-fetch: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#213)
-TRACE        367: pipeline-writeback: PC=0x800003b8, wb=1, rd=x3, ex=ALU (#210)
-TRACE        367: pipeline-memory: PC=0x800003bc, wb=1, rd=x4, ex=ALU (#211)
-TRACE        367: pipeline-execute: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#212)
-TRACE        367: pipeline-decode: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#213)
+TRACE        368: pipeline-fetch: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#213)
+TRACE        369: pipeline-writeback: PC=0x800003b8, wb=1, rd=x3, ex=ALU (#210)
+TRACE        369: pipeline-memory: PC=0x800003bc, wb=1, rd=x4, ex=ALU (#211)
+TRACE        369: pipeline-execute: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#212)
+TRACE        369: pipeline-decode: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#213)
 DEBUG Fetch: PC=0x800003c8 (#214)
 DEBUG Instr 0x13: ADDI x0, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
-TRACE        367: pipeline-fetch: PC=0x800003c8, wb=0, ex=ALU (#214)
-TRACE        368: pipeline-writeback: PC=0x800003bc, wb=1, rd=x4, ex=ALU (#211)
-TRACE        368: pipeline-memory: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#212)
-TRACE        368: pipeline-execute: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#213)
-TRACE        368: pipeline-decode: PC=0x800003c8, wb=0, ex=ALU (#214)
+TRACE        369: pipeline-fetch: PC=0x800003c8, wb=0, ex=ALU (#214)
+TRACE        370: pipeline-writeback: PC=0x800003bc, wb=1, rd=x4, ex=ALU (#211)
+TRACE        370: pipeline-memory: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#212)
+TRACE        370: pipeline-execute: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#213)
+TRACE        370: pipeline-decode: PC=0x800003c8, wb=0, ex=ALU (#214)
 DEBUG Fetch: PC=0x800003cc (#215)
 DEBUG Instr 0x13: ADDI x0, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
-TRACE        368: pipeline-fetch: PC=0x800003cc, wb=0, ex=ALU (#215)
-TRACE        369: pipeline-writeback: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#212)
-TRACE        369: pipeline-memory: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#213)
-TRACE        369: pipeline-execute: PC=0x800003c8, wb=0, ex=ALU (#214)
-TRACE        369: pipeline-decode: PC=0x800003cc, wb=0, ex=ALU (#215)
+TRACE        370: pipeline-fetch: PC=0x800003cc, wb=0, ex=ALU (#215)
+TRACE        371: pipeline-writeback: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#212)
+TRACE        371: pipeline-memory: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#213)
+TRACE        371: pipeline-execute: PC=0x800003c8, wb=0, ex=ALU (#214)
+TRACE        371: pipeline-decode: PC=0x800003cc, wb=0, ex=ALU (#215)
 DEBUG Fetch: PC=0x800003d0 (#216)
 DEBUG Instr 0x209703: LH x14, x1, 0x2
 DEBUG Src0 Reg: x1={0x80002000}
 DEBUG Mem Read: addr=0x80002002, data=0xff00 (size=2, type=Global)
 DEBUG Dest Reg: x14={0xffffff00}
-TRACE        369: pipeline-fetch: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#216)
-TRACE        370: pipeline-writeback: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#213)
-TRACE        370: pipeline-memory: PC=0x800003c8, wb=0, ex=ALU (#214)
-TRACE        370: pipeline-execute: PC=0x800003cc, wb=0, ex=ALU (#215)
-TRACE        370: pipeline-decode: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#216)
+TRACE        371: pipeline-fetch: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#216)
+TRACE        372: pipeline-writeback: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#213)
+TRACE        372: pipeline-memory: PC=0x800003c8, wb=0, ex=ALU (#214)
+TRACE        372: pipeline-execute: PC=0x800003cc, wb=0, ex=ALU (#215)
+TRACE        372: pipeline-decode: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#216)
 DEBUG Fetch: PC=0x800003d4 (#217)
 DEBUG Instr 0xf0000393: ADDI x7, x0, 0xffffff00
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x7={0xffffff00}
-TRACE        370: pipeline-fetch: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#217)
-TRACE        371: pipeline-writeback: PC=0x800003c8, wb=0, ex=ALU (#214)
-TRACE        371: pipeline-memory: PC=0x800003cc, wb=0, ex=ALU (#215)
-TRACE        371: pipeline-execute: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#216)
-TRACE        371: pipeline-decode: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#217)
+TRACE        372: pipeline-fetch: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#217)
+TRACE        373: pipeline-writeback: PC=0x800003c8, wb=0, ex=ALU (#214)
+TRACE        373: pipeline-memory: PC=0x800003cc, wb=0, ex=ALU (#215)
+TRACE        373: pipeline-execute: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#216)
+TRACE        373: pipeline-decode: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#217)
 DEBUG Fetch: PC=0x800003d8 (#218)
 DEBUG Instr 0x4771863: BNE x14, x7, 0x50
 DEBUG Src0 Reg: x14={0xffffff00}
 DEBUG Src1 Reg: x7={0xffffff00}
-TRACE        371: pipeline-fetch: PC=0x800003d8, wb=0, ex=ALU (#218)
-TRACE        372: pipeline-writeback: PC=0x800003cc, wb=0, ex=ALU (#215)
-TRACE        372: pipeline-memory: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#216)
-TRACE        372: pipeline-execute: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#217)
-TRACE        372: pipeline-decode: PC=0x800003d8, wb=0, ex=ALU (#218)
-TRACE        372: *** pipeline-fetch stalled!
-TRACE        373: pipeline-writeback: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#216)
-TRACE        373: pipeline-memory: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#217)
-TRACE        373: pipeline-execute: PC=0x800003d8, wb=0, ex=ALU (#218)
-TRACE        373: *** pipeline-fetch stalled!
-TRACE        374: pipeline-writeback: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#217)
-TRACE        374: pipeline-memory: PC=0x800003d8, wb=0, ex=ALU (#218)
+TRACE        373: pipeline-fetch: PC=0x800003d8, wb=0, ex=ALU (#218)
+TRACE        374: pipeline-writeback: PC=0x800003cc, wb=0, ex=ALU (#215)
+TRACE        374: pipeline-memory: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#216)
+TRACE        374: pipeline-execute: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#217)
+TRACE        374: pipeline-decode: PC=0x800003d8, wb=0, ex=ALU (#218)
 TRACE        374: *** pipeline-fetch stalled!
-TRACE        375: pipeline-writeback: PC=0x800003d8, wb=0, ex=ALU (#218)
+TRACE        375: pipeline-writeback: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#216)
+TRACE        375: pipeline-memory: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#217)
+TRACE        375: pipeline-execute: PC=0x800003d8, wb=0, ex=ALU (#218)
+TRACE        375: *** pipeline-fetch stalled!
+TRACE        376: pipeline-writeback: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#217)
+TRACE        376: pipeline-memory: PC=0x800003d8, wb=0, ex=ALU (#218)
+TRACE        376: *** pipeline-fetch stalled!
+TRACE        377: pipeline-writeback: PC=0x800003d8, wb=0, ex=ALU (#218)
 DEBUG Fetch: PC=0x800003dc (#219)
 DEBUG Instr 0x120213: ADDI x4, x4, 0x1
 DEBUG Src0 Reg: x4={0x0}
 DEBUG Dest Reg: x4={0x1}
-TRACE        375: pipeline-fetch: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#219)
-TRACE        376: pipeline-decode: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#219)
+TRACE        377: pipeline-fetch: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#219)
+TRACE        378: pipeline-decode: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#219)
 DEBUG Fetch: PC=0x800003e0 (#220)
 DEBUG Instr 0x200293: ADDI x5, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x5={0x2}
-TRACE        376: pipeline-fetch: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#220)
-TRACE        377: pipeline-execute: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#219)
-TRACE        377: pipeline-decode: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#220)
+TRACE        378: pipeline-fetch: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#220)
+TRACE        379: pipeline-execute: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#219)
+TRACE        379: pipeline-decode: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#220)
 DEBUG Fetch: PC=0x800003e4 (#221)
 DEBUG Instr 0xfc521ee3: BNE x4, x5, 0xffffffdc
 DEBUG Src0 Reg: x4={0x1}
 DEBUG Src1 Reg: x5={0x2}
 DEBUG *** Next PC=0x800003c0
-TRACE        377: pipeline-fetch: PC=0x800003e4, wb=0, ex=ALU (#221)
-TRACE        378: pipeline-memory: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#219)
-TRACE        378: pipeline-execute: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#220)
-TRACE        378: pipeline-decode: PC=0x800003e4, wb=0, ex=ALU (#221)
-TRACE        378: *** pipeline-fetch stalled!
-TRACE        379: pipeline-writeback: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#219)
-TRACE        379: pipeline-memory: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#220)
-TRACE        379: pipeline-execute: PC=0x800003e4, wb=0, ex=ALU (#221)
-TRACE        379: *** pipeline-fetch stalled!
-TRACE        380: pipeline-writeback: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#220)
-TRACE        380: pipeline-memory: PC=0x800003e4, wb=0, ex=ALU (#221)
+TRACE        379: pipeline-fetch: PC=0x800003e4, wb=0, ex=ALU (#221)
+TRACE        380: pipeline-memory: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#219)
+TRACE        380: pipeline-execute: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#220)
+TRACE        380: pipeline-decode: PC=0x800003e4, wb=0, ex=ALU (#221)
 TRACE        380: *** pipeline-fetch stalled!
-TRACE        381: pipeline-writeback: PC=0x800003e4, wb=0, ex=ALU (#221)
+TRACE        381: pipeline-writeback: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#219)
+TRACE        381: pipeline-memory: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#220)
+TRACE        381: pipeline-execute: PC=0x800003e4, wb=0, ex=ALU (#221)
+TRACE        381: *** pipeline-fetch stalled!
+TRACE        382: pipeline-writeback: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#220)
+TRACE        382: pipeline-memory: PC=0x800003e4, wb=0, ex=ALU (#221)
+TRACE        382: *** pipeline-fetch stalled!
+TRACE        383: pipeline-writeback: PC=0x800003e4, wb=0, ex=ALU (#221)
 DEBUG Fetch: PC=0x800003c0 (#65748)
 DEBUG Instr 0x2097: AUIPC x1, 0x2
 DEBUG Dest Reg: x1={0x800023c0}
-TRACE        381: pipeline-fetch: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#65748)
-TRACE        382: pipeline-decode: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#65748)
+TRACE        383: pipeline-fetch: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#65748)
+TRACE        384: pipeline-decode: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#65748)
 DEBUG Fetch: PC=0x800003c4 (#65749)
 DEBUG Instr 0xc4008093: ADDI x1, x1, 0xfffffc40
 DEBUG Src0 Reg: x1={0x800023c0}
 DEBUG Dest Reg: x1={0x80002000}
-TRACE        382: pipeline-fetch: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#65749)
-TRACE        383: pipeline-execute: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#65748)
-TRACE        383: pipeline-decode: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#65749)
+TRACE        384: pipeline-fetch: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#65749)
+TRACE        385: pipeline-execute: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#65748)
+TRACE        385: pipeline-decode: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#65749)
 DEBUG Fetch: PC=0x800003c8 (#65750)
 DEBUG Instr 0x13: ADDI x0, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
-TRACE        383: pipeline-fetch: PC=0x800003c8, wb=0, ex=ALU (#65750)
-TRACE        384: pipeline-memory: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#65748)
-TRACE        384: pipeline-execute: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#65749)
-TRACE        384: pipeline-decode: PC=0x800003c8, wb=0, ex=ALU (#65750)
+TRACE        385: pipeline-fetch: PC=0x800003c8, wb=0, ex=ALU (#65750)
+TRACE        386: pipeline-memory: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#65748)
+TRACE        386: pipeline-execute: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#65749)
+TRACE        386: pipeline-decode: PC=0x800003c8, wb=0, ex=ALU (#65750)
 DEBUG Fetch: PC=0x800003cc (#65751)
 DEBUG Instr 0x13: ADDI x0, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
-TRACE        384: pipeline-fetch: PC=0x800003cc, wb=0, ex=ALU (#65751)
-TRACE        385: pipeline-writeback: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#65748)
-TRACE        385: pipeline-memory: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#65749)
-TRACE        385: pipeline-execute: PC=0x800003c8, wb=0, ex=ALU (#65750)
-TRACE        385: pipeline-decode: PC=0x800003cc, wb=0, ex=ALU (#65751)
+TRACE        386: pipeline-fetch: PC=0x800003cc, wb=0, ex=ALU (#65751)
+TRACE        387: pipeline-writeback: PC=0x800003c0, wb=1, rd=x1, ex=ALU (#65748)
+TRACE        387: pipeline-memory: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#65749)
+TRACE        387: pipeline-execute: PC=0x800003c8, wb=0, ex=ALU (#65750)
+TRACE        387: pipeline-decode: PC=0x800003cc, wb=0, ex=ALU (#65751)
 DEBUG Fetch: PC=0x800003d0 (#65752)
 DEBUG Instr 0x209703: LH x14, x1, 0x2
 DEBUG Src0 Reg: x1={0x80002000}
 DEBUG Mem Read: addr=0x80002002, data=0xff00 (size=2, type=Global)
 DEBUG Dest Reg: x14={0xffffff00}
-TRACE        385: pipeline-fetch: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#65752)
-TRACE        386: pipeline-writeback: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#65749)
-TRACE        386: pipeline-memory: PC=0x800003c8, wb=0, ex=ALU (#65750)
-TRACE        386: pipeline-execute: PC=0x800003cc, wb=0, ex=ALU (#65751)
-TRACE        386: pipeline-decode: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#65752)
+TRACE        387: pipeline-fetch: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#65752)
+TRACE        388: pipeline-writeback: PC=0x800003c4, wb=1, rd=x1, ex=ALU (#65749)
+TRACE        388: pipeline-memory: PC=0x800003c8, wb=0, ex=ALU (#65750)
+TRACE        388: pipeline-execute: PC=0x800003cc, wb=0, ex=ALU (#65751)
+TRACE        388: pipeline-decode: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#65752)
 DEBUG Fetch: PC=0x800003d4 (#65753)
 DEBUG Instr 0xf0000393: ADDI x7, x0, 0xffffff00
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x7={0xffffff00}
-TRACE        386: pipeline-fetch: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#65753)
-TRACE        387: pipeline-writeback: PC=0x800003c8, wb=0, ex=ALU (#65750)
-TRACE        387: pipeline-memory: PC=0x800003cc, wb=0, ex=ALU (#65751)
-TRACE        387: pipeline-execute: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#65752)
-TRACE        387: pipeline-decode: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#65753)
+TRACE        388: pipeline-fetch: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#65753)
+TRACE        389: pipeline-writeback: PC=0x800003c8, wb=0, ex=ALU (#65750)
+TRACE        389: pipeline-memory: PC=0x800003cc, wb=0, ex=ALU (#65751)
+TRACE        389: pipeline-execute: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#65752)
+TRACE        389: pipeline-decode: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#65753)
 DEBUG Fetch: PC=0x800003d8 (#65754)
 DEBUG Instr 0x4771863: BNE x14, x7, 0x50
 DEBUG Src0 Reg: x14={0xffffff00}
 DEBUG Src1 Reg: x7={0xffffff00}
-TRACE        387: pipeline-fetch: PC=0x800003d8, wb=0, ex=ALU (#65754)
-TRACE        388: pipeline-writeback: PC=0x800003cc, wb=0, ex=ALU (#65751)
-TRACE        388: pipeline-memory: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#65752)
-TRACE        388: pipeline-execute: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#65753)
-TRACE        388: pipeline-decode: PC=0x800003d8, wb=0, ex=ALU (#65754)
-TRACE        388: *** pipeline-fetch stalled!
-TRACE        389: pipeline-writeback: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#65752)
-TRACE        389: pipeline-memory: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#65753)
-TRACE        389: pipeline-execute: PC=0x800003d8, wb=0, ex=ALU (#65754)
-TRACE        389: *** pipeline-fetch stalled!
-TRACE        390: pipeline-writeback: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#65753)
-TRACE        390: pipeline-memory: PC=0x800003d8, wb=0, ex=ALU (#65754)
+TRACE        389: pipeline-fetch: PC=0x800003d8, wb=0, ex=ALU (#65754)
+TRACE        390: pipeline-writeback: PC=0x800003cc, wb=0, ex=ALU (#65751)
+TRACE        390: pipeline-memory: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#65752)
+TRACE        390: pipeline-execute: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#65753)
+TRACE        390: pipeline-decode: PC=0x800003d8, wb=0, ex=ALU (#65754)
 TRACE        390: *** pipeline-fetch stalled!
-TRACE        391: pipeline-writeback: PC=0x800003d8, wb=0, ex=ALU (#65754)
+TRACE        391: pipeline-writeback: PC=0x800003d0, wb=1, rd=x14, ex=LSU (#65752)
+TRACE        391: pipeline-memory: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#65753)
+TRACE        391: pipeline-execute: PC=0x800003d8, wb=0, ex=ALU (#65754)
+TRACE        391: *** pipeline-fetch stalled!
+TRACE        392: pipeline-writeback: PC=0x800003d4, wb=1, rd=x7, ex=ALU (#65753)
+TRACE        392: pipeline-memory: PC=0x800003d8, wb=0, ex=ALU (#65754)
+TRACE        392: *** pipeline-fetch stalled!
+TRACE        393: pipeline-writeback: PC=0x800003d8, wb=0, ex=ALU (#65754)
 DEBUG Fetch: PC=0x800003dc (#65755)
 DEBUG Instr 0x120213: ADDI x4, x4, 0x1
 DEBUG Src0 Reg: x4={0x1}
 DEBUG Dest Reg: x4={0x2}
-TRACE        391: pipeline-fetch: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#65755)
-TRACE        392: pipeline-decode: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#65755)
+TRACE        393: pipeline-fetch: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#65755)
+TRACE        394: pipeline-decode: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#65755)
 DEBUG Fetch: PC=0x800003e0 (#65756)
 DEBUG Instr 0x200293: ADDI x5, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x5={0x2}
-TRACE        392: pipeline-fetch: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#65756)
-TRACE        393: pipeline-execute: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#65755)
-TRACE        393: pipeline-decode: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#65756)
+TRACE        394: pipeline-fetch: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#65756)
+TRACE        395: pipeline-execute: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#65755)
+TRACE        395: pipeline-decode: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#65756)
 DEBUG Fetch: PC=0x800003e4 (#65757)
 DEBUG Instr 0xfc521ee3: BNE x4, x5, 0xffffffdc
 DEBUG Src0 Reg: x4={0x2}
 DEBUG Src1 Reg: x5={0x2}
-TRACE        393: pipeline-fetch: PC=0x800003e4, wb=0, ex=ALU (#65757)
-TRACE        394: pipeline-memory: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#65755)
-TRACE        394: pipeline-execute: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#65756)
-TRACE        394: pipeline-decode: PC=0x800003e4, wb=0, ex=ALU (#65757)
-TRACE        394: *** pipeline-fetch stalled!
-TRACE        395: pipeline-writeback: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#65755)
-TRACE        395: pipeline-memory: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#65756)
-TRACE        395: pipeline-execute: PC=0x800003e4, wb=0, ex=ALU (#65757)
-TRACE        395: *** pipeline-fetch stalled!
-TRACE        396: pipeline-writeback: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#65756)
-TRACE        396: pipeline-memory: PC=0x800003e4, wb=0, ex=ALU (#65757)
+TRACE        395: pipeline-fetch: PC=0x800003e4, wb=0, ex=ALU (#65757)
+TRACE        396: pipeline-memory: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#65755)
+TRACE        396: pipeline-execute: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#65756)
+TRACE        396: pipeline-decode: PC=0x800003e4, wb=0, ex=ALU (#65757)
 TRACE        396: *** pipeline-fetch stalled!
-TRACE        397: pipeline-writeback: PC=0x800003e4, wb=0, ex=ALU (#65757)
+TRACE        397: pipeline-writeback: PC=0x800003dc, wb=1, rd=x4, ex=ALU (#65755)
+TRACE        397: pipeline-memory: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#65756)
+TRACE        397: pipeline-execute: PC=0x800003e4, wb=0, ex=ALU (#65757)
+TRACE        397: *** pipeline-fetch stalled!
+TRACE        398: pipeline-writeback: PC=0x800003e0, wb=1, rd=x5, ex=ALU (#65756)
+TRACE        398: pipeline-memory: PC=0x800003e4, wb=0, ex=ALU (#65757)
+TRACE        398: *** pipeline-fetch stalled!
+TRACE        399: pipeline-writeback: PC=0x800003e4, wb=0, ex=ALU (#65757)
 DEBUG Fetch: PC=0x800003e8 (#222)
 DEBUG Instr 0x1200193: ADDI x3, x0, 0x12
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x3={0x12}
-TRACE        397: pipeline-fetch: PC=0x800003e8, wb=1, rd=x3, ex=ALU (#222)
-TRACE        398: pipeline-decode: PC=0x800003e8, wb=1, rd=x3, ex=ALU (#222)
+TRACE        399: pipeline-fetch: PC=0x800003e8, wb=1, rd=x3, ex=ALU (#222)
+TRACE        400: pipeline-decode: PC=0x800003e8, wb=1, rd=x3, ex=ALU (#222)
 DEBUG Fetch: PC=0x800003ec (#223)
 DEBUG Instr 0x2297: AUIPC x5, 0x2
 DEBUG Dest Reg: x5={0x800023ec}
-TRACE        398: pipeline-fetch: PC=0x800003ec, wb=1, rd=x5, ex=ALU (#223)
-TRACE        399: pipeline-execute: PC=0x800003e8, wb=1, rd=x3, ex=ALU (#222)
-TRACE        399: pipeline-decode: PC=0x800003ec, wb=1, rd=x5, ex=ALU (#223)
+TRACE        400: pipeline-fetch: PC=0x800003ec, wb=1, rd=x5, ex=ALU (#223)
+TRACE        401: pipeline-execute: PC=0x800003e8, wb=1, rd=x3, ex=ALU (#222)
+TRACE        401: pipeline-decode: PC=0x800003ec, wb=1, rd=x5, ex=ALU (#223)
 DEBUG Fetch: PC=0x800003f0 (#224)
 DEBUG Instr 0xc1428293: ADDI x5, x5, 0xfffffc14
 DEBUG Src0 Reg: x5={0x800023ec}
 DEBUG Dest Reg: x5={0x80002000}
-TRACE        399: pipeline-fetch: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#224)
-TRACE        400: pipeline-memory: PC=0x800003e8, wb=1, rd=x3, ex=ALU (#222)
-TRACE        400: pipeline-execute: PC=0x800003ec, wb=1, rd=x5, ex=ALU (#223)
-TRACE        400: pipeline-decode: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#224)
+TRACE        401: pipeline-fetch: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#224)
+TRACE        402: pipeline-memory: PC=0x800003e8, wb=1, rd=x3, ex=ALU (#222)
+TRACE        402: pipeline-execute: PC=0x800003ec, wb=1, rd=x5, ex=ALU (#223)
+TRACE        402: pipeline-decode: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#224)
 DEBUG Fetch: PC=0x800003f4 (#225)
 DEBUG Instr 0x29103: LH x2, x5, 0x0
 DEBUG Src0 Reg: x5={0x80002000}
 DEBUG Mem Read: addr=0x80002000, data=0x00ff (size=2, type=Global)
 DEBUG Dest Reg: x2={0xff}
-TRACE        400: pipeline-fetch: PC=0x800003f4, wb=1, rd=x2, ex=LSU (#225)
-TRACE        401: pipeline-writeback: PC=0x800003e8, wb=1, rd=x3, ex=ALU (#222)
-TRACE        401: pipeline-memory: PC=0x800003ec, wb=1, rd=x5, ex=ALU (#223)
-TRACE        401: pipeline-execute: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#224)
-TRACE        401: pipeline-decode: PC=0x800003f4, wb=1, rd=x2, ex=LSU (#225)
+TRACE        402: pipeline-fetch: PC=0x800003f4, wb=1, rd=x2, ex=LSU (#225)
+TRACE        403: pipeline-writeback: PC=0x800003e8, wb=1, rd=x3, ex=ALU (#222)
+TRACE        403: pipeline-memory: PC=0x800003ec, wb=1, rd=x5, ex=ALU (#223)
+TRACE        403: pipeline-execute: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#224)
+TRACE        403: pipeline-decode: PC=0x800003f4, wb=1, rd=x2, ex=LSU (#225)
 DEBUG Fetch: PC=0x800003f8 (#226)
 DEBUG Instr 0x200113: ADDI x2, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x2={0x2}
-TRACE        401: pipeline-fetch: PC=0x800003f8, wb=1, rd=x2, ex=ALU (#226)
-TRACE        402: pipeline-writeback: PC=0x800003ec, wb=1, rd=x5, ex=ALU (#223)
-TRACE        402: pipeline-memory: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#224)
-TRACE        402: pipeline-execute: PC=0x800003f4, wb=1, rd=x2, ex=LSU (#225)
-TRACE        402: *** pipeline-decode stalled!: PC=0x800003f8, wb=1, rd=x2, ex=ALU (#226)
+TRACE        403: pipeline-fetch: PC=0x800003f8, wb=1, rd=x2, ex=ALU (#226)
+TRACE        404: pipeline-writeback: PC=0x800003ec, wb=1, rd=x5, ex=ALU (#223)
+TRACE        404: pipeline-memory: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#224)
+TRACE        404: pipeline-execute: PC=0x800003f4, wb=1, rd=x2, ex=LSU (#225)
+TRACE        404: pipeline-decode: PC=0x800003f8, wb=1, rd=x2, ex=ALU (#226)
 DEBUG Fetch: PC=0x800003fc (#227)
 DEBUG Instr 0x200393: ADDI x7, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x7={0x2}
-TRACE        402: pipeline-fetch: PC=0x800003fc, wb=1, rd=x7, ex=ALU (#227)
-TRACE        403: pipeline-writeback: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#224)
-TRACE        403: pipeline-memory: PC=0x800003f4, wb=1, rd=x2, ex=LSU (#225)
-TRACE        403: pipeline-decode: PC=0x800003f8, wb=1, rd=x2, ex=ALU (#226)
+TRACE        404: pipeline-fetch: PC=0x800003fc, wb=1, rd=x7, ex=ALU (#227)
+TRACE        405: pipeline-writeback: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#224)
+TRACE        405: pipeline-memory: PC=0x800003f4, wb=1, rd=x2, ex=LSU (#225)
+TRACE        405: pipeline-execute: PC=0x800003f8, wb=1, rd=x2, ex=ALU (#226)
+TRACE        405: pipeline-decode: PC=0x800003fc, wb=1, rd=x7, ex=ALU (#227)
 DEBUG Fetch: PC=0x80000400 (#228)
 DEBUG Instr 0x2711463: BNE x2, x7, 0x28
 DEBUG Src0 Reg: x2={0x2}
 DEBUG Src1 Reg: x7={0x2}
-TRACE        403: pipeline-fetch: PC=0x80000400, wb=0, ex=ALU (#228)
-TRACE        404: pipeline-writeback: PC=0x800003f4, wb=1, rd=x2, ex=LSU (#225)
-TRACE        404: pipeline-execute: PC=0x800003f8, wb=1, rd=x2, ex=ALU (#226)
-TRACE        404: pipeline-decode: PC=0x800003fc, wb=1, rd=x7, ex=ALU (#227)
+TRACE        405: pipeline-fetch: PC=0x80000400, wb=0, ex=ALU (#228)
+TRACE        406: pipeline-writeback: PC=0x800003f4, wb=1, rd=x2, ex=LSU (#225)
+TRACE        406: pipeline-memory: PC=0x800003f8, wb=1, rd=x2, ex=ALU (#226)
+TRACE        406: pipeline-execute: PC=0x800003fc, wb=1, rd=x7, ex=ALU (#227)
+TRACE        406: pipeline-decode: PC=0x80000400, wb=0, ex=ALU (#228)
+TRACE        406: *** pipeline-fetch stalled!
+TRACE        407: pipeline-writeback: PC=0x800003f8, wb=1, rd=x2, ex=ALU (#226)
+TRACE        407: pipeline-memory: PC=0x800003fc, wb=1, rd=x7, ex=ALU (#227)
+TRACE        407: pipeline-execute: PC=0x80000400, wb=0, ex=ALU (#228)
+TRACE        407: *** pipeline-fetch stalled!
+TRACE        408: pipeline-writeback: PC=0x800003fc, wb=1, rd=x7, ex=ALU (#227)
+TRACE        408: pipeline-memory: PC=0x80000400, wb=0, ex=ALU (#228)
+TRACE        408: *** pipeline-fetch stalled!
+TRACE        409: pipeline-writeback: PC=0x80000400, wb=0, ex=ALU (#228)
 DEBUG Fetch: PC=0x80000404 (#229)
 DEBUG Instr 0x1300193: ADDI x3, x0, 0x13
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x3={0x13}
-TRACE        404: pipeline-fetch: PC=0x80000404, wb=1, rd=x3, ex=ALU (#229)
-TRACE        405: pipeline-memory: PC=0x800003f8, wb=1, rd=x2, ex=ALU (#226)
-TRACE        405: pipeline-execute: PC=0x800003fc, wb=1, rd=x7, ex=ALU (#227)
-TRACE        405: pipeline-decode: PC=0x80000400, wb=0, ex=ALU (#228)
-TRACE        405: *** pipeline-fetch stalled!
-TRACE        406: pipeline-writeback: PC=0x800003f8, wb=1, rd=x2, ex=ALU (#226)
-TRACE        406: pipeline-memory: PC=0x800003fc, wb=1, rd=x7, ex=ALU (#227)
-TRACE        406: pipeline-execute: PC=0x80000400, wb=0, ex=ALU (#228)
-TRACE        406: pipeline-decode: PC=0x80000404, wb=1, rd=x3, ex=ALU (#229)
-TRACE        406: *** pipeline-fetch stalled!
-TRACE        407: pipeline-writeback: PC=0x800003fc, wb=1, rd=x7, ex=ALU (#227)
-TRACE        407: pipeline-memory: PC=0x80000400, wb=0, ex=ALU (#228)
-TRACE        407: pipeline-execute: PC=0x80000404, wb=1, rd=x3, ex=ALU (#229)
-TRACE        407: *** pipeline-fetch stalled!
-TRACE        408: pipeline-writeback: PC=0x80000400, wb=0, ex=ALU (#228)
-TRACE        408: pipeline-memory: PC=0x80000404, wb=1, rd=x3, ex=ALU (#229)
+TRACE        409: pipeline-fetch: PC=0x80000404, wb=1, rd=x3, ex=ALU (#229)
+TRACE        410: pipeline-decode: PC=0x80000404, wb=1, rd=x3, ex=ALU (#229)
 DEBUG Fetch: PC=0x80000408 (#230)
 DEBUG Instr 0x2297: AUIPC x5, 0x2
 DEBUG Dest Reg: x5={0x80002408}
-TRACE        408: pipeline-fetch: PC=0x80000408, wb=1, rd=x5, ex=ALU (#230)
-TRACE        409: pipeline-writeback: PC=0x80000404, wb=1, rd=x3, ex=ALU (#229)
-TRACE        409: pipeline-decode: PC=0x80000408, wb=1, rd=x5, ex=ALU (#230)
+TRACE        410: pipeline-fetch: PC=0x80000408, wb=1, rd=x5, ex=ALU (#230)
+TRACE        411: pipeline-execute: PC=0x80000404, wb=1, rd=x3, ex=ALU (#229)
+TRACE        411: pipeline-decode: PC=0x80000408, wb=1, rd=x5, ex=ALU (#230)
 DEBUG Fetch: PC=0x8000040c (#231)
 DEBUG Instr 0xbf828293: ADDI x5, x5, 0xfffffbf8
 DEBUG Src0 Reg: x5={0x80002408}
 DEBUG Dest Reg: x5={0x80002000}
-TRACE        409: pipeline-fetch: PC=0x8000040c, wb=1, rd=x5, ex=ALU (#231)
-TRACE        410: pipeline-execute: PC=0x80000408, wb=1, rd=x5, ex=ALU (#230)
-TRACE        410: pipeline-decode: PC=0x8000040c, wb=1, rd=x5, ex=ALU (#231)
+TRACE        411: pipeline-fetch: PC=0x8000040c, wb=1, rd=x5, ex=ALU (#231)
+TRACE        412: pipeline-memory: PC=0x80000404, wb=1, rd=x3, ex=ALU (#229)
+TRACE        412: pipeline-execute: PC=0x80000408, wb=1, rd=x5, ex=ALU (#230)
+TRACE        412: pipeline-decode: PC=0x8000040c, wb=1, rd=x5, ex=ALU (#231)
 DEBUG Fetch: PC=0x80000410 (#232)
 DEBUG Instr 0x29103: LH x2, x5, 0x0
 DEBUG Src0 Reg: x5={0x80002000}
 DEBUG Mem Read: addr=0x80002000, data=0x00ff (size=2, type=Global)
 DEBUG Dest Reg: x2={0xff}
-TRACE        410: pipeline-fetch: PC=0x80000410, wb=1, rd=x2, ex=LSU (#232)
-TRACE        411: pipeline-memory: PC=0x80000408, wb=1, rd=x5, ex=ALU (#230)
-TRACE        411: pipeline-execute: PC=0x8000040c, wb=1, rd=x5, ex=ALU (#231)
-TRACE        411: pipeline-decode: PC=0x80000410, wb=1, rd=x2, ex=LSU (#232)
+TRACE        412: pipeline-fetch: PC=0x80000410, wb=1, rd=x2, ex=LSU (#232)
+TRACE        413: pipeline-writeback: PC=0x80000404, wb=1, rd=x3, ex=ALU (#229)
+TRACE        413: pipeline-memory: PC=0x80000408, wb=1, rd=x5, ex=ALU (#230)
+TRACE        413: pipeline-execute: PC=0x8000040c, wb=1, rd=x5, ex=ALU (#231)
+TRACE        413: pipeline-decode: PC=0x80000410, wb=1, rd=x2, ex=LSU (#232)
 DEBUG Fetch: PC=0x80000414 (#233)
 DEBUG Instr 0x13: ADDI x0, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
-TRACE        411: pipeline-fetch: PC=0x80000414, wb=0, ex=ALU (#233)
-TRACE        412: pipeline-writeback: PC=0x80000408, wb=1, rd=x5, ex=ALU (#230)
-TRACE        412: pipeline-memory: PC=0x8000040c, wb=1, rd=x5, ex=ALU (#231)
-TRACE        412: pipeline-execute: PC=0x80000410, wb=1, rd=x2, ex=LSU (#232)
-TRACE        412: pipeline-decode: PC=0x80000414, wb=0, ex=ALU (#233)
+TRACE        413: pipeline-fetch: PC=0x80000414, wb=0, ex=ALU (#233)
+TRACE        414: pipeline-writeback: PC=0x80000408, wb=1, rd=x5, ex=ALU (#230)
+TRACE        414: pipeline-memory: PC=0x8000040c, wb=1, rd=x5, ex=ALU (#231)
+TRACE        414: pipeline-execute: PC=0x80000410, wb=1, rd=x2, ex=LSU (#232)
+TRACE        414: pipeline-decode: PC=0x80000414, wb=0, ex=ALU (#233)
 DEBUG Fetch: PC=0x80000418 (#234)
 DEBUG Instr 0x200113: ADDI x2, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x2={0x2}
-TRACE        412: pipeline-fetch: PC=0x80000418, wb=1, rd=x2, ex=ALU (#234)
-TRACE        413: pipeline-writeback: PC=0x8000040c, wb=1, rd=x5, ex=ALU (#231)
-TRACE        413: pipeline-memory: PC=0x80000410, wb=1, rd=x2, ex=LSU (#232)
-TRACE        413: pipeline-execute: PC=0x80000414, wb=0, ex=ALU (#233)
-TRACE        413: pipeline-decode: PC=0x80000418, wb=1, rd=x2, ex=ALU (#234)
+TRACE        414: pipeline-fetch: PC=0x80000418, wb=1, rd=x2, ex=ALU (#234)
+TRACE        415: pipeline-writeback: PC=0x8000040c, wb=1, rd=x5, ex=ALU (#231)
+TRACE        415: pipeline-memory: PC=0x80000410, wb=1, rd=x2, ex=LSU (#232)
+TRACE        415: pipeline-execute: PC=0x80000414, wb=0, ex=ALU (#233)
+TRACE        415: pipeline-decode: PC=0x80000418, wb=1, rd=x2, ex=ALU (#234)
 DEBUG Fetch: PC=0x8000041c (#235)
 DEBUG Instr 0x200393: ADDI x7, x0, 0x2
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x7={0x2}
-TRACE        413: pipeline-fetch: PC=0x8000041c, wb=1, rd=x7, ex=ALU (#235)
-TRACE        414: pipeline-writeback: PC=0x80000410, wb=1, rd=x2, ex=LSU (#232)
-TRACE        414: pipeline-memory: PC=0x80000414, wb=0, ex=ALU (#233)
-TRACE        414: pipeline-execute: PC=0x80000418, wb=1, rd=x2, ex=ALU (#234)
-TRACE        414: pipeline-decode: PC=0x8000041c, wb=1, rd=x7, ex=ALU (#235)
+TRACE        415: pipeline-fetch: PC=0x8000041c, wb=1, rd=x7, ex=ALU (#235)
+TRACE        416: pipeline-writeback: PC=0x80000410, wb=1, rd=x2, ex=LSU (#232)
+TRACE        416: pipeline-memory: PC=0x80000414, wb=0, ex=ALU (#233)
+TRACE        416: pipeline-execute: PC=0x80000418, wb=1, rd=x2, ex=ALU (#234)
+TRACE        416: pipeline-decode: PC=0x8000041c, wb=1, rd=x7, ex=ALU (#235)
 DEBUG Fetch: PC=0x80000420 (#236)
 DEBUG Instr 0x711463: BNE x2, x7, 0x8
 DEBUG Src0 Reg: x2={0x2}
 DEBUG Src1 Reg: x7={0x2}
-TRACE        414: pipeline-fetch: PC=0x80000420, wb=0, ex=ALU (#236)
-TRACE        415: pipeline-writeback: PC=0x80000414, wb=0, ex=ALU (#233)
-TRACE        415: pipeline-memory: PC=0x80000418, wb=1, rd=x2, ex=ALU (#234)
-TRACE        415: pipeline-execute: PC=0x8000041c, wb=1, rd=x7, ex=ALU (#235)
-TRACE        415: pipeline-decode: PC=0x80000420, wb=0, ex=ALU (#236)
-TRACE        415: *** pipeline-fetch stalled!
-TRACE        416: pipeline-writeback: PC=0x80000418, wb=1, rd=x2, ex=ALU (#234)
-TRACE        416: pipeline-memory: PC=0x8000041c, wb=1, rd=x7, ex=ALU (#235)
-TRACE        416: pipeline-execute: PC=0x80000420, wb=0, ex=ALU (#236)
-TRACE        416: *** pipeline-fetch stalled!
-TRACE        417: pipeline-writeback: PC=0x8000041c, wb=1, rd=x7, ex=ALU (#235)
-TRACE        417: pipeline-memory: PC=0x80000420, wb=0, ex=ALU (#236)
+TRACE        416: pipeline-fetch: PC=0x80000420, wb=0, ex=ALU (#236)
+TRACE        417: pipeline-writeback: PC=0x80000414, wb=0, ex=ALU (#233)
+TRACE        417: pipeline-memory: PC=0x80000418, wb=1, rd=x2, ex=ALU (#234)
+TRACE        417: pipeline-execute: PC=0x8000041c, wb=1, rd=x7, ex=ALU (#235)
+TRACE        417: pipeline-decode: PC=0x80000420, wb=0, ex=ALU (#236)
 TRACE        417: *** pipeline-fetch stalled!
-TRACE        418: pipeline-writeback: PC=0x80000420, wb=0, ex=ALU (#236)
+TRACE        418: pipeline-writeback: PC=0x80000418, wb=1, rd=x2, ex=ALU (#234)
+TRACE        418: pipeline-memory: PC=0x8000041c, wb=1, rd=x7, ex=ALU (#235)
+TRACE        418: pipeline-execute: PC=0x80000420, wb=0, ex=ALU (#236)
+TRACE        418: *** pipeline-fetch stalled!
+TRACE        419: pipeline-writeback: PC=0x8000041c, wb=1, rd=x7, ex=ALU (#235)
+TRACE        419: pipeline-memory: PC=0x80000420, wb=0, ex=ALU (#236)
+TRACE        419: *** pipeline-fetch stalled!
+TRACE        420: pipeline-writeback: PC=0x80000420, wb=0, ex=ALU (#236)
 DEBUG Fetch: PC=0x80000424 (#237)
 DEBUG Instr 0x2301063: BNE x0, x3, 0x20
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Src1 Reg: x3={0x13}
 DEBUG *** Next PC=0x80000444
-TRACE        418: pipeline-fetch: PC=0x80000424, wb=0, ex=ALU (#237)
-TRACE        419: pipeline-decode: PC=0x80000424, wb=0, ex=ALU (#237)
-TRACE        419: *** pipeline-fetch stalled!
-TRACE        420: pipeline-execute: PC=0x80000424, wb=0, ex=ALU (#237)
-TRACE        420: *** pipeline-fetch stalled!
-TRACE        421: pipeline-memory: PC=0x80000424, wb=0, ex=ALU (#237)
+TRACE        420: pipeline-fetch: PC=0x80000424, wb=0, ex=ALU (#237)
+TRACE        421: pipeline-decode: PC=0x80000424, wb=0, ex=ALU (#237)
 TRACE        421: *** pipeline-fetch stalled!
-TRACE        422: pipeline-writeback: PC=0x80000424, wb=0, ex=ALU (#237)
+TRACE        422: pipeline-execute: PC=0x80000424, wb=0, ex=ALU (#237)
+TRACE        422: *** pipeline-fetch stalled!
+TRACE        423: pipeline-memory: PC=0x80000424, wb=0, ex=ALU (#237)
+TRACE        423: *** pipeline-fetch stalled!
+TRACE        424: pipeline-writeback: PC=0x80000424, wb=0, ex=ALU (#237)
 DEBUG Fetch: PC=0x80000444 (#238)
 DEBUG Instr 0xff0000f: FENCE 0xff
-TRACE        422: pipeline-fetch: PC=0x80000444, wb=0, ex=LSU (#238)
-TRACE        423: pipeline-decode: PC=0x80000444, wb=0, ex=LSU (#238)
+TRACE        424: pipeline-fetch: PC=0x80000444, wb=0, ex=LSU (#238)
+TRACE        425: pipeline-decode: PC=0x80000444, wb=0, ex=LSU (#238)
 DEBUG Fetch: PC=0x80000448 (#239)
 DEBUG Instr 0x100193: ADDI x3, x0, 0x1
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x3={0x1}
-TRACE        423: pipeline-fetch: PC=0x80000448, wb=1, rd=x3, ex=ALU (#239)
-TRACE        424: pipeline-execute: PC=0x80000444, wb=0, ex=LSU (#238)
-TRACE        424: pipeline-decode: PC=0x80000448, wb=1, rd=x3, ex=ALU (#239)
+TRACE        425: pipeline-fetch: PC=0x80000448, wb=1, rd=x3, ex=ALU (#239)
+TRACE        426: pipeline-execute: PC=0x80000444, wb=0, ex=LSU (#238)
+TRACE        426: pipeline-decode: PC=0x80000448, wb=1, rd=x3, ex=ALU (#239)
 DEBUG Fetch: PC=0x8000044c (#240)
 DEBUG Instr 0x5d00893: ADDI x17, x0, 0x5d
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x17={0x5d}
-TRACE        424: pipeline-fetch: PC=0x8000044c, wb=1, rd=x17, ex=ALU (#240)
-TRACE        425: pipeline-memory: PC=0x80000444, wb=0, ex=LSU (#238)
-TRACE        425: pipeline-execute: PC=0x80000448, wb=1, rd=x3, ex=ALU (#239)
-TRACE        425: pipeline-decode: PC=0x8000044c, wb=1, rd=x17, ex=ALU (#240)
+TRACE        426: pipeline-fetch: PC=0x8000044c, wb=1, rd=x17, ex=ALU (#240)
+TRACE        427: pipeline-memory: PC=0x80000444, wb=0, ex=LSU (#238)
+TRACE        427: pipeline-execute: PC=0x80000448, wb=1, rd=x3, ex=ALU (#239)
+TRACE        427: pipeline-decode: PC=0x8000044c, wb=1, rd=x17, ex=ALU (#240)
 DEBUG Fetch: PC=0x80000450 (#241)
 DEBUG Instr 0x513: ADDI x10, x0, 0x0
 DEBUG Src0 Reg: x0={0x0}
 DEBUG Dest Reg: x10={0x0}
-TRACE        425: pipeline-fetch: PC=0x80000450, wb=1, rd=x10, ex=ALU (#241)
-TRACE        426: pipeline-writeback: PC=0x80000444, wb=0, ex=LSU (#238)
-TRACE        426: pipeline-memory: PC=0x80000448, wb=1, rd=x3, ex=ALU (#239)
-TRACE        426: pipeline-execute: PC=0x8000044c, wb=1, rd=x17, ex=ALU (#240)
-TRACE        426: pipeline-decode: PC=0x80000450, wb=1, rd=x10, ex=ALU (#241)
+TRACE        427: pipeline-fetch: PC=0x80000450, wb=1, rd=x10, ex=ALU (#241)
+TRACE        428: pipeline-writeback: PC=0x80000444, wb=0, ex=LSU (#238)
+TRACE        428: pipeline-memory: PC=0x80000448, wb=1, rd=x3, ex=ALU (#239)
+TRACE        428: pipeline-execute: PC=0x8000044c, wb=1, rd=x17, ex=ALU (#240)
+TRACE        428: pipeline-decode: PC=0x80000450, wb=1, rd=x10, ex=ALU (#241)
 DEBUG Fetch: PC=0x80000454 (#242)
 DEBUG Instr 0x73: ECALL 0x0
-TRACE        426: pipeline-fetch: PC=0x80000454, wb=0, ex=ALU (#242)
+TRACE        428: pipeline-fetch: PC=0x80000454, wb=0, ex=ALU (#242)
 PASSED!
