@@ -1,0 +1,300 @@
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-add.hex..
+---
+> Running rv32ui-p-add.hex..
+4182d4181
+< PERF: instrs=494, cycles=716
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-addi.hex..
+---
+> Running rv32ui-p-addi.hex..
+2278d2277
+< PERF: instrs=271, cycles=400
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-and.hex..
+---
+> Running rv32ui-p-and.hex..
+4221d4220
+< PERF: instrs=514, cycles=703
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-andi.hex..
+---
+> Running rv32ui-p-andi.hex..
+1887d1886
+< PERF: instrs=227, cycles=323
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-auipc.hex..
+---
+> Running rv32ui-p-auipc.hex..
+727d726
+< PERF: instrs=87, cycles=120
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-beq.hex..
+---
+> Running rv32ui-p-beq.hex..
+2790d2789
+< PERF: instrs=320, cycles=554
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-bge.hex..
+---
+> Running rv32ui-p-bge.hex..
+2970d2969
+< PERF: instrs=338, cycles=599
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-bgeu.hex..
+---
+> Running rv32ui-p-bgeu.hex..
+3120d3119
+< PERF: instrs=363, cycles=624
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-blt.hex..
+---
+> Running rv32ui-p-blt.hex..
+2790d2789
+< PERF: instrs=320, cycles=554
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-bltu.hex..
+---
+> Running rv32ui-p-bltu.hex..
+2940d2939
+< PERF: instrs=345, cycles=579
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-bne.hex..
+---
+> Running rv32ui-p-bne.hex..
+2792d2791
+< PERF: instrs=320, cycles=554
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-jal.hex..
+---
+> Running rv32ui-p-jal.hex..
+705d704
+< PERF: instrs=84, cycles=117
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-jalr.hex..
+---
+> Running rv32ui-p-jalr.hex..
+1223d1222
+< PERF: instrs=144, cycles=219
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-lb.hex..
+---
+> Running rv32ui-p-lb.hex..
+3198d3197
+< PERF: instrs=271, cycles=1239
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-lbu.hex..
+---
+> Running rv32ui-p-lbu.hex..
+3198d3197
+< PERF: instrs=271, cycles=1239
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-lh.hex..
+---
+> Running rv32ui-p-lh.hex..
+3319d3318
+< PERF: instrs=287, cycles=1266
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-lhu.hex..
+---
+> Running rv32ui-p-lhu.hex..
+3467d3466
+< PERF: instrs=296, cycles=1358
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-lui.hex..
+---
+> Running rv32ui-p-lui.hex..
+784d783
+< PERF: instrs=94, cycles=130
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-lw.hex..
+---
+> Running rv32ui-p-lw.hex..
+3574d3573
+< PERF: instrs=301, cycles=1435
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-or.hex..
+---
+> Running rv32ui-p-or.hex..
+4243d4242
+< PERF: instrs=517, cycles=706
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-ori.hex..
+---
+> Running rv32ui-p-ori.hex..
+1936d1935
+< PERF: instrs=234, cycles=330
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-sb.hex..
+---
+> Running rv32ui-p-sb.hex..
+5426d5425
+< PERF: instrs=472, cycles=2066
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-sh.hex..
+---
+> Running rv32ui-p-sh.hex..
+5875d5874
+< PERF: instrs=525, cycles=2192
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-simple.hex..
+---
+> Running rv32ui-p-simple.hex..
+575d574
+< PERF: instrs=67, cycles=88
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-sll.hex..
+---
+> Running rv32ui-p-sll.hex..
+4410d4409
+< PERF: instrs=522, cycles=756
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-slli.hex..
+---
+> Running rv32ui-p-slli.hex..
+2266d2265
+< PERF: instrs=270, cycles=399
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-slt.hex..
+---
+> Running rv32ui-p-slt.hex..
+4144d4143
+< PERF: instrs=488, cycles=710
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-slti.hex..
+---
+> Running rv32ui-p-slti.hex..
+2245d2244
+< PERF: instrs=266, cycles=395
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-sltiu.hex..
+---
+> Running rv32ui-p-sltiu.hex..
+2245d2244
+< PERF: instrs=266, cycles=395
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-sltu.hex..
+---
+> Running rv32ui-p-sltu.hex..
+4144d4143
+< PERF: instrs=488, cycles=710
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-sra.hex..
+---
+> Running rv32ui-p-sra.hex..
+4519d4518
+< PERF: instrs=541, cycles=778
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-srai.hex..
+---
+> Running rv32ui-p-srai.hex..
+2361d2360
+< PERF: instrs=285, cycles=414
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-srl.hex..
+---
+> Running rv32ui-p-srl.hex..
+4477d4476
+< PERF: instrs=535, cycles=772
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-srli.hex..
+---
+> Running rv32ui-p-srli.hex..
+2317d2316
+< PERF: instrs=279, cycles=408
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-sub.hex..
+---
+> Running rv32ui-p-sub.hex..
+4116d4115
+< PERF: instrs=486, cycles=705
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-sw.hex..
+---
+> Running rv32ui-p-sw.hex..
+5924d5923
+< PERF: instrs=535, cycles=2202
+rm -rf /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+g++ -std=c++11 -Wall -Wextra -Wfatal-errors -fPIC -Wno-maybe-uninitialized -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2 -I/w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common -DXLEN_32  -g -O0 -DDEBUG_LEVEL=3 /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/util.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/common/mem.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/main.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/processor.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/core.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/emulator.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/decode.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/execute.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/inorder.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/FU.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/ROB.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/scoreboard.cpp /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/src/gshare.cpp  -o /w/home.11/cs/ugrad/nguyend/M151/cs-m151b/project2/tinyrv
+1c1
+< Running tests/rv32ui-p-xor.hex..
+---
+> Running rv32ui-p-xor.hex..
+4236d4235
+< PERF: instrs=516, cycles=705

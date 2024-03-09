@@ -1,0 +1,2939 @@
+Running rv32ui-p-bltu.hex..
+DEBUG Fetch: PC=0x80000000 (#0)
+DEBUG Instr 0x500006f: JAL x0, 0x50
+DEBUG *** Next PC=0x80000050
+TRACE          0: *** branch stalled!: PC=0x80000000, wb=0, ex=ALU (#0)
+TRACE          1: *** branch stalled!: PC=0x80000000, wb=0, ex=ALU (#0)
+TRACE          2: *** branch stalled!: PC=0x80000000, wb=0, ex=ALU (#0)
+TRACE          3: pipeline-issue: PC=0x80000000, wb=0, ex=ALU (#0)
+TRACE          4: pipeline-execute: PC=0x80000000, wb=0, ex=ALU (#0)
+DEBUG Fetch: PC=0x80000050 (#1)
+DEBUG Instr 0x93: ADDI x1, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x0}
+TRACE          4: pipeline-issue: PC=0x80000050, wb=1, rd=x1, ex=ALU (#1)
+TRACE          5: pipeline-execute: PC=0x80000050, wb=1, rd=x1, ex=ALU (#1)
+DEBUG Fetch: PC=0x80000054 (#2)
+DEBUG Instr 0x113: ADDI x2, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0x0}
+TRACE          5: pipeline-issue: PC=0x80000054, wb=1, rd=x2, ex=ALU (#2)
+TRACE          6: pipeline-execute: PC=0x80000054, wb=1, rd=x2, ex=ALU (#2)
+DEBUG Fetch: PC=0x80000058 (#3)
+DEBUG Instr 0x193: ADDI x3, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x0}
+TRACE          6: pipeline-issue: PC=0x80000058, wb=1, rd=x3, ex=ALU (#3)
+TRACE          7: pipeline-writeback: PC=0x80000000, wb=0, ex=ALU (#0)
+TRACE          7: pipeline-execute: PC=0x80000058, wb=1, rd=x3, ex=ALU (#3)
+DEBUG Fetch: PC=0x8000005c (#4)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+TRACE          7: pipeline-issue: PC=0x8000005c, wb=1, rd=x4, ex=ALU (#4)
+TRACE          8: pipeline-writeback: PC=0x80000050, wb=1, rd=x1, ex=ALU (#1)
+TRACE          8: pipeline-execute: PC=0x8000005c, wb=1, rd=x4, ex=ALU (#4)
+DEBUG Fetch: PC=0x80000060 (#5)
+DEBUG Instr 0x293: ADDI x5, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x0}
+TRACE          8: pipeline-issue: PC=0x80000060, wb=1, rd=x5, ex=ALU (#5)
+TRACE          9: pipeline-commit: PC=0x80000000, wb=0, ex=ALU (#0)
+TRACE          9: pipeline-writeback: PC=0x80000054, wb=1, rd=x2, ex=ALU (#2)
+TRACE          9: pipeline-execute: PC=0x80000060, wb=1, rd=x5, ex=ALU (#5)
+DEBUG Fetch: PC=0x80000064 (#6)
+DEBUG Instr 0x313: ADDI x6, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x6={0x0}
+TRACE          9: pipeline-issue: PC=0x80000064, wb=1, rd=x6, ex=ALU (#6)
+TRACE         10: pipeline-commit: PC=0x80000050, wb=1, rd=x1, ex=ALU (#1)
+TRACE         10: pipeline-writeback: PC=0x80000058, wb=1, rd=x3, ex=ALU (#3)
+TRACE         10: pipeline-execute: PC=0x80000064, wb=1, rd=x6, ex=ALU (#6)
+DEBUG Fetch: PC=0x80000068 (#7)
+DEBUG Instr 0x393: ADDI x7, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x0}
+TRACE         10: pipeline-issue: PC=0x80000068, wb=1, rd=x7, ex=ALU (#7)
+TRACE         11: pipeline-commit: PC=0x80000054, wb=1, rd=x2, ex=ALU (#2)
+TRACE         11: pipeline-writeback: PC=0x8000005c, wb=1, rd=x4, ex=ALU (#4)
+TRACE         11: pipeline-execute: PC=0x80000068, wb=1, rd=x7, ex=ALU (#7)
+DEBUG Fetch: PC=0x8000006c (#8)
+DEBUG Instr 0x413: ADDI x8, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x8={0x0}
+TRACE         11: pipeline-issue: PC=0x8000006c, wb=1, rd=x8, ex=ALU (#8)
+TRACE         12: pipeline-commit: PC=0x80000058, wb=1, rd=x3, ex=ALU (#3)
+TRACE         12: pipeline-writeback: PC=0x80000060, wb=1, rd=x5, ex=ALU (#5)
+TRACE         12: pipeline-execute: PC=0x8000006c, wb=1, rd=x8, ex=ALU (#8)
+DEBUG Fetch: PC=0x80000070 (#9)
+DEBUG Instr 0x493: ADDI x9, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x9={0x0}
+TRACE         12: pipeline-issue: PC=0x80000070, wb=1, rd=x9, ex=ALU (#9)
+TRACE         13: pipeline-commit: PC=0x8000005c, wb=1, rd=x4, ex=ALU (#4)
+TRACE         13: pipeline-writeback: PC=0x80000064, wb=1, rd=x6, ex=ALU (#6)
+TRACE         13: pipeline-execute: PC=0x80000070, wb=1, rd=x9, ex=ALU (#9)
+DEBUG Fetch: PC=0x80000074 (#10)
+DEBUG Instr 0x513: ADDI x10, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x10={0x0}
+TRACE         13: pipeline-issue: PC=0x80000074, wb=1, rd=x10, ex=ALU (#10)
+TRACE         14: pipeline-commit: PC=0x80000060, wb=1, rd=x5, ex=ALU (#5)
+TRACE         14: pipeline-writeback: PC=0x80000068, wb=1, rd=x7, ex=ALU (#7)
+TRACE         14: pipeline-execute: PC=0x80000074, wb=1, rd=x10, ex=ALU (#10)
+DEBUG Fetch: PC=0x80000078 (#11)
+DEBUG Instr 0x593: ADDI x11, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x11={0x0}
+TRACE         14: pipeline-issue: PC=0x80000078, wb=1, rd=x11, ex=ALU (#11)
+TRACE         15: pipeline-commit: PC=0x80000064, wb=1, rd=x6, ex=ALU (#6)
+TRACE         15: pipeline-writeback: PC=0x8000006c, wb=1, rd=x8, ex=ALU (#8)
+TRACE         15: pipeline-execute: PC=0x80000078, wb=1, rd=x11, ex=ALU (#11)
+DEBUG Fetch: PC=0x8000007c (#12)
+DEBUG Instr 0x613: ADDI x12, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x12={0x0}
+TRACE         15: pipeline-issue: PC=0x8000007c, wb=1, rd=x12, ex=ALU (#12)
+TRACE         16: pipeline-commit: PC=0x80000068, wb=1, rd=x7, ex=ALU (#7)
+TRACE         16: pipeline-writeback: PC=0x80000070, wb=1, rd=x9, ex=ALU (#9)
+TRACE         16: pipeline-execute: PC=0x8000007c, wb=1, rd=x12, ex=ALU (#12)
+DEBUG Fetch: PC=0x80000080 (#13)
+DEBUG Instr 0x693: ADDI x13, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x13={0x0}
+TRACE         16: pipeline-issue: PC=0x80000080, wb=1, rd=x13, ex=ALU (#13)
+TRACE         17: pipeline-commit: PC=0x8000006c, wb=1, rd=x8, ex=ALU (#8)
+TRACE         17: pipeline-writeback: PC=0x80000074, wb=1, rd=x10, ex=ALU (#10)
+TRACE         17: pipeline-execute: PC=0x80000080, wb=1, rd=x13, ex=ALU (#13)
+DEBUG Fetch: PC=0x80000084 (#14)
+DEBUG Instr 0x713: ADDI x14, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x14={0x0}
+TRACE         17: pipeline-issue: PC=0x80000084, wb=1, rd=x14, ex=ALU (#14)
+TRACE         18: pipeline-commit: PC=0x80000070, wb=1, rd=x9, ex=ALU (#9)
+TRACE         18: pipeline-writeback: PC=0x80000078, wb=1, rd=x11, ex=ALU (#11)
+TRACE         18: pipeline-execute: PC=0x80000084, wb=1, rd=x14, ex=ALU (#14)
+DEBUG Fetch: PC=0x80000088 (#15)
+DEBUG Instr 0x793: ADDI x15, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x15={0x0}
+TRACE         18: pipeline-issue: PC=0x80000088, wb=1, rd=x15, ex=ALU (#15)
+TRACE         19: pipeline-commit: PC=0x80000074, wb=1, rd=x10, ex=ALU (#10)
+TRACE         19: pipeline-writeback: PC=0x8000007c, wb=1, rd=x12, ex=ALU (#12)
+TRACE         19: pipeline-execute: PC=0x80000088, wb=1, rd=x15, ex=ALU (#15)
+DEBUG Fetch: PC=0x8000008c (#16)
+DEBUG Instr 0x813: ADDI x16, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x16={0x0}
+TRACE         19: pipeline-issue: PC=0x8000008c, wb=1, rd=x16, ex=ALU (#16)
+TRACE         20: pipeline-commit: PC=0x80000078, wb=1, rd=x11, ex=ALU (#11)
+TRACE         20: pipeline-writeback: PC=0x80000080, wb=1, rd=x13, ex=ALU (#13)
+TRACE         20: pipeline-execute: PC=0x8000008c, wb=1, rd=x16, ex=ALU (#16)
+DEBUG Fetch: PC=0x80000090 (#17)
+DEBUG Instr 0x893: ADDI x17, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x17={0x0}
+TRACE         20: pipeline-issue: PC=0x80000090, wb=1, rd=x17, ex=ALU (#17)
+TRACE         21: pipeline-commit: PC=0x8000007c, wb=1, rd=x12, ex=ALU (#12)
+TRACE         21: pipeline-writeback: PC=0x80000084, wb=1, rd=x14, ex=ALU (#14)
+TRACE         21: pipeline-execute: PC=0x80000090, wb=1, rd=x17, ex=ALU (#17)
+DEBUG Fetch: PC=0x80000094 (#18)
+DEBUG Instr 0x913: ADDI x18, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x18={0x0}
+TRACE         21: pipeline-issue: PC=0x80000094, wb=1, rd=x18, ex=ALU (#18)
+TRACE         22: pipeline-commit: PC=0x80000080, wb=1, rd=x13, ex=ALU (#13)
+TRACE         22: pipeline-writeback: PC=0x80000088, wb=1, rd=x15, ex=ALU (#15)
+TRACE         22: pipeline-execute: PC=0x80000094, wb=1, rd=x18, ex=ALU (#18)
+DEBUG Fetch: PC=0x80000098 (#19)
+DEBUG Instr 0x993: ADDI x19, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x19={0x0}
+TRACE         22: pipeline-issue: PC=0x80000098, wb=1, rd=x19, ex=ALU (#19)
+TRACE         23: pipeline-commit: PC=0x80000084, wb=1, rd=x14, ex=ALU (#14)
+TRACE         23: pipeline-writeback: PC=0x8000008c, wb=1, rd=x16, ex=ALU (#16)
+TRACE         23: pipeline-execute: PC=0x80000098, wb=1, rd=x19, ex=ALU (#19)
+DEBUG Fetch: PC=0x8000009c (#20)
+DEBUG Instr 0xa13: ADDI x20, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x20={0x0}
+TRACE         23: pipeline-issue: PC=0x8000009c, wb=1, rd=x20, ex=ALU (#20)
+TRACE         24: pipeline-commit: PC=0x80000088, wb=1, rd=x15, ex=ALU (#15)
+TRACE         24: pipeline-writeback: PC=0x80000090, wb=1, rd=x17, ex=ALU (#17)
+TRACE         24: pipeline-execute: PC=0x8000009c, wb=1, rd=x20, ex=ALU (#20)
+DEBUG Fetch: PC=0x800000a0 (#21)
+DEBUG Instr 0xa93: ADDI x21, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x21={0x0}
+TRACE         24: pipeline-issue: PC=0x800000a0, wb=1, rd=x21, ex=ALU (#21)
+TRACE         25: pipeline-commit: PC=0x8000008c, wb=1, rd=x16, ex=ALU (#16)
+TRACE         25: pipeline-writeback: PC=0x80000094, wb=1, rd=x18, ex=ALU (#18)
+TRACE         25: pipeline-execute: PC=0x800000a0, wb=1, rd=x21, ex=ALU (#21)
+DEBUG Fetch: PC=0x800000a4 (#22)
+DEBUG Instr 0xb13: ADDI x22, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x22={0x0}
+TRACE         25: pipeline-issue: PC=0x800000a4, wb=1, rd=x22, ex=ALU (#22)
+TRACE         26: pipeline-commit: PC=0x80000090, wb=1, rd=x17, ex=ALU (#17)
+TRACE         26: pipeline-writeback: PC=0x80000098, wb=1, rd=x19, ex=ALU (#19)
+TRACE         26: pipeline-execute: PC=0x800000a4, wb=1, rd=x22, ex=ALU (#22)
+DEBUG Fetch: PC=0x800000a8 (#23)
+DEBUG Instr 0xb93: ADDI x23, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x23={0x0}
+TRACE         26: pipeline-issue: PC=0x800000a8, wb=1, rd=x23, ex=ALU (#23)
+TRACE         27: pipeline-commit: PC=0x80000094, wb=1, rd=x18, ex=ALU (#18)
+TRACE         27: pipeline-writeback: PC=0x8000009c, wb=1, rd=x20, ex=ALU (#20)
+TRACE         27: pipeline-execute: PC=0x800000a8, wb=1, rd=x23, ex=ALU (#23)
+DEBUG Fetch: PC=0x800000ac (#24)
+DEBUG Instr 0xc13: ADDI x24, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x24={0x0}
+TRACE         27: pipeline-issue: PC=0x800000ac, wb=1, rd=x24, ex=ALU (#24)
+TRACE         28: pipeline-commit: PC=0x80000098, wb=1, rd=x19, ex=ALU (#19)
+TRACE         28: pipeline-writeback: PC=0x800000a0, wb=1, rd=x21, ex=ALU (#21)
+TRACE         28: pipeline-execute: PC=0x800000ac, wb=1, rd=x24, ex=ALU (#24)
+DEBUG Fetch: PC=0x800000b0 (#25)
+DEBUG Instr 0xc93: ADDI x25, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x25={0x0}
+TRACE         28: pipeline-issue: PC=0x800000b0, wb=1, rd=x25, ex=ALU (#25)
+TRACE         29: pipeline-commit: PC=0x8000009c, wb=1, rd=x20, ex=ALU (#20)
+TRACE         29: pipeline-writeback: PC=0x800000a4, wb=1, rd=x22, ex=ALU (#22)
+TRACE         29: pipeline-execute: PC=0x800000b0, wb=1, rd=x25, ex=ALU (#25)
+DEBUG Fetch: PC=0x800000b4 (#26)
+DEBUG Instr 0xd13: ADDI x26, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x26={0x0}
+TRACE         29: pipeline-issue: PC=0x800000b4, wb=1, rd=x26, ex=ALU (#26)
+TRACE         30: pipeline-commit: PC=0x800000a0, wb=1, rd=x21, ex=ALU (#21)
+TRACE         30: pipeline-writeback: PC=0x800000a8, wb=1, rd=x23, ex=ALU (#23)
+TRACE         30: pipeline-execute: PC=0x800000b4, wb=1, rd=x26, ex=ALU (#26)
+DEBUG Fetch: PC=0x800000b8 (#27)
+DEBUG Instr 0xd93: ADDI x27, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x27={0x0}
+TRACE         30: pipeline-issue: PC=0x800000b8, wb=1, rd=x27, ex=ALU (#27)
+TRACE         31: pipeline-commit: PC=0x800000a4, wb=1, rd=x22, ex=ALU (#22)
+TRACE         31: pipeline-writeback: PC=0x800000ac, wb=1, rd=x24, ex=ALU (#24)
+TRACE         31: pipeline-execute: PC=0x800000b8, wb=1, rd=x27, ex=ALU (#27)
+DEBUG Fetch: PC=0x800000bc (#28)
+DEBUG Instr 0xe13: ADDI x28, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x28={0x0}
+TRACE         31: pipeline-issue: PC=0x800000bc, wb=1, rd=x28, ex=ALU (#28)
+TRACE         32: pipeline-commit: PC=0x800000a8, wb=1, rd=x23, ex=ALU (#23)
+TRACE         32: pipeline-writeback: PC=0x800000b0, wb=1, rd=x25, ex=ALU (#25)
+TRACE         32: pipeline-execute: PC=0x800000bc, wb=1, rd=x28, ex=ALU (#28)
+DEBUG Fetch: PC=0x800000c0 (#29)
+DEBUG Instr 0xe93: ADDI x29, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x29={0x0}
+TRACE         32: pipeline-issue: PC=0x800000c0, wb=1, rd=x29, ex=ALU (#29)
+TRACE         33: pipeline-commit: PC=0x800000ac, wb=1, rd=x24, ex=ALU (#24)
+TRACE         33: pipeline-writeback: PC=0x800000b4, wb=1, rd=x26, ex=ALU (#26)
+TRACE         33: pipeline-execute: PC=0x800000c0, wb=1, rd=x29, ex=ALU (#29)
+DEBUG Fetch: PC=0x800000c4 (#30)
+DEBUG Instr 0xf13: ADDI x30, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x30={0x0}
+TRACE         33: pipeline-issue: PC=0x800000c4, wb=1, rd=x30, ex=ALU (#30)
+TRACE         34: pipeline-commit: PC=0x800000b0, wb=1, rd=x25, ex=ALU (#25)
+TRACE         34: pipeline-writeback: PC=0x800000b8, wb=1, rd=x27, ex=ALU (#27)
+TRACE         34: pipeline-execute: PC=0x800000c4, wb=1, rd=x30, ex=ALU (#30)
+DEBUG Fetch: PC=0x800000c8 (#31)
+DEBUG Instr 0xf93: ADDI x31, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x31={0x0}
+TRACE         34: pipeline-issue: PC=0x800000c8, wb=1, rd=x31, ex=ALU (#31)
+TRACE         35: pipeline-commit: PC=0x800000b4, wb=1, rd=x26, ex=ALU (#26)
+TRACE         35: pipeline-writeback: PC=0x800000bc, wb=1, rd=x28, ex=ALU (#28)
+TRACE         35: pipeline-execute: PC=0x800000c8, wb=1, rd=x31, ex=ALU (#31)
+DEBUG Fetch: PC=0x800000cc (#32)
+DEBUG Instr 0xf1402573: CSRRS x10, x0, 0xf14
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x10={0x0}
+TRACE         35: pipeline-issue: PC=0x800000cc, wb=1, rd=x10, ex=CSR (#32)
+TRACE         36: pipeline-commit: PC=0x800000b8, wb=1, rd=x27, ex=ALU (#27)
+TRACE         36: pipeline-writeback: PC=0x800000c0, wb=1, rd=x29, ex=ALU (#29)
+TRACE         36: pipeline-execute: PC=0x800000cc, wb=1, rd=x10, ex=CSR (#32)
+DEBUG Fetch: PC=0x800000d0 (#33)
+DEBUG Instr 0x51063: BNE x10, x0, 0x0
+DEBUG Src0 Reg: x10={0x0}
+DEBUG Src1 Reg: x0={0x0}
+TRACE         36: *** branch stalled!: PC=0x800000d0, wb=0, ex=ALU (#33)
+TRACE         37: pipeline-commit: PC=0x800000bc, wb=1, rd=x28, ex=ALU (#28)
+TRACE         37: pipeline-writeback: PC=0x800000c4, wb=1, rd=x30, ex=ALU (#30)
+TRACE         37: *** branch stalled!: PC=0x800000d0, wb=0, ex=ALU (#33)
+TRACE         38: pipeline-commit: PC=0x800000c0, wb=1, rd=x29, ex=ALU (#29)
+TRACE         38: pipeline-writeback: PC=0x800000c8, wb=1, rd=x31, ex=ALU (#31)
+TRACE         38: *** branch stalled!: PC=0x800000d0, wb=0, ex=ALU (#33)
+TRACE         39: pipeline-commit: PC=0x800000c4, wb=1, rd=x30, ex=ALU (#30)
+TRACE         39: pipeline-issue: PC=0x800000d0, wb=0, ex=ALU (#33)
+TRACE         40: pipeline-commit: PC=0x800000c8, wb=1, rd=x31, ex=ALU (#31)
+TRACE         40: pipeline-writeback: PC=0x800000cc, wb=1, rd=x10, ex=CSR (#32)
+TRACE         40: pipeline-execute: PC=0x800000d0, wb=0, ex=ALU (#33)
+DEBUG Fetch: PC=0x800000d4 (#34)
+DEBUG Instr 0x297: AUIPC x5, 0x0
+DEBUG Dest Reg: x5={0x800000d4}
+TRACE         40: pipeline-issue: PC=0x800000d4, wb=1, rd=x5, ex=ALU (#34)
+TRACE         41: pipeline-execute: PC=0x800000d4, wb=1, rd=x5, ex=ALU (#34)
+DEBUG Fetch: PC=0x800000d8 (#35)
+DEBUG Instr 0x1028293: ADDI x5, x5, 0x10
+DEBUG Src0 Reg: x5={0x800000d4}
+DEBUG Dest Reg: x5={0x800000e4}
+TRACE         41: pipeline-issue: PC=0x800000d8, wb=1, rd=x5, ex=ALU (#35)
+TRACE         42: pipeline-commit: PC=0x800000cc, wb=1, rd=x10, ex=CSR (#32)
+DEBUG Fetch: PC=0x800000dc (#36)
+DEBUG Instr 0x30529073: CSRRW x0, x5, 0x305
+DEBUG Src0 Reg: x5={0x800000e4}
+TRACE         42: pipeline-issue: PC=0x800000dc, wb=0, ex=CSR (#36)
+TRACE         43: pipeline-writeback: PC=0x800000d0, wb=0, ex=ALU (#33)
+DEBUG Fetch: PC=0x800000e0 (#37)
+DEBUG Instr 0x74445073: CSRRWI x0, 0x744
+TRACE         43: pipeline-issue: PC=0x800000e0, wb=0, ex=CSR (#37)
+TRACE         44: pipeline-writeback: PC=0x800000d4, wb=1, rd=x5, ex=ALU (#34)
+TRACE         44: pipeline-execute: PC=0x800000d8, wb=1, rd=x5, ex=ALU (#35)
+TRACE         44: pipeline-execute: PC=0x800000e0, wb=0, ex=CSR (#37)
+DEBUG Fetch: PC=0x800000e4 (#38)
+DEBUG Instr 0x297: AUIPC x5, 0x0
+DEBUG Dest Reg: x5={0x800000e4}
+TRACE         44: pipeline-issue: PC=0x800000e4, wb=1, rd=x5, ex=ALU (#38)
+TRACE         45: pipeline-commit: PC=0x800000d0, wb=0, ex=ALU (#33)
+TRACE         45: pipeline-execute: PC=0x800000e4, wb=1, rd=x5, ex=ALU (#38)
+DEBUG Fetch: PC=0x800000e8 (#39)
+DEBUG Instr 0x1028293: ADDI x5, x5, 0x10
+DEBUG Src0 Reg: x5={0x800000e4}
+DEBUG Dest Reg: x5={0x800000f4}
+TRACE         45: pipeline-issue: PC=0x800000e8, wb=1, rd=x5, ex=ALU (#39)
+TRACE         46: pipeline-commit: PC=0x800000d4, wb=1, rd=x5, ex=ALU (#34)
+DEBUG Fetch: PC=0x800000ec (#40)
+DEBUG Instr 0x30529073: CSRRW x0, x5, 0x305
+DEBUG Src0 Reg: x5={0x800000f4}
+TRACE         46: pipeline-issue: PC=0x800000ec, wb=0, ex=CSR (#40)
+TRACE         47: pipeline-writeback: PC=0x800000d8, wb=1, rd=x5, ex=ALU (#35)
+TRACE         47: pipeline-execute: PC=0x800000dc, wb=0, ex=CSR (#36)
+DEBUG Fetch: PC=0x800000f0 (#41)
+DEBUG Instr 0x18005073: CSRRWI x0, 0x180
+TRACE         47: pipeline-issue: PC=0x800000f0, wb=0, ex=CSR (#41)
+TRACE         48: pipeline-writeback: PC=0x800000e4, wb=1, rd=x5, ex=ALU (#38)
+TRACE         48: pipeline-execute: PC=0x800000f0, wb=0, ex=CSR (#41)
+TRACE         48: pipeline-execute: PC=0x800000e8, wb=1, rd=x5, ex=ALU (#39)
+DEBUG Fetch: PC=0x800000f4 (#42)
+DEBUG Instr 0x297: AUIPC x5, 0x0
+DEBUG Dest Reg: x5={0x800000f4}
+TRACE         48: pipeline-issue: PC=0x800000f4, wb=1, rd=x5, ex=ALU (#42)
+TRACE         49: pipeline-commit: PC=0x800000d8, wb=1, rd=x5, ex=ALU (#35)
+TRACE         49: pipeline-writeback: PC=0x800000e0, wb=0, ex=CSR (#37)
+TRACE         49: pipeline-execute: PC=0x800000f4, wb=1, rd=x5, ex=ALU (#42)
+DEBUG Fetch: PC=0x800000f8 (#43)
+DEBUG Instr 0x2028293: ADDI x5, x5, 0x20
+DEBUG Src0 Reg: x5={0x800000f4}
+DEBUG Dest Reg: x5={0x80000114}
+TRACE         49: pipeline-issue: PC=0x800000f8, wb=1, rd=x5, ex=ALU (#43)
+DEBUG Fetch: PC=0x800000fc (#44)
+DEBUG Instr 0x30529073: CSRRW x0, x5, 0x305
+DEBUG Src0 Reg: x5={0x80000114}
+TRACE         50: pipeline-issue: PC=0x800000fc, wb=0, ex=CSR (#44)
+TRACE         51: pipeline-writeback: PC=0x800000e8, wb=1, rd=x5, ex=ALU (#39)
+TRACE         51: pipeline-execute: PC=0x800000ec, wb=0, ex=CSR (#40)
+DEBUG Fetch: PC=0x80000100 (#45)
+DEBUG Instr 0x800002b7: LUI x5, 0x80000000
+DEBUG Dest Reg: x5={0x80000000}
+TRACE         51: pipeline-issue: PC=0x80000100, wb=1, rd=x5, ex=ALU (#45)
+TRACE         52: pipeline-writeback: PC=0x800000f4, wb=1, rd=x5, ex=ALU (#42)
+TRACE         52: pipeline-execute: PC=0x800000f8, wb=1, rd=x5, ex=ALU (#43)
+TRACE         52: pipeline-execute: PC=0x80000100, wb=1, rd=x5, ex=ALU (#45)
+DEBUG Fetch: PC=0x80000104 (#46)
+DEBUG Instr 0xfff28293: ADDI x5, x5, 0xffffffff
+DEBUG Src0 Reg: x5={0x80000000}
+DEBUG Dest Reg: x5={0x7fffffff}
+TRACE         52: pipeline-issue: PC=0x80000104, wb=1, rd=x5, ex=ALU (#46)
+TRACE         53: pipeline-writeback: PC=0x800000dc, wb=0, ex=CSR (#36)
+DEBUG Fetch: PC=0x80000108 (#47)
+DEBUG Instr 0x3b029073: CSRRW x0, x5, 0x3b0
+DEBUG Src0 Reg: x5={0x7fffffff}
+TRACE         53: pipeline-issue: PC=0x80000108, wb=0, ex=CSR (#47)
+TRACE         54: pipeline-writeback: PC=0x800000f0, wb=0, ex=CSR (#41)
+DEBUG Fetch: PC=0x8000010c (#48)
+DEBUG Instr 0x1f00293: ADDI x5, x0, 0x1f
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x1f}
+TRACE         54: pipeline-issue: PC=0x8000010c, wb=1, rd=x5, ex=ALU (#48)
+TRACE         55: pipeline-commit: PC=0x800000dc, wb=0, ex=CSR (#36)
+TRACE         55: pipeline-writeback: PC=0x800000f8, wb=1, rd=x5, ex=ALU (#43)
+TRACE         55: pipeline-execute: PC=0x8000010c, wb=1, rd=x5, ex=ALU (#48)
+TRACE         55: pipeline-execute: PC=0x800000fc, wb=0, ex=CSR (#44)
+DEBUG Fetch: PC=0x80000110 (#49)
+DEBUG Instr 0x3a029073: CSRRW x0, x5, 0x3a0
+DEBUG Src0 Reg: x5={0x1f}
+TRACE         55: pipeline-issue: PC=0x80000110, wb=0, ex=CSR (#49)
+TRACE         56: pipeline-commit: PC=0x800000e0, wb=0, ex=CSR (#37)
+TRACE         56: pipeline-writeback: PC=0x80000100, wb=1, rd=x5, ex=ALU (#45)
+TRACE         56: pipeline-execute: PC=0x80000104, wb=1, rd=x5, ex=ALU (#46)
+DEBUG Fetch: PC=0x80000114 (#50)
+DEBUG Instr 0x30405073: CSRRWI x0, 0x304
+TRACE         56: pipeline-issue: PC=0x80000114, wb=0, ex=CSR (#50)
+TRACE         57: pipeline-commit: PC=0x800000e4, wb=1, rd=x5, ex=ALU (#38)
+TRACE         57: pipeline-writeback: PC=0x800000ec, wb=0, ex=CSR (#40)
+TRACE         57: pipeline-execute: PC=0x80000114, wb=0, ex=CSR (#50)
+DEBUG Fetch: PC=0x80000118 (#51)
+DEBUG Instr 0x297: AUIPC x5, 0x0
+DEBUG Dest Reg: x5={0x80000118}
+TRACE         57: pipeline-issue: PC=0x80000118, wb=1, rd=x5, ex=ALU (#51)
+TRACE         58: pipeline-commit: PC=0x800000e8, wb=1, rd=x5, ex=ALU (#39)
+TRACE         58: pipeline-writeback: PC=0x8000010c, wb=1, rd=x5, ex=ALU (#48)
+TRACE         58: pipeline-execute: PC=0x80000110, wb=0, ex=CSR (#49)
+TRACE         58: pipeline-execute: PC=0x80000118, wb=1, rd=x5, ex=ALU (#51)
+DEBUG Fetch: PC=0x8000011c (#52)
+DEBUG Instr 0x1428293: ADDI x5, x5, 0x14
+DEBUG Src0 Reg: x5={0x80000118}
+DEBUG Dest Reg: x5={0x8000012c}
+TRACE         58: pipeline-issue: PC=0x8000011c, wb=1, rd=x5, ex=ALU (#52)
+TRACE         59: pipeline-commit: PC=0x800000ec, wb=0, ex=CSR (#40)
+TRACE         59: pipeline-writeback: PC=0x80000104, wb=1, rd=x5, ex=ALU (#46)
+TRACE         59: pipeline-execute: PC=0x80000108, wb=0, ex=CSR (#47)
+DEBUG Fetch: PC=0x80000120 (#53)
+DEBUG Instr 0x30529073: CSRRW x0, x5, 0x305
+DEBUG Src0 Reg: x5={0x8000012c}
+TRACE         59: pipeline-issue: PC=0x80000120, wb=0, ex=CSR (#53)
+TRACE         60: pipeline-commit: PC=0x800000f0, wb=0, ex=CSR (#41)
+TRACE         60: pipeline-writeback: PC=0x800000fc, wb=0, ex=CSR (#44)
+DEBUG Fetch: PC=0x80000124 (#54)
+DEBUG Instr 0x30205073: CSRRWI x0, 0x302
+TRACE         60: pipeline-issue: PC=0x80000124, wb=0, ex=CSR (#54)
+TRACE         61: pipeline-commit: PC=0x800000f4, wb=1, rd=x5, ex=ALU (#42)
+TRACE         61: pipeline-writeback: PC=0x80000118, wb=1, rd=x5, ex=ALU (#51)
+TRACE         61: pipeline-execute: PC=0x8000011c, wb=1, rd=x5, ex=ALU (#52)
+TRACE         61: pipeline-execute: PC=0x80000124, wb=0, ex=CSR (#54)
+DEBUG Fetch: PC=0x80000128 (#55)
+DEBUG Instr 0x30305073: CSRRWI x0, 0x303
+TRACE         61: pipeline-issue: PC=0x80000128, wb=0, ex=CSR (#55)
+TRACE         62: pipeline-commit: PC=0x800000f8, wb=1, rd=x5, ex=ALU (#43)
+TRACE         62: pipeline-writeback: PC=0x80000114, wb=0, ex=CSR (#50)
+TRACE         62: pipeline-execute: PC=0x80000128, wb=0, ex=CSR (#55)
+DEBUG Fetch: PC=0x8000012c (#56)
+DEBUG Instr 0x193: ADDI x3, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x0}
+TRACE         62: pipeline-issue: PC=0x8000012c, wb=1, rd=x3, ex=ALU (#56)
+TRACE         63: pipeline-commit: PC=0x800000fc, wb=0, ex=CSR (#44)
+TRACE         63: pipeline-writeback: PC=0x80000110, wb=0, ex=CSR (#49)
+TRACE         63: pipeline-execute: PC=0x8000012c, wb=1, rd=x3, ex=ALU (#56)
+DEBUG Fetch: PC=0x80000130 (#57)
+DEBUG Instr 0x297: AUIPC x5, 0x0
+DEBUG Dest Reg: x5={0x80000130}
+TRACE         63: pipeline-issue: PC=0x80000130, wb=1, rd=x5, ex=ALU (#57)
+TRACE         64: pipeline-commit: PC=0x80000100, wb=1, rd=x5, ex=ALU (#45)
+TRACE         64: pipeline-writeback: PC=0x8000011c, wb=1, rd=x5, ex=ALU (#52)
+TRACE         64: pipeline-execute: PC=0x80000120, wb=0, ex=CSR (#53)
+TRACE         64: pipeline-execute: PC=0x80000130, wb=1, rd=x5, ex=ALU (#57)
+DEBUG Fetch: PC=0x80000134 (#58)
+DEBUG Instr 0xed428293: ADDI x5, x5, 0xfffffed4
+DEBUG Src0 Reg: x5={0x80000130}
+DEBUG Dest Reg: x5={0x80000004}
+TRACE         64: pipeline-issue: PC=0x80000134, wb=1, rd=x5, ex=ALU (#58)
+TRACE         65: pipeline-commit: PC=0x80000104, wb=1, rd=x5, ex=ALU (#46)
+TRACE         65: pipeline-writeback: PC=0x80000108, wb=0, ex=CSR (#47)
+DEBUG Fetch: PC=0x80000138 (#59)
+DEBUG Instr 0x30529073: CSRRW x0, x5, 0x305
+DEBUG Src0 Reg: x5={0x80000004}
+TRACE         65: pipeline-issue: PC=0x80000138, wb=0, ex=CSR (#59)
+TRACE         66: pipeline-writeback: PC=0x8000012c, wb=1, rd=x3, ex=ALU (#56)
+DEBUG Fetch: PC=0x8000013c (#60)
+DEBUG Instr 0x100513: ADDI x10, x0, 0x1
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x10={0x1}
+TRACE         66: pipeline-issue: PC=0x8000013c, wb=1, rd=x10, ex=ALU (#60)
+TRACE         67: pipeline-commit: PC=0x80000108, wb=0, ex=CSR (#47)
+TRACE         67: pipeline-writeback: PC=0x80000130, wb=1, rd=x5, ex=ALU (#57)
+TRACE         67: pipeline-execute: PC=0x80000134, wb=1, rd=x5, ex=ALU (#58)
+TRACE         67: pipeline-execute: PC=0x8000013c, wb=1, rd=x10, ex=ALU (#60)
+DEBUG Fetch: PC=0x80000140 (#61)
+DEBUG Instr 0x1f51513: SLLI x10, x10, 0x1f
+DEBUG Src0 Reg: x10={0x1}
+DEBUG Dest Reg: x10={0x80000000}
+TRACE         67: pipeline-issue: PC=0x80000140, wb=1, rd=x10, ex=ALU (#61)
+TRACE         68: pipeline-commit: PC=0x8000010c, wb=1, rd=x5, ex=ALU (#48)
+TRACE         68: pipeline-writeback: PC=0x80000124, wb=0, ex=CSR (#54)
+DEBUG Fetch: PC=0x80000144 (#62)
+DEBUG Instr 0x54c63: BLT x10, x0, 0x18
+DEBUG Src0 Reg: x10={0x80000000}
+DEBUG Src1 Reg: x0={0x0}
+DEBUG *** Next PC=0x8000015c
+TRACE         68: *** branch stalled!: PC=0x80000144, wb=0, ex=ALU (#62)
+TRACE         69: pipeline-commit: PC=0x80000110, wb=0, ex=CSR (#49)
+TRACE         69: pipeline-writeback: PC=0x80000128, wb=0, ex=CSR (#55)
+TRACE         69: *** branch stalled!: PC=0x80000144, wb=0, ex=ALU (#62)
+TRACE         70: pipeline-commit: PC=0x80000114, wb=0, ex=CSR (#50)
+TRACE         70: pipeline-writeback: PC=0x80000134, wb=1, rd=x5, ex=ALU (#58)
+TRACE         70: pipeline-execute: PC=0x80000138, wb=0, ex=CSR (#59)
+TRACE         70: *** branch stalled!: PC=0x80000144, wb=0, ex=ALU (#62)
+TRACE         71: pipeline-commit: PC=0x80000118, wb=1, rd=x5, ex=ALU (#51)
+TRACE         71: pipeline-writeback: PC=0x8000013c, wb=1, rd=x10, ex=ALU (#60)
+TRACE         71: pipeline-execute: PC=0x80000140, wb=1, rd=x10, ex=ALU (#61)
+TRACE         71: pipeline-issue: PC=0x80000144, wb=0, ex=ALU (#62)
+TRACE         72: pipeline-commit: PC=0x8000011c, wb=1, rd=x5, ex=ALU (#52)
+TRACE         72: pipeline-writeback: PC=0x80000120, wb=0, ex=CSR (#53)
+DEBUG Fetch: PC=0x8000015c (#63)
+DEBUG Instr 0x293: ADDI x5, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x0}
+TRACE         72: pipeline-issue: PC=0x8000015c, wb=1, rd=x5, ex=ALU (#63)
+TRACE         73: pipeline-execute: PC=0x8000015c, wb=1, rd=x5, ex=ALU (#63)
+DEBUG Fetch: PC=0x80000160 (#64)
+DEBUG Instr 0x28a63: BEQ x5, x0, 0x14
+DEBUG Src0 Reg: x5={0x0}
+DEBUG Src1 Reg: x0={0x0}
+DEBUG *** Next PC=0x80000174
+TRACE         73: *** branch stalled!: PC=0x80000160, wb=0, ex=ALU (#64)
+TRACE         74: pipeline-commit: PC=0x80000120, wb=0, ex=CSR (#53)
+TRACE         74: pipeline-writeback: PC=0x80000140, wb=1, rd=x10, ex=ALU (#61)
+TRACE         74: pipeline-execute: PC=0x80000144, wb=0, ex=ALU (#62)
+TRACE         74: *** branch stalled!: PC=0x80000160, wb=0, ex=ALU (#64)
+TRACE         75: pipeline-commit: PC=0x80000124, wb=0, ex=CSR (#54)
+TRACE         75: pipeline-writeback: PC=0x80000138, wb=0, ex=CSR (#59)
+TRACE         75: *** branch stalled!: PC=0x80000160, wb=0, ex=ALU (#64)
+TRACE         76: pipeline-commit: PC=0x80000128, wb=0, ex=CSR (#55)
+TRACE         76: pipeline-writeback: PC=0x8000015c, wb=1, rd=x5, ex=ALU (#63)
+TRACE         76: pipeline-issue: PC=0x80000160, wb=0, ex=ALU (#64)
+TRACE         77: pipeline-commit: PC=0x8000012c, wb=1, rd=x3, ex=ALU (#56)
+TRACE         77: pipeline-writeback: PC=0x80000144, wb=0, ex=ALU (#62)
+TRACE         77: pipeline-execute: PC=0x80000160, wb=0, ex=ALU (#64)
+DEBUG Fetch: PC=0x80000174 (#65)
+DEBUG Instr 0x30005073: CSRRWI x0, 0x300
+TRACE         77: pipeline-issue: PC=0x80000174, wb=0, ex=CSR (#65)
+TRACE         78: pipeline-commit: PC=0x80000130, wb=1, rd=x5, ex=ALU (#57)
+TRACE         78: pipeline-execute: PC=0x80000174, wb=0, ex=CSR (#65)
+DEBUG Fetch: PC=0x80000178 (#66)
+DEBUG Instr 0x297: AUIPC x5, 0x0
+DEBUG Dest Reg: x5={0x80000178}
+TRACE         78: pipeline-issue: PC=0x80000178, wb=1, rd=x5, ex=ALU (#66)
+TRACE         79: pipeline-commit: PC=0x80000134, wb=1, rd=x5, ex=ALU (#58)
+TRACE         79: pipeline-execute: PC=0x80000178, wb=1, rd=x5, ex=ALU (#66)
+DEBUG Fetch: PC=0x8000017c (#67)
+DEBUG Instr 0x1428293: ADDI x5, x5, 0x14
+DEBUG Src0 Reg: x5={0x80000178}
+DEBUG Dest Reg: x5={0x8000018c}
+TRACE         79: pipeline-issue: PC=0x8000017c, wb=1, rd=x5, ex=ALU (#67)
+TRACE         80: pipeline-commit: PC=0x80000138, wb=0, ex=CSR (#59)
+TRACE         80: pipeline-writeback: PC=0x80000160, wb=0, ex=ALU (#64)
+DEBUG Fetch: PC=0x80000180 (#68)
+DEBUG Instr 0x34129073: CSRRW x0, x5, 0x341
+DEBUG Src0 Reg: x5={0x8000018c}
+TRACE         80: pipeline-issue: PC=0x80000180, wb=0, ex=CSR (#68)
+TRACE         81: pipeline-commit: PC=0x8000013c, wb=1, rd=x10, ex=ALU (#60)
+DEBUG Fetch: PC=0x80000184 (#69)
+DEBUG Instr 0xf1402573: CSRRS x10, x0, 0xf14
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x10={0x0}
+TRACE         81: pipeline-issue: PC=0x80000184, wb=1, rd=x10, ex=CSR (#69)
+TRACE         82: pipeline-commit: PC=0x80000140, wb=1, rd=x10, ex=ALU (#61)
+TRACE         82: pipeline-writeback: PC=0x80000178, wb=1, rd=x5, ex=ALU (#66)
+TRACE         82: pipeline-execute: PC=0x80000184, wb=1, rd=x10, ex=CSR (#69)
+TRACE         82: pipeline-execute: PC=0x8000017c, wb=1, rd=x5, ex=ALU (#67)
+DEBUG Fetch: PC=0x80000188 (#70)
+DEBUG Instr 0x30200073: MRET 0x302
+TRACE         82: pipeline-issue: PC=0x80000188, wb=0, ex=ALU (#70)
+TRACE         83: pipeline-commit: PC=0x80000144, wb=0, ex=ALU (#62)
+TRACE         83: pipeline-writeback: PC=0x80000174, wb=0, ex=CSR (#65)
+TRACE         83: pipeline-execute: PC=0x80000188, wb=0, ex=ALU (#70)
+DEBUG Fetch: PC=0x8000018c (#71)
+DEBUG Instr 0x200193: ADDI x3, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x2}
+TRACE         83: pipeline-issue: PC=0x8000018c, wb=1, rd=x3, ex=ALU (#71)
+TRACE         84: pipeline-commit: PC=0x8000015c, wb=1, rd=x5, ex=ALU (#63)
+TRACE         84: pipeline-execute: PC=0x8000018c, wb=1, rd=x3, ex=ALU (#71)
+DEBUG Fetch: PC=0x80000190 (#72)
+DEBUG Instr 0x93: ADDI x1, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x0}
+TRACE         84: pipeline-issue: PC=0x80000190, wb=1, rd=x1, ex=ALU (#72)
+TRACE         85: pipeline-commit: PC=0x80000160, wb=0, ex=ALU (#64)
+TRACE         85: pipeline-writeback: PC=0x8000017c, wb=1, rd=x5, ex=ALU (#67)
+TRACE         85: pipeline-execute: PC=0x80000180, wb=0, ex=CSR (#68)
+TRACE         85: pipeline-execute: PC=0x80000190, wb=1, rd=x1, ex=ALU (#72)
+DEBUG Fetch: PC=0x80000194 (#73)
+DEBUG Instr 0x100113: ADDI x2, x0, 0x1
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0x1}
+TRACE         85: pipeline-issue: PC=0x80000194, wb=1, rd=x2, ex=ALU (#73)
+TRACE         86: pipeline-commit: PC=0x80000174, wb=0, ex=CSR (#65)
+TRACE         86: pipeline-writeback: PC=0x80000188, wb=0, ex=ALU (#70)
+TRACE         86: pipeline-execute: PC=0x80000194, wb=1, rd=x2, ex=ALU (#73)
+DEBUG Fetch: PC=0x80000198 (#74)
+DEBUG Instr 0x20e663: BLTU x1, x2, 0xc
+DEBUG Src0 Reg: x1={0x0}
+DEBUG Src1 Reg: x2={0x1}
+DEBUG *** Next PC=0x800001a4
+TRACE         86: *** branch stalled!: PC=0x80000198, wb=0, ex=ALU (#74)
+TRACE         87: pipeline-commit: PC=0x80000178, wb=1, rd=x5, ex=ALU (#66)
+TRACE         87: pipeline-writeback: PC=0x8000018c, wb=1, rd=x3, ex=ALU (#71)
+TRACE         87: *** branch stalled!: PC=0x80000198, wb=0, ex=ALU (#74)
+TRACE         88: pipeline-commit: PC=0x8000017c, wb=1, rd=x5, ex=ALU (#67)
+TRACE         88: pipeline-writeback: PC=0x80000190, wb=1, rd=x1, ex=ALU (#72)
+TRACE         88: *** branch stalled!: PC=0x80000198, wb=0, ex=ALU (#74)
+TRACE         89: pipeline-writeback: PC=0x80000194, wb=1, rd=x2, ex=ALU (#73)
+TRACE         89: pipeline-issue: PC=0x80000198, wb=0, ex=ALU (#74)
+TRACE         90: pipeline-writeback: PC=0x80000184, wb=1, rd=x10, ex=CSR (#69)
+TRACE         90: pipeline-execute: PC=0x80000198, wb=0, ex=ALU (#74)
+DEBUG Fetch: PC=0x800001a4 (#75)
+DEBUG Instr 0xfe20eee3: BLTU x1, x2, 0xfffffffc
+DEBUG Src0 Reg: x1={0x0}
+DEBUG Src1 Reg: x2={0x1}
+DEBUG *** Next PC=0x800001a0
+TRACE         90: *** branch stalled!: PC=0x800001a4, wb=0, ex=ALU (#75)
+TRACE         91: pipeline-writeback: PC=0x80000180, wb=0, ex=CSR (#68)
+TRACE         91: *** branch stalled!: PC=0x800001a4, wb=0, ex=ALU (#75)
+TRACE         92: *** branch stalled!: PC=0x800001a4, wb=0, ex=ALU (#75)
+TRACE         93: pipeline-commit: PC=0x80000180, wb=0, ex=CSR (#68)
+TRACE         93: pipeline-writeback: PC=0x80000198, wb=0, ex=ALU (#74)
+TRACE         93: pipeline-issue: PC=0x800001a4, wb=0, ex=ALU (#75)
+TRACE         94: pipeline-commit: PC=0x80000184, wb=1, rd=x10, ex=CSR (#69)
+TRACE         94: pipeline-execute: PC=0x800001a4, wb=0, ex=ALU (#75)
+DEBUG Fetch: PC=0x800001a0 (#76)
+DEBUG Instr 0x301663: BNE x0, x3, 0xc
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Src1 Reg: x3={0x2}
+DEBUG *** Next PC=0x800001ac
+TRACE         94: *** branch stalled!: PC=0x800001a0, wb=0, ex=ALU (#76)
+TRACE         95: pipeline-commit: PC=0x80000188, wb=0, ex=ALU (#70)
+TRACE         95: *** branch stalled!: PC=0x800001a0, wb=0, ex=ALU (#76)
+TRACE         96: pipeline-commit: PC=0x8000018c, wb=1, rd=x3, ex=ALU (#71)
+TRACE         96: *** branch stalled!: PC=0x800001a0, wb=0, ex=ALU (#76)
+TRACE         97: pipeline-commit: PC=0x80000190, wb=1, rd=x1, ex=ALU (#72)
+TRACE         97: pipeline-writeback: PC=0x800001a4, wb=0, ex=ALU (#75)
+TRACE         97: pipeline-issue: PC=0x800001a0, wb=0, ex=ALU (#76)
+TRACE         98: pipeline-commit: PC=0x80000194, wb=1, rd=x2, ex=ALU (#73)
+TRACE         98: pipeline-execute: PC=0x800001a0, wb=0, ex=ALU (#76)
+DEBUG Fetch: PC=0x800001ac (#77)
+DEBUG Instr 0x300193: ADDI x3, x0, 0x3
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x3}
+TRACE         98: pipeline-issue: PC=0x800001ac, wb=1, rd=x3, ex=ALU (#77)
+TRACE         99: pipeline-commit: PC=0x80000198, wb=0, ex=ALU (#74)
+TRACE         99: pipeline-execute: PC=0x800001ac, wb=1, rd=x3, ex=ALU (#77)
+DEBUG Fetch: PC=0x800001b0 (#78)
+DEBUG Instr 0xffe00093: ADDI x1, x0, 0xfffffffe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xfffffffe}
+TRACE         99: pipeline-issue: PC=0x800001b0, wb=1, rd=x1, ex=ALU (#78)
+TRACE        100: pipeline-commit: PC=0x800001a4, wb=0, ex=ALU (#75)
+TRACE        100: pipeline-execute: PC=0x800001b0, wb=1, rd=x1, ex=ALU (#78)
+DEBUG Fetch: PC=0x800001b4 (#79)
+DEBUG Instr 0xfff00113: ADDI x2, x0, 0xffffffff
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xffffffff}
+TRACE        100: pipeline-issue: PC=0x800001b4, wb=1, rd=x2, ex=ALU (#79)
+TRACE        101: pipeline-writeback: PC=0x800001a0, wb=0, ex=ALU (#76)
+TRACE        101: pipeline-execute: PC=0x800001b4, wb=1, rd=x2, ex=ALU (#79)
+DEBUG Fetch: PC=0x800001b8 (#80)
+DEBUG Instr 0x20e663: BLTU x1, x2, 0xc
+DEBUG Src0 Reg: x1={0xfffffffe}
+DEBUG Src1 Reg: x2={0xffffffff}
+DEBUG *** Next PC=0x800001c4
+TRACE        101: *** branch stalled!: PC=0x800001b8, wb=0, ex=ALU (#80)
+TRACE        102: pipeline-writeback: PC=0x800001ac, wb=1, rd=x3, ex=ALU (#77)
+TRACE        102: *** branch stalled!: PC=0x800001b8, wb=0, ex=ALU (#80)
+TRACE        103: pipeline-commit: PC=0x800001a0, wb=0, ex=ALU (#76)
+TRACE        103: pipeline-writeback: PC=0x800001b0, wb=1, rd=x1, ex=ALU (#78)
+TRACE        103: *** branch stalled!: PC=0x800001b8, wb=0, ex=ALU (#80)
+TRACE        104: pipeline-commit: PC=0x800001ac, wb=1, rd=x3, ex=ALU (#77)
+TRACE        104: pipeline-writeback: PC=0x800001b4, wb=1, rd=x2, ex=ALU (#79)
+TRACE        104: pipeline-issue: PC=0x800001b8, wb=0, ex=ALU (#80)
+TRACE        105: pipeline-commit: PC=0x800001b0, wb=1, rd=x1, ex=ALU (#78)
+TRACE        105: pipeline-execute: PC=0x800001b8, wb=0, ex=ALU (#80)
+DEBUG Fetch: PC=0x800001c4 (#81)
+DEBUG Instr 0xfe20eee3: BLTU x1, x2, 0xfffffffc
+DEBUG Src0 Reg: x1={0xfffffffe}
+DEBUG Src1 Reg: x2={0xffffffff}
+DEBUG *** Next PC=0x800001c0
+TRACE        105: *** branch stalled!: PC=0x800001c4, wb=0, ex=ALU (#81)
+TRACE        106: pipeline-commit: PC=0x800001b4, wb=1, rd=x2, ex=ALU (#79)
+TRACE        106: *** branch stalled!: PC=0x800001c4, wb=0, ex=ALU (#81)
+TRACE        107: *** branch stalled!: PC=0x800001c4, wb=0, ex=ALU (#81)
+TRACE        108: pipeline-writeback: PC=0x800001b8, wb=0, ex=ALU (#80)
+TRACE        108: pipeline-issue: PC=0x800001c4, wb=0, ex=ALU (#81)
+TRACE        109: pipeline-execute: PC=0x800001c4, wb=0, ex=ALU (#81)
+DEBUG Fetch: PC=0x800001c0 (#82)
+DEBUG Instr 0x301663: BNE x0, x3, 0xc
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Src1 Reg: x3={0x3}
+DEBUG *** Next PC=0x800001cc
+TRACE        109: *** branch stalled!: PC=0x800001c0, wb=0, ex=ALU (#82)
+TRACE        110: pipeline-commit: PC=0x800001b8, wb=0, ex=ALU (#80)
+TRACE        110: *** branch stalled!: PC=0x800001c0, wb=0, ex=ALU (#82)
+TRACE        111: *** branch stalled!: PC=0x800001c0, wb=0, ex=ALU (#82)
+TRACE        112: pipeline-writeback: PC=0x800001c4, wb=0, ex=ALU (#81)
+TRACE        112: pipeline-issue: PC=0x800001c0, wb=0, ex=ALU (#82)
+TRACE        113: pipeline-execute: PC=0x800001c0, wb=0, ex=ALU (#82)
+DEBUG Fetch: PC=0x800001cc (#83)
+DEBUG Instr 0x400193: ADDI x3, x0, 0x4
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x4}
+TRACE        113: pipeline-issue: PC=0x800001cc, wb=1, rd=x3, ex=ALU (#83)
+TRACE        114: pipeline-commit: PC=0x800001c4, wb=0, ex=ALU (#81)
+TRACE        114: pipeline-execute: PC=0x800001cc, wb=1, rd=x3, ex=ALU (#83)
+DEBUG Fetch: PC=0x800001d0 (#84)
+DEBUG Instr 0x93: ADDI x1, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x0}
+TRACE        114: pipeline-issue: PC=0x800001d0, wb=1, rd=x1, ex=ALU (#84)
+TRACE        115: pipeline-execute: PC=0x800001d0, wb=1, rd=x1, ex=ALU (#84)
+DEBUG Fetch: PC=0x800001d4 (#85)
+DEBUG Instr 0xfff00113: ADDI x2, x0, 0xffffffff
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xffffffff}
+TRACE        115: pipeline-issue: PC=0x800001d4, wb=1, rd=x2, ex=ALU (#85)
+TRACE        116: pipeline-writeback: PC=0x800001c0, wb=0, ex=ALU (#82)
+TRACE        116: pipeline-execute: PC=0x800001d4, wb=1, rd=x2, ex=ALU (#85)
+DEBUG Fetch: PC=0x800001d8 (#86)
+DEBUG Instr 0x20e663: BLTU x1, x2, 0xc
+DEBUG Src0 Reg: x1={0x0}
+DEBUG Src1 Reg: x2={0xffffffff}
+DEBUG *** Next PC=0x800001e4
+TRACE        116: *** branch stalled!: PC=0x800001d8, wb=0, ex=ALU (#86)
+TRACE        117: pipeline-writeback: PC=0x800001cc, wb=1, rd=x3, ex=ALU (#83)
+TRACE        117: *** branch stalled!: PC=0x800001d8, wb=0, ex=ALU (#86)
+TRACE        118: pipeline-commit: PC=0x800001c0, wb=0, ex=ALU (#82)
+TRACE        118: pipeline-writeback: PC=0x800001d0, wb=1, rd=x1, ex=ALU (#84)
+TRACE        118: *** branch stalled!: PC=0x800001d8, wb=0, ex=ALU (#86)
+TRACE        119: pipeline-commit: PC=0x800001cc, wb=1, rd=x3, ex=ALU (#83)
+TRACE        119: pipeline-writeback: PC=0x800001d4, wb=1, rd=x2, ex=ALU (#85)
+TRACE        119: pipeline-issue: PC=0x800001d8, wb=0, ex=ALU (#86)
+TRACE        120: pipeline-commit: PC=0x800001d0, wb=1, rd=x1, ex=ALU (#84)
+TRACE        120: pipeline-execute: PC=0x800001d8, wb=0, ex=ALU (#86)
+DEBUG Fetch: PC=0x800001e4 (#87)
+DEBUG Instr 0xfe20eee3: BLTU x1, x2, 0xfffffffc
+DEBUG Src0 Reg: x1={0x0}
+DEBUG Src1 Reg: x2={0xffffffff}
+DEBUG *** Next PC=0x800001e0
+TRACE        120: *** branch stalled!: PC=0x800001e4, wb=0, ex=ALU (#87)
+TRACE        121: pipeline-commit: PC=0x800001d4, wb=1, rd=x2, ex=ALU (#85)
+TRACE        121: *** branch stalled!: PC=0x800001e4, wb=0, ex=ALU (#87)
+TRACE        122: *** branch stalled!: PC=0x800001e4, wb=0, ex=ALU (#87)
+TRACE        123: pipeline-writeback: PC=0x800001d8, wb=0, ex=ALU (#86)
+TRACE        123: pipeline-issue: PC=0x800001e4, wb=0, ex=ALU (#87)
+TRACE        124: pipeline-execute: PC=0x800001e4, wb=0, ex=ALU (#87)
+DEBUG Fetch: PC=0x800001e0 (#88)
+DEBUG Instr 0x301663: BNE x0, x3, 0xc
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Src1 Reg: x3={0x4}
+DEBUG *** Next PC=0x800001ec
+TRACE        124: *** branch stalled!: PC=0x800001e0, wb=0, ex=ALU (#88)
+TRACE        125: pipeline-commit: PC=0x800001d8, wb=0, ex=ALU (#86)
+TRACE        125: *** branch stalled!: PC=0x800001e0, wb=0, ex=ALU (#88)
+TRACE        126: *** branch stalled!: PC=0x800001e0, wb=0, ex=ALU (#88)
+TRACE        127: pipeline-writeback: PC=0x800001e4, wb=0, ex=ALU (#87)
+TRACE        127: pipeline-issue: PC=0x800001e0, wb=0, ex=ALU (#88)
+TRACE        128: pipeline-execute: PC=0x800001e0, wb=0, ex=ALU (#88)
+DEBUG Fetch: PC=0x800001ec (#89)
+DEBUG Instr 0x500193: ADDI x3, x0, 0x5
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x5}
+TRACE        128: pipeline-issue: PC=0x800001ec, wb=1, rd=x3, ex=ALU (#89)
+TRACE        129: pipeline-commit: PC=0x800001e4, wb=0, ex=ALU (#87)
+TRACE        129: pipeline-execute: PC=0x800001ec, wb=1, rd=x3, ex=ALU (#89)
+DEBUG Fetch: PC=0x800001f0 (#90)
+DEBUG Instr 0x100093: ADDI x1, x0, 0x1
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x1}
+TRACE        129: pipeline-issue: PC=0x800001f0, wb=1, rd=x1, ex=ALU (#90)
+TRACE        130: pipeline-execute: PC=0x800001f0, wb=1, rd=x1, ex=ALU (#90)
+DEBUG Fetch: PC=0x800001f4 (#91)
+DEBUG Instr 0x113: ADDI x2, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0x0}
+TRACE        130: pipeline-issue: PC=0x800001f4, wb=1, rd=x2, ex=ALU (#91)
+TRACE        131: pipeline-writeback: PC=0x800001e0, wb=0, ex=ALU (#88)
+TRACE        131: pipeline-execute: PC=0x800001f4, wb=1, rd=x2, ex=ALU (#91)
+DEBUG Fetch: PC=0x800001f8 (#92)
+DEBUG Instr 0x20e463: BLTU x1, x2, 0x8
+DEBUG Src0 Reg: x1={0x1}
+DEBUG Src1 Reg: x2={0x0}
+TRACE        131: *** branch stalled!: PC=0x800001f8, wb=0, ex=ALU (#92)
+TRACE        132: pipeline-writeback: PC=0x800001ec, wb=1, rd=x3, ex=ALU (#89)
+TRACE        132: *** branch stalled!: PC=0x800001f8, wb=0, ex=ALU (#92)
+TRACE        133: pipeline-commit: PC=0x800001e0, wb=0, ex=ALU (#88)
+TRACE        133: pipeline-writeback: PC=0x800001f0, wb=1, rd=x1, ex=ALU (#90)
+TRACE        133: *** branch stalled!: PC=0x800001f8, wb=0, ex=ALU (#92)
+TRACE        134: pipeline-commit: PC=0x800001ec, wb=1, rd=x3, ex=ALU (#89)
+TRACE        134: pipeline-writeback: PC=0x800001f4, wb=1, rd=x2, ex=ALU (#91)
+TRACE        134: pipeline-issue: PC=0x800001f8, wb=0, ex=ALU (#92)
+TRACE        135: pipeline-commit: PC=0x800001f0, wb=1, rd=x1, ex=ALU (#90)
+TRACE        135: pipeline-execute: PC=0x800001f8, wb=0, ex=ALU (#92)
+DEBUG Fetch: PC=0x800001fc (#93)
+DEBUG Instr 0x301463: BNE x0, x3, 0x8
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Src1 Reg: x3={0x5}
+DEBUG *** Next PC=0x80000204
+TRACE        135: *** branch stalled!: PC=0x800001fc, wb=0, ex=ALU (#93)
+TRACE        136: pipeline-commit: PC=0x800001f4, wb=1, rd=x2, ex=ALU (#91)
+TRACE        136: *** branch stalled!: PC=0x800001fc, wb=0, ex=ALU (#93)
+TRACE        137: *** branch stalled!: PC=0x800001fc, wb=0, ex=ALU (#93)
+TRACE        138: pipeline-writeback: PC=0x800001f8, wb=0, ex=ALU (#92)
+TRACE        138: pipeline-issue: PC=0x800001fc, wb=0, ex=ALU (#93)
+TRACE        139: pipeline-execute: PC=0x800001fc, wb=0, ex=ALU (#93)
+DEBUG Fetch: PC=0x80000204 (#94)
+DEBUG Instr 0xfe20eee3: BLTU x1, x2, 0xfffffffc
+DEBUG Src0 Reg: x1={0x1}
+DEBUG Src1 Reg: x2={0x0}
+TRACE        139: *** branch stalled!: PC=0x80000204, wb=0, ex=ALU (#94)
+TRACE        140: pipeline-commit: PC=0x800001f8, wb=0, ex=ALU (#92)
+TRACE        140: *** branch stalled!: PC=0x80000204, wb=0, ex=ALU (#94)
+TRACE        141: *** branch stalled!: PC=0x80000204, wb=0, ex=ALU (#94)
+TRACE        142: pipeline-writeback: PC=0x800001fc, wb=0, ex=ALU (#93)
+TRACE        142: pipeline-issue: PC=0x80000204, wb=0, ex=ALU (#94)
+TRACE        143: pipeline-execute: PC=0x80000204, wb=0, ex=ALU (#94)
+DEBUG Fetch: PC=0x80000208 (#95)
+DEBUG Instr 0x600193: ADDI x3, x0, 0x6
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x6}
+TRACE        143: pipeline-issue: PC=0x80000208, wb=1, rd=x3, ex=ALU (#95)
+TRACE        144: pipeline-commit: PC=0x800001fc, wb=0, ex=ALU (#93)
+TRACE        144: pipeline-execute: PC=0x80000208, wb=1, rd=x3, ex=ALU (#95)
+DEBUG Fetch: PC=0x8000020c (#96)
+DEBUG Instr 0xfff00093: ADDI x1, x0, 0xffffffff
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xffffffff}
+TRACE        144: pipeline-issue: PC=0x8000020c, wb=1, rd=x1, ex=ALU (#96)
+TRACE        145: pipeline-execute: PC=0x8000020c, wb=1, rd=x1, ex=ALU (#96)
+DEBUG Fetch: PC=0x80000210 (#97)
+DEBUG Instr 0xffe00113: ADDI x2, x0, 0xfffffffe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0xfffffffe}
+TRACE        145: pipeline-issue: PC=0x80000210, wb=1, rd=x2, ex=ALU (#97)
+TRACE        146: pipeline-writeback: PC=0x80000204, wb=0, ex=ALU (#94)
+TRACE        146: pipeline-execute: PC=0x80000210, wb=1, rd=x2, ex=ALU (#97)
+DEBUG Fetch: PC=0x80000214 (#98)
+DEBUG Instr 0x20e463: BLTU x1, x2, 0x8
+DEBUG Src0 Reg: x1={0xffffffff}
+DEBUG Src1 Reg: x2={0xfffffffe}
+TRACE        146: *** branch stalled!: PC=0x80000214, wb=0, ex=ALU (#98)
+TRACE        147: pipeline-writeback: PC=0x80000208, wb=1, rd=x3, ex=ALU (#95)
+TRACE        147: *** branch stalled!: PC=0x80000214, wb=0, ex=ALU (#98)
+TRACE        148: pipeline-commit: PC=0x80000204, wb=0, ex=ALU (#94)
+TRACE        148: pipeline-writeback: PC=0x8000020c, wb=1, rd=x1, ex=ALU (#96)
+TRACE        148: *** branch stalled!: PC=0x80000214, wb=0, ex=ALU (#98)
+TRACE        149: pipeline-commit: PC=0x80000208, wb=1, rd=x3, ex=ALU (#95)
+TRACE        149: pipeline-writeback: PC=0x80000210, wb=1, rd=x2, ex=ALU (#97)
+TRACE        149: pipeline-issue: PC=0x80000214, wb=0, ex=ALU (#98)
+TRACE        150: pipeline-commit: PC=0x8000020c, wb=1, rd=x1, ex=ALU (#96)
+TRACE        150: pipeline-execute: PC=0x80000214, wb=0, ex=ALU (#98)
+DEBUG Fetch: PC=0x80000218 (#99)
+DEBUG Instr 0x301463: BNE x0, x3, 0x8
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Src1 Reg: x3={0x6}
+DEBUG *** Next PC=0x80000220
+TRACE        150: *** branch stalled!: PC=0x80000218, wb=0, ex=ALU (#99)
+TRACE        151: pipeline-commit: PC=0x80000210, wb=1, rd=x2, ex=ALU (#97)
+TRACE        151: *** branch stalled!: PC=0x80000218, wb=0, ex=ALU (#99)
+TRACE        152: *** branch stalled!: PC=0x80000218, wb=0, ex=ALU (#99)
+TRACE        153: pipeline-writeback: PC=0x80000214, wb=0, ex=ALU (#98)
+TRACE        153: pipeline-issue: PC=0x80000218, wb=0, ex=ALU (#99)
+TRACE        154: pipeline-execute: PC=0x80000218, wb=0, ex=ALU (#99)
+DEBUG Fetch: PC=0x80000220 (#100)
+DEBUG Instr 0xfe20eee3: BLTU x1, x2, 0xfffffffc
+DEBUG Src0 Reg: x1={0xffffffff}
+DEBUG Src1 Reg: x2={0xfffffffe}
+TRACE        154: *** branch stalled!: PC=0x80000220, wb=0, ex=ALU (#100)
+TRACE        155: pipeline-commit: PC=0x80000214, wb=0, ex=ALU (#98)
+TRACE        155: *** branch stalled!: PC=0x80000220, wb=0, ex=ALU (#100)
+TRACE        156: *** branch stalled!: PC=0x80000220, wb=0, ex=ALU (#100)
+TRACE        157: pipeline-writeback: PC=0x80000218, wb=0, ex=ALU (#99)
+TRACE        157: pipeline-issue: PC=0x80000220, wb=0, ex=ALU (#100)
+TRACE        158: pipeline-execute: PC=0x80000220, wb=0, ex=ALU (#100)
+DEBUG Fetch: PC=0x80000224 (#101)
+DEBUG Instr 0x700193: ADDI x3, x0, 0x7
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x7}
+TRACE        158: pipeline-issue: PC=0x80000224, wb=1, rd=x3, ex=ALU (#101)
+TRACE        159: pipeline-commit: PC=0x80000218, wb=0, ex=ALU (#99)
+TRACE        159: pipeline-execute: PC=0x80000224, wb=1, rd=x3, ex=ALU (#101)
+DEBUG Fetch: PC=0x80000228 (#102)
+DEBUG Instr 0xfff00093: ADDI x1, x0, 0xffffffff
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0xffffffff}
+TRACE        159: pipeline-issue: PC=0x80000228, wb=1, rd=x1, ex=ALU (#102)
+TRACE        160: pipeline-execute: PC=0x80000228, wb=1, rd=x1, ex=ALU (#102)
+DEBUG Fetch: PC=0x8000022c (#103)
+DEBUG Instr 0x113: ADDI x2, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x2={0x0}
+TRACE        160: pipeline-issue: PC=0x8000022c, wb=1, rd=x2, ex=ALU (#103)
+TRACE        161: pipeline-writeback: PC=0x80000220, wb=0, ex=ALU (#100)
+TRACE        161: pipeline-execute: PC=0x8000022c, wb=1, rd=x2, ex=ALU (#103)
+DEBUG Fetch: PC=0x80000230 (#104)
+DEBUG Instr 0x20e463: BLTU x1, x2, 0x8
+DEBUG Src0 Reg: x1={0xffffffff}
+DEBUG Src1 Reg: x2={0x0}
+TRACE        161: *** branch stalled!: PC=0x80000230, wb=0, ex=ALU (#104)
+TRACE        162: pipeline-writeback: PC=0x80000224, wb=1, rd=x3, ex=ALU (#101)
+TRACE        162: *** branch stalled!: PC=0x80000230, wb=0, ex=ALU (#104)
+TRACE        163: pipeline-commit: PC=0x80000220, wb=0, ex=ALU (#100)
+TRACE        163: pipeline-writeback: PC=0x80000228, wb=1, rd=x1, ex=ALU (#102)
+TRACE        163: *** branch stalled!: PC=0x80000230, wb=0, ex=ALU (#104)
+TRACE        164: pipeline-commit: PC=0x80000224, wb=1, rd=x3, ex=ALU (#101)
+TRACE        164: pipeline-writeback: PC=0x8000022c, wb=1, rd=x2, ex=ALU (#103)
+TRACE        164: pipeline-issue: PC=0x80000230, wb=0, ex=ALU (#104)
+TRACE        165: pipeline-commit: PC=0x80000228, wb=1, rd=x1, ex=ALU (#102)
+TRACE        165: pipeline-execute: PC=0x80000230, wb=0, ex=ALU (#104)
+DEBUG Fetch: PC=0x80000234 (#105)
+DEBUG Instr 0x301463: BNE x0, x3, 0x8
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Src1 Reg: x3={0x7}
+DEBUG *** Next PC=0x8000023c
+TRACE        165: *** branch stalled!: PC=0x80000234, wb=0, ex=ALU (#105)
+TRACE        166: pipeline-commit: PC=0x8000022c, wb=1, rd=x2, ex=ALU (#103)
+TRACE        166: *** branch stalled!: PC=0x80000234, wb=0, ex=ALU (#105)
+TRACE        167: *** branch stalled!: PC=0x80000234, wb=0, ex=ALU (#105)
+TRACE        168: pipeline-writeback: PC=0x80000230, wb=0, ex=ALU (#104)
+TRACE        168: pipeline-issue: PC=0x80000234, wb=0, ex=ALU (#105)
+TRACE        169: pipeline-execute: PC=0x80000234, wb=0, ex=ALU (#105)
+DEBUG Fetch: PC=0x8000023c (#106)
+DEBUG Instr 0xfe20eee3: BLTU x1, x2, 0xfffffffc
+DEBUG Src0 Reg: x1={0xffffffff}
+DEBUG Src1 Reg: x2={0x0}
+TRACE        169: *** branch stalled!: PC=0x8000023c, wb=0, ex=ALU (#106)
+TRACE        170: pipeline-commit: PC=0x80000230, wb=0, ex=ALU (#104)
+TRACE        170: *** branch stalled!: PC=0x8000023c, wb=0, ex=ALU (#106)
+TRACE        171: *** branch stalled!: PC=0x8000023c, wb=0, ex=ALU (#106)
+TRACE        172: pipeline-writeback: PC=0x80000234, wb=0, ex=ALU (#105)
+TRACE        172: pipeline-issue: PC=0x8000023c, wb=0, ex=ALU (#106)
+TRACE        173: pipeline-execute: PC=0x8000023c, wb=0, ex=ALU (#106)
+DEBUG Fetch: PC=0x80000240 (#107)
+DEBUG Instr 0x800193: ADDI x3, x0, 0x8
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x8}
+TRACE        173: pipeline-issue: PC=0x80000240, wb=1, rd=x3, ex=ALU (#107)
+TRACE        174: pipeline-commit: PC=0x80000234, wb=0, ex=ALU (#105)
+TRACE        174: pipeline-execute: PC=0x80000240, wb=1, rd=x3, ex=ALU (#107)
+DEBUG Fetch: PC=0x80000244 (#108)
+DEBUG Instr 0x800000b7: LUI x1, 0x80000000
+DEBUG Dest Reg: x1={0x80000000}
+TRACE        174: pipeline-issue: PC=0x80000244, wb=1, rd=x1, ex=ALU (#108)
+TRACE        175: pipeline-execute: PC=0x80000244, wb=1, rd=x1, ex=ALU (#108)
+DEBUG Fetch: PC=0x80000248 (#109)
+DEBUG Instr 0x80000137: LUI x2, 0x80000000
+DEBUG Dest Reg: x2={0x80000000}
+TRACE        175: pipeline-issue: PC=0x80000248, wb=1, rd=x2, ex=ALU (#109)
+TRACE        176: pipeline-writeback: PC=0x8000023c, wb=0, ex=ALU (#106)
+TRACE        176: pipeline-execute: PC=0x80000248, wb=1, rd=x2, ex=ALU (#109)
+DEBUG Fetch: PC=0x8000024c (#110)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0x80000000}
+DEBUG Dest Reg: x2={0x7fffffff}
+TRACE        176: pipeline-issue: PC=0x8000024c, wb=1, rd=x2, ex=ALU (#110)
+TRACE        177: pipeline-writeback: PC=0x80000240, wb=1, rd=x3, ex=ALU (#107)
+DEBUG Fetch: PC=0x80000250 (#111)
+DEBUG Instr 0x20e463: BLTU x1, x2, 0x8
+DEBUG Src0 Reg: x1={0x80000000}
+DEBUG Src1 Reg: x2={0x7fffffff}
+TRACE        177: *** branch stalled!: PC=0x80000250, wb=0, ex=ALU (#111)
+TRACE        178: pipeline-commit: PC=0x8000023c, wb=0, ex=ALU (#106)
+TRACE        178: pipeline-writeback: PC=0x80000244, wb=1, rd=x1, ex=ALU (#108)
+TRACE        178: *** branch stalled!: PC=0x80000250, wb=0, ex=ALU (#111)
+TRACE        179: pipeline-commit: PC=0x80000240, wb=1, rd=x3, ex=ALU (#107)
+TRACE        179: pipeline-writeback: PC=0x80000248, wb=1, rd=x2, ex=ALU (#109)
+TRACE        179: pipeline-execute: PC=0x8000024c, wb=1, rd=x2, ex=ALU (#110)
+TRACE        179: *** branch stalled!: PC=0x80000250, wb=0, ex=ALU (#111)
+TRACE        180: pipeline-commit: PC=0x80000244, wb=1, rd=x1, ex=ALU (#108)
+TRACE        180: pipeline-issue: PC=0x80000250, wb=0, ex=ALU (#111)
+TRACE        181: pipeline-commit: PC=0x80000248, wb=1, rd=x2, ex=ALU (#109)
+DEBUG Fetch: PC=0x80000254 (#112)
+DEBUG Instr 0x301463: BNE x0, x3, 0x8
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Src1 Reg: x3={0x8}
+DEBUG *** Next PC=0x8000025c
+TRACE        181: *** branch stalled!: PC=0x80000254, wb=0, ex=ALU (#112)
+TRACE        182: pipeline-writeback: PC=0x8000024c, wb=1, rd=x2, ex=ALU (#110)
+TRACE        182: pipeline-execute: PC=0x80000250, wb=0, ex=ALU (#111)
+TRACE        182: *** branch stalled!: PC=0x80000254, wb=0, ex=ALU (#112)
+TRACE        183: *** branch stalled!: PC=0x80000254, wb=0, ex=ALU (#112)
+TRACE        184: pipeline-commit: PC=0x8000024c, wb=1, rd=x2, ex=ALU (#110)
+TRACE        184: pipeline-issue: PC=0x80000254, wb=0, ex=ALU (#112)
+TRACE        185: pipeline-writeback: PC=0x80000250, wb=0, ex=ALU (#111)
+TRACE        185: pipeline-execute: PC=0x80000254, wb=0, ex=ALU (#112)
+DEBUG Fetch: PC=0x8000025c (#113)
+DEBUG Instr 0xfe20eee3: BLTU x1, x2, 0xfffffffc
+DEBUG Src0 Reg: x1={0x80000000}
+DEBUG Src1 Reg: x2={0x7fffffff}
+TRACE        185: *** branch stalled!: PC=0x8000025c, wb=0, ex=ALU (#113)
+TRACE        186: *** branch stalled!: PC=0x8000025c, wb=0, ex=ALU (#113)
+TRACE        187: pipeline-commit: PC=0x80000250, wb=0, ex=ALU (#111)
+TRACE        187: *** branch stalled!: PC=0x8000025c, wb=0, ex=ALU (#113)
+TRACE        188: pipeline-writeback: PC=0x80000254, wb=0, ex=ALU (#112)
+TRACE        188: pipeline-issue: PC=0x8000025c, wb=0, ex=ALU (#113)
+TRACE        189: pipeline-execute: PC=0x8000025c, wb=0, ex=ALU (#113)
+DEBUG Fetch: PC=0x80000260 (#114)
+DEBUG Instr 0x900193: ADDI x3, x0, 0x9
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x9}
+TRACE        189: pipeline-issue: PC=0x80000260, wb=1, rd=x3, ex=ALU (#114)
+TRACE        190: pipeline-commit: PC=0x80000254, wb=0, ex=ALU (#112)
+TRACE        190: pipeline-execute: PC=0x80000260, wb=1, rd=x3, ex=ALU (#114)
+DEBUG Fetch: PC=0x80000264 (#115)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+TRACE        190: pipeline-issue: PC=0x80000264, wb=1, rd=x4, ex=ALU (#115)
+TRACE        191: pipeline-execute: PC=0x80000264, wb=1, rd=x4, ex=ALU (#115)
+DEBUG Fetch: PC=0x80000268 (#116)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        191: pipeline-issue: PC=0x80000268, wb=1, rd=x1, ex=ALU (#116)
+TRACE        192: pipeline-writeback: PC=0x8000025c, wb=0, ex=ALU (#113)
+TRACE        192: pipeline-execute: PC=0x80000268, wb=1, rd=x1, ex=ALU (#116)
+DEBUG Fetch: PC=0x8000026c (#117)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        192: pipeline-issue: PC=0x8000026c, wb=1, rd=x2, ex=ALU (#117)
+TRACE        193: pipeline-writeback: PC=0x80000260, wb=1, rd=x3, ex=ALU (#114)
+TRACE        193: pipeline-execute: PC=0x8000026c, wb=1, rd=x2, ex=ALU (#117)
+DEBUG Fetch: PC=0x80000270 (#118)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        193: pipeline-issue: PC=0x80000270, wb=1, rd=x2, ex=ALU (#118)
+TRACE        194: pipeline-commit: PC=0x8000025c, wb=0, ex=ALU (#113)
+TRACE        194: pipeline-writeback: PC=0x80000264, wb=1, rd=x4, ex=ALU (#115)
+DEBUG Fetch: PC=0x80000274 (#119)
+DEBUG Instr 0x2020e663: BLTU x1, x2, 0x20c
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        194: *** branch stalled!: PC=0x80000274, wb=0, ex=ALU (#119)
+TRACE        195: pipeline-commit: PC=0x80000260, wb=1, rd=x3, ex=ALU (#114)
+TRACE        195: pipeline-writeback: PC=0x80000268, wb=1, rd=x1, ex=ALU (#116)
+TRACE        195: *** branch stalled!: PC=0x80000274, wb=0, ex=ALU (#119)
+TRACE        196: pipeline-commit: PC=0x80000264, wb=1, rd=x4, ex=ALU (#115)
+TRACE        196: pipeline-writeback: PC=0x8000026c, wb=1, rd=x2, ex=ALU (#117)
+TRACE        196: pipeline-execute: PC=0x80000270, wb=1, rd=x2, ex=ALU (#118)
+TRACE        196: *** branch stalled!: PC=0x80000274, wb=0, ex=ALU (#119)
+TRACE        197: pipeline-commit: PC=0x80000268, wb=1, rd=x1, ex=ALU (#116)
+TRACE        197: pipeline-issue: PC=0x80000274, wb=0, ex=ALU (#119)
+TRACE        198: pipeline-commit: PC=0x8000026c, wb=1, rd=x2, ex=ALU (#117)
+DEBUG Fetch: PC=0x80000278 (#120)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+TRACE        198: pipeline-issue: PC=0x80000278, wb=1, rd=x4, ex=ALU (#120)
+TRACE        199: pipeline-writeback: PC=0x80000270, wb=1, rd=x2, ex=ALU (#118)
+TRACE        199: pipeline-execute: PC=0x80000278, wb=1, rd=x4, ex=ALU (#120)
+TRACE        199: pipeline-execute: PC=0x80000274, wb=0, ex=ALU (#119)
+DEBUG Fetch: PC=0x8000027c (#121)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        199: pipeline-issue: PC=0x8000027c, wb=1, rd=x5, ex=ALU (#121)
+TRACE        200: pipeline-execute: PC=0x8000027c, wb=1, rd=x5, ex=ALU (#121)
+DEBUG Fetch: PC=0x80000280 (#122)
+DEBUG Instr 0xfe5214e3: BNE x4, x5, 0xffffffe8
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG *** Next PC=0x80000268
+TRACE        200: *** branch stalled!: PC=0x80000280, wb=0, ex=ALU (#122)
+TRACE        201: pipeline-commit: PC=0x80000270, wb=1, rd=x2, ex=ALU (#118)
+TRACE        201: *** branch stalled!: PC=0x80000280, wb=0, ex=ALU (#122)
+TRACE        202: pipeline-writeback: PC=0x80000278, wb=1, rd=x4, ex=ALU (#120)
+TRACE        202: *** branch stalled!: PC=0x80000280, wb=0, ex=ALU (#122)
+TRACE        203: pipeline-writeback: PC=0x80000274, wb=0, ex=ALU (#119)
+TRACE        203: pipeline-issue: PC=0x80000280, wb=0, ex=ALU (#122)
+TRACE        204: pipeline-writeback: PC=0x8000027c, wb=1, rd=x5, ex=ALU (#121)
+TRACE        204: pipeline-execute: PC=0x80000280, wb=0, ex=ALU (#122)
+DEBUG Fetch: PC=0x80000268 (#65652)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        204: pipeline-issue: PC=0x80000268, wb=1, rd=x1, ex=ALU (#65652)
+TRACE        205: pipeline-commit: PC=0x80000274, wb=0, ex=ALU (#119)
+TRACE        205: pipeline-execute: PC=0x80000268, wb=1, rd=x1, ex=ALU (#65652)
+DEBUG Fetch: PC=0x8000026c (#65653)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        205: pipeline-issue: PC=0x8000026c, wb=1, rd=x2, ex=ALU (#65653)
+TRACE        206: pipeline-commit: PC=0x80000278, wb=1, rd=x4, ex=ALU (#120)
+TRACE        206: pipeline-execute: PC=0x8000026c, wb=1, rd=x2, ex=ALU (#65653)
+DEBUG Fetch: PC=0x80000270 (#65654)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        206: pipeline-issue: PC=0x80000270, wb=1, rd=x2, ex=ALU (#65654)
+TRACE        207: pipeline-commit: PC=0x8000027c, wb=1, rd=x5, ex=ALU (#121)
+TRACE        207: pipeline-writeback: PC=0x80000280, wb=0, ex=ALU (#122)
+DEBUG Fetch: PC=0x80000274 (#65655)
+DEBUG Instr 0x2020e663: BLTU x1, x2, 0x20c
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        207: *** branch stalled!: PC=0x80000274, wb=0, ex=ALU (#65655)
+TRACE        208: pipeline-writeback: PC=0x80000268, wb=1, rd=x1, ex=ALU (#65652)
+TRACE        208: *** branch stalled!: PC=0x80000274, wb=0, ex=ALU (#65655)
+TRACE        209: pipeline-commit: PC=0x80000280, wb=0, ex=ALU (#122)
+TRACE        209: pipeline-writeback: PC=0x8000026c, wb=1, rd=x2, ex=ALU (#65653)
+TRACE        209: pipeline-execute: PC=0x80000270, wb=1, rd=x2, ex=ALU (#65654)
+TRACE        209: *** branch stalled!: PC=0x80000274, wb=0, ex=ALU (#65655)
+TRACE        210: pipeline-commit: PC=0x80000268, wb=1, rd=x1, ex=ALU (#65652)
+TRACE        210: pipeline-issue: PC=0x80000274, wb=0, ex=ALU (#65655)
+TRACE        211: pipeline-commit: PC=0x8000026c, wb=1, rd=x2, ex=ALU (#65653)
+DEBUG Fetch: PC=0x80000278 (#65656)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+TRACE        211: pipeline-issue: PC=0x80000278, wb=1, rd=x4, ex=ALU (#65656)
+TRACE        212: pipeline-writeback: PC=0x80000270, wb=1, rd=x2, ex=ALU (#65654)
+TRACE        212: pipeline-execute: PC=0x80000274, wb=0, ex=ALU (#65655)
+TRACE        212: pipeline-execute: PC=0x80000278, wb=1, rd=x4, ex=ALU (#65656)
+DEBUG Fetch: PC=0x8000027c (#65657)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        212: pipeline-issue: PC=0x8000027c, wb=1, rd=x5, ex=ALU (#65657)
+TRACE        213: pipeline-execute: PC=0x8000027c, wb=1, rd=x5, ex=ALU (#65657)
+DEBUG Fetch: PC=0x80000280 (#65658)
+DEBUG Instr 0xfe5214e3: BNE x4, x5, 0xffffffe8
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+TRACE        213: *** branch stalled!: PC=0x80000280, wb=0, ex=ALU (#65658)
+TRACE        214: pipeline-commit: PC=0x80000270, wb=1, rd=x2, ex=ALU (#65654)
+TRACE        214: *** branch stalled!: PC=0x80000280, wb=0, ex=ALU (#65658)
+TRACE        215: pipeline-writeback: PC=0x80000274, wb=0, ex=ALU (#65655)
+TRACE        215: *** branch stalled!: PC=0x80000280, wb=0, ex=ALU (#65658)
+TRACE        216: pipeline-writeback: PC=0x80000278, wb=1, rd=x4, ex=ALU (#65656)
+TRACE        216: pipeline-issue: PC=0x80000280, wb=0, ex=ALU (#65658)
+TRACE        217: pipeline-commit: PC=0x80000274, wb=0, ex=ALU (#65655)
+TRACE        217: pipeline-writeback: PC=0x8000027c, wb=1, rd=x5, ex=ALU (#65657)
+TRACE        217: pipeline-execute: PC=0x80000280, wb=0, ex=ALU (#65658)
+DEBUG Fetch: PC=0x80000284 (#123)
+DEBUG Instr 0xa00193: ADDI x3, x0, 0xa
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0xa}
+TRACE        217: pipeline-issue: PC=0x80000284, wb=1, rd=x3, ex=ALU (#123)
+TRACE        218: pipeline-commit: PC=0x80000278, wb=1, rd=x4, ex=ALU (#65656)
+TRACE        218: pipeline-execute: PC=0x80000284, wb=1, rd=x3, ex=ALU (#123)
+DEBUG Fetch: PC=0x80000288 (#124)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+TRACE        218: pipeline-issue: PC=0x80000288, wb=1, rd=x4, ex=ALU (#124)
+TRACE        219: pipeline-commit: PC=0x8000027c, wb=1, rd=x5, ex=ALU (#65657)
+TRACE        219: pipeline-execute: PC=0x80000288, wb=1, rd=x4, ex=ALU (#124)
+DEBUG Fetch: PC=0x8000028c (#125)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        219: pipeline-issue: PC=0x8000028c, wb=1, rd=x1, ex=ALU (#125)
+TRACE        220: pipeline-writeback: PC=0x80000280, wb=0, ex=ALU (#65658)
+TRACE        220: pipeline-execute: PC=0x8000028c, wb=1, rd=x1, ex=ALU (#125)
+DEBUG Fetch: PC=0x80000290 (#126)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        220: pipeline-issue: PC=0x80000290, wb=1, rd=x2, ex=ALU (#126)
+TRACE        221: pipeline-writeback: PC=0x80000284, wb=1, rd=x3, ex=ALU (#123)
+TRACE        221: pipeline-execute: PC=0x80000290, wb=1, rd=x2, ex=ALU (#126)
+DEBUG Fetch: PC=0x80000294 (#127)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        221: pipeline-issue: PC=0x80000294, wb=1, rd=x2, ex=ALU (#127)
+TRACE        222: pipeline-commit: PC=0x80000280, wb=0, ex=ALU (#65658)
+TRACE        222: pipeline-writeback: PC=0x80000288, wb=1, rd=x4, ex=ALU (#124)
+DEBUG Fetch: PC=0x80000298 (#128)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        222: pipeline-issue: PC=0x80000298, wb=0, ex=ALU (#128)
+TRACE        223: pipeline-commit: PC=0x80000284, wb=1, rd=x3, ex=ALU (#123)
+TRACE        223: pipeline-writeback: PC=0x8000028c, wb=1, rd=x1, ex=ALU (#125)
+TRACE        223: pipeline-execute: PC=0x80000298, wb=0, ex=ALU (#128)
+DEBUG Fetch: PC=0x8000029c (#129)
+DEBUG Instr 0x1e20e263: BLTU x1, x2, 0x1e4
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        223: *** branch stalled!: PC=0x8000029c, wb=0, ex=ALU (#129)
+TRACE        224: pipeline-commit: PC=0x80000288, wb=1, rd=x4, ex=ALU (#124)
+TRACE        224: pipeline-writeback: PC=0x80000290, wb=1, rd=x2, ex=ALU (#126)
+TRACE        224: pipeline-execute: PC=0x80000294, wb=1, rd=x2, ex=ALU (#127)
+TRACE        224: *** branch stalled!: PC=0x8000029c, wb=0, ex=ALU (#129)
+TRACE        225: pipeline-commit: PC=0x8000028c, wb=1, rd=x1, ex=ALU (#125)
+TRACE        225: *** branch stalled!: PC=0x8000029c, wb=0, ex=ALU (#129)
+TRACE        226: pipeline-commit: PC=0x80000290, wb=1, rd=x2, ex=ALU (#126)
+TRACE        226: pipeline-writeback: PC=0x80000298, wb=0, ex=ALU (#128)
+TRACE        226: pipeline-issue: PC=0x8000029c, wb=0, ex=ALU (#129)
+TRACE        227: pipeline-writeback: PC=0x80000294, wb=1, rd=x2, ex=ALU (#127)
+TRACE        227: pipeline-execute: PC=0x8000029c, wb=0, ex=ALU (#129)
+DEBUG Fetch: PC=0x800002a0 (#130)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+TRACE        227: pipeline-issue: PC=0x800002a0, wb=1, rd=x4, ex=ALU (#130)
+TRACE        228: pipeline-execute: PC=0x800002a0, wb=1, rd=x4, ex=ALU (#130)
+DEBUG Fetch: PC=0x800002a4 (#131)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        228: pipeline-issue: PC=0x800002a4, wb=1, rd=x5, ex=ALU (#131)
+TRACE        229: pipeline-commit: PC=0x80000294, wb=1, rd=x2, ex=ALU (#127)
+TRACE        229: pipeline-execute: PC=0x800002a4, wb=1, rd=x5, ex=ALU (#131)
+DEBUG Fetch: PC=0x800002a8 (#132)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG *** Next PC=0x8000028c
+TRACE        229: *** branch stalled!: PC=0x800002a8, wb=0, ex=ALU (#132)
+TRACE        230: pipeline-commit: PC=0x80000298, wb=0, ex=ALU (#128)
+TRACE        230: pipeline-writeback: PC=0x8000029c, wb=0, ex=ALU (#129)
+TRACE        230: *** branch stalled!: PC=0x800002a8, wb=0, ex=ALU (#132)
+TRACE        231: pipeline-writeback: PC=0x800002a0, wb=1, rd=x4, ex=ALU (#130)
+TRACE        231: *** branch stalled!: PC=0x800002a8, wb=0, ex=ALU (#132)
+TRACE        232: pipeline-commit: PC=0x8000029c, wb=0, ex=ALU (#129)
+TRACE        232: pipeline-writeback: PC=0x800002a4, wb=1, rd=x5, ex=ALU (#131)
+TRACE        232: pipeline-issue: PC=0x800002a8, wb=0, ex=ALU (#132)
+TRACE        233: pipeline-commit: PC=0x800002a0, wb=1, rd=x4, ex=ALU (#130)
+TRACE        233: pipeline-execute: PC=0x800002a8, wb=0, ex=ALU (#132)
+DEBUG Fetch: PC=0x8000028c (#65661)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        233: pipeline-issue: PC=0x8000028c, wb=1, rd=x1, ex=ALU (#65661)
+TRACE        234: pipeline-commit: PC=0x800002a4, wb=1, rd=x5, ex=ALU (#131)
+TRACE        234: pipeline-execute: PC=0x8000028c, wb=1, rd=x1, ex=ALU (#65661)
+DEBUG Fetch: PC=0x80000290 (#65662)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        234: pipeline-issue: PC=0x80000290, wb=1, rd=x2, ex=ALU (#65662)
+TRACE        235: pipeline-execute: PC=0x80000290, wb=1, rd=x2, ex=ALU (#65662)
+DEBUG Fetch: PC=0x80000294 (#65663)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        235: pipeline-issue: PC=0x80000294, wb=1, rd=x2, ex=ALU (#65663)
+TRACE        236: pipeline-writeback: PC=0x800002a8, wb=0, ex=ALU (#132)
+DEBUG Fetch: PC=0x80000298 (#65664)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        236: pipeline-issue: PC=0x80000298, wb=0, ex=ALU (#65664)
+TRACE        237: pipeline-writeback: PC=0x8000028c, wb=1, rd=x1, ex=ALU (#65661)
+TRACE        237: pipeline-execute: PC=0x80000298, wb=0, ex=ALU (#65664)
+DEBUG Fetch: PC=0x8000029c (#65665)
+DEBUG Instr 0x1e20e263: BLTU x1, x2, 0x1e4
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        237: *** branch stalled!: PC=0x8000029c, wb=0, ex=ALU (#65665)
+TRACE        238: pipeline-commit: PC=0x800002a8, wb=0, ex=ALU (#132)
+TRACE        238: pipeline-writeback: PC=0x80000290, wb=1, rd=x2, ex=ALU (#65662)
+TRACE        238: pipeline-execute: PC=0x80000294, wb=1, rd=x2, ex=ALU (#65663)
+TRACE        238: *** branch stalled!: PC=0x8000029c, wb=0, ex=ALU (#65665)
+TRACE        239: pipeline-commit: PC=0x8000028c, wb=1, rd=x1, ex=ALU (#65661)
+TRACE        239: *** branch stalled!: PC=0x8000029c, wb=0, ex=ALU (#65665)
+TRACE        240: pipeline-commit: PC=0x80000290, wb=1, rd=x2, ex=ALU (#65662)
+TRACE        240: pipeline-writeback: PC=0x80000298, wb=0, ex=ALU (#65664)
+TRACE        240: pipeline-issue: PC=0x8000029c, wb=0, ex=ALU (#65665)
+TRACE        241: pipeline-writeback: PC=0x80000294, wb=1, rd=x2, ex=ALU (#65663)
+TRACE        241: pipeline-execute: PC=0x8000029c, wb=0, ex=ALU (#65665)
+DEBUG Fetch: PC=0x800002a0 (#65666)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+TRACE        241: pipeline-issue: PC=0x800002a0, wb=1, rd=x4, ex=ALU (#65666)
+TRACE        242: pipeline-execute: PC=0x800002a0, wb=1, rd=x4, ex=ALU (#65666)
+DEBUG Fetch: PC=0x800002a4 (#65667)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        242: pipeline-issue: PC=0x800002a4, wb=1, rd=x5, ex=ALU (#65667)
+TRACE        243: pipeline-commit: PC=0x80000294, wb=1, rd=x2, ex=ALU (#65663)
+TRACE        243: pipeline-execute: PC=0x800002a4, wb=1, rd=x5, ex=ALU (#65667)
+DEBUG Fetch: PC=0x800002a8 (#65668)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+TRACE        243: *** branch stalled!: PC=0x800002a8, wb=0, ex=ALU (#65668)
+TRACE        244: pipeline-commit: PC=0x80000298, wb=0, ex=ALU (#65664)
+TRACE        244: pipeline-writeback: PC=0x8000029c, wb=0, ex=ALU (#65665)
+TRACE        244: *** branch stalled!: PC=0x800002a8, wb=0, ex=ALU (#65668)
+TRACE        245: pipeline-writeback: PC=0x800002a0, wb=1, rd=x4, ex=ALU (#65666)
+TRACE        245: *** branch stalled!: PC=0x800002a8, wb=0, ex=ALU (#65668)
+TRACE        246: pipeline-commit: PC=0x8000029c, wb=0, ex=ALU (#65665)
+TRACE        246: pipeline-writeback: PC=0x800002a4, wb=1, rd=x5, ex=ALU (#65667)
+TRACE        246: pipeline-issue: PC=0x800002a8, wb=0, ex=ALU (#65668)
+TRACE        247: pipeline-commit: PC=0x800002a0, wb=1, rd=x4, ex=ALU (#65666)
+TRACE        247: pipeline-execute: PC=0x800002a8, wb=0, ex=ALU (#65668)
+DEBUG Fetch: PC=0x800002ac (#133)
+DEBUG Instr 0xb00193: ADDI x3, x0, 0xb
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0xb}
+TRACE        247: pipeline-issue: PC=0x800002ac, wb=1, rd=x3, ex=ALU (#133)
+TRACE        248: pipeline-commit: PC=0x800002a4, wb=1, rd=x5, ex=ALU (#65667)
+TRACE        248: pipeline-execute: PC=0x800002ac, wb=1, rd=x3, ex=ALU (#133)
+DEBUG Fetch: PC=0x800002b0 (#134)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+TRACE        248: pipeline-issue: PC=0x800002b0, wb=1, rd=x4, ex=ALU (#134)
+TRACE        249: pipeline-execute: PC=0x800002b0, wb=1, rd=x4, ex=ALU (#134)
+DEBUG Fetch: PC=0x800002b4 (#135)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        249: pipeline-issue: PC=0x800002b4, wb=1, rd=x1, ex=ALU (#135)
+TRACE        250: pipeline-writeback: PC=0x800002a8, wb=0, ex=ALU (#65668)
+TRACE        250: pipeline-execute: PC=0x800002b4, wb=1, rd=x1, ex=ALU (#135)
+DEBUG Fetch: PC=0x800002b8 (#136)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        250: pipeline-issue: PC=0x800002b8, wb=1, rd=x2, ex=ALU (#136)
+TRACE        251: pipeline-writeback: PC=0x800002ac, wb=1, rd=x3, ex=ALU (#133)
+TRACE        251: pipeline-execute: PC=0x800002b8, wb=1, rd=x2, ex=ALU (#136)
+DEBUG Fetch: PC=0x800002bc (#137)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        251: pipeline-issue: PC=0x800002bc, wb=1, rd=x2, ex=ALU (#137)
+TRACE        252: pipeline-commit: PC=0x800002a8, wb=0, ex=ALU (#65668)
+TRACE        252: pipeline-writeback: PC=0x800002b0, wb=1, rd=x4, ex=ALU (#134)
+DEBUG Fetch: PC=0x800002c0 (#138)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        252: pipeline-issue: PC=0x800002c0, wb=0, ex=ALU (#138)
+TRACE        253: pipeline-commit: PC=0x800002ac, wb=1, rd=x3, ex=ALU (#133)
+TRACE        253: pipeline-writeback: PC=0x800002b4, wb=1, rd=x1, ex=ALU (#135)
+TRACE        253: pipeline-execute: PC=0x800002c0, wb=0, ex=ALU (#138)
+DEBUG Fetch: PC=0x800002c4 (#139)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        253: pipeline-issue: PC=0x800002c4, wb=0, ex=ALU (#139)
+TRACE        254: pipeline-commit: PC=0x800002b0, wb=1, rd=x4, ex=ALU (#134)
+TRACE        254: pipeline-writeback: PC=0x800002b8, wb=1, rd=x2, ex=ALU (#136)
+TRACE        254: pipeline-execute: PC=0x800002c4, wb=0, ex=ALU (#139)
+TRACE        254: pipeline-execute: PC=0x800002bc, wb=1, rd=x2, ex=ALU (#137)
+DEBUG Fetch: PC=0x800002c8 (#140)
+DEBUG Instr 0x1a20ec63: BLTU x1, x2, 0x1b8
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        254: *** branch stalled!: PC=0x800002c8, wb=0, ex=ALU (#140)
+TRACE        255: pipeline-commit: PC=0x800002b4, wb=1, rd=x1, ex=ALU (#135)
+TRACE        255: *** branch stalled!: PC=0x800002c8, wb=0, ex=ALU (#140)
+TRACE        256: pipeline-commit: PC=0x800002b8, wb=1, rd=x2, ex=ALU (#136)
+TRACE        256: pipeline-writeback: PC=0x800002c0, wb=0, ex=ALU (#138)
+TRACE        256: *** branch stalled!: PC=0x800002c8, wb=0, ex=ALU (#140)
+TRACE        257: pipeline-writeback: PC=0x800002c4, wb=0, ex=ALU (#139)
+TRACE        257: pipeline-issue: PC=0x800002c8, wb=0, ex=ALU (#140)
+TRACE        258: pipeline-writeback: PC=0x800002bc, wb=1, rd=x2, ex=ALU (#137)
+TRACE        258: pipeline-execute: PC=0x800002c8, wb=0, ex=ALU (#140)
+DEBUG Fetch: PC=0x800002cc (#141)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+TRACE        258: pipeline-issue: PC=0x800002cc, wb=1, rd=x4, ex=ALU (#141)
+TRACE        259: pipeline-execute: PC=0x800002cc, wb=1, rd=x4, ex=ALU (#141)
+DEBUG Fetch: PC=0x800002d0 (#142)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        259: pipeline-issue: PC=0x800002d0, wb=1, rd=x5, ex=ALU (#142)
+TRACE        260: pipeline-commit: PC=0x800002bc, wb=1, rd=x2, ex=ALU (#137)
+TRACE        260: pipeline-execute: PC=0x800002d0, wb=1, rd=x5, ex=ALU (#142)
+DEBUG Fetch: PC=0x800002d4 (#143)
+DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG *** Next PC=0x800002b4
+TRACE        260: *** branch stalled!: PC=0x800002d4, wb=0, ex=ALU (#143)
+TRACE        261: pipeline-commit: PC=0x800002c0, wb=0, ex=ALU (#138)
+TRACE        261: pipeline-writeback: PC=0x800002c8, wb=0, ex=ALU (#140)
+TRACE        261: *** branch stalled!: PC=0x800002d4, wb=0, ex=ALU (#143)
+TRACE        262: pipeline-commit: PC=0x800002c4, wb=0, ex=ALU (#139)
+TRACE        262: pipeline-writeback: PC=0x800002cc, wb=1, rd=x4, ex=ALU (#141)
+TRACE        262: *** branch stalled!: PC=0x800002d4, wb=0, ex=ALU (#143)
+TRACE        263: pipeline-commit: PC=0x800002c8, wb=0, ex=ALU (#140)
+TRACE        263: pipeline-writeback: PC=0x800002d0, wb=1, rd=x5, ex=ALU (#142)
+TRACE        263: pipeline-issue: PC=0x800002d4, wb=0, ex=ALU (#143)
+TRACE        264: pipeline-commit: PC=0x800002cc, wb=1, rd=x4, ex=ALU (#141)
+TRACE        264: pipeline-execute: PC=0x800002d4, wb=0, ex=ALU (#143)
+DEBUG Fetch: PC=0x800002b4 (#65671)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        264: pipeline-issue: PC=0x800002b4, wb=1, rd=x1, ex=ALU (#65671)
+TRACE        265: pipeline-commit: PC=0x800002d0, wb=1, rd=x5, ex=ALU (#142)
+TRACE        265: pipeline-execute: PC=0x800002b4, wb=1, rd=x1, ex=ALU (#65671)
+DEBUG Fetch: PC=0x800002b8 (#65672)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        265: pipeline-issue: PC=0x800002b8, wb=1, rd=x2, ex=ALU (#65672)
+TRACE        266: pipeline-execute: PC=0x800002b8, wb=1, rd=x2, ex=ALU (#65672)
+DEBUG Fetch: PC=0x800002bc (#65673)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        266: pipeline-issue: PC=0x800002bc, wb=1, rd=x2, ex=ALU (#65673)
+TRACE        267: pipeline-writeback: PC=0x800002d4, wb=0, ex=ALU (#143)
+DEBUG Fetch: PC=0x800002c0 (#65674)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        267: pipeline-issue: PC=0x800002c0, wb=0, ex=ALU (#65674)
+TRACE        268: pipeline-writeback: PC=0x800002b4, wb=1, rd=x1, ex=ALU (#65671)
+TRACE        268: pipeline-execute: PC=0x800002c0, wb=0, ex=ALU (#65674)
+DEBUG Fetch: PC=0x800002c4 (#65675)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        268: pipeline-issue: PC=0x800002c4, wb=0, ex=ALU (#65675)
+TRACE        269: pipeline-commit: PC=0x800002d4, wb=0, ex=ALU (#143)
+TRACE        269: pipeline-writeback: PC=0x800002b8, wb=1, rd=x2, ex=ALU (#65672)
+TRACE        269: pipeline-execute: PC=0x800002bc, wb=1, rd=x2, ex=ALU (#65673)
+TRACE        269: pipeline-execute: PC=0x800002c4, wb=0, ex=ALU (#65675)
+DEBUG Fetch: PC=0x800002c8 (#65676)
+DEBUG Instr 0x1a20ec63: BLTU x1, x2, 0x1b8
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        269: *** branch stalled!: PC=0x800002c8, wb=0, ex=ALU (#65676)
+TRACE        270: pipeline-commit: PC=0x800002b4, wb=1, rd=x1, ex=ALU (#65671)
+TRACE        270: *** branch stalled!: PC=0x800002c8, wb=0, ex=ALU (#65676)
+TRACE        271: pipeline-commit: PC=0x800002b8, wb=1, rd=x2, ex=ALU (#65672)
+TRACE        271: pipeline-writeback: PC=0x800002c0, wb=0, ex=ALU (#65674)
+TRACE        271: *** branch stalled!: PC=0x800002c8, wb=0, ex=ALU (#65676)
+TRACE        272: pipeline-writeback: PC=0x800002bc, wb=1, rd=x2, ex=ALU (#65673)
+TRACE        272: pipeline-issue: PC=0x800002c8, wb=0, ex=ALU (#65676)
+TRACE        273: pipeline-writeback: PC=0x800002c4, wb=0, ex=ALU (#65675)
+TRACE        273: pipeline-execute: PC=0x800002c8, wb=0, ex=ALU (#65676)
+DEBUG Fetch: PC=0x800002cc (#65677)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+TRACE        273: pipeline-issue: PC=0x800002cc, wb=1, rd=x4, ex=ALU (#65677)
+TRACE        274: pipeline-commit: PC=0x800002bc, wb=1, rd=x2, ex=ALU (#65673)
+TRACE        274: pipeline-execute: PC=0x800002cc, wb=1, rd=x4, ex=ALU (#65677)
+DEBUG Fetch: PC=0x800002d0 (#65678)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        274: pipeline-issue: PC=0x800002d0, wb=1, rd=x5, ex=ALU (#65678)
+TRACE        275: pipeline-commit: PC=0x800002c0, wb=0, ex=ALU (#65674)
+TRACE        275: pipeline-execute: PC=0x800002d0, wb=1, rd=x5, ex=ALU (#65678)
+DEBUG Fetch: PC=0x800002d4 (#65679)
+DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+TRACE        275: *** branch stalled!: PC=0x800002d4, wb=0, ex=ALU (#65679)
+TRACE        276: pipeline-commit: PC=0x800002c4, wb=0, ex=ALU (#65675)
+TRACE        276: pipeline-writeback: PC=0x800002c8, wb=0, ex=ALU (#65676)
+TRACE        276: *** branch stalled!: PC=0x800002d4, wb=0, ex=ALU (#65679)
+TRACE        277: pipeline-writeback: PC=0x800002cc, wb=1, rd=x4, ex=ALU (#65677)
+TRACE        277: *** branch stalled!: PC=0x800002d4, wb=0, ex=ALU (#65679)
+TRACE        278: pipeline-commit: PC=0x800002c8, wb=0, ex=ALU (#65676)
+TRACE        278: pipeline-writeback: PC=0x800002d0, wb=1, rd=x5, ex=ALU (#65678)
+TRACE        278: pipeline-issue: PC=0x800002d4, wb=0, ex=ALU (#65679)
+TRACE        279: pipeline-commit: PC=0x800002cc, wb=1, rd=x4, ex=ALU (#65677)
+TRACE        279: pipeline-execute: PC=0x800002d4, wb=0, ex=ALU (#65679)
+DEBUG Fetch: PC=0x800002d8 (#144)
+DEBUG Instr 0xc00193: ADDI x3, x0, 0xc
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0xc}
+TRACE        279: pipeline-issue: PC=0x800002d8, wb=1, rd=x3, ex=ALU (#144)
+TRACE        280: pipeline-commit: PC=0x800002d0, wb=1, rd=x5, ex=ALU (#65678)
+TRACE        280: pipeline-execute: PC=0x800002d8, wb=1, rd=x3, ex=ALU (#144)
+DEBUG Fetch: PC=0x800002dc (#145)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+TRACE        280: pipeline-issue: PC=0x800002dc, wb=1, rd=x4, ex=ALU (#145)
+TRACE        281: pipeline-execute: PC=0x800002dc, wb=1, rd=x4, ex=ALU (#145)
+DEBUG Fetch: PC=0x800002e0 (#146)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        281: pipeline-issue: PC=0x800002e0, wb=1, rd=x1, ex=ALU (#146)
+TRACE        282: pipeline-writeback: PC=0x800002d4, wb=0, ex=ALU (#65679)
+TRACE        282: pipeline-execute: PC=0x800002e0, wb=1, rd=x1, ex=ALU (#146)
+DEBUG Fetch: PC=0x800002e4 (#147)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        282: pipeline-issue: PC=0x800002e4, wb=0, ex=ALU (#147)
+TRACE        283: pipeline-writeback: PC=0x800002d8, wb=1, rd=x3, ex=ALU (#144)
+TRACE        283: pipeline-execute: PC=0x800002e4, wb=0, ex=ALU (#147)
+DEBUG Fetch: PC=0x800002e8 (#148)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        283: pipeline-issue: PC=0x800002e8, wb=1, rd=x2, ex=ALU (#148)
+TRACE        284: pipeline-commit: PC=0x800002d4, wb=0, ex=ALU (#65679)
+TRACE        284: pipeline-writeback: PC=0x800002dc, wb=1, rd=x4, ex=ALU (#145)
+TRACE        284: pipeline-execute: PC=0x800002e8, wb=1, rd=x2, ex=ALU (#148)
+DEBUG Fetch: PC=0x800002ec (#149)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        284: pipeline-issue: PC=0x800002ec, wb=1, rd=x2, ex=ALU (#149)
+TRACE        285: pipeline-commit: PC=0x800002d8, wb=1, rd=x3, ex=ALU (#144)
+TRACE        285: pipeline-writeback: PC=0x800002e0, wb=1, rd=x1, ex=ALU (#146)
+DEBUG Fetch: PC=0x800002f0 (#150)
+DEBUG Instr 0x1820e863: BLTU x1, x2, 0x190
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        285: *** branch stalled!: PC=0x800002f0, wb=0, ex=ALU (#150)
+TRACE        286: pipeline-commit: PC=0x800002dc, wb=1, rd=x4, ex=ALU (#145)
+TRACE        286: pipeline-writeback: PC=0x800002e4, wb=0, ex=ALU (#147)
+TRACE        286: *** branch stalled!: PC=0x800002f0, wb=0, ex=ALU (#150)
+TRACE        287: pipeline-commit: PC=0x800002e0, wb=1, rd=x1, ex=ALU (#146)
+TRACE        287: pipeline-writeback: PC=0x800002e8, wb=1, rd=x2, ex=ALU (#148)
+TRACE        287: pipeline-execute: PC=0x800002ec, wb=1, rd=x2, ex=ALU (#149)
+TRACE        287: *** branch stalled!: PC=0x800002f0, wb=0, ex=ALU (#150)
+TRACE        288: pipeline-commit: PC=0x800002e4, wb=0, ex=ALU (#147)
+TRACE        288: pipeline-issue: PC=0x800002f0, wb=0, ex=ALU (#150)
+TRACE        289: pipeline-commit: PC=0x800002e8, wb=1, rd=x2, ex=ALU (#148)
+DEBUG Fetch: PC=0x800002f4 (#151)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+TRACE        289: pipeline-issue: PC=0x800002f4, wb=1, rd=x4, ex=ALU (#151)
+TRACE        290: pipeline-writeback: PC=0x800002ec, wb=1, rd=x2, ex=ALU (#149)
+TRACE        290: pipeline-execute: PC=0x800002f4, wb=1, rd=x4, ex=ALU (#151)
+TRACE        290: pipeline-execute: PC=0x800002f0, wb=0, ex=ALU (#150)
+DEBUG Fetch: PC=0x800002f8 (#152)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        290: pipeline-issue: PC=0x800002f8, wb=1, rd=x5, ex=ALU (#152)
+TRACE        291: pipeline-execute: PC=0x800002f8, wb=1, rd=x5, ex=ALU (#152)
+DEBUG Fetch: PC=0x800002fc (#153)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG *** Next PC=0x800002e0
+TRACE        291: *** branch stalled!: PC=0x800002fc, wb=0, ex=ALU (#153)
+TRACE        292: pipeline-commit: PC=0x800002ec, wb=1, rd=x2, ex=ALU (#149)
+TRACE        292: *** branch stalled!: PC=0x800002fc, wb=0, ex=ALU (#153)
+TRACE        293: pipeline-writeback: PC=0x800002f4, wb=1, rd=x4, ex=ALU (#151)
+TRACE        293: *** branch stalled!: PC=0x800002fc, wb=0, ex=ALU (#153)
+TRACE        294: pipeline-writeback: PC=0x800002f0, wb=0, ex=ALU (#150)
+TRACE        294: pipeline-issue: PC=0x800002fc, wb=0, ex=ALU (#153)
+TRACE        295: pipeline-writeback: PC=0x800002f8, wb=1, rd=x5, ex=ALU (#152)
+TRACE        295: pipeline-execute: PC=0x800002fc, wb=0, ex=ALU (#153)
+DEBUG Fetch: PC=0x800002e0 (#65682)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        295: pipeline-issue: PC=0x800002e0, wb=1, rd=x1, ex=ALU (#65682)
+TRACE        296: pipeline-commit: PC=0x800002f0, wb=0, ex=ALU (#150)
+TRACE        296: pipeline-execute: PC=0x800002e0, wb=1, rd=x1, ex=ALU (#65682)
+DEBUG Fetch: PC=0x800002e4 (#65683)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        296: pipeline-issue: PC=0x800002e4, wb=0, ex=ALU (#65683)
+TRACE        297: pipeline-commit: PC=0x800002f4, wb=1, rd=x4, ex=ALU (#151)
+TRACE        297: pipeline-execute: PC=0x800002e4, wb=0, ex=ALU (#65683)
+DEBUG Fetch: PC=0x800002e8 (#65684)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        297: pipeline-issue: PC=0x800002e8, wb=1, rd=x2, ex=ALU (#65684)
+TRACE        298: pipeline-commit: PC=0x800002f8, wb=1, rd=x5, ex=ALU (#152)
+TRACE        298: pipeline-writeback: PC=0x800002fc, wb=0, ex=ALU (#153)
+TRACE        298: pipeline-execute: PC=0x800002e8, wb=1, rd=x2, ex=ALU (#65684)
+DEBUG Fetch: PC=0x800002ec (#65685)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        298: pipeline-issue: PC=0x800002ec, wb=1, rd=x2, ex=ALU (#65685)
+TRACE        299: pipeline-writeback: PC=0x800002e0, wb=1, rd=x1, ex=ALU (#65682)
+DEBUG Fetch: PC=0x800002f0 (#65686)
+DEBUG Instr 0x1820e863: BLTU x1, x2, 0x190
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        299: *** branch stalled!: PC=0x800002f0, wb=0, ex=ALU (#65686)
+TRACE        300: pipeline-commit: PC=0x800002fc, wb=0, ex=ALU (#153)
+TRACE        300: pipeline-writeback: PC=0x800002e4, wb=0, ex=ALU (#65683)
+TRACE        300: *** branch stalled!: PC=0x800002f0, wb=0, ex=ALU (#65686)
+TRACE        301: pipeline-commit: PC=0x800002e0, wb=1, rd=x1, ex=ALU (#65682)
+TRACE        301: pipeline-writeback: PC=0x800002e8, wb=1, rd=x2, ex=ALU (#65684)
+TRACE        301: pipeline-execute: PC=0x800002ec, wb=1, rd=x2, ex=ALU (#65685)
+TRACE        301: *** branch stalled!: PC=0x800002f0, wb=0, ex=ALU (#65686)
+TRACE        302: pipeline-commit: PC=0x800002e4, wb=0, ex=ALU (#65683)
+TRACE        302: pipeline-issue: PC=0x800002f0, wb=0, ex=ALU (#65686)
+TRACE        303: pipeline-commit: PC=0x800002e8, wb=1, rd=x2, ex=ALU (#65684)
+DEBUG Fetch: PC=0x800002f4 (#65687)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+TRACE        303: pipeline-issue: PC=0x800002f4, wb=1, rd=x4, ex=ALU (#65687)
+TRACE        304: pipeline-writeback: PC=0x800002ec, wb=1, rd=x2, ex=ALU (#65685)
+TRACE        304: pipeline-execute: PC=0x800002f0, wb=0, ex=ALU (#65686)
+TRACE        304: pipeline-execute: PC=0x800002f4, wb=1, rd=x4, ex=ALU (#65687)
+DEBUG Fetch: PC=0x800002f8 (#65688)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        304: pipeline-issue: PC=0x800002f8, wb=1, rd=x5, ex=ALU (#65688)
+TRACE        305: pipeline-execute: PC=0x800002f8, wb=1, rd=x5, ex=ALU (#65688)
+DEBUG Fetch: PC=0x800002fc (#65689)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+TRACE        305: *** branch stalled!: PC=0x800002fc, wb=0, ex=ALU (#65689)
+TRACE        306: pipeline-commit: PC=0x800002ec, wb=1, rd=x2, ex=ALU (#65685)
+TRACE        306: *** branch stalled!: PC=0x800002fc, wb=0, ex=ALU (#65689)
+TRACE        307: pipeline-writeback: PC=0x800002f0, wb=0, ex=ALU (#65686)
+TRACE        307: *** branch stalled!: PC=0x800002fc, wb=0, ex=ALU (#65689)
+TRACE        308: pipeline-writeback: PC=0x800002f4, wb=1, rd=x4, ex=ALU (#65687)
+TRACE        308: pipeline-issue: PC=0x800002fc, wb=0, ex=ALU (#65689)
+TRACE        309: pipeline-commit: PC=0x800002f0, wb=0, ex=ALU (#65686)
+TRACE        309: pipeline-writeback: PC=0x800002f8, wb=1, rd=x5, ex=ALU (#65688)
+TRACE        309: pipeline-execute: PC=0x800002fc, wb=0, ex=ALU (#65689)
+DEBUG Fetch: PC=0x80000300 (#154)
+DEBUG Instr 0xd00193: ADDI x3, x0, 0xd
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0xd}
+TRACE        309: pipeline-issue: PC=0x80000300, wb=1, rd=x3, ex=ALU (#154)
+TRACE        310: pipeline-commit: PC=0x800002f4, wb=1, rd=x4, ex=ALU (#65687)
+TRACE        310: pipeline-execute: PC=0x80000300, wb=1, rd=x3, ex=ALU (#154)
+DEBUG Fetch: PC=0x80000304 (#155)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+TRACE        310: pipeline-issue: PC=0x80000304, wb=1, rd=x4, ex=ALU (#155)
+TRACE        311: pipeline-commit: PC=0x800002f8, wb=1, rd=x5, ex=ALU (#65688)
+TRACE        311: pipeline-execute: PC=0x80000304, wb=1, rd=x4, ex=ALU (#155)
+DEBUG Fetch: PC=0x80000308 (#156)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        311: pipeline-issue: PC=0x80000308, wb=1, rd=x1, ex=ALU (#156)
+TRACE        312: pipeline-writeback: PC=0x800002fc, wb=0, ex=ALU (#65689)
+TRACE        312: pipeline-execute: PC=0x80000308, wb=1, rd=x1, ex=ALU (#156)
+DEBUG Fetch: PC=0x8000030c (#157)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        312: pipeline-issue: PC=0x8000030c, wb=0, ex=ALU (#157)
+TRACE        313: pipeline-writeback: PC=0x80000300, wb=1, rd=x3, ex=ALU (#154)
+TRACE        313: pipeline-execute: PC=0x8000030c, wb=0, ex=ALU (#157)
+DEBUG Fetch: PC=0x80000310 (#158)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        313: pipeline-issue: PC=0x80000310, wb=1, rd=x2, ex=ALU (#158)
+TRACE        314: pipeline-commit: PC=0x800002fc, wb=0, ex=ALU (#65689)
+TRACE        314: pipeline-writeback: PC=0x80000304, wb=1, rd=x4, ex=ALU (#155)
+TRACE        314: pipeline-execute: PC=0x80000310, wb=1, rd=x2, ex=ALU (#158)
+DEBUG Fetch: PC=0x80000314 (#159)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        314: pipeline-issue: PC=0x80000314, wb=1, rd=x2, ex=ALU (#159)
+TRACE        315: pipeline-commit: PC=0x80000300, wb=1, rd=x3, ex=ALU (#154)
+TRACE        315: pipeline-writeback: PC=0x80000308, wb=1, rd=x1, ex=ALU (#156)
+DEBUG Fetch: PC=0x80000318 (#160)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        315: pipeline-issue: PC=0x80000318, wb=0, ex=ALU (#160)
+TRACE        316: pipeline-commit: PC=0x80000304, wb=1, rd=x4, ex=ALU (#155)
+TRACE        316: pipeline-writeback: PC=0x8000030c, wb=0, ex=ALU (#157)
+TRACE        316: pipeline-execute: PC=0x80000318, wb=0, ex=ALU (#160)
+DEBUG Fetch: PC=0x8000031c (#161)
+DEBUG Instr 0x1620e263: BLTU x1, x2, 0x164
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        316: *** branch stalled!: PC=0x8000031c, wb=0, ex=ALU (#161)
+TRACE        317: pipeline-commit: PC=0x80000308, wb=1, rd=x1, ex=ALU (#156)
+TRACE        317: pipeline-writeback: PC=0x80000310, wb=1, rd=x2, ex=ALU (#158)
+TRACE        317: pipeline-execute: PC=0x80000314, wb=1, rd=x2, ex=ALU (#159)
+TRACE        317: *** branch stalled!: PC=0x8000031c, wb=0, ex=ALU (#161)
+TRACE        318: pipeline-commit: PC=0x8000030c, wb=0, ex=ALU (#157)
+TRACE        318: *** branch stalled!: PC=0x8000031c, wb=0, ex=ALU (#161)
+TRACE        319: pipeline-commit: PC=0x80000310, wb=1, rd=x2, ex=ALU (#158)
+TRACE        319: pipeline-writeback: PC=0x80000318, wb=0, ex=ALU (#160)
+TRACE        319: pipeline-issue: PC=0x8000031c, wb=0, ex=ALU (#161)
+TRACE        320: pipeline-writeback: PC=0x80000314, wb=1, rd=x2, ex=ALU (#159)
+TRACE        320: pipeline-execute: PC=0x8000031c, wb=0, ex=ALU (#161)
+DEBUG Fetch: PC=0x80000320 (#162)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+TRACE        320: pipeline-issue: PC=0x80000320, wb=1, rd=x4, ex=ALU (#162)
+TRACE        321: pipeline-execute: PC=0x80000320, wb=1, rd=x4, ex=ALU (#162)
+DEBUG Fetch: PC=0x80000324 (#163)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        321: pipeline-issue: PC=0x80000324, wb=1, rd=x5, ex=ALU (#163)
+TRACE        322: pipeline-commit: PC=0x80000314, wb=1, rd=x2, ex=ALU (#159)
+TRACE        322: pipeline-execute: PC=0x80000324, wb=1, rd=x5, ex=ALU (#163)
+DEBUG Fetch: PC=0x80000328 (#164)
+DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG *** Next PC=0x80000308
+TRACE        322: *** branch stalled!: PC=0x80000328, wb=0, ex=ALU (#164)
+TRACE        323: pipeline-commit: PC=0x80000318, wb=0, ex=ALU (#160)
+TRACE        323: pipeline-writeback: PC=0x8000031c, wb=0, ex=ALU (#161)
+TRACE        323: *** branch stalled!: PC=0x80000328, wb=0, ex=ALU (#164)
+TRACE        324: pipeline-writeback: PC=0x80000320, wb=1, rd=x4, ex=ALU (#162)
+TRACE        324: *** branch stalled!: PC=0x80000328, wb=0, ex=ALU (#164)
+TRACE        325: pipeline-commit: PC=0x8000031c, wb=0, ex=ALU (#161)
+TRACE        325: pipeline-writeback: PC=0x80000324, wb=1, rd=x5, ex=ALU (#163)
+TRACE        325: pipeline-issue: PC=0x80000328, wb=0, ex=ALU (#164)
+TRACE        326: pipeline-commit: PC=0x80000320, wb=1, rd=x4, ex=ALU (#162)
+TRACE        326: pipeline-execute: PC=0x80000328, wb=0, ex=ALU (#164)
+DEBUG Fetch: PC=0x80000308 (#65692)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        326: pipeline-issue: PC=0x80000308, wb=1, rd=x1, ex=ALU (#65692)
+TRACE        327: pipeline-commit: PC=0x80000324, wb=1, rd=x5, ex=ALU (#163)
+TRACE        327: pipeline-execute: PC=0x80000308, wb=1, rd=x1, ex=ALU (#65692)
+DEBUG Fetch: PC=0x8000030c (#65693)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        327: pipeline-issue: PC=0x8000030c, wb=0, ex=ALU (#65693)
+TRACE        328: pipeline-execute: PC=0x8000030c, wb=0, ex=ALU (#65693)
+DEBUG Fetch: PC=0x80000310 (#65694)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        328: pipeline-issue: PC=0x80000310, wb=1, rd=x2, ex=ALU (#65694)
+TRACE        329: pipeline-writeback: PC=0x80000328, wb=0, ex=ALU (#164)
+TRACE        329: pipeline-execute: PC=0x80000310, wb=1, rd=x2, ex=ALU (#65694)
+DEBUG Fetch: PC=0x80000314 (#65695)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        329: pipeline-issue: PC=0x80000314, wb=1, rd=x2, ex=ALU (#65695)
+TRACE        330: pipeline-writeback: PC=0x80000308, wb=1, rd=x1, ex=ALU (#65692)
+DEBUG Fetch: PC=0x80000318 (#65696)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        330: pipeline-issue: PC=0x80000318, wb=0, ex=ALU (#65696)
+TRACE        331: pipeline-commit: PC=0x80000328, wb=0, ex=ALU (#164)
+TRACE        331: pipeline-writeback: PC=0x8000030c, wb=0, ex=ALU (#65693)
+TRACE        331: pipeline-execute: PC=0x80000318, wb=0, ex=ALU (#65696)
+DEBUG Fetch: PC=0x8000031c (#65697)
+DEBUG Instr 0x1620e263: BLTU x1, x2, 0x164
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        331: *** branch stalled!: PC=0x8000031c, wb=0, ex=ALU (#65697)
+TRACE        332: pipeline-commit: PC=0x80000308, wb=1, rd=x1, ex=ALU (#65692)
+TRACE        332: pipeline-writeback: PC=0x80000310, wb=1, rd=x2, ex=ALU (#65694)
+TRACE        332: pipeline-execute: PC=0x80000314, wb=1, rd=x2, ex=ALU (#65695)
+TRACE        332: *** branch stalled!: PC=0x8000031c, wb=0, ex=ALU (#65697)
+TRACE        333: pipeline-commit: PC=0x8000030c, wb=0, ex=ALU (#65693)
+TRACE        333: *** branch stalled!: PC=0x8000031c, wb=0, ex=ALU (#65697)
+TRACE        334: pipeline-commit: PC=0x80000310, wb=1, rd=x2, ex=ALU (#65694)
+TRACE        334: pipeline-writeback: PC=0x80000318, wb=0, ex=ALU (#65696)
+TRACE        334: pipeline-issue: PC=0x8000031c, wb=0, ex=ALU (#65697)
+TRACE        335: pipeline-writeback: PC=0x80000314, wb=1, rd=x2, ex=ALU (#65695)
+TRACE        335: pipeline-execute: PC=0x8000031c, wb=0, ex=ALU (#65697)
+DEBUG Fetch: PC=0x80000320 (#65698)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+TRACE        335: pipeline-issue: PC=0x80000320, wb=1, rd=x4, ex=ALU (#65698)
+TRACE        336: pipeline-execute: PC=0x80000320, wb=1, rd=x4, ex=ALU (#65698)
+DEBUG Fetch: PC=0x80000324 (#65699)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        336: pipeline-issue: PC=0x80000324, wb=1, rd=x5, ex=ALU (#65699)
+TRACE        337: pipeline-commit: PC=0x80000314, wb=1, rd=x2, ex=ALU (#65695)
+TRACE        337: pipeline-execute: PC=0x80000324, wb=1, rd=x5, ex=ALU (#65699)
+DEBUG Fetch: PC=0x80000328 (#65700)
+DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+TRACE        337: *** branch stalled!: PC=0x80000328, wb=0, ex=ALU (#65700)
+TRACE        338: pipeline-commit: PC=0x80000318, wb=0, ex=ALU (#65696)
+TRACE        338: pipeline-writeback: PC=0x8000031c, wb=0, ex=ALU (#65697)
+TRACE        338: *** branch stalled!: PC=0x80000328, wb=0, ex=ALU (#65700)
+TRACE        339: pipeline-writeback: PC=0x80000320, wb=1, rd=x4, ex=ALU (#65698)
+TRACE        339: *** branch stalled!: PC=0x80000328, wb=0, ex=ALU (#65700)
+TRACE        340: pipeline-commit: PC=0x8000031c, wb=0, ex=ALU (#65697)
+TRACE        340: pipeline-writeback: PC=0x80000324, wb=1, rd=x5, ex=ALU (#65699)
+TRACE        340: pipeline-issue: PC=0x80000328, wb=0, ex=ALU (#65700)
+TRACE        341: pipeline-commit: PC=0x80000320, wb=1, rd=x4, ex=ALU (#65698)
+TRACE        341: pipeline-execute: PC=0x80000328, wb=0, ex=ALU (#65700)
+DEBUG Fetch: PC=0x8000032c (#165)
+DEBUG Instr 0xe00193: ADDI x3, x0, 0xe
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0xe}
+TRACE        341: pipeline-issue: PC=0x8000032c, wb=1, rd=x3, ex=ALU (#165)
+TRACE        342: pipeline-commit: PC=0x80000324, wb=1, rd=x5, ex=ALU (#65699)
+TRACE        342: pipeline-execute: PC=0x8000032c, wb=1, rd=x3, ex=ALU (#165)
+DEBUG Fetch: PC=0x80000330 (#166)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+TRACE        342: pipeline-issue: PC=0x80000330, wb=1, rd=x4, ex=ALU (#166)
+TRACE        343: pipeline-execute: PC=0x80000330, wb=1, rd=x4, ex=ALU (#166)
+DEBUG Fetch: PC=0x80000334 (#167)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        343: pipeline-issue: PC=0x80000334, wb=1, rd=x1, ex=ALU (#167)
+TRACE        344: pipeline-writeback: PC=0x80000328, wb=0, ex=ALU (#65700)
+TRACE        344: pipeline-execute: PC=0x80000334, wb=1, rd=x1, ex=ALU (#167)
+DEBUG Fetch: PC=0x80000338 (#168)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        344: pipeline-issue: PC=0x80000338, wb=0, ex=ALU (#168)
+TRACE        345: pipeline-writeback: PC=0x8000032c, wb=1, rd=x3, ex=ALU (#165)
+TRACE        345: pipeline-execute: PC=0x80000338, wb=0, ex=ALU (#168)
+DEBUG Fetch: PC=0x8000033c (#169)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        345: pipeline-issue: PC=0x8000033c, wb=0, ex=ALU (#169)
+TRACE        346: pipeline-commit: PC=0x80000328, wb=0, ex=ALU (#65700)
+TRACE        346: pipeline-writeback: PC=0x80000330, wb=1, rd=x4, ex=ALU (#166)
+TRACE        346: pipeline-execute: PC=0x8000033c, wb=0, ex=ALU (#169)
+DEBUG Fetch: PC=0x80000340 (#170)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        346: pipeline-issue: PC=0x80000340, wb=1, rd=x2, ex=ALU (#170)
+TRACE        347: pipeline-commit: PC=0x8000032c, wb=1, rd=x3, ex=ALU (#165)
+TRACE        347: pipeline-writeback: PC=0x80000334, wb=1, rd=x1, ex=ALU (#167)
+TRACE        347: pipeline-execute: PC=0x80000340, wb=1, rd=x2, ex=ALU (#170)
+DEBUG Fetch: PC=0x80000344 (#171)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        347: pipeline-issue: PC=0x80000344, wb=1, rd=x2, ex=ALU (#171)
+TRACE        348: pipeline-commit: PC=0x80000330, wb=1, rd=x4, ex=ALU (#166)
+TRACE        348: pipeline-writeback: PC=0x80000338, wb=0, ex=ALU (#168)
+DEBUG Fetch: PC=0x80000348 (#172)
+DEBUG Instr 0x1220ec63: BLTU x1, x2, 0x138
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        348: *** branch stalled!: PC=0x80000348, wb=0, ex=ALU (#172)
+TRACE        349: pipeline-commit: PC=0x80000334, wb=1, rd=x1, ex=ALU (#167)
+TRACE        349: pipeline-writeback: PC=0x8000033c, wb=0, ex=ALU (#169)
+TRACE        349: *** branch stalled!: PC=0x80000348, wb=0, ex=ALU (#172)
+TRACE        350: pipeline-commit: PC=0x80000338, wb=0, ex=ALU (#168)
+TRACE        350: pipeline-writeback: PC=0x80000340, wb=1, rd=x2, ex=ALU (#170)
+TRACE        350: pipeline-execute: PC=0x80000344, wb=1, rd=x2, ex=ALU (#171)
+TRACE        350: *** branch stalled!: PC=0x80000348, wb=0, ex=ALU (#172)
+TRACE        351: pipeline-commit: PC=0x8000033c, wb=0, ex=ALU (#169)
+TRACE        351: pipeline-issue: PC=0x80000348, wb=0, ex=ALU (#172)
+TRACE        352: pipeline-commit: PC=0x80000340, wb=1, rd=x2, ex=ALU (#170)
+DEBUG Fetch: PC=0x8000034c (#173)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+TRACE        352: pipeline-issue: PC=0x8000034c, wb=1, rd=x4, ex=ALU (#173)
+TRACE        353: pipeline-writeback: PC=0x80000344, wb=1, rd=x2, ex=ALU (#171)
+TRACE        353: pipeline-execute: PC=0x80000348, wb=0, ex=ALU (#172)
+TRACE        353: pipeline-execute: PC=0x8000034c, wb=1, rd=x4, ex=ALU (#173)
+DEBUG Fetch: PC=0x80000350 (#174)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        353: pipeline-issue: PC=0x80000350, wb=1, rd=x5, ex=ALU (#174)
+TRACE        354: pipeline-execute: PC=0x80000350, wb=1, rd=x5, ex=ALU (#174)
+DEBUG Fetch: PC=0x80000354 (#175)
+DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG *** Next PC=0x80000334
+TRACE        354: *** branch stalled!: PC=0x80000354, wb=0, ex=ALU (#175)
+TRACE        355: pipeline-commit: PC=0x80000344, wb=1, rd=x2, ex=ALU (#171)
+TRACE        355: *** branch stalled!: PC=0x80000354, wb=0, ex=ALU (#175)
+TRACE        356: pipeline-writeback: PC=0x80000348, wb=0, ex=ALU (#172)
+TRACE        356: *** branch stalled!: PC=0x80000354, wb=0, ex=ALU (#175)
+TRACE        357: pipeline-writeback: PC=0x8000034c, wb=1, rd=x4, ex=ALU (#173)
+TRACE        357: pipeline-issue: PC=0x80000354, wb=0, ex=ALU (#175)
+TRACE        358: pipeline-commit: PC=0x80000348, wb=0, ex=ALU (#172)
+TRACE        358: pipeline-writeback: PC=0x80000350, wb=1, rd=x5, ex=ALU (#174)
+TRACE        358: pipeline-execute: PC=0x80000354, wb=0, ex=ALU (#175)
+DEBUG Fetch: PC=0x80000334 (#65703)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        358: pipeline-issue: PC=0x80000334, wb=1, rd=x1, ex=ALU (#65703)
+TRACE        359: pipeline-commit: PC=0x8000034c, wb=1, rd=x4, ex=ALU (#173)
+TRACE        359: pipeline-execute: PC=0x80000334, wb=1, rd=x1, ex=ALU (#65703)
+DEBUG Fetch: PC=0x80000338 (#65704)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        359: pipeline-issue: PC=0x80000338, wb=0, ex=ALU (#65704)
+TRACE        360: pipeline-commit: PC=0x80000350, wb=1, rd=x5, ex=ALU (#174)
+TRACE        360: pipeline-execute: PC=0x80000338, wb=0, ex=ALU (#65704)
+DEBUG Fetch: PC=0x8000033c (#65705)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        360: pipeline-issue: PC=0x8000033c, wb=0, ex=ALU (#65705)
+TRACE        361: pipeline-writeback: PC=0x80000354, wb=0, ex=ALU (#175)
+TRACE        361: pipeline-execute: PC=0x8000033c, wb=0, ex=ALU (#65705)
+DEBUG Fetch: PC=0x80000340 (#65706)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        361: pipeline-issue: PC=0x80000340, wb=1, rd=x2, ex=ALU (#65706)
+TRACE        362: pipeline-writeback: PC=0x80000334, wb=1, rd=x1, ex=ALU (#65703)
+TRACE        362: pipeline-execute: PC=0x80000340, wb=1, rd=x2, ex=ALU (#65706)
+DEBUG Fetch: PC=0x80000344 (#65707)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        362: pipeline-issue: PC=0x80000344, wb=1, rd=x2, ex=ALU (#65707)
+TRACE        363: pipeline-commit: PC=0x80000354, wb=0, ex=ALU (#175)
+TRACE        363: pipeline-writeback: PC=0x80000338, wb=0, ex=ALU (#65704)
+DEBUG Fetch: PC=0x80000348 (#65708)
+DEBUG Instr 0x1220ec63: BLTU x1, x2, 0x138
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        363: *** branch stalled!: PC=0x80000348, wb=0, ex=ALU (#65708)
+TRACE        364: pipeline-commit: PC=0x80000334, wb=1, rd=x1, ex=ALU (#65703)
+TRACE        364: pipeline-writeback: PC=0x8000033c, wb=0, ex=ALU (#65705)
+TRACE        364: *** branch stalled!: PC=0x80000348, wb=0, ex=ALU (#65708)
+TRACE        365: pipeline-commit: PC=0x80000338, wb=0, ex=ALU (#65704)
+TRACE        365: pipeline-writeback: PC=0x80000340, wb=1, rd=x2, ex=ALU (#65706)
+TRACE        365: pipeline-execute: PC=0x80000344, wb=1, rd=x2, ex=ALU (#65707)
+TRACE        365: *** branch stalled!: PC=0x80000348, wb=0, ex=ALU (#65708)
+TRACE        366: pipeline-commit: PC=0x8000033c, wb=0, ex=ALU (#65705)
+TRACE        366: pipeline-issue: PC=0x80000348, wb=0, ex=ALU (#65708)
+TRACE        367: pipeline-commit: PC=0x80000340, wb=1, rd=x2, ex=ALU (#65706)
+DEBUG Fetch: PC=0x8000034c (#65709)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+TRACE        367: pipeline-issue: PC=0x8000034c, wb=1, rd=x4, ex=ALU (#65709)
+TRACE        368: pipeline-writeback: PC=0x80000344, wb=1, rd=x2, ex=ALU (#65707)
+TRACE        368: pipeline-execute: PC=0x8000034c, wb=1, rd=x4, ex=ALU (#65709)
+TRACE        368: pipeline-execute: PC=0x80000348, wb=0, ex=ALU (#65708)
+DEBUG Fetch: PC=0x80000350 (#65710)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        368: pipeline-issue: PC=0x80000350, wb=1, rd=x5, ex=ALU (#65710)
+TRACE        369: pipeline-execute: PC=0x80000350, wb=1, rd=x5, ex=ALU (#65710)
+DEBUG Fetch: PC=0x80000354 (#65711)
+DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+TRACE        369: *** branch stalled!: PC=0x80000354, wb=0, ex=ALU (#65711)
+TRACE        370: pipeline-commit: PC=0x80000344, wb=1, rd=x2, ex=ALU (#65707)
+TRACE        370: *** branch stalled!: PC=0x80000354, wb=0, ex=ALU (#65711)
+TRACE        371: pipeline-writeback: PC=0x8000034c, wb=1, rd=x4, ex=ALU (#65709)
+TRACE        371: *** branch stalled!: PC=0x80000354, wb=0, ex=ALU (#65711)
+TRACE        372: pipeline-writeback: PC=0x80000348, wb=0, ex=ALU (#65708)
+TRACE        372: pipeline-issue: PC=0x80000354, wb=0, ex=ALU (#65711)
+TRACE        373: pipeline-writeback: PC=0x80000350, wb=1, rd=x5, ex=ALU (#65710)
+TRACE        373: pipeline-execute: PC=0x80000354, wb=0, ex=ALU (#65711)
+DEBUG Fetch: PC=0x80000358 (#176)
+DEBUG Instr 0xf00193: ADDI x3, x0, 0xf
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0xf}
+TRACE        373: pipeline-issue: PC=0x80000358, wb=1, rd=x3, ex=ALU (#176)
+TRACE        374: pipeline-commit: PC=0x80000348, wb=0, ex=ALU (#65708)
+TRACE        374: pipeline-execute: PC=0x80000358, wb=1, rd=x3, ex=ALU (#176)
+DEBUG Fetch: PC=0x8000035c (#177)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+TRACE        374: pipeline-issue: PC=0x8000035c, wb=1, rd=x4, ex=ALU (#177)
+TRACE        375: pipeline-commit: PC=0x8000034c, wb=1, rd=x4, ex=ALU (#65709)
+TRACE        375: pipeline-execute: PC=0x8000035c, wb=1, rd=x4, ex=ALU (#177)
+DEBUG Fetch: PC=0x80000360 (#178)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        375: pipeline-issue: PC=0x80000360, wb=1, rd=x1, ex=ALU (#178)
+TRACE        376: pipeline-commit: PC=0x80000350, wb=1, rd=x5, ex=ALU (#65710)
+TRACE        376: pipeline-writeback: PC=0x80000354, wb=0, ex=ALU (#65711)
+TRACE        376: pipeline-execute: PC=0x80000360, wb=1, rd=x1, ex=ALU (#178)
+DEBUG Fetch: PC=0x80000364 (#179)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        376: pipeline-issue: PC=0x80000364, wb=1, rd=x2, ex=ALU (#179)
+TRACE        377: pipeline-writeback: PC=0x80000358, wb=1, rd=x3, ex=ALU (#176)
+TRACE        377: pipeline-execute: PC=0x80000364, wb=1, rd=x2, ex=ALU (#179)
+DEBUG Fetch: PC=0x80000368 (#180)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        377: pipeline-issue: PC=0x80000368, wb=1, rd=x2, ex=ALU (#180)
+TRACE        378: pipeline-commit: PC=0x80000354, wb=0, ex=ALU (#65711)
+TRACE        378: pipeline-writeback: PC=0x8000035c, wb=1, rd=x4, ex=ALU (#177)
+DEBUG Fetch: PC=0x8000036c (#181)
+DEBUG Instr 0x1020ea63: BLTU x1, x2, 0x114
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        378: *** branch stalled!: PC=0x8000036c, wb=0, ex=ALU (#181)
+TRACE        379: pipeline-commit: PC=0x80000358, wb=1, rd=x3, ex=ALU (#176)
+TRACE        379: pipeline-writeback: PC=0x80000360, wb=1, rd=x1, ex=ALU (#178)
+TRACE        379: *** branch stalled!: PC=0x8000036c, wb=0, ex=ALU (#181)
+TRACE        380: pipeline-commit: PC=0x8000035c, wb=1, rd=x4, ex=ALU (#177)
+TRACE        380: pipeline-writeback: PC=0x80000364, wb=1, rd=x2, ex=ALU (#179)
+TRACE        380: pipeline-execute: PC=0x80000368, wb=1, rd=x2, ex=ALU (#180)
+TRACE        380: *** branch stalled!: PC=0x8000036c, wb=0, ex=ALU (#181)
+TRACE        381: pipeline-commit: PC=0x80000360, wb=1, rd=x1, ex=ALU (#178)
+TRACE        381: pipeline-issue: PC=0x8000036c, wb=0, ex=ALU (#181)
+TRACE        382: pipeline-commit: PC=0x80000364, wb=1, rd=x2, ex=ALU (#179)
+DEBUG Fetch: PC=0x80000370 (#182)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+TRACE        382: pipeline-issue: PC=0x80000370, wb=1, rd=x4, ex=ALU (#182)
+TRACE        383: pipeline-writeback: PC=0x80000368, wb=1, rd=x2, ex=ALU (#180)
+TRACE        383: pipeline-execute: PC=0x80000370, wb=1, rd=x4, ex=ALU (#182)
+TRACE        383: pipeline-execute: PC=0x8000036c, wb=0, ex=ALU (#181)
+DEBUG Fetch: PC=0x80000374 (#183)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        383: pipeline-issue: PC=0x80000374, wb=1, rd=x5, ex=ALU (#183)
+TRACE        384: pipeline-execute: PC=0x80000374, wb=1, rd=x5, ex=ALU (#183)
+DEBUG Fetch: PC=0x80000378 (#184)
+DEBUG Instr 0xfe5214e3: BNE x4, x5, 0xffffffe8
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG *** Next PC=0x80000360
+TRACE        384: *** branch stalled!: PC=0x80000378, wb=0, ex=ALU (#184)
+TRACE        385: pipeline-commit: PC=0x80000368, wb=1, rd=x2, ex=ALU (#180)
+TRACE        385: *** branch stalled!: PC=0x80000378, wb=0, ex=ALU (#184)
+TRACE        386: pipeline-writeback: PC=0x80000370, wb=1, rd=x4, ex=ALU (#182)
+TRACE        386: *** branch stalled!: PC=0x80000378, wb=0, ex=ALU (#184)
+TRACE        387: pipeline-writeback: PC=0x8000036c, wb=0, ex=ALU (#181)
+TRACE        387: pipeline-issue: PC=0x80000378, wb=0, ex=ALU (#184)
+TRACE        388: pipeline-writeback: PC=0x80000374, wb=1, rd=x5, ex=ALU (#183)
+TRACE        388: pipeline-execute: PC=0x80000378, wb=0, ex=ALU (#184)
+DEBUG Fetch: PC=0x80000360 (#65714)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        388: pipeline-issue: PC=0x80000360, wb=1, rd=x1, ex=ALU (#65714)
+TRACE        389: pipeline-commit: PC=0x8000036c, wb=0, ex=ALU (#181)
+TRACE        389: pipeline-execute: PC=0x80000360, wb=1, rd=x1, ex=ALU (#65714)
+DEBUG Fetch: PC=0x80000364 (#65715)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        389: pipeline-issue: PC=0x80000364, wb=1, rd=x2, ex=ALU (#65715)
+TRACE        390: pipeline-commit: PC=0x80000370, wb=1, rd=x4, ex=ALU (#182)
+TRACE        390: pipeline-execute: PC=0x80000364, wb=1, rd=x2, ex=ALU (#65715)
+DEBUG Fetch: PC=0x80000368 (#65716)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        390: pipeline-issue: PC=0x80000368, wb=1, rd=x2, ex=ALU (#65716)
+TRACE        391: pipeline-commit: PC=0x80000374, wb=1, rd=x5, ex=ALU (#183)
+TRACE        391: pipeline-writeback: PC=0x80000378, wb=0, ex=ALU (#184)
+DEBUG Fetch: PC=0x8000036c (#65717)
+DEBUG Instr 0x1020ea63: BLTU x1, x2, 0x114
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        391: *** branch stalled!: PC=0x8000036c, wb=0, ex=ALU (#65717)
+TRACE        392: pipeline-writeback: PC=0x80000360, wb=1, rd=x1, ex=ALU (#65714)
+TRACE        392: *** branch stalled!: PC=0x8000036c, wb=0, ex=ALU (#65717)
+TRACE        393: pipeline-commit: PC=0x80000378, wb=0, ex=ALU (#184)
+TRACE        393: pipeline-writeback: PC=0x80000364, wb=1, rd=x2, ex=ALU (#65715)
+TRACE        393: pipeline-execute: PC=0x80000368, wb=1, rd=x2, ex=ALU (#65716)
+TRACE        393: *** branch stalled!: PC=0x8000036c, wb=0, ex=ALU (#65717)
+TRACE        394: pipeline-commit: PC=0x80000360, wb=1, rd=x1, ex=ALU (#65714)
+TRACE        394: pipeline-issue: PC=0x8000036c, wb=0, ex=ALU (#65717)
+TRACE        395: pipeline-commit: PC=0x80000364, wb=1, rd=x2, ex=ALU (#65715)
+DEBUG Fetch: PC=0x80000370 (#65718)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+TRACE        395: pipeline-issue: PC=0x80000370, wb=1, rd=x4, ex=ALU (#65718)
+TRACE        396: pipeline-writeback: PC=0x80000368, wb=1, rd=x2, ex=ALU (#65716)
+TRACE        396: pipeline-execute: PC=0x8000036c, wb=0, ex=ALU (#65717)
+TRACE        396: pipeline-execute: PC=0x80000370, wb=1, rd=x4, ex=ALU (#65718)
+DEBUG Fetch: PC=0x80000374 (#65719)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        396: pipeline-issue: PC=0x80000374, wb=1, rd=x5, ex=ALU (#65719)
+TRACE        397: pipeline-execute: PC=0x80000374, wb=1, rd=x5, ex=ALU (#65719)
+DEBUG Fetch: PC=0x80000378 (#65720)
+DEBUG Instr 0xfe5214e3: BNE x4, x5, 0xffffffe8
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+TRACE        397: *** branch stalled!: PC=0x80000378, wb=0, ex=ALU (#65720)
+TRACE        398: pipeline-commit: PC=0x80000368, wb=1, rd=x2, ex=ALU (#65716)
+TRACE        398: *** branch stalled!: PC=0x80000378, wb=0, ex=ALU (#65720)
+TRACE        399: pipeline-writeback: PC=0x8000036c, wb=0, ex=ALU (#65717)
+TRACE        399: *** branch stalled!: PC=0x80000378, wb=0, ex=ALU (#65720)
+TRACE        400: pipeline-writeback: PC=0x80000370, wb=1, rd=x4, ex=ALU (#65718)
+TRACE        400: pipeline-issue: PC=0x80000378, wb=0, ex=ALU (#65720)
+TRACE        401: pipeline-commit: PC=0x8000036c, wb=0, ex=ALU (#65717)
+TRACE        401: pipeline-writeback: PC=0x80000374, wb=1, rd=x5, ex=ALU (#65719)
+TRACE        401: pipeline-execute: PC=0x80000378, wb=0, ex=ALU (#65720)
+DEBUG Fetch: PC=0x8000037c (#185)
+DEBUG Instr 0x1000193: ADDI x3, x0, 0x10
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x10}
+TRACE        401: pipeline-issue: PC=0x8000037c, wb=1, rd=x3, ex=ALU (#185)
+TRACE        402: pipeline-commit: PC=0x80000370, wb=1, rd=x4, ex=ALU (#65718)
+TRACE        402: pipeline-execute: PC=0x8000037c, wb=1, rd=x3, ex=ALU (#185)
+DEBUG Fetch: PC=0x80000380 (#186)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+TRACE        402: pipeline-issue: PC=0x80000380, wb=1, rd=x4, ex=ALU (#186)
+TRACE        403: pipeline-commit: PC=0x80000374, wb=1, rd=x5, ex=ALU (#65719)
+TRACE        403: pipeline-execute: PC=0x80000380, wb=1, rd=x4, ex=ALU (#186)
+DEBUG Fetch: PC=0x80000384 (#187)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        403: pipeline-issue: PC=0x80000384, wb=1, rd=x1, ex=ALU (#187)
+TRACE        404: pipeline-writeback: PC=0x80000378, wb=0, ex=ALU (#65720)
+TRACE        404: pipeline-execute: PC=0x80000384, wb=1, rd=x1, ex=ALU (#187)
+DEBUG Fetch: PC=0x80000388 (#188)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        404: pipeline-issue: PC=0x80000388, wb=1, rd=x2, ex=ALU (#188)
+TRACE        405: pipeline-writeback: PC=0x8000037c, wb=1, rd=x3, ex=ALU (#185)
+TRACE        405: pipeline-execute: PC=0x80000388, wb=1, rd=x2, ex=ALU (#188)
+DEBUG Fetch: PC=0x8000038c (#189)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        405: pipeline-issue: PC=0x8000038c, wb=1, rd=x2, ex=ALU (#189)
+TRACE        406: pipeline-commit: PC=0x80000378, wb=0, ex=ALU (#65720)
+TRACE        406: pipeline-writeback: PC=0x80000380, wb=1, rd=x4, ex=ALU (#186)
+DEBUG Fetch: PC=0x80000390 (#190)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        406: pipeline-issue: PC=0x80000390, wb=0, ex=ALU (#190)
+TRACE        407: pipeline-commit: PC=0x8000037c, wb=1, rd=x3, ex=ALU (#185)
+TRACE        407: pipeline-writeback: PC=0x80000384, wb=1, rd=x1, ex=ALU (#187)
+TRACE        407: pipeline-execute: PC=0x80000390, wb=0, ex=ALU (#190)
+DEBUG Fetch: PC=0x80000394 (#191)
+DEBUG Instr 0xe20e663: BLTU x1, x2, 0xec
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        407: *** branch stalled!: PC=0x80000394, wb=0, ex=ALU (#191)
+TRACE        408: pipeline-commit: PC=0x80000380, wb=1, rd=x4, ex=ALU (#186)
+TRACE        408: pipeline-writeback: PC=0x80000388, wb=1, rd=x2, ex=ALU (#188)
+TRACE        408: pipeline-execute: PC=0x8000038c, wb=1, rd=x2, ex=ALU (#189)
+TRACE        408: *** branch stalled!: PC=0x80000394, wb=0, ex=ALU (#191)
+TRACE        409: pipeline-commit: PC=0x80000384, wb=1, rd=x1, ex=ALU (#187)
+TRACE        409: *** branch stalled!: PC=0x80000394, wb=0, ex=ALU (#191)
+TRACE        410: pipeline-commit: PC=0x80000388, wb=1, rd=x2, ex=ALU (#188)
+TRACE        410: pipeline-writeback: PC=0x80000390, wb=0, ex=ALU (#190)
+TRACE        410: pipeline-issue: PC=0x80000394, wb=0, ex=ALU (#191)
+TRACE        411: pipeline-writeback: PC=0x8000038c, wb=1, rd=x2, ex=ALU (#189)
+TRACE        411: pipeline-execute: PC=0x80000394, wb=0, ex=ALU (#191)
+DEBUG Fetch: PC=0x80000398 (#192)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+TRACE        411: pipeline-issue: PC=0x80000398, wb=1, rd=x4, ex=ALU (#192)
+TRACE        412: pipeline-execute: PC=0x80000398, wb=1, rd=x4, ex=ALU (#192)
+DEBUG Fetch: PC=0x8000039c (#193)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        412: pipeline-issue: PC=0x8000039c, wb=1, rd=x5, ex=ALU (#193)
+TRACE        413: pipeline-commit: PC=0x8000038c, wb=1, rd=x2, ex=ALU (#189)
+TRACE        413: pipeline-execute: PC=0x8000039c, wb=1, rd=x5, ex=ALU (#193)
+DEBUG Fetch: PC=0x800003a0 (#194)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG *** Next PC=0x80000384
+TRACE        413: *** branch stalled!: PC=0x800003a0, wb=0, ex=ALU (#194)
+TRACE        414: pipeline-commit: PC=0x80000390, wb=0, ex=ALU (#190)
+TRACE        414: pipeline-writeback: PC=0x80000394, wb=0, ex=ALU (#191)
+TRACE        414: *** branch stalled!: PC=0x800003a0, wb=0, ex=ALU (#194)
+TRACE        415: pipeline-writeback: PC=0x80000398, wb=1, rd=x4, ex=ALU (#192)
+TRACE        415: *** branch stalled!: PC=0x800003a0, wb=0, ex=ALU (#194)
+TRACE        416: pipeline-commit: PC=0x80000394, wb=0, ex=ALU (#191)
+TRACE        416: pipeline-writeback: PC=0x8000039c, wb=1, rd=x5, ex=ALU (#193)
+TRACE        416: pipeline-issue: PC=0x800003a0, wb=0, ex=ALU (#194)
+TRACE        417: pipeline-commit: PC=0x80000398, wb=1, rd=x4, ex=ALU (#192)
+TRACE        417: pipeline-execute: PC=0x800003a0, wb=0, ex=ALU (#194)
+DEBUG Fetch: PC=0x80000384 (#65723)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        417: pipeline-issue: PC=0x80000384, wb=1, rd=x1, ex=ALU (#65723)
+TRACE        418: pipeline-commit: PC=0x8000039c, wb=1, rd=x5, ex=ALU (#193)
+TRACE        418: pipeline-execute: PC=0x80000384, wb=1, rd=x1, ex=ALU (#65723)
+DEBUG Fetch: PC=0x80000388 (#65724)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        418: pipeline-issue: PC=0x80000388, wb=1, rd=x2, ex=ALU (#65724)
+TRACE        419: pipeline-execute: PC=0x80000388, wb=1, rd=x2, ex=ALU (#65724)
+DEBUG Fetch: PC=0x8000038c (#65725)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        419: pipeline-issue: PC=0x8000038c, wb=1, rd=x2, ex=ALU (#65725)
+TRACE        420: pipeline-writeback: PC=0x800003a0, wb=0, ex=ALU (#194)
+DEBUG Fetch: PC=0x80000390 (#65726)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        420: pipeline-issue: PC=0x80000390, wb=0, ex=ALU (#65726)
+TRACE        421: pipeline-writeback: PC=0x80000384, wb=1, rd=x1, ex=ALU (#65723)
+TRACE        421: pipeline-execute: PC=0x80000390, wb=0, ex=ALU (#65726)
+DEBUG Fetch: PC=0x80000394 (#65727)
+DEBUG Instr 0xe20e663: BLTU x1, x2, 0xec
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        421: *** branch stalled!: PC=0x80000394, wb=0, ex=ALU (#65727)
+TRACE        422: pipeline-commit: PC=0x800003a0, wb=0, ex=ALU (#194)
+TRACE        422: pipeline-writeback: PC=0x80000388, wb=1, rd=x2, ex=ALU (#65724)
+TRACE        422: pipeline-execute: PC=0x8000038c, wb=1, rd=x2, ex=ALU (#65725)
+TRACE        422: *** branch stalled!: PC=0x80000394, wb=0, ex=ALU (#65727)
+TRACE        423: pipeline-commit: PC=0x80000384, wb=1, rd=x1, ex=ALU (#65723)
+TRACE        423: *** branch stalled!: PC=0x80000394, wb=0, ex=ALU (#65727)
+TRACE        424: pipeline-commit: PC=0x80000388, wb=1, rd=x2, ex=ALU (#65724)
+TRACE        424: pipeline-writeback: PC=0x80000390, wb=0, ex=ALU (#65726)
+TRACE        424: pipeline-issue: PC=0x80000394, wb=0, ex=ALU (#65727)
+TRACE        425: pipeline-writeback: PC=0x8000038c, wb=1, rd=x2, ex=ALU (#65725)
+TRACE        425: pipeline-execute: PC=0x80000394, wb=0, ex=ALU (#65727)
+DEBUG Fetch: PC=0x80000398 (#65728)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+TRACE        425: pipeline-issue: PC=0x80000398, wb=1, rd=x4, ex=ALU (#65728)
+TRACE        426: pipeline-execute: PC=0x80000398, wb=1, rd=x4, ex=ALU (#65728)
+DEBUG Fetch: PC=0x8000039c (#65729)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        426: pipeline-issue: PC=0x8000039c, wb=1, rd=x5, ex=ALU (#65729)
+TRACE        427: pipeline-commit: PC=0x8000038c, wb=1, rd=x2, ex=ALU (#65725)
+TRACE        427: pipeline-execute: PC=0x8000039c, wb=1, rd=x5, ex=ALU (#65729)
+DEBUG Fetch: PC=0x800003a0 (#65730)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+TRACE        427: *** branch stalled!: PC=0x800003a0, wb=0, ex=ALU (#65730)
+TRACE        428: pipeline-commit: PC=0x80000390, wb=0, ex=ALU (#65726)
+TRACE        428: pipeline-writeback: PC=0x80000394, wb=0, ex=ALU (#65727)
+TRACE        428: *** branch stalled!: PC=0x800003a0, wb=0, ex=ALU (#65730)
+TRACE        429: pipeline-writeback: PC=0x80000398, wb=1, rd=x4, ex=ALU (#65728)
+TRACE        429: *** branch stalled!: PC=0x800003a0, wb=0, ex=ALU (#65730)
+TRACE        430: pipeline-commit: PC=0x80000394, wb=0, ex=ALU (#65727)
+TRACE        430: pipeline-writeback: PC=0x8000039c, wb=1, rd=x5, ex=ALU (#65729)
+TRACE        430: pipeline-issue: PC=0x800003a0, wb=0, ex=ALU (#65730)
+TRACE        431: pipeline-commit: PC=0x80000398, wb=1, rd=x4, ex=ALU (#65728)
+TRACE        431: pipeline-execute: PC=0x800003a0, wb=0, ex=ALU (#65730)
+DEBUG Fetch: PC=0x800003a4 (#195)
+DEBUG Instr 0x1100193: ADDI x3, x0, 0x11
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x11}
+TRACE        431: pipeline-issue: PC=0x800003a4, wb=1, rd=x3, ex=ALU (#195)
+TRACE        432: pipeline-commit: PC=0x8000039c, wb=1, rd=x5, ex=ALU (#65729)
+TRACE        432: pipeline-execute: PC=0x800003a4, wb=1, rd=x3, ex=ALU (#195)
+DEBUG Fetch: PC=0x800003a8 (#196)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+TRACE        432: pipeline-issue: PC=0x800003a8, wb=1, rd=x4, ex=ALU (#196)
+TRACE        433: pipeline-execute: PC=0x800003a8, wb=1, rd=x4, ex=ALU (#196)
+DEBUG Fetch: PC=0x800003ac (#197)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        433: pipeline-issue: PC=0x800003ac, wb=1, rd=x1, ex=ALU (#197)
+TRACE        434: pipeline-writeback: PC=0x800003a0, wb=0, ex=ALU (#65730)
+TRACE        434: pipeline-execute: PC=0x800003ac, wb=1, rd=x1, ex=ALU (#197)
+DEBUG Fetch: PC=0x800003b0 (#198)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        434: pipeline-issue: PC=0x800003b0, wb=1, rd=x2, ex=ALU (#198)
+TRACE        435: pipeline-writeback: PC=0x800003a4, wb=1, rd=x3, ex=ALU (#195)
+TRACE        435: pipeline-execute: PC=0x800003b0, wb=1, rd=x2, ex=ALU (#198)
+DEBUG Fetch: PC=0x800003b4 (#199)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        435: pipeline-issue: PC=0x800003b4, wb=1, rd=x2, ex=ALU (#199)
+TRACE        436: pipeline-commit: PC=0x800003a0, wb=0, ex=ALU (#65730)
+TRACE        436: pipeline-writeback: PC=0x800003a8, wb=1, rd=x4, ex=ALU (#196)
+DEBUG Fetch: PC=0x800003b8 (#200)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        436: pipeline-issue: PC=0x800003b8, wb=0, ex=ALU (#200)
+TRACE        437: pipeline-commit: PC=0x800003a4, wb=1, rd=x3, ex=ALU (#195)
+TRACE        437: pipeline-writeback: PC=0x800003ac, wb=1, rd=x1, ex=ALU (#197)
+TRACE        437: pipeline-execute: PC=0x800003b8, wb=0, ex=ALU (#200)
+DEBUG Fetch: PC=0x800003bc (#201)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        437: pipeline-issue: PC=0x800003bc, wb=0, ex=ALU (#201)
+TRACE        438: pipeline-commit: PC=0x800003a8, wb=1, rd=x4, ex=ALU (#196)
+TRACE        438: pipeline-writeback: PC=0x800003b0, wb=1, rd=x2, ex=ALU (#198)
+TRACE        438: pipeline-execute: PC=0x800003bc, wb=0, ex=ALU (#201)
+TRACE        438: pipeline-execute: PC=0x800003b4, wb=1, rd=x2, ex=ALU (#199)
+DEBUG Fetch: PC=0x800003c0 (#202)
+DEBUG Instr 0xc20e063: BLTU x1, x2, 0xc0
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        438: *** branch stalled!: PC=0x800003c0, wb=0, ex=ALU (#202)
+TRACE        439: pipeline-commit: PC=0x800003ac, wb=1, rd=x1, ex=ALU (#197)
+TRACE        439: *** branch stalled!: PC=0x800003c0, wb=0, ex=ALU (#202)
+TRACE        440: pipeline-commit: PC=0x800003b0, wb=1, rd=x2, ex=ALU (#198)
+TRACE        440: pipeline-writeback: PC=0x800003b8, wb=0, ex=ALU (#200)
+TRACE        440: *** branch stalled!: PC=0x800003c0, wb=0, ex=ALU (#202)
+TRACE        441: pipeline-writeback: PC=0x800003bc, wb=0, ex=ALU (#201)
+TRACE        441: pipeline-issue: PC=0x800003c0, wb=0, ex=ALU (#202)
+TRACE        442: pipeline-writeback: PC=0x800003b4, wb=1, rd=x2, ex=ALU (#199)
+TRACE        442: pipeline-execute: PC=0x800003c0, wb=0, ex=ALU (#202)
+DEBUG Fetch: PC=0x800003c4 (#203)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+TRACE        442: pipeline-issue: PC=0x800003c4, wb=1, rd=x4, ex=ALU (#203)
+TRACE        443: pipeline-execute: PC=0x800003c4, wb=1, rd=x4, ex=ALU (#203)
+DEBUG Fetch: PC=0x800003c8 (#204)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        443: pipeline-issue: PC=0x800003c8, wb=1, rd=x5, ex=ALU (#204)
+TRACE        444: pipeline-commit: PC=0x800003b4, wb=1, rd=x2, ex=ALU (#199)
+TRACE        444: pipeline-execute: PC=0x800003c8, wb=1, rd=x5, ex=ALU (#204)
+DEBUG Fetch: PC=0x800003cc (#205)
+DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG *** Next PC=0x800003ac
+TRACE        444: *** branch stalled!: PC=0x800003cc, wb=0, ex=ALU (#205)
+TRACE        445: pipeline-commit: PC=0x800003b8, wb=0, ex=ALU (#200)
+TRACE        445: pipeline-writeback: PC=0x800003c0, wb=0, ex=ALU (#202)
+TRACE        445: *** branch stalled!: PC=0x800003cc, wb=0, ex=ALU (#205)
+TRACE        446: pipeline-commit: PC=0x800003bc, wb=0, ex=ALU (#201)
+TRACE        446: pipeline-writeback: PC=0x800003c4, wb=1, rd=x4, ex=ALU (#203)
+TRACE        446: *** branch stalled!: PC=0x800003cc, wb=0, ex=ALU (#205)
+TRACE        447: pipeline-commit: PC=0x800003c0, wb=0, ex=ALU (#202)
+TRACE        447: pipeline-writeback: PC=0x800003c8, wb=1, rd=x5, ex=ALU (#204)
+TRACE        447: pipeline-issue: PC=0x800003cc, wb=0, ex=ALU (#205)
+TRACE        448: pipeline-commit: PC=0x800003c4, wb=1, rd=x4, ex=ALU (#203)
+TRACE        448: pipeline-execute: PC=0x800003cc, wb=0, ex=ALU (#205)
+DEBUG Fetch: PC=0x800003ac (#65733)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        448: pipeline-issue: PC=0x800003ac, wb=1, rd=x1, ex=ALU (#65733)
+TRACE        449: pipeline-commit: PC=0x800003c8, wb=1, rd=x5, ex=ALU (#204)
+TRACE        449: pipeline-execute: PC=0x800003ac, wb=1, rd=x1, ex=ALU (#65733)
+DEBUG Fetch: PC=0x800003b0 (#65734)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        449: pipeline-issue: PC=0x800003b0, wb=1, rd=x2, ex=ALU (#65734)
+TRACE        450: pipeline-execute: PC=0x800003b0, wb=1, rd=x2, ex=ALU (#65734)
+DEBUG Fetch: PC=0x800003b4 (#65735)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        450: pipeline-issue: PC=0x800003b4, wb=1, rd=x2, ex=ALU (#65735)
+TRACE        451: pipeline-writeback: PC=0x800003cc, wb=0, ex=ALU (#205)
+DEBUG Fetch: PC=0x800003b8 (#65736)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        451: pipeline-issue: PC=0x800003b8, wb=0, ex=ALU (#65736)
+TRACE        452: pipeline-writeback: PC=0x800003ac, wb=1, rd=x1, ex=ALU (#65733)
+TRACE        452: pipeline-execute: PC=0x800003b8, wb=0, ex=ALU (#65736)
+DEBUG Fetch: PC=0x800003bc (#65737)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        452: pipeline-issue: PC=0x800003bc, wb=0, ex=ALU (#65737)
+TRACE        453: pipeline-commit: PC=0x800003cc, wb=0, ex=ALU (#205)
+TRACE        453: pipeline-writeback: PC=0x800003b0, wb=1, rd=x2, ex=ALU (#65734)
+TRACE        453: pipeline-execute: PC=0x800003b4, wb=1, rd=x2, ex=ALU (#65735)
+TRACE        453: pipeline-execute: PC=0x800003bc, wb=0, ex=ALU (#65737)
+DEBUG Fetch: PC=0x800003c0 (#65738)
+DEBUG Instr 0xc20e063: BLTU x1, x2, 0xc0
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        453: *** branch stalled!: PC=0x800003c0, wb=0, ex=ALU (#65738)
+TRACE        454: pipeline-commit: PC=0x800003ac, wb=1, rd=x1, ex=ALU (#65733)
+TRACE        454: *** branch stalled!: PC=0x800003c0, wb=0, ex=ALU (#65738)
+TRACE        455: pipeline-commit: PC=0x800003b0, wb=1, rd=x2, ex=ALU (#65734)
+TRACE        455: pipeline-writeback: PC=0x800003b8, wb=0, ex=ALU (#65736)
+TRACE        455: *** branch stalled!: PC=0x800003c0, wb=0, ex=ALU (#65738)
+TRACE        456: pipeline-writeback: PC=0x800003b4, wb=1, rd=x2, ex=ALU (#65735)
+TRACE        456: pipeline-issue: PC=0x800003c0, wb=0, ex=ALU (#65738)
+TRACE        457: pipeline-writeback: PC=0x800003bc, wb=0, ex=ALU (#65737)
+TRACE        457: pipeline-execute: PC=0x800003c0, wb=0, ex=ALU (#65738)
+DEBUG Fetch: PC=0x800003c4 (#65739)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+TRACE        457: pipeline-issue: PC=0x800003c4, wb=1, rd=x4, ex=ALU (#65739)
+TRACE        458: pipeline-commit: PC=0x800003b4, wb=1, rd=x2, ex=ALU (#65735)
+TRACE        458: pipeline-execute: PC=0x800003c4, wb=1, rd=x4, ex=ALU (#65739)
+DEBUG Fetch: PC=0x800003c8 (#65740)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        458: pipeline-issue: PC=0x800003c8, wb=1, rd=x5, ex=ALU (#65740)
+TRACE        459: pipeline-commit: PC=0x800003b8, wb=0, ex=ALU (#65736)
+TRACE        459: pipeline-execute: PC=0x800003c8, wb=1, rd=x5, ex=ALU (#65740)
+DEBUG Fetch: PC=0x800003cc (#65741)
+DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+TRACE        459: *** branch stalled!: PC=0x800003cc, wb=0, ex=ALU (#65741)
+TRACE        460: pipeline-commit: PC=0x800003bc, wb=0, ex=ALU (#65737)
+TRACE        460: pipeline-writeback: PC=0x800003c0, wb=0, ex=ALU (#65738)
+TRACE        460: *** branch stalled!: PC=0x800003cc, wb=0, ex=ALU (#65741)
+TRACE        461: pipeline-writeback: PC=0x800003c4, wb=1, rd=x4, ex=ALU (#65739)
+TRACE        461: *** branch stalled!: PC=0x800003cc, wb=0, ex=ALU (#65741)
+TRACE        462: pipeline-commit: PC=0x800003c0, wb=0, ex=ALU (#65738)
+TRACE        462: pipeline-writeback: PC=0x800003c8, wb=1, rd=x5, ex=ALU (#65740)
+TRACE        462: pipeline-issue: PC=0x800003cc, wb=0, ex=ALU (#65741)
+TRACE        463: pipeline-commit: PC=0x800003c4, wb=1, rd=x4, ex=ALU (#65739)
+TRACE        463: pipeline-execute: PC=0x800003cc, wb=0, ex=ALU (#65741)
+DEBUG Fetch: PC=0x800003d0 (#206)
+DEBUG Instr 0x1200193: ADDI x3, x0, 0x12
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x12}
+TRACE        463: pipeline-issue: PC=0x800003d0, wb=1, rd=x3, ex=ALU (#206)
+TRACE        464: pipeline-commit: PC=0x800003c8, wb=1, rd=x5, ex=ALU (#65740)
+TRACE        464: pipeline-execute: PC=0x800003d0, wb=1, rd=x3, ex=ALU (#206)
+DEBUG Fetch: PC=0x800003d4 (#207)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+TRACE        464: pipeline-issue: PC=0x800003d4, wb=1, rd=x4, ex=ALU (#207)
+TRACE        465: pipeline-execute: PC=0x800003d4, wb=1, rd=x4, ex=ALU (#207)
+DEBUG Fetch: PC=0x800003d8 (#208)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        465: pipeline-issue: PC=0x800003d8, wb=1, rd=x1, ex=ALU (#208)
+TRACE        466: pipeline-writeback: PC=0x800003cc, wb=0, ex=ALU (#65741)
+TRACE        466: pipeline-execute: PC=0x800003d8, wb=1, rd=x1, ex=ALU (#208)
+DEBUG Fetch: PC=0x800003dc (#209)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        466: pipeline-issue: PC=0x800003dc, wb=0, ex=ALU (#209)
+TRACE        467: pipeline-writeback: PC=0x800003d0, wb=1, rd=x3, ex=ALU (#206)
+TRACE        467: pipeline-execute: PC=0x800003dc, wb=0, ex=ALU (#209)
+DEBUG Fetch: PC=0x800003e0 (#210)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        467: pipeline-issue: PC=0x800003e0, wb=1, rd=x2, ex=ALU (#210)
+TRACE        468: pipeline-commit: PC=0x800003cc, wb=0, ex=ALU (#65741)
+TRACE        468: pipeline-writeback: PC=0x800003d4, wb=1, rd=x4, ex=ALU (#207)
+TRACE        468: pipeline-execute: PC=0x800003e0, wb=1, rd=x2, ex=ALU (#210)
+DEBUG Fetch: PC=0x800003e4 (#211)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        468: pipeline-issue: PC=0x800003e4, wb=1, rd=x2, ex=ALU (#211)
+TRACE        469: pipeline-commit: PC=0x800003d0, wb=1, rd=x3, ex=ALU (#206)
+TRACE        469: pipeline-writeback: PC=0x800003d8, wb=1, rd=x1, ex=ALU (#208)
+DEBUG Fetch: PC=0x800003e8 (#212)
+DEBUG Instr 0x820ec63: BLTU x1, x2, 0x98
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        469: *** branch stalled!: PC=0x800003e8, wb=0, ex=ALU (#212)
+TRACE        470: pipeline-commit: PC=0x800003d4, wb=1, rd=x4, ex=ALU (#207)
+TRACE        470: pipeline-writeback: PC=0x800003dc, wb=0, ex=ALU (#209)
+TRACE        470: *** branch stalled!: PC=0x800003e8, wb=0, ex=ALU (#212)
+TRACE        471: pipeline-commit: PC=0x800003d8, wb=1, rd=x1, ex=ALU (#208)
+TRACE        471: pipeline-writeback: PC=0x800003e0, wb=1, rd=x2, ex=ALU (#210)
+TRACE        471: pipeline-execute: PC=0x800003e4, wb=1, rd=x2, ex=ALU (#211)
+TRACE        471: *** branch stalled!: PC=0x800003e8, wb=0, ex=ALU (#212)
+TRACE        472: pipeline-commit: PC=0x800003dc, wb=0, ex=ALU (#209)
+TRACE        472: pipeline-issue: PC=0x800003e8, wb=0, ex=ALU (#212)
+TRACE        473: pipeline-commit: PC=0x800003e0, wb=1, rd=x2, ex=ALU (#210)
+DEBUG Fetch: PC=0x800003ec (#213)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+TRACE        473: pipeline-issue: PC=0x800003ec, wb=1, rd=x4, ex=ALU (#213)
+TRACE        474: pipeline-writeback: PC=0x800003e4, wb=1, rd=x2, ex=ALU (#211)
+TRACE        474: pipeline-execute: PC=0x800003ec, wb=1, rd=x4, ex=ALU (#213)
+TRACE        474: pipeline-execute: PC=0x800003e8, wb=0, ex=ALU (#212)
+DEBUG Fetch: PC=0x800003f0 (#214)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        474: pipeline-issue: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#214)
+TRACE        475: pipeline-execute: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#214)
+DEBUG Fetch: PC=0x800003f4 (#215)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG *** Next PC=0x800003d8
+TRACE        475: *** branch stalled!: PC=0x800003f4, wb=0, ex=ALU (#215)
+TRACE        476: pipeline-commit: PC=0x800003e4, wb=1, rd=x2, ex=ALU (#211)
+TRACE        476: *** branch stalled!: PC=0x800003f4, wb=0, ex=ALU (#215)
+TRACE        477: pipeline-writeback: PC=0x800003ec, wb=1, rd=x4, ex=ALU (#213)
+TRACE        477: *** branch stalled!: PC=0x800003f4, wb=0, ex=ALU (#215)
+TRACE        478: pipeline-writeback: PC=0x800003e8, wb=0, ex=ALU (#212)
+TRACE        478: pipeline-issue: PC=0x800003f4, wb=0, ex=ALU (#215)
+TRACE        479: pipeline-writeback: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#214)
+TRACE        479: pipeline-execute: PC=0x800003f4, wb=0, ex=ALU (#215)
+DEBUG Fetch: PC=0x800003d8 (#65744)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        479: pipeline-issue: PC=0x800003d8, wb=1, rd=x1, ex=ALU (#65744)
+TRACE        480: pipeline-commit: PC=0x800003e8, wb=0, ex=ALU (#212)
+TRACE        480: pipeline-execute: PC=0x800003d8, wb=1, rd=x1, ex=ALU (#65744)
+DEBUG Fetch: PC=0x800003dc (#65745)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        480: pipeline-issue: PC=0x800003dc, wb=0, ex=ALU (#65745)
+TRACE        481: pipeline-commit: PC=0x800003ec, wb=1, rd=x4, ex=ALU (#213)
+TRACE        481: pipeline-execute: PC=0x800003dc, wb=0, ex=ALU (#65745)
+DEBUG Fetch: PC=0x800003e0 (#65746)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        481: pipeline-issue: PC=0x800003e0, wb=1, rd=x2, ex=ALU (#65746)
+TRACE        482: pipeline-commit: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#214)
+TRACE        482: pipeline-writeback: PC=0x800003f4, wb=0, ex=ALU (#215)
+TRACE        482: pipeline-execute: PC=0x800003e0, wb=1, rd=x2, ex=ALU (#65746)
+DEBUG Fetch: PC=0x800003e4 (#65747)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        482: pipeline-issue: PC=0x800003e4, wb=1, rd=x2, ex=ALU (#65747)
+TRACE        483: pipeline-writeback: PC=0x800003d8, wb=1, rd=x1, ex=ALU (#65744)
+DEBUG Fetch: PC=0x800003e8 (#65748)
+DEBUG Instr 0x820ec63: BLTU x1, x2, 0x98
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        483: *** branch stalled!: PC=0x800003e8, wb=0, ex=ALU (#65748)
+TRACE        484: pipeline-commit: PC=0x800003f4, wb=0, ex=ALU (#215)
+TRACE        484: pipeline-writeback: PC=0x800003dc, wb=0, ex=ALU (#65745)
+TRACE        484: *** branch stalled!: PC=0x800003e8, wb=0, ex=ALU (#65748)
+TRACE        485: pipeline-commit: PC=0x800003d8, wb=1, rd=x1, ex=ALU (#65744)
+TRACE        485: pipeline-writeback: PC=0x800003e0, wb=1, rd=x2, ex=ALU (#65746)
+TRACE        485: pipeline-execute: PC=0x800003e4, wb=1, rd=x2, ex=ALU (#65747)
+TRACE        485: *** branch stalled!: PC=0x800003e8, wb=0, ex=ALU (#65748)
+TRACE        486: pipeline-commit: PC=0x800003dc, wb=0, ex=ALU (#65745)
+TRACE        486: pipeline-issue: PC=0x800003e8, wb=0, ex=ALU (#65748)
+TRACE        487: pipeline-commit: PC=0x800003e0, wb=1, rd=x2, ex=ALU (#65746)
+DEBUG Fetch: PC=0x800003ec (#65749)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+TRACE        487: pipeline-issue: PC=0x800003ec, wb=1, rd=x4, ex=ALU (#65749)
+TRACE        488: pipeline-writeback: PC=0x800003e4, wb=1, rd=x2, ex=ALU (#65747)
+TRACE        488: pipeline-execute: PC=0x800003ec, wb=1, rd=x4, ex=ALU (#65749)
+TRACE        488: pipeline-execute: PC=0x800003e8, wb=0, ex=ALU (#65748)
+DEBUG Fetch: PC=0x800003f0 (#65750)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        488: pipeline-issue: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#65750)
+TRACE        489: pipeline-execute: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#65750)
+DEBUG Fetch: PC=0x800003f4 (#65751)
+DEBUG Instr 0xfe5212e3: BNE x4, x5, 0xffffffe4
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+TRACE        489: *** branch stalled!: PC=0x800003f4, wb=0, ex=ALU (#65751)
+TRACE        490: pipeline-commit: PC=0x800003e4, wb=1, rd=x2, ex=ALU (#65747)
+TRACE        490: *** branch stalled!: PC=0x800003f4, wb=0, ex=ALU (#65751)
+TRACE        491: pipeline-writeback: PC=0x800003ec, wb=1, rd=x4, ex=ALU (#65749)
+TRACE        491: *** branch stalled!: PC=0x800003f4, wb=0, ex=ALU (#65751)
+TRACE        492: pipeline-writeback: PC=0x800003e8, wb=0, ex=ALU (#65748)
+TRACE        492: pipeline-issue: PC=0x800003f4, wb=0, ex=ALU (#65751)
+TRACE        493: pipeline-writeback: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#65750)
+TRACE        493: pipeline-execute: PC=0x800003f4, wb=0, ex=ALU (#65751)
+DEBUG Fetch: PC=0x800003f8 (#216)
+DEBUG Instr 0x1300193: ADDI x3, x0, 0x13
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x13}
+TRACE        493: pipeline-issue: PC=0x800003f8, wb=1, rd=x3, ex=ALU (#216)
+TRACE        494: pipeline-commit: PC=0x800003e8, wb=0, ex=ALU (#65748)
+TRACE        494: pipeline-execute: PC=0x800003f8, wb=1, rd=x3, ex=ALU (#216)
+DEBUG Fetch: PC=0x800003fc (#217)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+TRACE        494: pipeline-issue: PC=0x800003fc, wb=1, rd=x4, ex=ALU (#217)
+TRACE        495: pipeline-commit: PC=0x800003ec, wb=1, rd=x4, ex=ALU (#65749)
+TRACE        495: pipeline-execute: PC=0x800003fc, wb=1, rd=x4, ex=ALU (#217)
+DEBUG Fetch: PC=0x80000400 (#218)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        495: pipeline-issue: PC=0x80000400, wb=1, rd=x1, ex=ALU (#218)
+TRACE        496: pipeline-commit: PC=0x800003f0, wb=1, rd=x5, ex=ALU (#65750)
+TRACE        496: pipeline-writeback: PC=0x800003f4, wb=0, ex=ALU (#65751)
+TRACE        496: pipeline-execute: PC=0x80000400, wb=1, rd=x1, ex=ALU (#218)
+DEBUG Fetch: PC=0x80000404 (#219)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        496: pipeline-issue: PC=0x80000404, wb=0, ex=ALU (#219)
+TRACE        497: pipeline-writeback: PC=0x800003f8, wb=1, rd=x3, ex=ALU (#216)
+TRACE        497: pipeline-execute: PC=0x80000404, wb=0, ex=ALU (#219)
+DEBUG Fetch: PC=0x80000408 (#220)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        497: pipeline-issue: PC=0x80000408, wb=1, rd=x2, ex=ALU (#220)
+TRACE        498: pipeline-commit: PC=0x800003f4, wb=0, ex=ALU (#65751)
+TRACE        498: pipeline-writeback: PC=0x800003fc, wb=1, rd=x4, ex=ALU (#217)
+TRACE        498: pipeline-execute: PC=0x80000408, wb=1, rd=x2, ex=ALU (#220)
+DEBUG Fetch: PC=0x8000040c (#221)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        498: pipeline-issue: PC=0x8000040c, wb=1, rd=x2, ex=ALU (#221)
+TRACE        499: pipeline-commit: PC=0x800003f8, wb=1, rd=x3, ex=ALU (#216)
+TRACE        499: pipeline-writeback: PC=0x80000400, wb=1, rd=x1, ex=ALU (#218)
+DEBUG Fetch: PC=0x80000410 (#222)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        499: pipeline-issue: PC=0x80000410, wb=0, ex=ALU (#222)
+TRACE        500: pipeline-commit: PC=0x800003fc, wb=1, rd=x4, ex=ALU (#217)
+TRACE        500: pipeline-writeback: PC=0x80000404, wb=0, ex=ALU (#219)
+TRACE        500: pipeline-execute: PC=0x80000410, wb=0, ex=ALU (#222)
+DEBUG Fetch: PC=0x80000414 (#223)
+DEBUG Instr 0x620e663: BLTU x1, x2, 0x6c
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        500: *** branch stalled!: PC=0x80000414, wb=0, ex=ALU (#223)
+TRACE        501: pipeline-commit: PC=0x80000400, wb=1, rd=x1, ex=ALU (#218)
+TRACE        501: pipeline-writeback: PC=0x80000408, wb=1, rd=x2, ex=ALU (#220)
+TRACE        501: pipeline-execute: PC=0x8000040c, wb=1, rd=x2, ex=ALU (#221)
+TRACE        501: *** branch stalled!: PC=0x80000414, wb=0, ex=ALU (#223)
+TRACE        502: pipeline-commit: PC=0x80000404, wb=0, ex=ALU (#219)
+TRACE        502: *** branch stalled!: PC=0x80000414, wb=0, ex=ALU (#223)
+TRACE        503: pipeline-commit: PC=0x80000408, wb=1, rd=x2, ex=ALU (#220)
+TRACE        503: pipeline-writeback: PC=0x80000410, wb=0, ex=ALU (#222)
+TRACE        503: pipeline-issue: PC=0x80000414, wb=0, ex=ALU (#223)
+TRACE        504: pipeline-writeback: PC=0x8000040c, wb=1, rd=x2, ex=ALU (#221)
+TRACE        504: pipeline-execute: PC=0x80000414, wb=0, ex=ALU (#223)
+DEBUG Fetch: PC=0x80000418 (#224)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+TRACE        504: pipeline-issue: PC=0x80000418, wb=1, rd=x4, ex=ALU (#224)
+TRACE        505: pipeline-execute: PC=0x80000418, wb=1, rd=x4, ex=ALU (#224)
+DEBUG Fetch: PC=0x8000041c (#225)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        505: pipeline-issue: PC=0x8000041c, wb=1, rd=x5, ex=ALU (#225)
+TRACE        506: pipeline-commit: PC=0x8000040c, wb=1, rd=x2, ex=ALU (#221)
+TRACE        506: pipeline-execute: PC=0x8000041c, wb=1, rd=x5, ex=ALU (#225)
+DEBUG Fetch: PC=0x80000420 (#226)
+DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG *** Next PC=0x80000400
+TRACE        506: *** branch stalled!: PC=0x80000420, wb=0, ex=ALU (#226)
+TRACE        507: pipeline-commit: PC=0x80000410, wb=0, ex=ALU (#222)
+TRACE        507: pipeline-writeback: PC=0x80000414, wb=0, ex=ALU (#223)
+TRACE        507: *** branch stalled!: PC=0x80000420, wb=0, ex=ALU (#226)
+TRACE        508: pipeline-writeback: PC=0x80000418, wb=1, rd=x4, ex=ALU (#224)
+TRACE        508: *** branch stalled!: PC=0x80000420, wb=0, ex=ALU (#226)
+TRACE        509: pipeline-commit: PC=0x80000414, wb=0, ex=ALU (#223)
+TRACE        509: pipeline-writeback: PC=0x8000041c, wb=1, rd=x5, ex=ALU (#225)
+TRACE        509: pipeline-issue: PC=0x80000420, wb=0, ex=ALU (#226)
+TRACE        510: pipeline-commit: PC=0x80000418, wb=1, rd=x4, ex=ALU (#224)
+TRACE        510: pipeline-execute: PC=0x80000420, wb=0, ex=ALU (#226)
+DEBUG Fetch: PC=0x80000400 (#65754)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        510: pipeline-issue: PC=0x80000400, wb=1, rd=x1, ex=ALU (#65754)
+TRACE        511: pipeline-commit: PC=0x8000041c, wb=1, rd=x5, ex=ALU (#225)
+TRACE        511: pipeline-execute: PC=0x80000400, wb=1, rd=x1, ex=ALU (#65754)
+DEBUG Fetch: PC=0x80000404 (#65755)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        511: pipeline-issue: PC=0x80000404, wb=0, ex=ALU (#65755)
+TRACE        512: pipeline-execute: PC=0x80000404, wb=0, ex=ALU (#65755)
+DEBUG Fetch: PC=0x80000408 (#65756)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        512: pipeline-issue: PC=0x80000408, wb=1, rd=x2, ex=ALU (#65756)
+TRACE        513: pipeline-writeback: PC=0x80000420, wb=0, ex=ALU (#226)
+TRACE        513: pipeline-execute: PC=0x80000408, wb=1, rd=x2, ex=ALU (#65756)
+DEBUG Fetch: PC=0x8000040c (#65757)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        513: pipeline-issue: PC=0x8000040c, wb=1, rd=x2, ex=ALU (#65757)
+TRACE        514: pipeline-writeback: PC=0x80000400, wb=1, rd=x1, ex=ALU (#65754)
+DEBUG Fetch: PC=0x80000410 (#65758)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        514: pipeline-issue: PC=0x80000410, wb=0, ex=ALU (#65758)
+TRACE        515: pipeline-commit: PC=0x80000420, wb=0, ex=ALU (#226)
+TRACE        515: pipeline-writeback: PC=0x80000404, wb=0, ex=ALU (#65755)
+TRACE        515: pipeline-execute: PC=0x80000410, wb=0, ex=ALU (#65758)
+DEBUG Fetch: PC=0x80000414 (#65759)
+DEBUG Instr 0x620e663: BLTU x1, x2, 0x6c
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        515: *** branch stalled!: PC=0x80000414, wb=0, ex=ALU (#65759)
+TRACE        516: pipeline-commit: PC=0x80000400, wb=1, rd=x1, ex=ALU (#65754)
+TRACE        516: pipeline-writeback: PC=0x80000408, wb=1, rd=x2, ex=ALU (#65756)
+TRACE        516: pipeline-execute: PC=0x8000040c, wb=1, rd=x2, ex=ALU (#65757)
+TRACE        516: *** branch stalled!: PC=0x80000414, wb=0, ex=ALU (#65759)
+TRACE        517: pipeline-commit: PC=0x80000404, wb=0, ex=ALU (#65755)
+TRACE        517: *** branch stalled!: PC=0x80000414, wb=0, ex=ALU (#65759)
+TRACE        518: pipeline-commit: PC=0x80000408, wb=1, rd=x2, ex=ALU (#65756)
+TRACE        518: pipeline-writeback: PC=0x80000410, wb=0, ex=ALU (#65758)
+TRACE        518: pipeline-issue: PC=0x80000414, wb=0, ex=ALU (#65759)
+TRACE        519: pipeline-writeback: PC=0x8000040c, wb=1, rd=x2, ex=ALU (#65757)
+TRACE        519: pipeline-execute: PC=0x80000414, wb=0, ex=ALU (#65759)
+DEBUG Fetch: PC=0x80000418 (#65760)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+TRACE        519: pipeline-issue: PC=0x80000418, wb=1, rd=x4, ex=ALU (#65760)
+TRACE        520: pipeline-execute: PC=0x80000418, wb=1, rd=x4, ex=ALU (#65760)
+DEBUG Fetch: PC=0x8000041c (#65761)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        520: pipeline-issue: PC=0x8000041c, wb=1, rd=x5, ex=ALU (#65761)
+TRACE        521: pipeline-commit: PC=0x8000040c, wb=1, rd=x2, ex=ALU (#65757)
+TRACE        521: pipeline-execute: PC=0x8000041c, wb=1, rd=x5, ex=ALU (#65761)
+DEBUG Fetch: PC=0x80000420 (#65762)
+DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+TRACE        521: *** branch stalled!: PC=0x80000420, wb=0, ex=ALU (#65762)
+TRACE        522: pipeline-commit: PC=0x80000410, wb=0, ex=ALU (#65758)
+TRACE        522: pipeline-writeback: PC=0x80000414, wb=0, ex=ALU (#65759)
+TRACE        522: *** branch stalled!: PC=0x80000420, wb=0, ex=ALU (#65762)
+TRACE        523: pipeline-writeback: PC=0x80000418, wb=1, rd=x4, ex=ALU (#65760)
+TRACE        523: *** branch stalled!: PC=0x80000420, wb=0, ex=ALU (#65762)
+TRACE        524: pipeline-commit: PC=0x80000414, wb=0, ex=ALU (#65759)
+TRACE        524: pipeline-writeback: PC=0x8000041c, wb=1, rd=x5, ex=ALU (#65761)
+TRACE        524: pipeline-issue: PC=0x80000420, wb=0, ex=ALU (#65762)
+TRACE        525: pipeline-commit: PC=0x80000418, wb=1, rd=x4, ex=ALU (#65760)
+TRACE        525: pipeline-execute: PC=0x80000420, wb=0, ex=ALU (#65762)
+DEBUG Fetch: PC=0x80000424 (#227)
+DEBUG Instr 0x1400193: ADDI x3, x0, 0x14
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x14}
+TRACE        525: pipeline-issue: PC=0x80000424, wb=1, rd=x3, ex=ALU (#227)
+TRACE        526: pipeline-commit: PC=0x8000041c, wb=1, rd=x5, ex=ALU (#65761)
+TRACE        526: pipeline-execute: PC=0x80000424, wb=1, rd=x3, ex=ALU (#227)
+DEBUG Fetch: PC=0x80000428 (#228)
+DEBUG Instr 0x213: ADDI x4, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x4={0x0}
+TRACE        526: pipeline-issue: PC=0x80000428, wb=1, rd=x4, ex=ALU (#228)
+TRACE        527: pipeline-execute: PC=0x80000428, wb=1, rd=x4, ex=ALU (#228)
+DEBUG Fetch: PC=0x8000042c (#229)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        527: pipeline-issue: PC=0x8000042c, wb=1, rd=x1, ex=ALU (#229)
+TRACE        528: pipeline-writeback: PC=0x80000420, wb=0, ex=ALU (#65762)
+TRACE        528: pipeline-execute: PC=0x8000042c, wb=1, rd=x1, ex=ALU (#229)
+DEBUG Fetch: PC=0x80000430 (#230)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        528: pipeline-issue: PC=0x80000430, wb=0, ex=ALU (#230)
+TRACE        529: pipeline-writeback: PC=0x80000424, wb=1, rd=x3, ex=ALU (#227)
+TRACE        529: pipeline-execute: PC=0x80000430, wb=0, ex=ALU (#230)
+DEBUG Fetch: PC=0x80000434 (#231)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        529: pipeline-issue: PC=0x80000434, wb=0, ex=ALU (#231)
+TRACE        530: pipeline-commit: PC=0x80000420, wb=0, ex=ALU (#65762)
+TRACE        530: pipeline-writeback: PC=0x80000428, wb=1, rd=x4, ex=ALU (#228)
+TRACE        530: pipeline-execute: PC=0x80000434, wb=0, ex=ALU (#231)
+DEBUG Fetch: PC=0x80000438 (#232)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        530: pipeline-issue: PC=0x80000438, wb=1, rd=x2, ex=ALU (#232)
+TRACE        531: pipeline-commit: PC=0x80000424, wb=1, rd=x3, ex=ALU (#227)
+TRACE        531: pipeline-writeback: PC=0x8000042c, wb=1, rd=x1, ex=ALU (#229)
+TRACE        531: pipeline-execute: PC=0x80000438, wb=1, rd=x2, ex=ALU (#232)
+DEBUG Fetch: PC=0x8000043c (#233)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        531: pipeline-issue: PC=0x8000043c, wb=1, rd=x2, ex=ALU (#233)
+TRACE        532: pipeline-commit: PC=0x80000428, wb=1, rd=x4, ex=ALU (#228)
+TRACE        532: pipeline-writeback: PC=0x80000430, wb=0, ex=ALU (#230)
+DEBUG Fetch: PC=0x80000440 (#234)
+DEBUG Instr 0x420e063: BLTU x1, x2, 0x40
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        532: *** branch stalled!: PC=0x80000440, wb=0, ex=ALU (#234)
+TRACE        533: pipeline-commit: PC=0x8000042c, wb=1, rd=x1, ex=ALU (#229)
+TRACE        533: pipeline-writeback: PC=0x80000434, wb=0, ex=ALU (#231)
+TRACE        533: *** branch stalled!: PC=0x80000440, wb=0, ex=ALU (#234)
+TRACE        534: pipeline-commit: PC=0x80000430, wb=0, ex=ALU (#230)
+TRACE        534: pipeline-writeback: PC=0x80000438, wb=1, rd=x2, ex=ALU (#232)
+TRACE        534: pipeline-execute: PC=0x8000043c, wb=1, rd=x2, ex=ALU (#233)
+TRACE        534: *** branch stalled!: PC=0x80000440, wb=0, ex=ALU (#234)
+TRACE        535: pipeline-commit: PC=0x80000434, wb=0, ex=ALU (#231)
+TRACE        535: pipeline-issue: PC=0x80000440, wb=0, ex=ALU (#234)
+TRACE        536: pipeline-commit: PC=0x80000438, wb=1, rd=x2, ex=ALU (#232)
+DEBUG Fetch: PC=0x80000444 (#235)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x0}
+DEBUG Dest Reg: x4={0x1}
+TRACE        536: pipeline-issue: PC=0x80000444, wb=1, rd=x4, ex=ALU (#235)
+TRACE        537: pipeline-writeback: PC=0x8000043c, wb=1, rd=x2, ex=ALU (#233)
+TRACE        537: pipeline-execute: PC=0x80000440, wb=0, ex=ALU (#234)
+TRACE        537: pipeline-execute: PC=0x80000444, wb=1, rd=x4, ex=ALU (#235)
+DEBUG Fetch: PC=0x80000448 (#236)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        537: pipeline-issue: PC=0x80000448, wb=1, rd=x5, ex=ALU (#236)
+TRACE        538: pipeline-execute: PC=0x80000448, wb=1, rd=x5, ex=ALU (#236)
+DEBUG Fetch: PC=0x8000044c (#237)
+DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Src1 Reg: x5={0x2}
+DEBUG *** Next PC=0x8000042c
+TRACE        538: *** branch stalled!: PC=0x8000044c, wb=0, ex=ALU (#237)
+TRACE        539: pipeline-commit: PC=0x8000043c, wb=1, rd=x2, ex=ALU (#233)
+TRACE        539: *** branch stalled!: PC=0x8000044c, wb=0, ex=ALU (#237)
+TRACE        540: pipeline-writeback: PC=0x80000440, wb=0, ex=ALU (#234)
+TRACE        540: *** branch stalled!: PC=0x8000044c, wb=0, ex=ALU (#237)
+TRACE        541: pipeline-writeback: PC=0x80000444, wb=1, rd=x4, ex=ALU (#235)
+TRACE        541: pipeline-issue: PC=0x8000044c, wb=0, ex=ALU (#237)
+TRACE        542: pipeline-commit: PC=0x80000440, wb=0, ex=ALU (#234)
+TRACE        542: pipeline-writeback: PC=0x80000448, wb=1, rd=x5, ex=ALU (#236)
+TRACE        542: pipeline-execute: PC=0x8000044c, wb=0, ex=ALU (#237)
+DEBUG Fetch: PC=0x8000042c (#65765)
+DEBUG Instr 0xf00000b7: LUI x1, 0xf0000000
+DEBUG Dest Reg: x1={0xf0000000}
+TRACE        542: pipeline-issue: PC=0x8000042c, wb=1, rd=x1, ex=ALU (#65765)
+TRACE        543: pipeline-commit: PC=0x80000444, wb=1, rd=x4, ex=ALU (#235)
+TRACE        543: pipeline-execute: PC=0x8000042c, wb=1, rd=x1, ex=ALU (#65765)
+DEBUG Fetch: PC=0x80000430 (#65766)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        543: pipeline-issue: PC=0x80000430, wb=0, ex=ALU (#65766)
+TRACE        544: pipeline-commit: PC=0x80000448, wb=1, rd=x5, ex=ALU (#236)
+TRACE        544: pipeline-execute: PC=0x80000430, wb=0, ex=ALU (#65766)
+DEBUG Fetch: PC=0x80000434 (#65767)
+DEBUG Instr 0x13: ADDI x0, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+TRACE        544: pipeline-issue: PC=0x80000434, wb=0, ex=ALU (#65767)
+TRACE        545: pipeline-writeback: PC=0x8000044c, wb=0, ex=ALU (#237)
+TRACE        545: pipeline-execute: PC=0x80000434, wb=0, ex=ALU (#65767)
+DEBUG Fetch: PC=0x80000438 (#65768)
+DEBUG Instr 0xf0000137: LUI x2, 0xf0000000
+DEBUG Dest Reg: x2={0xf0000000}
+TRACE        545: pipeline-issue: PC=0x80000438, wb=1, rd=x2, ex=ALU (#65768)
+TRACE        546: pipeline-writeback: PC=0x8000042c, wb=1, rd=x1, ex=ALU (#65765)
+TRACE        546: pipeline-execute: PC=0x80000438, wb=1, rd=x2, ex=ALU (#65768)
+DEBUG Fetch: PC=0x8000043c (#65769)
+DEBUG Instr 0xfff10113: ADDI x2, x2, 0xffffffff
+DEBUG Src0 Reg: x2={0xf0000000}
+DEBUG Dest Reg: x2={0xefffffff}
+TRACE        546: pipeline-issue: PC=0x8000043c, wb=1, rd=x2, ex=ALU (#65769)
+TRACE        547: pipeline-commit: PC=0x8000044c, wb=0, ex=ALU (#237)
+TRACE        547: pipeline-writeback: PC=0x80000430, wb=0, ex=ALU (#65766)
+DEBUG Fetch: PC=0x80000440 (#65770)
+DEBUG Instr 0x420e063: BLTU x1, x2, 0x40
+DEBUG Src0 Reg: x1={0xf0000000}
+DEBUG Src1 Reg: x2={0xefffffff}
+TRACE        547: *** branch stalled!: PC=0x80000440, wb=0, ex=ALU (#65770)
+TRACE        548: pipeline-commit: PC=0x8000042c, wb=1, rd=x1, ex=ALU (#65765)
+TRACE        548: pipeline-writeback: PC=0x80000434, wb=0, ex=ALU (#65767)
+TRACE        548: *** branch stalled!: PC=0x80000440, wb=0, ex=ALU (#65770)
+TRACE        549: pipeline-commit: PC=0x80000430, wb=0, ex=ALU (#65766)
+TRACE        549: pipeline-writeback: PC=0x80000438, wb=1, rd=x2, ex=ALU (#65768)
+TRACE        549: pipeline-execute: PC=0x8000043c, wb=1, rd=x2, ex=ALU (#65769)
+TRACE        549: *** branch stalled!: PC=0x80000440, wb=0, ex=ALU (#65770)
+TRACE        550: pipeline-commit: PC=0x80000434, wb=0, ex=ALU (#65767)
+TRACE        550: pipeline-issue: PC=0x80000440, wb=0, ex=ALU (#65770)
+TRACE        551: pipeline-commit: PC=0x80000438, wb=1, rd=x2, ex=ALU (#65768)
+DEBUG Fetch: PC=0x80000444 (#65771)
+DEBUG Instr 0x120213: ADDI x4, x4, 0x1
+DEBUG Src0 Reg: x4={0x1}
+DEBUG Dest Reg: x4={0x2}
+TRACE        551: pipeline-issue: PC=0x80000444, wb=1, rd=x4, ex=ALU (#65771)
+TRACE        552: pipeline-writeback: PC=0x8000043c, wb=1, rd=x2, ex=ALU (#65769)
+TRACE        552: pipeline-execute: PC=0x80000444, wb=1, rd=x4, ex=ALU (#65771)
+TRACE        552: pipeline-execute: PC=0x80000440, wb=0, ex=ALU (#65770)
+DEBUG Fetch: PC=0x80000448 (#65772)
+DEBUG Instr 0x200293: ADDI x5, x0, 0x2
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x5={0x2}
+TRACE        552: pipeline-issue: PC=0x80000448, wb=1, rd=x5, ex=ALU (#65772)
+TRACE        553: pipeline-execute: PC=0x80000448, wb=1, rd=x5, ex=ALU (#65772)
+DEBUG Fetch: PC=0x8000044c (#65773)
+DEBUG Instr 0xfe5210e3: BNE x4, x5, 0xffffffe0
+DEBUG Src0 Reg: x4={0x2}
+DEBUG Src1 Reg: x5={0x2}
+TRACE        553: *** branch stalled!: PC=0x8000044c, wb=0, ex=ALU (#65773)
+TRACE        554: pipeline-commit: PC=0x8000043c, wb=1, rd=x2, ex=ALU (#65769)
+TRACE        554: *** branch stalled!: PC=0x8000044c, wb=0, ex=ALU (#65773)
+TRACE        555: pipeline-writeback: PC=0x80000444, wb=1, rd=x4, ex=ALU (#65771)
+TRACE        555: *** branch stalled!: PC=0x8000044c, wb=0, ex=ALU (#65773)
+TRACE        556: pipeline-writeback: PC=0x80000440, wb=0, ex=ALU (#65770)
+TRACE        556: pipeline-issue: PC=0x8000044c, wb=0, ex=ALU (#65773)
+TRACE        557: pipeline-writeback: PC=0x80000448, wb=1, rd=x5, ex=ALU (#65772)
+TRACE        557: pipeline-execute: PC=0x8000044c, wb=0, ex=ALU (#65773)
+DEBUG Fetch: PC=0x80000450 (#238)
+DEBUG Instr 0x1500193: ADDI x3, x0, 0x15
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x15}
+TRACE        557: pipeline-issue: PC=0x80000450, wb=1, rd=x3, ex=ALU (#238)
+TRACE        558: pipeline-commit: PC=0x80000440, wb=0, ex=ALU (#65770)
+TRACE        558: pipeline-execute: PC=0x80000450, wb=1, rd=x3, ex=ALU (#238)
+DEBUG Fetch: PC=0x80000454 (#239)
+DEBUG Instr 0x100093: ADDI x1, x0, 0x1
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x1={0x1}
+TRACE        558: pipeline-issue: PC=0x80000454, wb=1, rd=x1, ex=ALU (#239)
+TRACE        559: pipeline-commit: PC=0x80000444, wb=1, rd=x4, ex=ALU (#65771)
+TRACE        559: pipeline-execute: PC=0x80000454, wb=1, rd=x1, ex=ALU (#239)
+DEBUG Fetch: PC=0x80000458 (#240)
+DEBUG Instr 0x106a63: BLTU x0, x1, 0x14
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Src1 Reg: x1={0x1}
+DEBUG *** Next PC=0x8000046c
+TRACE        559: *** branch stalled!: PC=0x80000458, wb=0, ex=ALU (#240)
+TRACE        560: pipeline-commit: PC=0x80000448, wb=1, rd=x5, ex=ALU (#65772)
+TRACE        560: pipeline-writeback: PC=0x8000044c, wb=0, ex=ALU (#65773)
+TRACE        560: *** branch stalled!: PC=0x80000458, wb=0, ex=ALU (#240)
+TRACE        561: pipeline-writeback: PC=0x80000450, wb=1, rd=x3, ex=ALU (#238)
+TRACE        561: *** branch stalled!: PC=0x80000458, wb=0, ex=ALU (#240)
+TRACE        562: pipeline-commit: PC=0x8000044c, wb=0, ex=ALU (#65773)
+TRACE        562: pipeline-writeback: PC=0x80000454, wb=1, rd=x1, ex=ALU (#239)
+TRACE        562: pipeline-issue: PC=0x80000458, wb=0, ex=ALU (#240)
+TRACE        563: pipeline-commit: PC=0x80000450, wb=1, rd=x3, ex=ALU (#238)
+TRACE        563: pipeline-execute: PC=0x80000458, wb=0, ex=ALU (#240)
+DEBUG Fetch: PC=0x8000046c (#241)
+DEBUG Instr 0x108093: ADDI x1, x1, 0x1
+DEBUG Src0 Reg: x1={0x1}
+DEBUG Dest Reg: x1={0x2}
+TRACE        563: pipeline-issue: PC=0x8000046c, wb=1, rd=x1, ex=ALU (#241)
+TRACE        564: pipeline-commit: PC=0x80000454, wb=1, rd=x1, ex=ALU (#239)
+TRACE        564: pipeline-execute: PC=0x8000046c, wb=1, rd=x1, ex=ALU (#241)
+DEBUG Fetch: PC=0x80000470 (#242)
+DEBUG Instr 0x108093: ADDI x1, x1, 0x1
+DEBUG Src0 Reg: x1={0x2}
+DEBUG Dest Reg: x1={0x3}
+TRACE        564: pipeline-issue: PC=0x80000470, wb=1, rd=x1, ex=ALU (#242)
+DEBUG Fetch: PC=0x80000474 (#243)
+DEBUG Instr 0x300393: ADDI x7, x0, 0x3
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x7={0x3}
+TRACE        565: pipeline-issue: PC=0x80000474, wb=1, rd=x7, ex=ALU (#243)
+TRACE        566: pipeline-writeback: PC=0x80000458, wb=0, ex=ALU (#240)
+TRACE        566: pipeline-execute: PC=0x80000474, wb=1, rd=x7, ex=ALU (#243)
+DEBUG Fetch: PC=0x80000478 (#244)
+DEBUG Instr 0x709463: BNE x1, x7, 0x8
+DEBUG Src0 Reg: x1={0x3}
+DEBUG Src1 Reg: x7={0x3}
+TRACE        566: *** branch stalled!: PC=0x80000478, wb=0, ex=ALU (#244)
+TRACE        567: pipeline-writeback: PC=0x8000046c, wb=1, rd=x1, ex=ALU (#241)
+TRACE        567: pipeline-execute: PC=0x80000470, wb=1, rd=x1, ex=ALU (#242)
+TRACE        567: *** branch stalled!: PC=0x80000478, wb=0, ex=ALU (#244)
+TRACE        568: pipeline-commit: PC=0x80000458, wb=0, ex=ALU (#240)
+TRACE        568: *** branch stalled!: PC=0x80000478, wb=0, ex=ALU (#244)
+TRACE        569: pipeline-commit: PC=0x8000046c, wb=1, rd=x1, ex=ALU (#241)
+TRACE        569: pipeline-writeback: PC=0x80000474, wb=1, rd=x7, ex=ALU (#243)
+TRACE        569: pipeline-issue: PC=0x80000478, wb=0, ex=ALU (#244)
+TRACE        570: pipeline-writeback: PC=0x80000470, wb=1, rd=x1, ex=ALU (#242)
+TRACE        570: pipeline-execute: PC=0x80000478, wb=0, ex=ALU (#244)
+DEBUG Fetch: PC=0x8000047c (#245)
+DEBUG Instr 0x2301063: BNE x0, x3, 0x20
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Src1 Reg: x3={0x15}
+DEBUG *** Next PC=0x8000049c
+TRACE        570: *** branch stalled!: PC=0x8000047c, wb=0, ex=ALU (#245)
+TRACE        571: *** branch stalled!: PC=0x8000047c, wb=0, ex=ALU (#245)
+TRACE        572: pipeline-commit: PC=0x80000470, wb=1, rd=x1, ex=ALU (#242)
+TRACE        572: *** branch stalled!: PC=0x8000047c, wb=0, ex=ALU (#245)
+TRACE        573: pipeline-commit: PC=0x80000474, wb=1, rd=x7, ex=ALU (#243)
+TRACE        573: pipeline-writeback: PC=0x80000478, wb=0, ex=ALU (#244)
+TRACE        573: pipeline-issue: PC=0x8000047c, wb=0, ex=ALU (#245)
+TRACE        574: pipeline-execute: PC=0x8000047c, wb=0, ex=ALU (#245)
+DEBUG Fetch: PC=0x8000049c (#246)
+DEBUG Instr 0xff0000f: FENCE 0xff
+TRACE        574: pipeline-issue: PC=0x8000049c, wb=0, ex=LSU (#246)
+TRACE        575: pipeline-commit: PC=0x80000478, wb=0, ex=ALU (#244)
+TRACE        575: pipeline-execute: PC=0x8000049c, wb=0, ex=LSU (#246)
+DEBUG Fetch: PC=0x800004a0 (#247)
+DEBUG Instr 0x100193: ADDI x3, x0, 0x1
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x3={0x1}
+TRACE        575: pipeline-issue: PC=0x800004a0, wb=1, rd=x3, ex=ALU (#247)
+TRACE        576: pipeline-execute: PC=0x800004a0, wb=1, rd=x3, ex=ALU (#247)
+DEBUG Fetch: PC=0x800004a4 (#248)
+DEBUG Instr 0x5d00893: ADDI x17, x0, 0x5d
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x17={0x5d}
+TRACE        576: pipeline-issue: PC=0x800004a4, wb=1, rd=x17, ex=ALU (#248)
+TRACE        577: pipeline-writeback: PC=0x8000047c, wb=0, ex=ALU (#245)
+TRACE        577: pipeline-execute: PC=0x800004a4, wb=1, rd=x17, ex=ALU (#248)
+DEBUG Fetch: PC=0x800004a8 (#249)
+DEBUG Instr 0x513: ADDI x10, x0, 0x0
+DEBUG Src0 Reg: x0={0x0}
+DEBUG Dest Reg: x10={0x0}
+TRACE        577: pipeline-issue: PC=0x800004a8, wb=1, rd=x10, ex=ALU (#249)
+TRACE        578: pipeline-execute: PC=0x800004a8, wb=1, rd=x10, ex=ALU (#249)
+DEBUG Fetch: PC=0x800004ac (#250)
+DEBUG Instr 0x73: ECALL 0x0
+TRACE        578: pipeline-issue: PC=0x800004ac, wb=0, ex=ALU (#250)
+PASSED!

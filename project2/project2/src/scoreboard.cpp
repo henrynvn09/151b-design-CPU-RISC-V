@@ -41,13 +41,17 @@ bool Scoreboard::issue(pipeline_trace_t* trace) {
   
   // TODO:
   // check for structural hazards return false if found
+  // std::cout << RS_.is_full() << ROB_->is_full() << "\n";
+   if (RS_.is_full ()|| ROB_->is_full()){ 
+    return false;
+  }
 
   // TODO:
   // load renamed operands (rob1_index, rob2_index) from RAT
   // use the instruction source operands from trace
   // a returned value of-1 indicate that the register value is in the register file, otherwise it is in the RS or ROB)
-  int rob1_index; 
-  int rob2_index; 
+  int rob1_index = RAT_.get(trace->rs1);
+  int rob2_index = RAT_.get(trace->rs2); 
      
   // for each non-available operands (value == -1), obtain their producing RS indices (rs1_index, rs2_index) from the RST
   // setting rs_index=-1 means the operand value is in the ROB or register File.
@@ -67,10 +71,8 @@ bool Scoreboard::issue(pipeline_trace_t* trace) {
 
   // update the RST with newly allocated RS index
   RST_[rob_index] = rs_index;
-
   return true;
 }
-
 std::vector<pipeline_trace_t*> Scoreboard::execute() {
   std::vector<pipeline_trace_t*> traces;
   auto& FUs = core_->FUs_;
@@ -84,8 +86,17 @@ std::vector<pipeline_trace_t*> Scoreboard::execute() {
   for (int i = 0; i < (int)RS_.size(); ++i) { 
     auto& rs_entry = RS_[i];
     // HERE!
+    // std::cout<<rs_entry.valid<<rs_entry.running<<rs_entry.rs1_index<<rs_entry.rs2_index<<"\n";
+    if (rs_entry.valid && !rs_entry.running && rs_entry.rs1_index == -1 && rs_entry.rs2_index == -1)
+    { // check if ready to run
+      // FU->Input.send(FunctionalUnit::entry_t{trace, rob_index, rs_index});//send the instruction to the FU
+      FUs[(int)rs_entry.trace->fu_type]->Input.send({rs_entry.trace, rs_entry.rob_index, i});
+      rs_entry.running = true;
+      traces.push_back(rs_entry.trace);
+  //  std::cout << "lolo" <<i<<"lolo";
+    }
+    // std::cout<<RS_.size()<<i <<"---"<< rs_entry.trace<<"\n";
   }
-
   return traces;
 }
 
@@ -109,17 +120,25 @@ pipeline_trace_t* Scoreboard::writeback() {
       if (!rs_entry.valid)
         continue;
       // HERE!
+     if (rs_entry.rs1_index == fu_entry.rs_index){
+        rs_entry.rs1_index = -1;
+     }
+     if (rs_entry.rs2_index == fu_entry.rs_index){
+        rs_entry.rs2_index = -1;
+     }
+    //  std::cout << "infinite loop writeback";
     }
     
     // TODO: 
     // clear RST by invalidating current ROB entry to -1
-        
+    RST_[fu_entry.rob_index] = -1;
     // TODO: 
     // notify the ROB about completion (using ROB->Completed.send())
-    
+    ROB->Completed.send(fu_entry.rob_index);
     // TODO: 
     // deallocate the RS entry of this FU
-        
+    RS_.remove(fu_entry.rs_index);
+    
     // set the returned trace
     trace = fu_entry.trace;
 

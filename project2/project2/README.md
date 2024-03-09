@@ -44,7 +44,7 @@ The provided Makefile contains a `test` command to execute all provided tests.
 All tests are under the /tests/ folder.
 You can execute an individual test by running:
 
-    $ ./tinyrv -s tests/rv32ui-p-sub.hex
+    $  
     $ ./tinyrv -so tests/rv32ui-p-sub.hex
     $ ./tinyrv -sg tests/rv32ui-p-sub.hex
     $ ./tinyrv -sog tests/rv32ui-p-sub.hex

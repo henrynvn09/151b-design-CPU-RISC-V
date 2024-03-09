@@ -113,10 +113,13 @@ void Core::issue() {
 
 void Core::execute() {   
   auto traces = pipeline_->execute();
+  
   for (auto trace : traces) {
     __unused (trace);
     DT(3, "pipeline-execute: " << *trace);
+    // std::cout <<"nested looppppppppp";
   }
+  // std::cout<<"infinite loop  core execute \n";
 }
 
 void Core::writeback() {

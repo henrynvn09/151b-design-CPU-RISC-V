@@ -69,7 +69,14 @@ void ReorderBuffer::tick() {
   // push the trace into commit port (using this->Committed.send())
   // remove the head entry
   // HERE!
-}
+  if(head.completed == true){
+    if(head.trace->wb&&RAT.get(head.trace->rd)==head_index_){
+      RAT.set(head.trace->rd, -1);
+    }
+    this->Committed.send(head.trace);
+    this->pop();
+    // std::cout << "infinite loop tick";
+}}
 
 int ReorderBuffer::allocate(pipeline_trace_t* trace) {
   assert(!this->is_full());
