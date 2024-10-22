@@ -4,65 +4,24 @@ This repository contains multiple projects related to system-level programming a
 
 | Project Name         | Description                                                                 | Tech Stack       |
 |----------------------|-----------------------------------------------------------------------------|------------------|
-| project1             | Contains various utilities and memory management tools, along with debug traces for RISC-V instruction set. | C++              |
-| project2             | Implements a RISC-V processor emulator with various components like core, decode, execute, and more. | C++              |
+| project1             | Implements a RISC-V 5-stage pipelined processor simulator.                  | C++              |
+| project2             | Implements an out-of-order RISC-V processor emulator with gshare predictor.  | C++              |
 
-## Project 1
+## Project 1: Pipelined RISC-V CPU Simulator
 
-### Description
-Project 1 includes common utilities and memory management tools. It also contains debug traces for the RISC-V instruction set.
+In this project, you will design a RISC-V 5-stage pipelined processor using C++. The ISA of this processor is the standard RV32-I base extension. The provided source code contains an incomplete implementation of the CPU. The processor implementation consists of two parts:
+- The CPU emulator: decode and execute instructions to generate instruction trace.
+- The CPU simulator: Use the instruction trace to perform cycle-level simulation.
 
-### Tech Stack
-- C++
+You are responsible for completing the code of the emulator and simulator such that you can successfully execute the provided tests on the processor.
 
-### Directory Structure
-- `common/`: Contains utility and memory management headers and source files.
-- `debug_traces/`: Contains log files for various RISC-V instructions.
-- `debug_traces-1/`: Additional debug traces.
-- `src/`: Source files for the project.
-- `tests/`: Test scripts and files.
-- `Makefile`: Build instructions for the project.
+## Project 2: Out-of-order RISC-V CPU Simulator
+In this project, you will design an out-of-order RISC-V processor using C++. The ISA of this processor is the standard RV32-I base extension. The provided source code contains an incomplete implementation of the CPU. The processor implementation consists of two parts:
 
-## Project 2
+- The CPU emulator: decode and execute instructions to generate instruction trace.
+- The CPU simulator: Use the instruction trace to perform cycle-level simulation.
+You are responsible for completing the code of the out-of-order pipeline and gshare branch predictor such that you can successfully execute the provided tests with the correct timing.
 
-### Description
-Project 2 focuses on implementing a RISC-V processor emulator. It includes various components such as the core, decode, execute, and more.
-
-### Tech Stack
-- C++
-
-### Directory Structure
-- 
-
-project2
-
-: Main directory for Project 2.
-- `common/`: Shared utilities and memory management files.
-- `src/`: Source files for the RISC-V processor emulator.
-- `tests/`: Test scripts and files.
-- `Makefile`: Build instructions for the project.
-
-## How to Build
-
-To build the projects, navigate to the respective project directory and run the following command:
-
-```sh
-make
-```
-
-## How to Run Tests
-
-To run tests, navigate to the respective project directory and execute the test scripts:
-
-```sh
-./testCompare.sh
-./timeCompare.sh
-```
-
-## Additional Information
-
-For more details, refer to the individual 
-
-README.md
-
- files located in each project directory.
+### Project Parts
+- Out-of-order Pipeline: Complete the implementation of the processor's scoreboard and re-order buffer. Refer to TODO entries inside scoreboard.cpp and ROB.cpp for where you should make your changes.
+- Gshare Predictor: Complete the implementation of the processor's branch predictor. It will consist of a GShare predictor containing an 8-bit BHR and 256-entry BHT, matched with a 256-entry BTB. Assume all counters, including the BHR, to be initialized to zero at boot. You should complete the implementation of the GShare class by implementing the predict() method. Note that we are only interested in timing. Your predict() method should first determine the current predicted outcome, and then update the predictor. Also note that a successful prediction is a combination of branch direction and branch target hits.
